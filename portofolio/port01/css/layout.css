@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* layout styles used to construct page layout : header, main, footer.
+and also classes for contents for example : column, product description, etc. */
+
+/* ==================== */
+/* clearfix */
+/* ==================== */
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1;
+}
+
+/* ==================== */
+/* container */
+/* ==================== */
+.container {
+	margin: 0 auto;
+}
+
+/* ==================== */
+/* positioning */
+/* ==================== */
+.flLeft {
+	float: left;
+}
+
+.flRight {
+	float: right;
+}
+
+/* ==================== */
+/* text */
+/* ==================== */
+.centerText {
+	text-align: center;
+}
+
+/* ==================== */
+/* responsive */
+/* ==================== */
+.dynamicImage {
+	max-width: 100%;
+}
+
+/* ==================== */
+/* spacing */
+/* ==================== */
+.marginTopBot10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

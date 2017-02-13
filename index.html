@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dimitri Herlambang Personal Website</title>
+    <link rel="icon" href="img/tab_logo.png">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="Dimitri Herlambang Personal Website">
+    <meta name="keywords" content="Dimitri,Herlambang,Personal,Website">
+    <meta name="author" content="Dimitri">
+    <link href="/css/base.css" rel="stylesheet">
+    <style>
+		html:before {
+			width: 100%;
+			height: 100%;
+			background: url(img/main_bg.jpg) no-repeat center center !important;
+			content: "";
+			display: block;
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: -10;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		*{transition: .3s ease-in-out;}
+		html {
+			/* background: url(img/main_bg.jpg) no-repeat; */
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			-webkit-animation: fadein 1s;
+			-moz-animation: fadein 1s;  
+			-ms-animation: fadein 1s; 
+			-o-animation: fadein 1s; 
+			animation: fadein 1s;
+		}
+		.navButton {
+			margin:100px 50px 100px auto;
+		}
+		.navButton li{
+			margin: 0 15px 15px 0;
+			padding: 15px;
+			display: inline-block;
+		}
+		.navButton li a{
+			padding:15px;
+			color:#fff;
+			font-weight:100;
+		}
+		.navButton li a:hover {
+			padding: 30px;
+			color: #000;
+		}
+	</style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="mainArea" class="clearfix">
+			<section id="1_" style="padding:250px 0 200px 0;">
+        		<div class="container960 clearfix">
+                    <h1 class="">I am Dimitri Herlambang</h1>
+                    <div class="h1border" style="background-color:#FF9800"></div>
+                    <p class="tWhite">Welcome to my Personal Website.</p>
+                    <div class="mTB30">
+                        <p class="t16 tWhite">
+                            This site serves as my humble html built-from-the-scratch creation.
+                            Everything I have learned, including
+                            HTML, CSS, Javascript, jQueries, and outside of web development topics, will be put here.
+                        </p>
+                        <p class="t16 tWhite">
+                            You can browse my CV, or read articles written by me, go ahead and enjoy!
+                        </p>
+                        <ul class="t48 navButton" style="margin-top: 50px;">
+							<li><a href="cv.html">About Me</a></li>
+							<li><a href="inter.html">Intermezzo</a></li>
+						</ul>
+                    </div><!-- /.mTB30 -->
+            	</div><!-- /.container960 -->
+			</section>
+		<div id="footerArea" style="background-color:#ECECEC">
+			<div class="container1366">
+				<p class="tR">Design by Dimitri Herlambang</p>
+			</div><!-- /.container1366 -->
+		</div><!-- /#footerArea -->
+    </div> <!-- /#wrap -->
+</body>
+</html>

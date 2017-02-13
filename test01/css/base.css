@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/* reset */
+html{background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:separate;border-spacing:0;}
+fieldset,img{border:0;}
+img{vertical-align:top;}
+address,caption,em,strong,th{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th,td{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;border:none;}
+
+/* base tag */
+button {cursor: pointer;border:none;}
+* {font-family:Arial;}
+a {text-decoration:none;color:inherit;}
+h2 {margin-bottom: 5px;}
+h3 {font-size: 16px;}
+
+/* base class */
+.clearfix:before,
+.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+
+.fL{float:left;}
+.fR{float:right;}
+
+.tB{font-weight:bold;}
+.tI{font-style:italic;}
+.tU{text-decoration:underline;}
+
+.tL{text-align:left;}
+.tC{text-align:center;}
+.tR{text-align:right;}
+
+.mTB10{margin-top:10px;margin-bottom:10px;}
+.mT15{margin-top:15px;}
+.mB10{margin-bottom:10px;}
+.mB15{margin-bottom:15px;}
+.dispInline li {display: inline-block;}
+
+/* layout */
+#headerArea {
+	position: fixed;
+	width: 100%;
+	padding: 11px 0 11px 0;
+	border-bottom: 1px solid #349dc9;
+	font-size: 10px;
+	background-color: #fff;
+	z-index: 5;
+}
+	#headerArea a{padding: 11px;}
+	#headerArea a:hover{background-color: #349dc9;color:#fff;}
+
+#mainArea {
+	padding-top:33px;
+	padding-bottom:35px;
+	background-color: #f2f2f2;
+}
+
+#sideArea {
+	width: 200px;
+	padding-top: 10px;
+	font-size: 9px;
+}
+#contentArea {max-width: 440px;}
+
+#footerArea {
+	padding: 5px 0 5px 0;
+	color: #349dc9;
+	font-size: 10px;
+}
+
+/* custom ID */
+#srcSP {
+	width: 50px;
+	height: 50px;
+}
+#sliderArea{padding-top: 15px;margin-bottom: 15px;}
+#searchArea{
+	height: 30px;
+	background:url(../img/OKZ3.png) center no-repeat;
+	background-size: 200px 55px;
+}
+#search{height: 30px;padding:0 5px;}
+#slider{
+	max-width:768px;
+	height:315px;
+	margin: 15px auto;
+	background-color:#c2cad3;
+}
+#sideTab li{padding:0 3px 2px 3px;}
+#sideTab li a{padding:0 3px 5px 3px;}
+
+#pager li {margin-right: 5px;}
+#pager li button{
+	padding: 8px 10px;
+	background-color: #fff;
+	color: #333;
+}
+#footerArea tr td {
+	text-align: left;
+    vertical-align: middle;
+    height: 30px;
+}
+#footerArea li{margin-left: 10px;}
+
+/* custom class */
+.wrap660 {
+	padding: 0 10px 0 10px;
+	margin: 0 auto;
+	max-width: 680px;
+	box-sizing: border-box;
+}
+
+.h301 {margin-top: 15px;}
+.h302 {border-bottom: 3px solid #349dc9;}
+.h302 h3 {padding-left: 5px;}
+
+.dummy01 li{
+	width: 155px;
+	height: 115px;
+	margin-right: 5px;
+	background-color: gray;
+}
+.dummy02 {margin-top: 5px;}
+.dummy02 li {
+	width: 185px;
+	height: 55px;
+	margin-bottom: 5px;
+	background-color: gray;
+}
+.dummy03 li {
+	width: 185px;
+	height: 60px;
+	margin-bottom: 5px;
+	background-color: gray;
+}
+.dummy04 {
+	width: 110px;
+	height: 75px;
+	background-color: gray;
+	margin-bottom: 3px;
+}
+.dummy05 {
+	width: 75px;
+	height: 75px;
+	background-color: gray;
+}
+.dummy06 {
+	margin-right: 4px;
+	margin-bottom: 3px;
+	width: 60px;
+	height: 40px;
+	background-color: gray;
+}
+.dummy06:last-of-type {
+	margin-right: 0;
+}
+.dummy07 {
+	width: 440px;
+	height: 265px;
+	margin-bottom: 15px;
+	background-color: gray;
+}
+
+.sideTabContent {
+	margin-top: -3px;
+	padding: 5px;
+	border: 1px solid gray;
+}
+.sideDropDown {
+	margin-top: 15px;
+	padding-top: 5px;
+	border: 1px solid gray;
+}
+
+.btnActive {
+	background-color: #349dc9 !important;
+	color: #fff !important;
+}
+
+.SP {display: none;}
+
+/* responsive */
+@media screen and (max-width: 641px) {
+	#headerArea {
+		padding: 0;
+		background: #fff url(../img/OKZ3.png) center no-repeat;
+		background-size: 165px 50px;
+	}
+	#headerArea .wrap660 {padding: 0;}
+	#searchArea{background:none;}
+	#sideArea {float:none;margin: 0 auto;}
+	#contentArea {float:none;margin: 0 auto;}
+	.PC {display: none;}
+	.SP {display: block;}
+	.dummy01 li {
+		width: 115px;
+		height: 100px;
+	}
+	.dummy07 {width: 300px; margin:10px auto;}
+}
