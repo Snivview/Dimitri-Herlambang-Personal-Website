@@ -8,7 +8,7 @@
     <meta name="description" content="Dimitri Herlambang Personal Website">
     <meta name="keywords" content="Dimitri,Herlambang,Personal,Website">
     <meta name="author" content="Dimitri">
-    <link href="/css/base.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
     <style>
 		html:before {
 			width: 100%;
@@ -55,6 +55,48 @@
 			padding: 30px;
 			color: #000;
 		}
+        h1 {font-size: 300%;font-weight: 600;}
+        @-webkit-keyframes textLeftMove {
+            0%   {left: -500px;}
+            100% {left: 0px;}
+        }
+        @keyframes textLeftMove {
+            0%   {left: -500px;}
+            100% {left: 0px;}
+        }
+        @-webkit-keyframes textShow {
+            0%   {opacity: 0;}
+            25%   {opacity: .25;}
+            50%   {opacity: .5;}
+            75%   {opacity: .75;}
+            100%   {opacity: 1;}
+        }
+        @keyframes textLeftMove {
+            0%   {left: -500px;}
+            100% {left: 0px;}
+        }
+        @-webkit-keyframes textRightMove {
+            0%   {left: 500px;opacity: 0;}
+            100% {left: 0px;opacity: 1;}
+        }
+        @keyframes textRightMove {
+            0%   {left: 500px;opacity: 0;}
+            100% {left: 0px;opacity: 1;}
+        }
+        .textShow {
+            -webkit-animation: textShow 1s; /* Safari 4.0 - 8.0 */
+            animation: textShow 1s;
+        }
+        .textLeft {
+            position :relative;
+            -webkit-animation: textLeftMove 1s; /* Safari 4.0 - 8.0 */
+            animation: textLeftMove 1s;
+        }
+        .textRight {
+            position :relative;
+            -webkit-animation: textRightMove 1s; /* Safari 4.0 - 8.0 */
+            animation: textRightMove 1s;
+        }
 	</style>
 </head>
 
@@ -63,21 +105,12 @@
         <div id="mainArea" class="clearfix">
 			<section id="1_" style="padding:250px 0 200px 0;">
         		<div class="container960 clearfix">
-                    <h1 class="">I am Dimitri Herlambang</h1>
+                    <h1 class="tC tWhite textShow">I am Dimitri Herlambang</h1>
                     <div class="h1border" style="background-color:#FF9800"></div>
-                    <p class="tWhite">Welcome to my Personal Website.</p>
                     <div class="mTB30">
-                        <p class="t16 tWhite">
-                            This site serves as my humble html built-from-the-scratch creation.
-                            Everything I have learned, including
-                            HTML, CSS, Javascript, jQueries, and outside of web development topics, will be put here.
-                        </p>
-                        <p class="t16 tWhite">
-                            You can browse my CV, or read articles written by me, go ahead and enjoy!
-                        </p>
                         <ul class="t48 navButton" style="margin-top: 50px;">
-							<li><a href="cv.html">About Me</a></li>
-							<li><a href="inter.html">Intermezzo</a></li>
+							<li class="textLeft"><a href="cv.html">About Me</a></li>
+							<li class="textRight"><a href="inter.html">Intermezzo</a></li>
 						</ul>
                     </div><!-- /.mTB30 -->
             	</div><!-- /.container960 -->
