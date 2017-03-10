@@ -13,18 +13,18 @@
 
 <body>
     <div id="wrap">
+		<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/header.html');?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
         	<div class="container960">
 				<h1>Memaknai Tabayyun di Era Teknologi Informasi (Part 1 : Berita Hoax)</h1>
                 <div class="mTB30 articles">
                 	<p>Di era internet sekarang ini, informasi dapat menyebar dengan sangat cepat.
-                    	Cukup 2 atau 3 kali klik saja, sebuah berita dapat disebarkan, melalui berbagai macam media sosial.
-                        Baik itu Facebook, Twitter, Instagram, Path, Whatsapp, Blackberry Messenger, LINE.
+                    	Cukup 2 atau 3 kali klik saja, sebuah berita dapat disebarkan, melalui berbagai macam media sosial, sampai aplikasi chat.
                     </p>
-                    <p><i>Concern</i> terbesar dalam penyebaran berita ini adalah. Seberapa benar info itu adanya ?</p>
+                    <p><i>Concern</i> terbesar dalam penyebaran berita ini adalah kebenaran dari berita tersebut.</p>
                     <p>Seringkali saya temui, orang-orang yang membagikan suatu berita ataupun <i>link</i> yang menuju
                     	suatu sumber media online, tidak mengetahui kejadian sebenarnya. "Hanya share", "tadi dapet dari si X".
-                        Sungguh bukan alasan yang logis.
+                        Dan itu bukan alasan yang logis menurut saya, tapi lebih terbawa emosi.
                     </p>
                     <h2>Mesti bagaimana ?</h2>
                     <p>Dalam Kitab Suci Al-Qur'an surat Al-Hujurat ayat 49 terdapat jawabannya :</p>
@@ -44,6 +44,7 @@
                     <p class="tR"><a class="link01" href="memaknai-tabayyun-dalam-kehidupan-modern-part-2.html"><i>lanjut ke part 2</i></a></p>
                 </div> <!-- /.articles -->
             </div> <!-- /.container960 -->
+			<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/footer.html');?>
 		</div><!-- /#mainArea -->
     </div> <!-- /#wrap -->
 </body>

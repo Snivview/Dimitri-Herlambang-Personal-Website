@@ -13,6 +13,7 @@
 
 <body>
     <div id="wrap">
+		<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/header.html');?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
 			<div class="container960">
 				<p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di snivview.wordpress.com,<br>
@@ -184,6 +185,7 @@
 				</div>
 			</div><!-- /.container960 -->
 		</div><!-- /#mainArea -->
+		<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/footer.html');?>
     </div> <!-- /#wrap -->
 </body>
 </html>
