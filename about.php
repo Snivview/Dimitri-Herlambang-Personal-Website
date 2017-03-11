@@ -181,7 +181,11 @@
 
 <body>
     <div id="wrap">
-	<?php include '/_common/header.html';?>
+	<?php 
+		$path = $_SERVER['DOCUMENT_ROOT'];
+		$path .= "/_common/header.html";
+		include_once($path);
+	?>
     <div id="mainArea" class="clearfix">
 		<section id="2_" style="padding-bottom:0;">
         	<div class="container960 clearfix">

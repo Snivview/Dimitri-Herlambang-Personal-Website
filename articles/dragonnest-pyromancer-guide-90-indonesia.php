@@ -13,7 +13,11 @@
 </head>
 <body>
 <div id="wrap">
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/header.html');?>
+<?php 
+	$path = $_SERVER['DOCUMENT_ROOT'];
+	$path .= "/_common/header.html";
+	include_once($path);
+?>
 <div id="mainArea" class="clearfix" style="padding-top:100px">
 <div class="container960">
 <h1>Dragon Nest Pyromancer Guide 90 Indonesia</h1>
@@ -1350,7 +1354,11 @@ Menembakkan 3 proyektil burung api ke depan. Burung api akan menyebar ke 3 arah 
 </div>
 </div>
 </div>
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/footer.html');?>
+<?php 
+	$path = $_SERVER['DOCUMENT_ROOT'];
+	$path .= "/_common/footer.html";
+	include_once($path);
+?>
 </div>
 </body>
 </html>

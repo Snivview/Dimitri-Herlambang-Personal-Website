@@ -28,7 +28,11 @@
 
 <body>
     <div id="wrap">
-		<?php include '/_common/header.html';?>
+		<?php 
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/_common/header.html";
+			include_once($path);
+		?>
         <div id="mainArea" class="clearfix">
 			<div class="container960">
 				<section id="1_" style="padding:50px 0 200px 0;">
@@ -51,7 +55,11 @@
 				</section>
 			</div>
 		</div> <!-- /#mainArea -->
-		<?php include '/_common/footer.html';?>
+		<?php 
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/_common/footer.html";
+			include_once($path);
+		?>
 	</div><!-- /#wrap -->
 </body>
 </html>

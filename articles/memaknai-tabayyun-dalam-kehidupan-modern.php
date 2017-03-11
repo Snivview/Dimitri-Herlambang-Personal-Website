@@ -13,7 +13,11 @@
 
 <body>
     <div id="wrap">
-		<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/header.html');?>
+		<?php 
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/_common/header.html";
+			include_once($path);
+		?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
         	<div class="container960">
 				<h1>Memaknai Tabayyun di Era Teknologi Informasi (Part 1 : Berita Hoax)</h1>
@@ -44,7 +48,11 @@
                     <p class="tR"><a class="link01" href="memaknai-tabayyun-dalam-kehidupan-modern-part-2.html"><i>lanjut ke part 2</i></a></p>
                 </div> <!-- /.articles -->
             </div> <!-- /.container960 -->
-			<?php include ($_SERVER['DOCUMENT_ROOT'].'/_common/footer.html');?>
+			<?php 
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/_common/footer.html";
+				include_once($path);
+			?>
 		</div><!-- /#mainArea -->
     </div> <!-- /#wrap -->
 </body>
