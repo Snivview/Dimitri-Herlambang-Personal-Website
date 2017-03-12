@@ -67,10 +67,10 @@ button:focus {outline:none;}
     #headerArea {
         height: 60px !important;
     }
-    #Left {
+    .Left {
         width: 30%;
     }
-    #hMid, #hRight {
+    .hMid, .hRight {
         display: none;
     }
     #hMenuOpenBtn {
