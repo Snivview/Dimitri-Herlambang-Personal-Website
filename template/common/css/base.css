@@ -15,7 +15,9 @@ sub{vertical-align:text-bottom;}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
 
 /* base tag */
-
+* {
+    font-family: segoe ui;
+}
 /* base class */
 .clearfix:before,
 .clearfix:after{content:"";display:table;}

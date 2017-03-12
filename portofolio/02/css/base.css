@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* reset */
+html{background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:separate;border-spacing:0;}
+fieldset,img{border:0;}
+img{vertical-align:top;}
+address,caption,em,strong,th{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th,td{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+
+/* base tag */
+* {font-family: sans-serif;}
+a {text-decoration: none; color: inherit;}
+button {border:none;}
+button:focus {outline:none;}
+
+/* base class */
+.clearfix:before,
+.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+
+.fL{float:left;}
+.fR{float:right;}
+
+.tB{font-weight:bold;}
+.tL{text-align:left;}
+.tC{text-align:center;}
+.tR{text-align:right;}
+.tI{font-style:italic;}
+.tS{text-decoration: line-through;}
+
+.t12{font-size:12px;}
+.t14{font-size:14px;}
+.t16{font-size:16px;}
+.t18{font-size:18px;}
+.t24{font-size:24px;}
+.t48{font-size:48px;}
+.tWhite{color:#fff;}
+
+.mTB10{margin-top: 10px;margin-bottom: 10px;}
+.mTB30{margin-top: 30px;margin-bottom: 30px;}
+.mT30{margin-top: 30px;}
+.mB30{margin-bottom: 30px;}
+
+.dispTable{
+	display:table-cell;
+	vertical-align: middle;
+}
+.dispInline li{display:inline-block;}
+.dispList li{display:list-item;}
+
+/* components */
+.wrap1000 {
+    padding: 5px;
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 568px) {
+    #headerArea {
+        height: 60px !important;
+    }
+    #Left {
+        width: 30%;
+    }
+    #hMid, #hRight {
+        display: none;
+    }
+    #hMenuOpenBtn {
+        display: block !important;
+        float: right;
+    }
+}
+
+/* HEADER */
+#headerArea {
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    border-top: 5px solid #A99755;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(148,148,148,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(148,148,148,1);
+    box-shadow: 0px 2px 5px 0px rgba(148,148,148,1);
+    background-color: #fff;
+}
+#headerArea ul {
+    margin-top: 18px;
+}
+#headerArea img {
+    width: 100%;
+}
+#headerArea ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#headerArea ul li:last-of-type {
+    margin-right: 0;
+}
+#headerArea ul li a{
+    padding: 5px 0;
+    transition: .3s;
+}
+#headerArea ul li a:hover{
+    transition: .3s;
+    color: #A99755;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #413c2a;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.hLeft {width: 15%;}
+.hMid {width: 75%;}
+.hRight {width: 10%;}
+#hMenuOpenBtn {
+    display: none;
+    margin: 5px 5px 0 0;
+    width: 36px;
+    height: 36px;
+    background: url(../img/header_menu_btn.png) no-repeat;
+}
+.dropdown-content {
+    margin-top: 2px;
+    padding: 5px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-weight: normal;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+button.accordion {
+    width: 100%;
+    transition: 0.4s;
+}
+div.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-weight: normal !important;
+}
+
+/* MAIN */
+#mainArea {
+    padding: 100px 0;
+    background-color: #fff7d6;
+}
+
+/* FOOTER */
+#footerArea {}

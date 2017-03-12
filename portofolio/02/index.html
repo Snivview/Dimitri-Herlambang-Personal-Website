@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SMA 112 Jakarta</title>
+    <link rel="icon" href="img/tab_logo.png">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="template">
+    <meta name="keywords" content="template">
+    <meta name="author" content="Dimitri">
+    <link href="css/base.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+		<div id="headerArea" class="clearfix">
+            <div class="wrap1000 clearfix">
+                <div class="hLeft fL">
+                    <h1><a href="/"><img src="img/logo.png" alt="SMA 112"></a></h1>
+                </div>
+                <div class="hMid fL">
+                    <ul class="dispInline">
+                        <li class="dropdown"><a href="#" class="dropbtn">Profil&#x25BC;</a>
+                            <div class="dropdown-content">
+                                <a href="#">Visi dan Misi</a>
+                                <a href="#">Sejarah Singkat</a>
+                                <a href="#">Sarana &amp; Prasarana</a>
+                                <a href="#">Struktur Organisasi</a>
+                                <a href="#">Kondisi Siswa</a>
+                                <a href="#">Prestasi</a>
+                            </div></li><!--
+                        --><li><a href="#" class="dropbtn">Kepala Sekolah</a></li><!--
+                        --><li class="dropdown"><a href="#" class="dropbtn">Guru&#x25BC;</a>
+                            <div class="dropdown-content">
+                                <a href="#">Direktori Guru dan Karyawan</a>
+                                <a href="#">Silabus</a>
+                                <a href="#">Prestasi Guru</a>
+                                <a href="#">Kalender Akademik</a>
+                            </div>
+                        </li><!--
+                        --><li class="dropdown"><a href="#" class="dropbtn">Siswa&#x25BC;</a>
+                            <div class="dropdown-content">
+                                <a href="#">Prestasi Siswa</a>
+                                <a href="#">Ekstrakurikuler</a>
+                            </div>
+                        </li><!--
+                        --><li class="dropdown"><a href="#" class="dropbtn">Fitur&#x25BC;</a>
+                            <div class="dropdown-content">
+                                <a href="#">Agenda</a>
+                                <a href="#">Artikel</a>
+                                <a href="#">Berita</a>
+                                <a href="#">Link</a>
+                            </div>
+                        </li><!--
+                        --><li><a href="#">Download Form CPDB 2016/2017</a></li><!--
+                        --><li><a href="#">Kontak Sekolah</a></li>
+                    </ul>
+                </div>
+                <div class="hRight fL">
+                    <h1 class="fR"><img src="img/logo2.png" alt="DKI Jakarta"></h1>
+                </div>
+                <!-- mobile device menu -->
+                <div id="hMenu" class="sidenav"> 
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="accordion">Profil &#x25BC;</a>
+                    <div class="panel">
+                        <a href="#">Visi dan Misi</a>
+                        <a href="#">Sejarah Singkat</a>
+                        <a href="#">Sarana &amp; Prasarana</a>
+                        <a href="#">Struktur Organisasi</a>
+                        <a href="#">Kondisi Siswa</a>
+                        <a href="#">Prestasi</a>
+                    </div>
+                    <a href="#">Kepala Sekolah</a>
+                    <a href="#">Guru</a>
+                    <a href="#">Siswa</a>
+                    <a href="#">Fitur</a>
+                    <a href="#">Download Form CPDB 2016/2017</a>
+                    <a href="#">Kontak Sekolah</a>
+                </div>
+                <button id="hMenuOpenBtn" onclick="openNav()"></button>
+            </div> <!-- /.wrap1000 -->
+		</div> <!-- /#headerArea -->
+		
+        <div id="mainArea" class="clearfix" style="padding-top:100px;">
+		</div> <!-- /#mainArea -->
+		
+		<div id="footerArea">
+		</div> <!-- /#footerArea -->
+    </div> <!-- /#wrap -->
+    <script>
+        /* Open the sidenav */
+        function openNav() {
+            document.getElementById("hMenu").style.width = "100%";
+        }
+
+        /* Close/hide the sidenav */
+        function closeNav() {
+            document.getElementById("hMenu").style.width = "0";
+        }
+        /* accordion menu */
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          }
+        }
+    </script>
+</body>
+</html>

@@ -8,19 +8,23 @@
     <meta name="description" content="template">
     <meta name="keywords" content="template">
     <meta name="author" content="Dimitri">
-    <link href="/css/base.css" rel="stylesheet">
+    <link href="/template/common/css/base.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="wrap">
-		<div id="headerArea" class="clearfix">
-		</div><!-- /#headerArea -->
-		
+	<?php 
+		$path = $_SERVER['DOCUMENT_ROOT'];
+		$path .= "/template/common/header.php";
+		include_once($path);
+	?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
 		</div><!-- /#mainArea -->
-		
-		<div id="footerArea">
-		</div><!-- /#footerArea -->
+	<?php 
+		$path = $_SERVER['DOCUMENT_ROOT'];
+		$path .= "/template/common/footer.php";
+		include_once($path);
+	?>
     </div> <!-- /#wrap -->
 </body>
 </html>
