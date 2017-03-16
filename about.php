@@ -35,7 +35,7 @@
 			margin-right: 15px;
 			margin-bottom: 10px;
 		}
-		.tabTitle li a {padding: 15px;}
+		.tabTitle li a {padding: 15px;color:#fff;}
 		.tabTitleBord {border-bottom: 3px solid rgba(236, 236, 236, 0);}
 		.ui-tabs-active.ui-state-active{
 			transition: .3s;
@@ -191,10 +191,10 @@
         	<div class="container960 clearfix">
                 <div id="tabs" class="clearfix">
                     <ul class="tabTitle">
-                        <li id="tabTitle_1" class="tabTitleBord" style=""><a href="#tabs-1">Intro</a></li><!--
-                        --><li id="tabTitle_2" class="tabTitleBord" style=""><a href="#tabs-2">Skills</a></li><!--
-                        --><li id="tabTitle_3" class="tabTitleBord" style=""><a href="#tabs-3">Experience</a></li><!--
-                        --><li id="tabTitle_4" class="tabTitleBord" style=""><a href="#tabs-4">Bio</a></li>
+                        <li id="tabTitle_1" class="tabTitleBord"><a href="#tabs-1">Intro</a></li><!--
+                        --><li id="tabTitle_2" class="tabTitleBord"><a href="#tabs-2">Skills</a></li><!--
+                        --><li id="tabTitle_3" class="tabTitleBord"><a href="#tabs-3">Experience</a></li><!--
+                        --><li id="tabTitle_4" class="tabTitleBord"><a href="#tabs-4">Bio</a></li>
                     </ul>
                     <div id="tabs-1" class="tabbing clearfix">
                         <h1>Introduction</h1>
@@ -257,7 +257,7 @@
                             <p class="tR" style="margin-top:15px;color:#448aff"><a href="#2_"><i>back to top</i></a></p>
 						</div> <!-- /.clearfix -->
 						
-                    </div><!-- /#tabs-1 -->
+                    </div> <!-- /#tabs-1 -->
                     
                     <div id="tabs-2" class="tabbing clearfix">
 						<h1>Skills &amp; Abilities</h1>
@@ -364,7 +364,7 @@
 								</div><!-- /.container480 -->
                             </div><!-- /.clearfix -->
                         <p class="tR" style="margin-top:15px;color:#448aff"><a href="#2_"><i>back to top</i></a></p>
-                    </div><!-- /#tabs_2 -->
+                    </div> <!-- /#tabs_2 -->
                     
                     <div id="tabs-3" class="tabbing clearfix">
 						<h1>Education &amp; Experiences</h1>
@@ -415,20 +415,28 @@
                             </div> <!-- /.container480 -->
                         </div><!-- /.clearfix -->
 						<p class="tR" style="margin-top:15px;color:#448aff"><a href="#2_"><i>back to top</i></a></p>
-                    </div><!-- /#tabs_3 -->
+                    </div> <!-- /#tabs_3 -->
                     
                     <div id="tabs-4" class="tabbing clearfix">
 						<h1>Bio</h1>
 						<div class="h1border" style="background-color:#AEEA00;"></div>
                         <div class="clearfix">
-                            <div class="container480">
+                            <div class="container480 fL">
                                 <p class="t24">Dimitri Herlambang S.Kom</p>
-								<ul class="contact">
-									<li><a href="http://www.linkedin.com/in/dimitri-herlambang"><img src="/_img/contact_01.png" alt="linkedin"></a></li>
-									<li><a href="https://www.facebook.com/dimitri.herlambang.9"><img src="/_img/contact_03.png" alt="facebook"></a></li>
-									<li><a href="https://snivview.wordpress.com"><img src="/_img/contact_05.png" alt="wordpress"></a></li>
-								</ul>
-								<p>About me :<br> 
+                                <p>Born in rural town of Bekasi at 1992, I am the first and the last son of my family.<br>Being the only son, I have the most luxurious, pampered treatment from my parents most of the time.
+                                </p>
+                                <p>I am rarely go outside as a result of their "overly-protective" policy, so they bought me Playstation console for entertainment, it became my primary source of fun.</p>
+                                <p>The first time I made contact with a computer was at primary school (<span class="tI">yes they had windows 95 OS PCs as part of school curriculum</span>), they taught basic computer operations, design application named "Instant Artist", basic html programming, Paint, and finally CorelDraw.
+                                </p>
+                                <p>At the age of 10, my parents bought me a PC. Since that, it grew to become my interest for studying computer. Not-so-often I broke my PC as a result of me tampering with the system, just because my curiosity did so.</p>
+                                <p>When it came to choosing a university, I immediately took an interest in Information System, I chose Binus because of its notability in computer studies, and its proximity to my house, saving a lot of transport and living costs compared to studying in another province.</p>
+                                <p>And then I graduated at 2014, on the last month of that year, I got recruited into Transcosmos Indonesia as a web administrator. Learned html, js, jq, everything that is needed to build a website.</p>
+                                <p>After two years of my first workplace, I decided to not continue the contract and ended my service for the company at January 2017.</p>
+                                <p>One month after that, I got hired at Kontan media, one below Kompas Gramedia group, as a front-end developer. This is a new beginning for me, and my path to a professional web developer still has a long way to go.</p>
+                            </div> <!-- /.container480 -->
+                            <div class="container480 fL">
+								<h2 class="t24">About Me</h2>
+                                <p>
                                     • Friendly<br>
                                     • Open-minded<br>
                                     • Optimist<br>
@@ -440,14 +448,19 @@
                                     • Gaming<br>
                                     • Writing
                                 </p>
-                                <p>My kind of sports :<br>
+                                <p>Side Activities :<br>
+                                    • Cycling<br>
                                     • Badminton<br>
                                     • Tennis<br>
-                                    • Cycling
                                 </p>
+								<ul class="contact">
+									<li><a href="http://www.linkedin.com/in/dimitri-herlambang"><img src="/_img/contact_01.png" alt="linkedin"></a></li>
+									<li><a href="https://www.facebook.com/dimitri.herlambang.9"><img src="/_img/contact_03.png" alt="facebook"></a></li>
+									<li><a href="https://snivview.wordpress.com"><img src="/_img/contact_05.png" alt="wordpress"></a></li>
+								</ul>
                             </div> <!-- /.container480 -->
                         </div> <!-- /.clearfix -->
-					</div>
+					</div> <!-- /#tabs_4 -->
                 </div><!-- /#tabs -->
 			</div><!-- /.container960 -->
 		</section><!-- /#section_2 -->
