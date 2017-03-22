@@ -20,9 +20,7 @@
 		?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
 			<div class="container960">
-				<p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di snivview.wordpress.com,<br>
-					namun blog itu sudah lama tidak aktif, sehingga saya pindahkan ke dimiherlambang.com, website pribadi saya.
-				</i></p>
+				<p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di snivview.wordpress.com,</i></p>
 				<h1>Pengalaman Operasi Usus Buntu</h1>
 				<div class="mTB30 articles">
 					<p>Kejadiannya sih, sekitar tahun 2011.<br>

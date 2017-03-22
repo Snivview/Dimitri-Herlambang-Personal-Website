@@ -20,6 +20,7 @@
 		?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
 			<div class="container960">
+                <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di snivview.wordpress.com,</i></p>
 				<h1>Pengalaman Bekerja di Transcosmos Indonesia - Part 1</h1>
 				<p>Transcosmos di Jepang sana adalah perusahaan yang bergerak dibidang Digital Marketing, di Indonesia sendiri, sudah berdiri semenjak Juni 2013, dan gw bergabung disini pada Desember 2014.</p>
 				<div class="articles">

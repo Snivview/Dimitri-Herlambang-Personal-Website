@@ -20,6 +20,7 @@
 		?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
         	<div class="container960">
+                <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di snivview.wordpress.com,</i></p>
 				<h1>Memaknai Tabayyun di Era Teknologi Informasi (Part 1 : Berita Hoax)</h1>
                 <div class="mTB30 articles">
                 	<p>Di era internet sekarang ini, informasi dapat menyebar dengan sangat cepat.
