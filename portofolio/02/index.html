@@ -102,13 +102,7 @@
 		
         <div id="mainArea" class="clearfix">
             <div class="wrap1000">
-                <div class="slideshow">
-                    <img class="mySlides" src="img/content_img_001.jpg">
-                    <img class="mySlides" src="img/content_img_002.jpg">
-                    <img class="mySlides" src="img/content_img_003.jpg">
-                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-                </div>
+                
             </div> <!-- /.wrap1000 -->
 		</div> <!-- /#mainArea -->
 		
@@ -139,24 +133,6 @@
               panel.style.maxHeight = panel.scrollHeight + "px";
             } 
           }
-        }
-        
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1} 
-            if (n < 1) {slideIndex = x.length} ;
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none"; 
-            }
-            x[slideIndex-1].style.display = "block"; 
         }
     </script>
 </body>

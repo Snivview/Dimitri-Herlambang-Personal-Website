@@ -13,8 +13,18 @@
 
 <body>
     <div id="wrap">
+		<?php 
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/_common/header.html";
+			include_once($path);
+		?>
         <div id="mainArea" class="clearfix" style="padding-top:100px;">
 		</div><!-- /#mainArea -->
+		<?php 
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/_common/footer.html";
+			include_once($path);
+		?>
     </div> <!-- /#wrap -->
 </body>
 </html>

@@ -18,9 +18,8 @@
 			$path .= "/_common/header.html";
 			include_once($path);
 		?>
-        <div id="mainArea" class="clearfix" style="padding-top:100px;">
+        <div id="mainArea" class="clearfix">
         	<div class="container960">
-                <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di snivview.wordpress.com,</i></p>
 				<h1>Memaknai Tabayyun di Era Teknologi Informasi (Part 1 : Berita Hoax)</h1>
                 <div class="mTB30 articles">
                 	<p>Di era internet sekarang ini, informasi dapat menyebar dengan sangat cepat.
@@ -32,7 +31,7 @@
                         Dan itu bukan alasan yang logis menurut saya, tapi lebih terbawa emosi.
                     </p>
                     <h2>Mesti bagaimana ?</h2>
-                    <p>Dalam Kitab Suci Al-Qur'an surat Al-Hujurat ayat 49 terdapat jawabannya :</p>
+                    <p>Dalam Al-Qur'an surat Al-Hujurat ayat 49 terdapat jawabannya :</p>
                     <p><i>Hai orang-orang yang beriman, jika datang kepadamu orang fasik membawa suatu berita, 
                         maka periksalah dengan teliti agar kamu tidak menimpakan suatu musibah kepada suatu kaum 
                         tanpa mengetahui keadaannya yang menyebabkan kamu menyesal atas perbuatanmu itu.</i>
@@ -46,7 +45,7 @@
                     <p>Dalam case lainnya, misal suatu berita belum dianalisa oleh berbagai media massa, atau bahkan tidak tercantum dalam media massa resmi sekalipun, bagaimana ?</p>
                     <p>Mudah juga. Pertama, apabila dari hasil pencarian kita lihat alamat menuju blog, atau website yang tidak jelas asal usulnya, maka kemungkinan berita itu hoax.</p>
                     <p>Kedua, apabila kita membandingkan berita dari website-website yang memuat berita tadi, hanya menampilkan berita yang sama persis, bahkan hingga kata-katanya juga sama persis, apalagi diakhiri imbauan agar membagikan berita itu, kemungkinan besar hoax.</p>
-                    <p class="tR"><a class="link01" href="memaknai-tabayyun-dalam-kehidupan-modern-part-2.html"><i>lanjut ke part 2</i></a></p>
+                    <p class="tR"><a class="link01" href="memaknai-tabayyun-dalam-kehidupan-modern-part-2.php"><i>lanjut ke part 2</i></a></p>
                 </div> <!-- /.articles -->
             </div> <!-- /.container960 -->
 			<?php 

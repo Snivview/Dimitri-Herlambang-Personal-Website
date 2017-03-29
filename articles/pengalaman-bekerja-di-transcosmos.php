@@ -18,9 +18,9 @@
 			$path .= "/_common/header.html";
 			include_once($path);
 		?>
-        <div id="mainArea" class="clearfix" style="padding-top:100px;">
+        <div id="mainArea" class="clearfix">
 			<div class="container960">
-                <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di snivview.wordpress.com,</i></p>
+                <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di <a href="http://snivview.wordpress.com">snivview.wordpress.com,</a></i></p>
 				<h1>Pengalaman Bekerja di Transcosmos Indonesia - Part 1</h1>
 				<p>Transcosmos di Jepang sana adalah perusahaan yang bergerak dibidang Digital Marketing, di Indonesia sendiri, sudah berdiri semenjak Juni 2013, dan gw bergabung disini pada Desember 2014.</p>
 				<div class="articles">
@@ -46,6 +46,7 @@
 					<p>Pada hari presentasi, kami memakai seragam putih lengan panjang dengan celana bahan hitam, formal. Tim kami adalah tim A, sehingga kami yang maju duluan. Gw menjelaskan fitur demo transaksi.</p>
 					<p>Setelah semua tim maju, kami diberikan penilaian, dan si bos Jepang juga turut memberikan komentar pada seluruh batch 8. Kata-kata yang gw inget adalah, “marketing tools”, dan “you guys did a good job”. Anyway, that is how it goes. Di sore hari, kita bersantai sejenak, review dan berbicara dengan tim lain.</p>
 					<p>Perjalanan di Transcosmos ini baru saja dimulai.</p>
+                    <p class="tR"><a class="link01" href="pengalaman-bekerja-di-transcosmos-part-2.php"><i>lanjut ke part 2</i></a></p>
 				</div> <!-- /.articles -->
 			</div> <!-- /.container960 -->
 		</div><!-- /#mainArea -->
