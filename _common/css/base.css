@@ -159,4 +159,13 @@ img {width: 100%;}
 #mainArea {padding: 50px 0 0 0;}
 
 /* footer */
-#footerArea {}
+#footerArea {font-size: 12px;}
+#footerArea img {
+    width: 25px !important;
+    height: 25px !important;
+    opacity: .5;
+}
+#footerArea img:hover {
+    opacity: 1;
+}
+#footerArea a {margin-right: 5px;}

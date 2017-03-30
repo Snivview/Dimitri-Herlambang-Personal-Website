@@ -441,7 +441,7 @@
                                     • Open-minded<br>
                                     • Optimist<br>
                                     • Ever-ready<br>
-                                    • Organized</span>
+                                    • Organized
                                 </p>
                                 <p>Hobbies :<br>
                                     • Coding<br>
@@ -453,11 +453,6 @@
                                     • Badminton<br>
                                     • Tennis<br>
                                 </p>
-								<ul class="contact">
-									<li><a href="http://www.linkedin.com/in/dimitri-herlambang"><img src="/_img/contact_01.png" alt="linkedin"></a></li>
-									<li><a href="https://www.facebook.com/dimitri.herlambang.9"><img src="/_img/contact_03.png" alt="facebook"></a></li>
-									<li><a href="https://snivview.wordpress.com"><img src="/_img/contact_05.png" alt="wordpress"></a></li>
-								</ul>
                             </div> <!-- /.container480 -->
                         </div> <!-- /.clearfix -->
 					</div> <!-- /#tabs_4 -->
