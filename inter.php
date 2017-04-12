@@ -42,6 +42,7 @@
 							<h2>Diary</h2>
 							<p class="t18"><a href="articles/pengalaman-bekerja-di-transcosmos.php">Pengalaman Bekerja di Transcosmos - Part 1</a></p>
                             <p class="t18"><a href="articles/pengalaman-bekerja-di-transcosmos-part-2.php">Pengalaman Bekerja di Transcosmos - Part 2</a></p>
+                            <p class="t18"><a href="articles/pengalaman-bekerja-di-transcosmos-part-3.php">Pengalaman Bekerja di Transcosmos - Part 3</a></p>
 							<p class="t18"><a href="articles/pengalaman-operasi-usus-buntu.php">Pengalaman Operasi Usus Buntu</a></p>
 							<p class="t18"><a href="articles/memaknai-tabayyun-dalam-kehidupan-modern.php">Memaknai Tabayyun dalam Kehidupan Modern - Part 1</a></p>
 							<p class="t18"><a href="articles/memaknai-tabayyun-dalam-kehidupan-modern-part-2.php">Memaknai Tabayyun dalam Kehidupan Modern - Part 2</a></p>
