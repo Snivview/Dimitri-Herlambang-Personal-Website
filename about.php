@@ -392,7 +392,7 @@
                             <div class="container480">
                                 <h2>Transcosmos Indonesia <br> (December 2014 - February 2017)</h2>
 							</div> <!-- /.container480 -->
-						</div> <!-- /.clearifx -->
+						</div> <!-- /.clearfix -->
                         <div class="clearfix">
                             <div class="container480 fL">
                                 <p class="t14">
@@ -411,6 +411,26 @@
                                 	<li>Worked on client's product management using CMS</li>
                                     <li>Worked on English-Indonesia Translation project</li>
                                 	<li>Supervised company's knowledge management system</li>
+                                </ul>
+                            </div> <!-- /.container480 -->
+                        </div><!-- /.clearfix -->
+                        <div class="clearfix">
+                            <div class="container480">
+                                <h2>Kompas Harian <br> (April 2017 - Current)</h2>
+							</div> <!-- /.container480 -->
+						</div> <!-- /.clearfix -->
+                        <div class="clearfix">
+                            <div class="container480 fL">
+                                <p class="t14">
+                                    One of renowned Indonesia media since 1965. Currently underwent a transition into a digital environment. Its notable products are klasika, advertorial, kompas karier, and many more. <br>For online daily newspaper, you can visit <a class="link01" href="http://kompas.id" target="_blank">kompas id</a>.
+								</p>
+                                <p class="t14">
+                                    Recruited as a new front-end designer. I was tasked to be the "enabler" for advertisement team to pour printed advertisement into a web-based. 
+                                </p>
+                            </div><!-- /.container480 -->
+                            <div class="container480 fL">
+                                <ul class="achievement">
+                            		<li>Joined web advertisement team</li>
                                 </ul>
                             </div> <!-- /.container480 -->
                         </div><!-- /.clearfix -->
@@ -460,6 +480,11 @@
 			</div><!-- /.container960 -->
 		</section><!-- /#section_2 -->
     </div><!-- /#mainArea -->
+        <?php 
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/_common/footer.html";
+			include_once($path);
+		?>
     </div> <!-- /#wrap -->
 	<script type="text/javascript" src="/_common/js/jQuery.js"></script>
 	<script type="text/javascript" src="/_common/js/jQuery-ui.js"></script>
