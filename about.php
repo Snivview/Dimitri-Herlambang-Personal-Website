@@ -456,7 +456,7 @@
                                 <p>When it came to choosing a university, I immediately took an interest in Information System, I chose Binus because of its notability in computer studies, and its proximity to my house, saving a lot of transport and living costs compared to studying in another province.</p>
                                 <p>And then I graduated at 2014, on the last month of that year, I got recruited into Transcosmos Indonesia as a web administrator. Learned html, js, jq, everything that is needed to build a website.</p>
                                 <p>After two years of my first workplace, I decided to not continue the contract and ended my service for the company at January 2017.</p>
-                                <p>One month after that, I got hired at Kontan media, one below Kompas Gramedia group, as a front-end developer. This is a new beginning for me, and my path to a professional web developer still has a long way to go.</p>
+                                <p>One month after that, I got hired at Kompas media, one of famous media in Nusantara, serving people of Indonesia since 1965. My position here is crucial as I am one of the "enabler" of digital transformation of Kompas daily print newspaper. Of course, my career will unfold, my skills will be expanded, and my patience will be tested.</p>
                             </div> <!-- /.container480 -->
                             <div class="container480 fL">
 								<h2 class="t24">About Me</h2>
