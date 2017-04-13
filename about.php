@@ -176,6 +176,9 @@
 				padding: 5px 0 5px 0;
 			}
 		}
+        @media screen and (max-width:768px) {
+            html {background: none;}
+        }
 	</style>
 </head>
 
