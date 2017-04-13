@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Pengalaman Bekerja di Transcosmos Indonesia</title>
+    <title>Pengalaman Bekerja di Transcosmos Indonesia - Part 1</title>
     <link rel="icon" href="/_common/img/tab_logo.png">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <meta name="description" content="pengalaman bekerja di transcosmos indonesia">

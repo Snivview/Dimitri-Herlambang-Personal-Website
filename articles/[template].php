@@ -18,9 +18,9 @@
 			$path .= "/_common/header.html";
 			include_once($path);
 		?>
-        <div id="mainArea" class="clearfix" style="padding-top:100px;">
+        <div id="mainArea" class="clearfix">
 			<div class="container960">
-                <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di <a href="http://snivview.wordpress.com">snivview.wordpress.com,</a></i></p>
+                <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di <a href="http://snivview.wordpress.com">snivview.wordpress.com</a></i></p>
 				<h1></h1>
                 <div class="mTB30 articles">
 				</div>
