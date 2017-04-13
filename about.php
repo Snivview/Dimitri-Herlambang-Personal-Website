@@ -178,6 +178,7 @@
 		}
         @media screen and (max-width:768px) {
             html {background: none;}
+            .tabTitle li a {color:#000;}
         }
 	</style>
 </head>
