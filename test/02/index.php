@@ -9,70 +9,97 @@
 
 <body>
     <div id="wrap">
-	<?php 
-		$path = $_SERVER['DOCUMENT_ROOT'];
+	 <?php 
+		/* $path = $_SERVER['DOCUMENT_ROOT'];
 		$path .= "/test/02/common/header.php";
-		include_once($path);
+		include_once($path); */
 	?>
+        <!-- <div id="headerArea" class="clearfix">
+            <div class="wrap01">
+                <ul class="dispInline" id="hNav">
+                    <li><a href="http://www.kompas.id" target="_blank"><img src="img/logo-kompas.png"></a></li>
+                    <li><a href="http://karier.kompas.id" target="_blank">Kompas Karier</a></li>
+                    <li><a href="http://klasika.kompas.id" target="_blank">Klasika</a></li>
+                    <li><a href="http://klasika.kompas.id" target="_blank">Advertorial</a></li>
+                </ul>
+            </div>
+        </div> -->
         <div id="mainArea" class="clearfix">
             <div class="topHeading">
                 <h1>The Spotlight</h1>
-                <h2>Rangkaian Peristiwa dalam Sebuah Sorotan</h2>
+                <h2>Ragam Produk Unggulan Solusi Kebutuhan Anda</h2>
             </div> <!-- /.topHeading -->
             
             <div class="wrap01">
                 <div class="container">
-                    <div class="block">
+                    <div class="block01">
                         <div><img src="img/spot01.png"></div>
-                        <h3>Peluncuran Suzuki Ignis</h3>
-                        <p>Lebih dari sekedar LCGC, City Car lansiran Suzuki ini mencoba mengusik pasar LCGC yang sebelumnya dikuasai pabrikan Jepang lainnya.</p>
-                        <div class="readMore">
-                            <ul><li>Advertorial</li></ul>
+                        <h3>Suzuki Ignis</h3>
+                        <div class="flipLeft">
+                            <ul><li>Sponsored by Suzuki Indonesia &#9654;</li></ul>
+                        </div>
+                        <div class="flipTop">
+                            <p>Lebih dari sekedar LCGC, City Car lansiran Suzuki ini mencoba mengusik pasar LCGC yang sebelumnya dikuasai pabrikan Jepang lainnya.</p>
                         </div>
                     </div>
-                    <div class="block">
+                    <div class="block01">
                         <div><img src="img/spot02.jpg"></div>
-                        <h3>Longsor Wilis</h3>
-                        <p>Sebulan sudah warga lereng gunung Wilis dirundung rasa waswas akibat bergesernya tanah tempat mereka tinggal.</p>
-                        <div class="readMore">
-                            <ul><li>Dalam Negeri</li></ul>
+                        <h3>Tax Amnesty</h3>
+                        <div class="flipLeft">
+                            <ul>
+                                <li>Sponsored by Direktorat Jenderal Pajak &#9654;</li>
+                            </ul>
+                        </div>
+                        <div class="flipTop">
+                            <p>Usaha Jokowi dalam menarik triliunan dana masyarakat yang disimpan di luar negeri ini menjadi sorotan. Bagi anda yang tertarik mengikuti pengampunan pajak, simak tutorial interaktif berikut.</p>
                         </div>
                     </div>
-                    <div class="block">
-                        <div><img src="img/spot03.png"></div>
-                        <h3>Pilkada Banten</h3>
-                        <p>Pasca sepeninggalan Ratu Atut yang diciduk lembaga KPK beberapa tahun lalu, warga banten masih dihadapkan pada sebuah pilihan sulit.</p>
-                        <div class="readMore">
-                            <ul><li>Politik</li></ul>
+                    <div class="block01">
+                        <div><img src="img/spot03.jpg"></div>
+                        <h3>Perumahan Citra Maja Raya</h3>
+                        <div class="flipLeft">
+                            <ul><li>Sponsored by Ciputra Group &#9654;</li></ul>
+                        </div>
+                        <div class="flipTop">
+                            <p>Proyek rumah murah baru dari Ciputra yang berlokasi di kawasan Maja, Banten. Seperti apa penawaran dan prospek kedepannya ?</p>
                         </div>
                     </div>
-                    <div class="block">
-                        <div><img src="img/spot04.jpg"></div>
-                        <h3>Suriah Berkecamuk</h3>
-                        <p>Kondisi politik timur tengah yang selalu dalam kondisi labil, Suriah menjadi salah satu zona perang antara kelompok radikal dengan negara-negara adidaya.</p>
-                        <div class="readMore">
-                            <ul><li>Politik Internasional</li></ul>
+                    <div class="block01">
+                        <div><img src="img/spot04.jpeg"></div>
+                        <h3>Hello Moto Z</h3>
+                        <div class="flipLeft">
+                            <ul><li>Sponsored by Lenovo Motorola &#9654;</li></ul>
                         </div>
-                    </div>
-                    <div class="block">
-                        <div><img src="img/spot05.jpeg"></div>
-                        <h3>Trump Effect</h3>
-                        <p>Belum genap satu tahun, manuver Presiden negeri Paman Sam Donald John Trump dalam "mengembalikan kejayaan Amerika" sudah cukup menggemparkan elite politik dunia, lantas bagaimana dampaknya di Indonesia ?</p>
-                        <div class="readMore">
-                            <ul><li>Politik Internasional</li></ul>
+                        <div class="flipTop">
+                            <p>Transformasi smartphone Moto Z dan Moto Z Play anda menjadi perangkat yang benar-benar berbeda. Proyektor movie, kamera, baterai pamungkas, speaker stereo dan lainnya.</p>
                         </div>
                     </div>
                 </div> <!-- /.container -->
             </div> <!-- /.wrap01 -->
 		</div> <!-- /#mainArea -->
 	<?php 
+        /*
 		$path = $_SERVER['DOCUMENT_ROOT'];
 		$path .= "/test/02/common/footer.php";
 		include_once($path);
+        */
 	?>
     </div> <!-- /#wrap -->
     
+    <script src="common/js/jQuery.js" type="text/javascript"></script>
     <script>
+        $( document ).ready(function(){
+            $('.block01').hover(
+                function(){
+                    $('.flipLeft',this).addClass('showFlipLeft')
+                    $('.flipTop',this).addClass('showFlipTop') 
+                },
+                function(){ 
+                    $('.flipLeft',this).removeClass('showFlipLeft')
+                    $('.flipTop',this).removeClass('showFlipTop')
+                }
+            )
+        });
     </script>
 </body>
 </html>

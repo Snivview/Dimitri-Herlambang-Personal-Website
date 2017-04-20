@@ -13,6 +13,9 @@ h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+:focus {
+ outline: none;   
+}
 
 /* base tag */
 html {background-color: #f4f7f6;}
@@ -95,8 +98,8 @@ p {
     position: relative;
     text-align:center;
 }
-.block { /* the multiple centered div */
-    height: 350px;
+.block01 { /* the multiple centered div */
+    height: 335px;
     width: 320px;
     display:inline-block;
     margin: 10px;
@@ -108,46 +111,67 @@ p {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
-.block div:nth-of-type(1){height: 200px;}
-.block:hover {
+.block01 div:nth-of-type(1){height: 200px;}
+.block01:hover {
     transition: .3s;
     opacity: 1;
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
-.readMore{
+.flipLeft{
     opacity: 0;
     transition: .3s;
     position: absolute;
     height: 350px;
     width: 350px;
     top: 0;
-    margin-left: -50px;
+    margin-left: -30px;
     display: table;
     vertical-align: middle;
     overflow: hidden;
     font-size: 12px;
+    z-index: 1;
 }
-.readMore:hover {
-    opacity: 1;
-    transition: .3s;
+.showFlipLeft {
+    opacity: 1 !important;
     margin-left: 0;
+    transition: .3s;
 }
-.readMore ul {
+.flipLeft ul {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
 }
-.readMore li {
-    background-color: #00599A;
-    color: #fff;
+.flipLeft li {
     padding: 5px;
     min-width: 30px;
+    max-width: 310px;
     display: inline-block;
+    position: absolute;
+}
+.flipLeft li:nth-of-type(1) {
+    top: 20%;
+    background-color: #00599A;
+    color: #fff;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(128,128,128,1);
 -moz-box-shadow: 0px 1px 5px 0px rgba(128,128,128,1);
 box-shadow: 0px 1px 5px 0px rgba(128,128,128,1);
 }
+.flipTop {
+    opacity: 0;
+    position: absolute;
+    height: 500px;
+    width: 320px;
+    margin-top: 50px;
+    transition: .3s;
+    z-index: 3;
+}
+.showFlipTop {
+    opacity: 1 !important;
+    margin-top: 0;
+    transition: .3s;
+}
+
 
 /* header */
 #headerArea {
