@@ -36,7 +36,7 @@
                         <div><img src="img/spot01.png"></div>
                         <h3>Suzuki Ignis</h3>
                         <div class="flipLeft"><p class="type01">Sponsored by Suzuki Indonesia &#9654;</p></div>
-                        <div>
+                        <div class="flipTop">
                             <p>Lebih dari sekedar LCGC, City Car lansiran Suzuki ini mencoba mengusik pasar LCGC yang sebelumnya dikuasai pabrikan Jepang lainnya.</p>
                         </div>
                     </div> <!-- /.block01 -->
