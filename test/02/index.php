@@ -35,45 +35,43 @@
                     <div class="block01">
                         <div><img src="img/spot01.png"></div>
                         <h3>Suzuki Ignis</h3>
-                        <div class="flipLeft">
-                            <ul><li>Sponsored by Suzuki Indonesia &#9654;</li></ul>
-                        </div>
-                        <div class="flipTop">
+                        <div class="flipLeft"><p class="type01">Sponsored by Suzuki Indonesia &#9654;</p></div>
+                        <div>
                             <p>Lebih dari sekedar LCGC, City Car lansiran Suzuki ini mencoba mengusik pasar LCGC yang sebelumnya dikuasai pabrikan Jepang lainnya.</p>
                         </div>
-                    </div>
+                    </div> <!-- /.block01 -->
                     <div class="block01">
                         <div><img src="img/spot02.jpg"></div>
                         <h3>Tax Amnesty</h3>
-                        <div class="flipLeft">
-                            <ul>
-                                <li>Sponsored by Direktorat Jenderal Pajak &#9654;</li>
-                            </ul>
-                        </div>
+                        <div class="flipLeft"><p class="type01">Sponsored by Direktorat Jenderal Pajak &#9654;</p></div>
                         <div class="flipTop">
                             <p>Usaha Jokowi dalam menarik triliunan dana masyarakat yang disimpan di luar negeri ini menjadi sorotan. Bagi anda yang tertarik mengikuti pengampunan pajak, simak tutorial interaktif berikut.</p>
                         </div>
-                    </div>
+                    </div> <!-- /.block01 -->
                     <div class="block01">
                         <div><img src="img/spot03.jpg"></div>
                         <h3>Perumahan Citra Maja Raya</h3>
-                        <div class="flipLeft">
-                            <ul><li>Sponsored by Ciputra Group &#9654;</li></ul>
-                        </div>
+                        <div class="flipLeft"><p class="type01">Sponsored by Ciputra Group &#9654;</p></div>
                         <div class="flipTop">
                             <p>Proyek rumah murah baru dari Ciputra yang berlokasi di kawasan Maja, Banten. Seperti apa penawaran dan prospek kedepannya ?</p>
                         </div>
-                    </div>
+                    </div> <!-- /.block01 -->
                     <div class="block01">
                         <div><img src="img/spot04.jpeg"></div>
                         <h3>Hello Moto Z</h3>
-                        <div class="flipLeft">
-                            <ul><li>Sponsored by Lenovo Motorola &#9654;</li></ul>
-                        </div>
+                        <div class="flipLeft"><p class="type01">Sponsored by Lenovo Motorola &#9654;</p></div>
                         <div class="flipTop">
                             <p>Transformasi smartphone Moto Z dan Moto Z Play anda menjadi perangkat yang benar-benar berbeda. Proyektor movie, kamera, baterai pamungkas, speaker stereo dan lainnya.</p>
                         </div>
-                    </div>
+                    </div> <!-- /.block01 -->
+                    <div class="block01">
+                        <div><img src="img/spot05.jpg"></div>
+                        <h3>Samsung New Galaxy A</h3>
+                        <div class="flipLeft"><p class="type02">Advertorial &#9654;</p></div>
+                        <div class="flipTop">
+                            <p>Samsung kembali melakukan penyegaran terhadap Smartphone kelas menengah seri A, apa saja fitur yang ditambahkan ?</p>
+                        </div>
+                    </div> <!-- /.block01 -->
                 </div> <!-- /.container -->
             </div> <!-- /.wrap01 -->
 		</div> <!-- /#mainArea -->
@@ -100,6 +98,28 @@
                 }
             )
         });
+    </script>
+    <script>
+        var touch = 'ontouchstart' in document.documentElement
+                || navigator.maxTouchPoints > 0
+                || navigator.msMaxTouchPoints > 0;
+
+        if (touch) { // remove all :hover stylesheets
+            try { // prevent exception on browsers not supporting DOM styleSheets properly
+                for (var si in document.styleSheets) {
+                    var styleSheet = document.styleSheets[si];
+                    if (!styleSheet.rules) continue;
+
+                    for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                        if (!styleSheet.rules[ri].selectorText) continue;
+
+                        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                            styleSheet.deleteRule(ri);
+                        }
+                    }
+                }
+            } catch (ex) {}
+        }
     </script>
 </body>
 </html>
