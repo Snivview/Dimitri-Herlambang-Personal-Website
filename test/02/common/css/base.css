@@ -57,7 +57,7 @@ h2 {
     animation: frame2 1s;
 }
 h3 {
-    margin: 15px 0 10px 0;
+    margin: 0 0 5px 0;
     font-weight: 300;
     font-size: 25px;
 }
@@ -102,12 +102,12 @@ p {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
-.block01 div:nth-of-type(1){height: 200px;}
-.block01:hover {
+.block01 div:nth-of-type(1){height: 190px;}
+.block01Colored {
     transition: .3s;
     opacity: 1;
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%) !important;
 }
 .flipLeft{
     opacity: 0;
@@ -121,7 +121,7 @@ p {
     text-align: left;
 }
 .flipLeft p {
-    top: 30%;
+    top: 165px;
     padding: 5px;
     display: inline;
     color: #fff;
@@ -171,11 +171,12 @@ p {
 /* ---------------------- footer ---------------------- */
 #footerArea {}
 
+/* ---------------------- responsive ---------------------- */
 @media screen and (max-width:768px){
     .wrap01 {
         padding-left: 0;
         padding-right: 0;
     }
-    .block {margin: 0;}
-    .block p {padding: 5px;}
+    .block01 {margin: 0;}
+    .block01 p {padding: 5px;}
 }

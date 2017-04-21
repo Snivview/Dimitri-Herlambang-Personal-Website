@@ -85,40 +85,53 @@
     </div> <!-- /#wrap -->
     
     <script src="common/js/jQuery.js" type="text/javascript"></script>
-    <script>
+    <script> /* hover effect */
         $( document ).ready(function(){
             $('.block01').hover(
                 function(){
                     $('.flipLeft',this).addClass('showFlipLeft')
                     $('.flipTop',this).addClass('showFlipTop') 
+                    $(this).addClass('block01Colored') 
                 },
                 function(){ 
                     $('.flipLeft',this).removeClass('showFlipLeft')
                     $('.flipTop',this).removeClass('showFlipTop')
+                    $(this).removeClass('block01Colored') 
                 }
             )
         });
     </script>
+    <script> /* mobile device hover effect */
+        if ($(window).width() < 569) {
+            $('.flipLeft').addClass('showFlipLeft');
+            $('.flipTop').addClass('showFlipTop');
+            $('.block01').addClass('block01Colored');
+        } else {
+            $('.flipLeft').removeClass('showFlipLeft');
+            $('.flipTop').removeClass('showFlipTop');
+            $('.block01').removeClass('block01Colored');
+        }
+    </script>
+    <script>/* navigate using arrow keys */</script>
     <script>
-        var touch = 'ontouchstart' in document.documentElement
-                || navigator.maxTouchPoints > 0
-                || navigator.msMaxTouchPoints > 0;
-
-        if (touch) { // remove all :hover stylesheets
-            try { // prevent exception on browsers not supporting DOM styleSheets properly
-                for (var si in document.styleSheets) {
-                    var styleSheet = document.styleSheets[si];
-                    if (!styleSheet.rules) continue;
-
-                    for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-                        if (!styleSheet.rules[ri].selectorText) continue;
-
-                        if (styleSheet.rules[ri].selectorText.match(':hover')) {
-                            styleSheet.deleteRule(ri);
-                        }
-                    }
-                }
-            } catch (ex) {}
+        function detectmob() { 
+            if(navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)
+            ){
+                $('.flipLeft').addClass('showFlipLeft');
+                $('.flipTop').addClass('showFlipTop');
+                $('.block01').addClass('block01Colored');
+            }
+            else {
+                $('.flipLeft').removeClass('showFlipLeft');
+                $('.flipTop').removeClass('showFlipTop');
+                $('.block01').removeClass('block01Colored');;
+            }
         }
     </script>
 </body>
