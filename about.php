@@ -312,12 +312,8 @@
 							<div class="clearfix">
 								<div class="container480 fL">
 									<h2>Microsoft Office</h2>
-									<p class="t16">
-										Been using microsoft office product for years, for article writing, personal financial report, to list client's content list.
-									</p>
-									<p class="t16">
-										Microsoft Visio to draw diagrams and create database schemes.
-									</p>
+									<p class="t16">Been using microsoft office product for years, for article writing, personal financial report, to list client's content list.</p>
+									<p class="t16">Microsoft Visio to draw diagrams and create database schemes.									</p>
 									<ul class="list01" style="margin-top:20px;">
 										<li><img src="/_img/logo_word.png" alt="Microsoft Word" title="Microsoft Word"></li><!--
 										--><li><img src="/_img/logo_excel.png" alt="Microsoft Excel" title="Microsoft Excel"></li><!--
@@ -348,9 +344,7 @@
                             <div class="clearfix">
                                 <div class="container480 fL">
 									<h2>Website Hosting and Repositories</h2>
-									<p class="t16">
-										Experienced in website hosting, Tortoise Github for web repository.
-									</p>
+									<p class="t16">Experienced in website hosting, Tortoise Github for web repository.</p>
 									<ul class="list01" style="margin-top:20px;">
 										<li><img src="/_img/logo_gh.png" alt="Tortoise Github" title="Tortoise Github"></li>
 									</ul>
@@ -403,9 +397,7 @@
                                     Japanese origin company, renowned for providing Call Center
                                     operators in their homeland for over <a class="link01" target="_blank" href="http://www.trans-cosmos.co.jp/english/company/history.html"> 50 years</a>, and also recently here in <a class="link01" target="_blank" href="http://www.trans-cosmos.co.id/">Indonesia</a>.
 								</p>
-                                <p class="t14">
-                                    Recruited as a junior web programmer, after trained half a year, got involved in clients content management projects.
-                                </p>
+                                <p class="t14">Recruited as a junior web programmer, after trained half a year, got involved in clients content management projects.</p>
                             </div><!-- /.container480 -->
                             <div class="container480 fL">
                                 <ul class="achievement">
@@ -516,15 +508,12 @@
     		var progressBarWidth = percent * $element.width() / 100;
     		$element.find('div').animate({ width: progressBarWidth }, 200).html();
 		}
-		
 		$(document).ready(function(){
-
-		var top_header = $('html');
-		top_header.css({'background-position':'top center'});
-
-		$(window).scroll(function () {
-			var st = $(this).scrollTop();
-			top_header.css({'background-position':'center calc(0% + '+(st*.94)+'px)'});
+			var top_header = $('html');
+			top_header.css({'background-position':'top center'});
+			$(window).scroll(function () {
+				var st = $(this).scrollTop();
+				top_header.css({'background-position':'center calc(0% + '+(st*.94)+'px)'});
 			});
 		});
 	</script>
