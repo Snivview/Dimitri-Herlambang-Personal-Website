@@ -21,10 +21,12 @@
         <div id="mainArea" class="clearfix">
 			<div class="container960">
                 <p class="t12"><i>sebelumnya artikel ini sudah di publish di blog saya di <a href="http://snivview.wordpress.com">snivview.wordpress.com</a></i></p>
+				
 				<h1></h1>
                 <div class="mTB30 articles">
+                	
 				</div>
-			</div>
+			</div> <!-- /.container960 -->
 		</div><!-- /#mainArea -->
 		<?php 
 			$path = $_SERVER['DOCUMENT_ROOT'];

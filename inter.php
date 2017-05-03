@@ -40,14 +40,15 @@
 					<h1>Recent Articles</h1>
 					<div class="clearfix t18">
 						<h2>Artikel</h2>
-						<p><a href="/articles/memaknai-tabayyun-dalam-kehidupan-modern.php">Memaknai Tabayyun dalam Kehidupan Modern - Part 1</a></p>
-						<p><a href="/articles/memaknai-tabayyun-dalam-kehidupan-modern-part-2.php">Memaknai Tabayyun dalam Kehidupan Modern - Part 2</a></p>
-						<p><a href="/articles/jangan-takut-sakit.php">Jangan (takut) sakit !</a></p>
+						<p><a href="/articles/memaknai-tabayyun-dalam-kehidupan-modern.php" target="_blank">Memaknai Tabayyun dalam Kehidupan Modern - Part 1</a></p>
+						<p><a href="/articles/memaknai-tabayyun-dalam-kehidupan-modern-part-2.php" target="_blank">Memaknai Tabayyun dalam Kehidupan Modern - Part 2</a></p>
+						<p><a href="https://snivview.wordpress.com/2017/04/14/jangan-takut-sakit-part-1/" target="_blank">Jangan (takut) sakit !</a></p>
 						<h2>Diary</h2>
-						<p><a href="/articles/pengalaman-bekerja-di-transcosmos.php">Pengalaman Bekerja di Transcosmos - Part 1</a></p>
-                        <p><a href="/articles/pengalaman-bekerja-di-transcosmos-part-2.php">Pengalaman Bekerja di Transcosmos - Part 2</a></p>
-                        <p><a href="/articles/pengalaman-bekerja-di-transcosmos-part-3.php">Pengalaman Bekerja di Transcosmos - Part 3</a></p>
-						<p><a href="/articles/pengalaman-operasi-usus-buntu.php">Pengalaman Operasi Usus Buntu</a></p>
+						<p><a href="https://snivview.wordpress.com/2017/04/13/pengalaman-bekerja-di-transcosmos-indonesia-part-0-5/" target="_blank">Pengalaman Bekerja di Transcosmos - Part 0.5</a></p>
+						<p><a href="https://snivview.wordpress.com/2017/02/12/pengalaman-bekerja-di-transcosmos-indonesia/" target="_blank">Pengalaman Bekerja di Transcosmos - Part 1</a></p>
+                        <p><a href="https://snivview.wordpress.com/2017/03/24/pengalaman-bekerja-di-transcosmos-indonesia-part-2/" target="_blank">Pengalaman Bekerja di Transcosmos - Part 2</a></p>
+                        <p><a href="https://snivview.wordpress.com/2017/04/12/pengalaman-bekerja-di-transcosmos-indonesia-part-3/" target="_blank">Pengalaman Bekerja di Transcosmos - Part 3</a></p>
+						<p><a href="https://snivview.wordpress.com/2013/11/07/pengalaman-operasi-usus-buntu/" target="_blank">Pengalaman Operasi Usus Buntu</a></p>
 					</div>
 					<!-- <div class="clearfix">
 						<div class="container960 link01">
