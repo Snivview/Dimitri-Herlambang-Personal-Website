@@ -10,11 +10,9 @@
  *--------------------------------------------------------------------------*/
  
 new function(){
-
 	var attr ="data-tor-smoothScroll";//for html5 , if you can't use html5 , this value change "class"
 	var attrPatt = /noSmooth/;
 	var d = document;//document short cut
-	
 	/* add Event -------------------------------------------------*/
 	function addEvent(elm,listener,fn){
 		try{ // IE
@@ -28,7 +26,6 @@ new function(){
 			);
 		}
 	}
-
 	/* Start SmoothScroll  -------------------------------------------------*/
 	function SmoothScroll(a){
 		if(d.getElementById(a.rel.replace(/.*\#/,""))){
@@ -44,7 +41,6 @@ new function(){
 		if(docHeight-winHeight<end){
 			var end = docHeight-winHeight;
 		}
-		
 		//Current Point
 		var start=window.pageYOffset || d.documentElement.scrollTop || d.body.scrollTop || 0;
 		var flag=(end<start)?"up":"down";
@@ -70,7 +66,6 @@ new function(){
 		}
 		scrollMe(start,end,flag);
 	}
-
 	/* Add SmoothScroll -------------------------------------------------*/
 	addEvent(window,"load",function(){
 		var anchors = d.getElementsByTagName("a");
