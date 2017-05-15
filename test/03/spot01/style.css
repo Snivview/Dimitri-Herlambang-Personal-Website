@@ -14,9 +14,73 @@ sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
 
-#section_1 {
-	background: url(img/section_1_bg.png) no-repeat;
+.tI {font-style: italic;}
+.tS {font-size: 12px;}
+
+button {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
 }
-#section_2 {
-	background: url(img/section_1_bg.png) no-repeat;
+button:focus {outline: none;}
+
+h2,h3 {
+	letter-spacing: -2px;
+	margin-bottom: 20px;
 }
+#wrap {
+	font-family: segoe ui;
+}
+section {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+}
+section div {
+	position: absolute;
+}
+/* -------------------------------- */
+#section_1 {background-image: url(img/section_1_bg.jpg);}
+#section_1 h2 {
+	font-size: 300%;
+	margin-bottom: 3%;
+}
+#section_1 h3 {font-size: 150%;}
+#section_1 p {margin-bottom: 10px;}
+#section_1 div{
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}
+#section_1 div:nth-of-type(1) {
+	width: 300px;
+	top: 30%;
+	left: 0;
+	opacity: 0;
+	margin-left: -150px;
+	transition: .3s;
+	background-color: #fff;
+}
+#section_1 div:nth-of-type(1):hover {
+	margin-left: 0px;
+	opacity: .9;
+	transition: .3s;
+}
+#section_1 div:nth-of-type(2) {
+	top: 45%;
+	right: 5%;
+	opacity: 0;
+	margin-bottom: -150px;
+	transition: .3s;
+}
+#section_1 div:nth-of-type(2):hover {
+	margin-bottom: 0px;
+	opacity: .9;
+	transition: .3s;
+}
+
+#section_1 p {letter-spacing: -.5px;}
+/* -------------------------------- */
+
+#section_2 {background-image: url(img/section_2_bg.jpg);}

@@ -21,10 +21,23 @@
 	?>
         <div id="mainArea" class="clearfix">
         	<section id="section_1">
-        		
+        		<div>
+        			<h2>Suzuki Ignis</h2>
+        			<p>Hadir sebagai City-Car yang menyasar generasi milenial yang baru meniti karir, Suzuki Ignis menawarkan model yang dinamis, sporty, dan penuh gaya sebagai ciri khas anak muda masa kini.</p>
+        			<button><img src="img/color1.png"></button>
+        			<button><img src="img/color2.png"></button>
+        			<button><img src="img/color3.png"></button>
+        			<button><img src="img/color4.png"></button>
+        			<button><img src="img/color5.png"></button>
+        		</div>
+        		<div>
+        			<h3>LED Projector Headlamp + DRL</h3>
+        			<p>Cahaya lebih terang, fokus dan tidak menyilaukan.</p>
+        			<p class="tI tS">Khusus tipe GX</p>
+        		</div>
         	</section>
+        	
         	<section id="section_2">
-        		
         	</section>
 		</div><!-- /#mainArea -->
 	<?php
