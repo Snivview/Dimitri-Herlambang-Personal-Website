@@ -10,7 +10,8 @@
 
 <body>
     <div id="wrap">
-	 <?php  /*
+    <!-- include header -->
+	 <?php  /* 
 		$path = $_SERVER['DOCUMENT_ROOT'];
 		$path .= "/test/02/common/header.php";
 		include_once($path); */
@@ -24,6 +25,7 @@
                 </ul>
             </div>
         </div> -->
+        
         <div id="mainArea" class="clearfix">
             <div class="topHeading">
                 <h1>The Spotlight</h1>
@@ -91,6 +93,8 @@
                 </div> <!-- /.container -->
             </div> <!-- /.wrap01 -->
 		</div> <!-- /#mainArea -->
+		
+	<!-- include footer -->
 	<?php 
         /*
 		$path = $_SERVER['DOCUMENT_ROOT'];

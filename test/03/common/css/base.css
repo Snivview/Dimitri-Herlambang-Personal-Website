@@ -102,6 +102,14 @@ p {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+.block01:hover { /* gives zoom effect when hovered */
+	-webkit-transform:scale(1.15); /* Safari and Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* IE 9 */
+    -o-transform:scale(1.15); /* Opera */
+     transform:scale(1.15);
+	transition: .3s;
+}
 .block01 div:nth-of-type(1){
 	height: 190px;
 	display: table-cell;
