@@ -12,16 +12,19 @@
 
 <div class="row">
   <div class="column">
-    <img src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="img/komik01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="https://www.w3schools.com/howto/img_fjords.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="img/komik02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="https://www.w3schools.com/howto/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="img/komik03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="https://www.w3schools.com/howto/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="img/komik04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/komik05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
   </div>
 </div>
 
@@ -30,25 +33,25 @@
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="http://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/komik01.jpg" style="width:100%">
     </div>
-
     <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="http://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/komik02.jpg" style="width:100%">
     </div>
-
     <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="http://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/komik03.jpg" style="width:100%">
     </div>
-    
     <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="http://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/komik04.jpg" style="width:100%">
     </div>
-    
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/komik05.jpg" style="width:100%">
+    </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -58,16 +61,19 @@
 
 
     <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="" onclick="currentSlide(1)" alt="Nature and sunrise">
+      <img class="demo cursor" src="img/komik01.jpg" onclick="currentSlide(1)" alt="057">
     </div>
     <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      <img class="demo cursor" src="img/komik02.jpg" onclick="currentSlide(2)" alt="058">
     </div>
     <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="img/komik03.jpg" onclick="currentSlide(3)" alt="059">
     </div>
     <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="img/komik04.jpg" onclick="currentSlide(4)" alt="060">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/komik05.jpg" onclick="currentSlide(5)" alt="061">
     </div>
   </div>
 </div>
@@ -99,16 +105,6 @@
 	  dots[slideIndex-1].className += " active";
 	  captionText.innerHTML = dots[slideIndex-1].alt;
 	}
-</script>
-<script src="swipe.js"></script>
-<script>
-	$(".modal-content").touchwipe({
-		 wipeLeft: function(plusSlides(-1)),
-		 wipeRight: function(plusSlides(1)),
-		 min_move_x: 20,
-		 min_move_y: 20,
-		 preventDefaultEvents: true
-	});	
 </script>
 </body>
 </html>
