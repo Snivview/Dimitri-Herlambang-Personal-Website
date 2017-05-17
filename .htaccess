@@ -45,3 +45,5 @@ ExpiresDefault "access 1 month"
 
 # Disable Directory Browsing
 IndexIgnore *
+Options All -Indexes
+IndexIgnore *.wmv *.mp4 *.avi *.etc
