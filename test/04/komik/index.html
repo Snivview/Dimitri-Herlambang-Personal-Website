@@ -89,9 +89,22 @@
 		  dots[i].className = dots[i].className.replace(" active", "");
 	  }
 	  slides[slideIndex-1].style.display = "block";
-	  dots[slideIndex-1].className += " active";
+	  dots[slideIndex-1].target.className += " active";
 	  captionText.innerHTML = dots[slideIndex-1].alt;
 	}
 </script>
+<script src="jQuery.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".modal-content").on("swipeleft",function(){
+			plusSlides(-1);
+		});
+		$(".modal-content").on("swiperight",function(){
+			plusSlides(1);
+		});
+	});	
+</script>
+
 </body>
 </html>
