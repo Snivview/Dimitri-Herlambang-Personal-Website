@@ -90,6 +90,11 @@
                             <p>Kehadiran pabrikan Eropa yang ingin menunjukkan eksistensinya di pasar melalui mobil LCGC yang dikembangkan di India ini menawarkan harga yang sangat terjangkau, seperti apa kualitasnya ? &#9654;</p>
                         </div>
                     </div> <!-- /.block01 -->
+                    
+
+               
+               
+               
                 </div> <!-- /.container -->
             </div> <!-- /.wrap01 -->
 		</div> <!-- /#mainArea -->
@@ -133,7 +138,9 @@
             $('.block01').removeClass('block01Colored');
         }
     </script>
-    <script>/* navigate using arrow keys */
-    </script>
+	<script>
+		
+	</script>
+    <script>/* navigate using arrow keys */</script>
 </body>
 </html>
