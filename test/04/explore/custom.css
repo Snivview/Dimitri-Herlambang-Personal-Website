@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background: url(imgs/pulau_jawa.png) no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+}
+
+#section0 {background: none !important;}
+#section0 img {margin: 0 !important;}
+
+#section1 h1 {color: #fff;}
+#section1 {
+	background: url(imgs/section_1_bg.jpg) no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	color: #fff;
+}
+#section1 .slide:nth-of-type(2) {
+	background:url(imgs/section_1_bg_slide_2.jpg) no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+
+#section2 img{
+	margin: 20px 0 0 52px;
+}
+#section3 img{
+	bottom: 0px;
+	position: absolute;
+	margin-left: -420px;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.twitter-share-button{
+	position: absolute;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
