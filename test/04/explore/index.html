@@ -5,8 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Xplore Jawa - Kompas Klasika</title>
 	<meta name="author" content="Dimitri Herlambang" />
-	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
-	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
 	<meta name="Resource-type" content="Document" />
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
@@ -19,15 +19,15 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="jquery.183.js"></script>
+	<script src="jquery-ui.191.js"></script>
 
 	<script type="text/javascript" src="jquery.fullPage.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
+				anchors: ['s1', 's2', 's3', 's4', 's5', 's6'],
 				menu: '#menu',
 				scrollingSpeed: 1000
 			});
@@ -37,11 +37,11 @@
 <body>
 
 <ul id="menu">
-	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
-	<li data-menuanchor="5thpage"><a href="#5thpage">Fifth slide</a></li>
+	<li data-menuanchor="s1"><a href="#s1">Peta</a></li>
+	<li data-menuanchor="s2"><a href="#s2">Pandeglang</a></li>
+	<li data-menuanchor="s3"><a href="#s3">Jayakarta</a></li>
+	<li data-menuanchor="s4"><a href="#s4">Cirebon</a></li>
+	<li data-menuanchor="s5"><a href="#s5">Demak</a></li>
 </ul>
 
 
@@ -56,7 +56,7 @@
 	<div class="section " id="section1">
 		<div class="slide">
 			<div class="intro">
-				<h1>Pandeglang, Banten</h1>
+				<h1>Pandeglang</h1>
 				<p>Some say, nama Pandeglang berasal dari kata Pandai Gelang, sebuah daerah yang konon katanya memiliki seorang pandai gelang yang termasyur.</p>
 			</div>
 
@@ -85,27 +85,23 @@
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1>Example</h1>
-			<p>HTML markup example to define 4 sections.</p>
-			<img src="imgs/example2.png" alt="example" />
+			<h1>Jakarta</h1>
+			<p>Salah satu kota yang berkali-kali berganti nama, dan menjadi kota perebutan beberapa kerajaan islam di jawa barat.</p>
+
 		</div>
 	</div>
 	<div class="section" id="section3">
 		<div class="intro">
-			<h1>Working On Tablets</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-				<br /><br /><br /><br /><br /><br />
-			</p>
+			<h1>Cirebon</h1>
+			<p>Sebuah pluralisme yang mencirikan Cirebon sebagai ”caruban,” carbon dan Cirebon yang berarti campuran. Simbol-simbol kecarubanan tersebut kini masih tersimpan dan dipelihara masyarakat setempat. Jejak Islam di Cirebon seperti sejarah yang hilang dari ingatan.</p>
 		</div>
-		<img src="imgs/tablets.png" alt="tablets" />
 	</div>
 	<div class="section">
 		
 		<div class="slide">
 			<div class="intro">
-				<h1>Pandeglang, Banten</h1>
-				<p>Some say, nama Pandeglang berasal dari kata Pandai Gelang, sebuah daerah yang konon katanya memiliki seorang pandai gelang yang termasyur.</p>
+				<h1>Demak</h1>
+				<p>Pernah menjadi pusat kesultanan terbesar di Pulau Jawa, Demak menjadi salah satu basis kekuatan islam di jaman kerajaan.</p>
 			</div>
 
 		</div>

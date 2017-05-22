@@ -7,25 +7,31 @@ html {
 	background-size: contain;
 }
 
+.section, .slide {
+	background-position: center bottom !important;
+	background-size: cover !important;
+}
+
 #section0 {background: none !important;}
 #section0 img {margin: 0 !important;}
 
 #section1 h1 {color: #fff;}
 #section1 {
 	background: url(imgs/section_1_bg.jpg) no-repeat;
-	background-position: center bottom;
-	background-size: cover;
 	color: #fff;
 }
 #section1 .slide:nth-of-type(2) {
 	background:url(imgs/section_1_bg_slide_2.jpg) no-repeat;
-	background-position: center bottom;
-	background-size: cover;
 }
 
+#section2 {
+	background: url(imgs/section_2_bg.jpg) no-repeat;
+	color: #fff;
+}
 #section2 img{
 	margin: 20px 0 0 52px;
 }
+
 #section3 img{
 	bottom: 0px;
 	position: absolute;
