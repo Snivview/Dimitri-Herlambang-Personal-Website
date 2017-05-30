@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* reset */
+html{background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:separate;border-spacing:0;}
+fieldset,img{border:0;}
+img{vertical-align:top;}
+address,caption,em,strong,th{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th,td{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+
+/* base tag */
+* {font-family: segoe ui;}
+html {background-color: #000;}
+
+/* base class */
+.clearfix:before,
+.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+
+.fL{float:left;}
+.fR{float:right;}
+
+.tB{font-weight:bold;}
+.tL{text-align:left;}
+.tC{text-align:center;}
+.tR{text-align:right;}
+.tI{font-style:italic;}
+.tS{text-decoration: line-through;}
+
+h1 {
+	font-size: 275%;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+.div-container {
+	padding: 15px;
+	margin: 0 auto;
+	max-width: 994px;
+}
+
+.div-transparent-layer {
+	background-color: rgba(0,0,0,.50);
+}
+
+.div-paragraph {font-size: 75%;}
+.div-paragraph p {
+	margin: 10px 0;
+	color: #fff;
+}
+
+.div-border {
+	width: 200px;
+	margin: 15px auto 30px auto;
+	height: 1px;
+	background-color: #fff;
+}
+
+.swiper-container {
+	max-width: 900px;
+}
+.swiper-slide img{
+	width: 100%;
+}
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: .6 !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff !important;
+}
+
+#mainArea {
+	overflow-x: hidden;
+}
+
+#section_1 {
+	background: url(../img/section_1_bg.jpg) no-repeat;
+	background-position: center;
+	height: 100vh;
+  	width: 100vw;
+}
+#section_1 .div-transparent-layer {
+	height: 100vh;
+  	width: 100vw;
+	position: relative;
+}
+#section_1 .div-caption {
+	position: absolute;
+	width: 300px;
+	bottom: 5%;
+	left: 2%;
+}
+
+#section_1 h1, #section_1 h2 {
+	color: #fff;
+	text-align: left;
+}
+#section_1 h2 {font-size: 105%;}
+
+#section_2 {padding: 50px 0;}
+#section_2 h1, #section_2 h2 {
+	color: #fff;
+}

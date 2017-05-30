@@ -1,113 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Komik Bidadari Mata Elang - Kompas Klasika</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="width=device-width">
+
+<title>Slider Pro</title>
+
+<link rel="stylesheet" type="text/css" href="slider-pro.min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="examples.css" media="screen"/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="jQ.js"></script>
+<script type="text/javascript" src="jQ.sliderPro.js"></script>
+
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+		$( '#example1' ).sliderPro({
+			width: 960,
+			height: 360,
+			arrows: true,
+			buttons: false,
+			waitForLayers: true,
+			thumbnailWidth: 200,
+			thumbnailHeight: 100,
+			thumbnailPointer: true,
+			autoplay: false,
+			autoScaleLayers: false,
+			breakpoints: {
+				500: {
+					thumbnailWidth: 120,
+					thumbnailHeight: 50
+				}
+			}
+		});
+	});
+</script>
+
 </head>
 
 <body>
-<h2 style="text-align:center">Bidadari Mata Elang</h2>
-<div class="row">
-  <div class="column"> <img src="img/komik01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"> </div>
-  <div class="column"> <img src="img/komik02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"> </div>
-  <div class="column"> <img src="img/komik03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"> </div>
-  <div class="column"> <img src="img/komik04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"> </div>
-  <div class="column"> <img src="img/komik05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"> </div>
-</div>
-<div id="modalWrap" class="modal"> <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content" id="pageone">
-    <div>
-      <div class="slide">
-        <div class="numbertext">Edisi 57</div>
-        <img src="img/komik01.jpg" alt="Bidadari Mata Elang 57"> 
-      </div>
-      <div class="slide">
-        <div class="numbertext">Edisi 58</div>
-        <img src="img/komik02.jpg" alt="Bidadari Mata Elang 58"> 
-      </div>
-      <div class="slide">
-        <div class="numbertext">Edisi 59</div>
-        <img src="img/komik03.jpg" alt="Bidadari Mata Elang 59">
-      </div>
-      <div class="slide">
-        <div class="numbertext">Edisi 60</div>
-        <img src="img/komik04.jpg" alt="Bidadari Mata Elang 60">
-      </div>
-      <div class="slide">
-        <div class="numbertext">Edisi 61</div>
-        <img src="img/komik05.jpg" alt="Bidadari Mata Elang 61">
-      </div>
-    </div>
-    <div> 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
-    <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-    
-    <!-- <div class="column">
-      <img class="demo cursor" src="img/komik01.jpg" onclick="currentSlide(1)" alt="057">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/komik02.jpg" onclick="currentSlide(2)" alt="058">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/komik03.jpg" onclick="currentSlide(3)" alt="059">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/komik04.jpg" onclick="currentSlide(4)" alt="060">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/komik05.jpg" onclick="currentSlide(5)" alt="061">
-    </div> --> 
-  </div><!-- /.modal-content --> 
-</div><!-- /.modal --> 
 
-<script src="jQuery.js"></script>
-<script src="jquery.touchSwipe.min.js"></script>
-<script>
-	function openModal() {document.getElementById('modalWrap').style.display = "block"; }
-	function closeModal() {document.getElementById('modalWrap').style.display = "none"; }
+	<div id="example1" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="img/komik01.jpg"/>
+			</div>
 
-	var slideIndex = 1;
-	showSlides(slideIndex);
+	        <div class="sp-slide">
+	        	<img class="sp-image" src="img/komik02.jpg"/>
+			</div>
 
-	function plusSlides(n) {showSlides(slideIndex += n);}
-	function currentSlide(n) {showSlides(slideIndex = n);}
+			<div class="sp-slide">
+				<img class="sp-image" src="img/komik03.jpg"/>
+			</div>
 
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("slide");
-	  var dots = document.getElementsByClassName("demo");
-	  var captionText = document.getElementById("caption");
-	  if (n > slides.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none";
-	  }
-	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";
-	  dots[slideIndex-1].className += " active";
-	  captionText.innerHTML = dots[slideIndex-1].alt;
-	}
-</script>
-<script>
-	$(document).ready(function() {
-		$(".modal-content").swipe({
-			swipeLeft:function(event, direction, distance, duration, fingerCount) {
-				plusSlides(1);
-			}
-		});
-		$(".modal-content").swipe({
-			swipeRight:function(event, direction, distance, duration, fingerCount) {
-				plusSlides(-1);
-			}
-		});
-	});	
-</script>
+			<div class="sp-slide">
+				<img class="sp-image" src="img/komik04.jpg"/>
+			</div>
+		</div>
+
+		<div class="sp-thumbnails">
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-title">Edisi 057</div>
+			</div>
+
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-title">Edisi 058</div>
+			</div>
+
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-title">Edisi 059</div>
+			</div>
+
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-title">Edisi 060</div>
+			</div>
+		</div>
+    </div>
+
 </body>
 </html>
