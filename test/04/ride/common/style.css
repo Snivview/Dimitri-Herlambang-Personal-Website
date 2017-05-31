@@ -57,6 +57,7 @@ iframe {
 	padding: 15px;
 	margin: 0 auto;
 	max-width: 994px;
+	transition: all 1s;
 }
 
 .div-transparent-layer {
@@ -67,14 +68,21 @@ iframe {
 .div-paragraph p {
 	margin: 10px 0;
 	color: #fff;
+	transition: all 1s;
+	opacity: 0;
 }
 
 .div-image {
 	margin: 30px auto;
 	max-width: 1024px;
+	transition: all 1s;
+	opacity: 0;
 }
-.div-image img {
-	width: 100%;
+.div-image img {width: 100%;}
+
+.show {
+	transition: all 1s;
+	opacity: 1 !important;
 }
 
 .div-border {

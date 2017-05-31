@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <link rel="stylesheet" href="common/style.css">
+  
 </head>
 
 <body>
@@ -162,9 +163,35 @@
 			</div>
 		</div>
 	</div>
- 	
 </div><!-- /#mainArea -->
-	<script src="common/jquery.183.js"></script>
-   	<script src="common/parallax.min.js"></script>
+  	<script src="common/jquery-183.js" type="text/javascript"></script>
+   	<script src="common/parallax.min.js" type="text/javascript"></script> 
+   	<script>
+		function isScrolledIntoView(elem) {
+			var docViewTop = $(window).scrollTop();
+			var docViewBottom = docViewTop + $(window).height();
+
+			var elemTop = $(elem).offset().top;
+			var elemBottom = elemTop + $(elem).height();
+			var circleHeight = $(elem).height() / 2;
+
+			/* return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)); */
+			return ((elemBottom - circleHeight <= docViewBottom) && (elemTop - circleHeight >= docViewTop));
+		}
+
+		$(window).scroll(function () {
+			$('.div-paragraph p').each(function () {
+				if (isScrolledIntoView(this) === true) {
+					$(this).addClass('show')
+				}
+			});
+			$('.div-image').each(function () {
+				if (isScrolledIntoView(this) === true) {
+					$(this).addClass('show')
+				}
+			});
+
+		});
+	</script>
 </body>
 </html>
