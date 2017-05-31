@@ -17,6 +17,14 @@ input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;
 /* base tag */
 * {font-family: segoe ui;}
 html {background-color: #000;}
+@font-face {
+  font-family: Riga;
+  src: url('../font/Riga-Black.otf');
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url('../font/Ubuntu-R.ttf');
+}
 
 /* base class */
 .clearfix:before,
@@ -37,11 +45,13 @@ h1 {
 	font-size: 375%;
 	letter-spacing: -1px;
 	text-align: center;
+	font-family: Riga;
 }
 h2 {
 	font-size: 200%;
 	letter-spacing: -1px;
 	text-align: left;
+	font-family: Ubuntu;
 }
 h3 {
 	font-size: 125%;
@@ -70,13 +80,12 @@ iframe {
 	color: #fff;
 	transition: all 1s;
 	opacity: 0;
+	font-family: Ubuntu;
 }
 
 .div-image {
 	margin: 30px auto;
 	max-width: 1024px;
-	transition: all 1s;
-	opacity: 0;
 }
 .div-image img {width: 100%;}
 

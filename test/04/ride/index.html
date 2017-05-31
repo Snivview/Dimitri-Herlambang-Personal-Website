@@ -170,10 +170,10 @@
 		function isScrolledIntoView(elem) {
 			var docViewTop = $(window).scrollTop();
 			var docViewBottom = docViewTop + $(window).height();
+			var circleHeight = $(elem).height() / 5;
 
 			var elemTop = $(elem).offset().top;
 			var elemBottom = elemTop + $(elem).height();
-			var circleHeight = $(elem).height() / 2;
 
 			/* return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)); */
 			return ((elemBottom - circleHeight <= docViewBottom) && (elemTop - circleHeight >= docViewTop));
@@ -185,12 +185,6 @@
 					$(this).addClass('show')
 				}
 			});
-			$('.div-image').each(function () {
-				if (isScrolledIntoView(this) === true) {
-					$(this).addClass('show')
-				}
-			});
-
 		});
 	</script>
 </body>
