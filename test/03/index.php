@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>The Spotlight</title>
+    <title>Interaktif Klasika</title>
     <link rel="icon" href="/_common/_img/tab_logo.png">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link href="_common/css/base.css" rel="stylesheet">
@@ -28,26 +28,26 @@
         
         <div id="mainArea" class="clearfix">
             <div class="topHeading">
-                <h1>The Spotlight</h1>
-                <h2>Ragam Produk Unggulan Solusi Kebutuhan Anda</h2>
+                <h1>Interaktif Klasika</h1>
+                <h2>Ragam Advertorial Kegiatan di Sekitar Anda</h2>
             </div> <!-- /.topHeading -->
             
             <div class="wrap01">
                 <div class="multiple">
-                    <div class="block01">
-                        <div><img src="_img/spot01.png"></div>
-                        <h3>Suzuki Ignis</h3>
-                        <div class="flipLeft"><p class="type01">Sponsored by Suzuki Indonesia &#9654;</p></div>
+                    <div class="block01" onclick="window.open('ride/');">
+                        <div><img src="_img/interaktif_01.png"></div>
+                        <h3>Ride Jakarta</h3>
+                        <div class="flipLeft"><p class="type01">Advertorial &#9654;</p></div>
                         <div class="flipTop">
-                            <p>Lebih dari sekedar LCGC, City Car lansiran Suzuki ini mencoba mengusik pasar LCGC yang sebelumnya dikuasai pabrikan Jepang lainnya. &#9654;</p>
+                            <p>Bukan cuma waktu, kesehatan pun jadi aset berharga bagi masyarakat urban. Bisa dimaklumi kemudian jika pusat kebugaran kian menjamur di berbagai penjuru kota. Salah satu yang naik daun adalah <span class="tI">boutique fitness studio</span>. &#9654;</p>
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
-                        <div><img src="_img/spot02.png"></div>
-                        <h3>Tax Amnesty</h3>
-                        <div class="flipLeft"><p class="type01">Sponsored by Direktorat Jenderal Pajak &#9654;</p></div>
+                        <div><img src="_img/interaktif_02.png"></div>
+                        <h3>Keistimewaan Umrah di Bulan Ramadhan</h3>
+                        <div class="flipLeft"><p class="type01">Eksplor &#9654;</p></div>
                         <div class="flipTop">
-                            <p>Usaha Jokowi dalam menarik triliunan dana masyarakat yang disimpan di luar negeri ini menjadi sorotan. Bagi anda yang tertarik mengikuti pengampunan pajak, simak tutorial interaktif berikut. &#9654;</p>
+                            <p>Padatnya jemaah umrah pada bulan Ramadhan menjadi keistimewaan sendiri di bulan yang penuh berkah ini. &#9654;</p>
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
@@ -109,7 +109,7 @@
 	?>
     </div> <!-- /#wrap -->
     
-    <script src="common/js/jQuery.js" type="text/javascript"></script>
+    <script src="_common/js/jQuery.js" type="text/javascript"></script>
   
     <script> /* animation when hovering a particular article*/
         $( document ).ready(function(){
@@ -128,7 +128,7 @@
         });
     </script>
     <script> /* mobile device hover effect */
-        if ($(window).width() < 569) {
+        if ($(window).width() < 769) {
             $('.flipLeft').addClass('showFlipLeft');
             $('.flipTop').addClass('showFlipTop');
             $('.block01').addClass('block01Colored');

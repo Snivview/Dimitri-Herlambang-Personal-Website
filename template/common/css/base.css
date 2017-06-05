@@ -31,20 +31,8 @@ input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;
 .tC{text-align:center;}
 .tR{text-align:right;}
 .tI{font-style:italic;}
-.tS{text-decoration: line-through;}
 
-.t12{font-size:12px;}
-.t14{font-size:14px;}
-.t16{font-size:16px;}
-.t18{font-size:18px;}
-.t24{font-size:24px;}
-.t48{font-size:48px;}
 .tWhite{color:#fff;}
-
-.mTB10{margin-top: 10px;margin-bottom: 10px;}
-.mTB30{margin-top: 30px;margin-bottom: 30px;}
-.mT30{margin-top: 30px;}
-.mB30{margin-bottom: 30px;}
 
 .dispTable{
 	display:table-cell;

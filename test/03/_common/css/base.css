@@ -76,6 +76,8 @@ p {
 }
 .dispInline li{display:inline-block;}
 .dispList li{display:list-item;}
+
+.tI {font-style: italic;}
 /* ---------------------- components ---------------------- */
 .topHeading {margin-bottom: 50px;}
 .wrap01 {
@@ -112,8 +114,10 @@ p {
 }
 .block01 div:nth-of-type(1){
 	height: 190px;
+	width: 320px;
 	display: table-cell;
     vertical-align: middle;
+	text-align: center;
 }
 .block01Colored {
     transition: .3s;
@@ -188,7 +192,7 @@ p {
         padding-left: 0;
         padding-right: 0;
     }
-    .block01 {margin: 0;}
+    .block01 {margin: 30px 0;}
     .block01 p {padding: 5px;}
 	.block01 div:nth-of-type(1){
 		width: 100%;

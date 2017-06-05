@@ -8,7 +8,7 @@
     <meta name="description" content="template">
     <meta name="keywords" content="template">
     <meta name="author" content="Dimitri">
-    <link href="/template/common/css/base.css" rel="stylesheet">
+    <link href="common/css/base.css" rel="stylesheet">
 </head>
 
 <body>
