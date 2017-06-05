@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>The Spotlight</title>
-    <link rel="icon" href="/_common/img/tab_logo.png">
+    <link rel="icon" href="/_common/_img/tab_logo.png">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <link href="common/css/base.css" rel="stylesheet">
+    <link href="_common/css/base.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <div class="wrap01">
                 <div class="multiple">
                     <div class="block01">
-                        <div><img src="img/spot01.png"></div>
+                        <div><img src="_img/spot01.png"></div>
                         <h3>Suzuki Ignis</h3>
                         <div class="flipLeft"><p class="type01">Sponsored by Suzuki Indonesia &#9654;</p></div>
                         <div class="flipTop">
@@ -43,7 +43,7 @@
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
-                        <div><img src="img/spot02.png"></div>
+                        <div><img src="_img/spot02.png"></div>
                         <h3>Tax Amnesty</h3>
                         <div class="flipLeft"><p class="type01">Sponsored by Direktorat Jenderal Pajak &#9654;</p></div>
                         <div class="flipTop">
@@ -51,7 +51,7 @@
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
-                        <div><img src="img/spot03.png"></div>
+                        <div><img src="_img/spot03.png"></div>
                         <h3>Perumahan Citra Maja Raya</h3>
                         <div class="flipLeft"><p class="type01">Sponsored by Ciputra Group &#9654;</p></div>
                         <div class="flipTop">
@@ -59,7 +59,7 @@
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
-                        <div><img src="img/spot04.png"></div>
+                        <div><img src="_img/spot04.png"></div>
                         <h3>Hello Moto Z</h3>
                         <div class="flipLeft"><p class="type01">Sponsored by Lenovo Motorola &#9654;</p></div>
                         <div class="flipTop">
@@ -67,7 +67,7 @@
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
-                        <div><img src="img/spot05.png"></div>
+                        <div><img src="_img/spot05.png"></div>
                         <h3>Samsung New Galaxy A</h3>
                         <div class="flipLeft"><p class="type02">Advertorial &#9654;</p></div>
                         <div class="flipTop">
@@ -75,7 +75,7 @@
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
-                        <div><img src="img/spot06.png"></div>
+                        <div><img src="_img/spot06.png"></div>
                         <h3>Tokopedia</h3>
                         <div class="flipLeft"><p class="type02">Klasika &#9654;</p></div>
                         <div class="flipTop">
@@ -83,7 +83,7 @@
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">
-                        <div><img src="img/spot07.png"></div>
+                        <div><img src="_img/spot07.png"></div>
                         <h3>Renault Kwid</h3>
                         <div class="flipLeft"><p class="type01">Sponsored by Renault &#9654;</p></div>
                         <div class="flipTop">
