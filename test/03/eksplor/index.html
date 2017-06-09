@@ -3,134 +3,164 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	<title>Eksplor Jawa</title>
-	<meta name="author" content="Dimitri" />
-	<meta name="description" content="" />
-	<meta name="keywords"  content="" />
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
 	<meta name="Resource-type" content="Document" />
 
 
 	<link rel="stylesheet" type="text/css" href="cmn/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="cmn/style.css" />
+	<link rel="stylesheet" type="text/css" href="cmn/examples.css" />
 	<style>
-		#section2.load-background{
-		  	background: url(img/section_2_bg.jpg) no-repeat;
-		}
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:40px 0 0 0;
+	}
+	.intro p{
+		color: #fff;
+		padding:40px 0 0 0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
 
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    text-align:center;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-
-}
-
-.sidenav a:hover{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
 	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 
 	<script src="cmn/jQuery-183.js"></script>
 	<script src="cmn/jQuery-ui-191.js"></script>
 	<script type="text/javascript" src="cmn/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="cmn/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="cmn/examples.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: [],
-				scrollOverflow: true,
-				verticalCentered: false,
-				css3:false,
-                onLeave: function(index, nextIndex, direction){
-                  if(nextIndex === 3){
-                    var destinationSection = $('.section').eq(nextIndex-1);
-                    destinationSection.addClass('load-background');
-                  }
-                }
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+				scrollOverflow: true
 			});
 		});
 	</script>
-
 </head>
 <body>
 
 <div id="fullpage">
-	<div id="menu" onclick="openNav()"><img src="img/icon_001.png"></div>
-	
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<img src="img/section_2_bg.png" alt="Pulau Jawa">
-	</div>
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Scrolling inside sections</h1>
+			<p>Easy and useful! Just make use of the option `scrollOverflow` for it and add the `scrolloverflow` vendor libary! <br></p>
 
-	<div class="section active" id="section0">
-		<div class="div-transparent">
-			<div class="caption">
-				<h1>Eksplor Jawa</h1>
-				<h2>Telusuri jejak peninggalan Kerajaan-kerajaan Islam di 10 kota berikut</h2>
+
+			<img src="./imgs/iphone2.png" alt="iphone" id="iphone-two" />
+
+			<p>Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte.
+
+	Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui.
+
+	Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+
+	Per alienum torquatos eu. Sed saepe quodsi et, ullum choro definitionem sed et. Ullum elitr comprehensam sed at, sint illum propriae per eu. Eu enim laudem reformidans vel. Pro clita quando ad. Usu te virtute quaestio, ut eruditi tacimates volutpat per.
+
+	Affert accusamus duo ex, ea pri habeo graece, cu magna dolorum sea. Quas dictas assueverit ad qui, cu duo harum fabulas apeirian, ullum gubergren et sit. Ne cetero recusabo adipiscing quo, cu harum quaestio neglegentur cum. Has tation aliquip ad, virtute volumus definitionem mel ne. Nobis audiam civibus ius at.
+
+	Ei eum hinc mutat inciderint. Cu maluisset assentior per, graecis ponderum no mel. Eum eu vitae quando gloriatur, cum graece percipitur no, sed errem maiestatis te. Sed porro epicuri te, ad nam malorum verterem. Ea zril aliquip euismod sed.
+
+		  </p>
+		  <p>Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte.
+
+	Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui.
+
+	Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+
+	Per alienum torquatos eu. Sed saepe quodsi et, ullum choro definitionem sed et. Ullum elitr comprehensam sed at, sint illum propriae per eu. Eu enim laudem reformidans vel. Pro clita quando ad. Usu te virtute quaestio, ut eruditi tacimates volutpat per.
+
+	Affert accusamus duo ex, ea pri habeo graece, cu magna dolorum sea. Quas dictas assueverit ad qui, cu duo harum fabulas apeirian, ullum gubergren et sit. Ne cetero recusabo adipiscing quo, cu harum quaestio neglegentur cum. Has tation aliquip ad, virtute volumus definitionem mel ne. Nobis audiam civibus ius at.
+
+	Ei eum hinc mutat inciderint. Cu maluisset assentior per, graecis ponderum no mel. Eum eu vitae quando gloriatur, cum graece percipitur no, sed errem maiestatis te. Sed porro epicuri te, ad nam malorum verterem. Ea zril aliquip euismod sed.
+
+		  </p>
+		  <p>Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte.
+
+	Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui.
+
+	Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+
+	Per alienum torquatos eu. Sed saepe quodsi et, ullum choro definitionem sed et. Ullum elitr comprehensam sed at, sint illum propriae per eu. Eu enim laudem reformidans vel. Pro clita quando ad. Usu te virtute quaestio, ut eruditi tacimates volutpat per.
+
+	Affert accusamus duo ex, ea pri habeo graece, cu magna dolorum sea. Quas dictas assueverit ad qui, cu duo harum fabulas apeirian, ullum gubergren et sit. Ne cetero recusabo adipiscing quo, cu harum quaestio neglegentur cum. Has tation aliquip ad, virtute volumus definitionem mel ne. Nobis audiam civibus ius at.
+
+	Ei eum hinc mutat inciderint. Cu maluisset assentior per, graecis ponderum no mel. Eum eu vitae quando gloriatur, cum graece percipitur no, sed errem maiestatis te. Sed porro epicuri te, ad nam malorum verterem. Ea zril aliquip euismod sed.
+
+		  </p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Also in sections</h1>
+				<img src="./imgs/iphone-two.png" alt="iphone" id="iphone-two" />
+				<p>
+					Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte.
+
+					Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui.
+
+					Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+					Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+					Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+
+					Per alienum torquatos eu.
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2"><h1>Even inside slides</h1></div>
+		<div class="slide" id="slide3">
+			<div class="intro">
+				<h1>Scrolling slide</h1>
+				<img src="./imgs/iphone-red.png" alt="iphone" id="iphone-two" />
+				<p>
+					Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte.
+
+					Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui.
+
+					Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+					Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+					Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+
+					Per alienum torquatos eu.
+				</p>
 			</div>
 		</div>
 	</div>
-	
-	<!-- <div class="section" id="section1">
-		<img data-src="img/section_2_bg.png" alt="Pulau Jawa">
-	</div> -->
-	
 	<div class="section" id="section2">
-		<div class="div-content">
-			<h2>Banten</h2>
-			<p>Kesultanan Banten adalah sebuah kerajaan Islam yang pernah berdiri di Tatar Pasundan, Provinsi Banten, Indonesia. Berawal sekitar tahun 1526, ketika kesultanan Cirebon dan kesultanan Demak memperluas pengaruhnya ke kawasan pesisir barat Pulau Jawa, dengan menaklukan beberapa kawasan pelabuhan kemudian menjadikannya sebagai pangkalan militer serta kawasan perdagangan sebagai antisipasi terealisasinya perjanjian antara kerajaan Sunda dan Portugis tahun 1522 m.</p>
-			<p>Maulana Hasanuddin, putera Sunan Gunung Jati[5] berperan dalam penaklukan tersebut. Setelah penaklukan tersebut, Maulana Hasanuddin mengembangkan benteng pertahanan yang dinamakan Surosowan (dibangun 1600 m) menjadi kawasan kota pesisir yang kemudian hari menjadi pusat pemerintahan setelah Banten menjadi kesultanan yang berdiri sendiri.</p>
-			<p>Selama hampir 3 abad Kesultanan Banten mampu bertahan bahkan mencapai kejayaan yang luar biasa, yang diwaktu bersamaan penjajah dari Eropa telah berdatangan dan menanamkan pengaruhnya. Perang saudara, dan persaingan dengan kekuatan global memperebutkan sumber daya maupun perdagangan, serta ketergantungan akan persenjataan telah melemahkan hegemoni Kesultanan Banten atas wilayahnya. Kekuatan politik Kesultanan Banten akhir runtuh pada tahun 1813 setelah sebelumnya Istana Surosowan 	sebagai simbol kekuasaan di Kota Intan dihancurkan, dan pada masa-masa akhir pemerintanannya, para Sultan Banten tidak lebih dari raja bawahan dari pemerintahan kolonial di Hindia Belanda.</p>
-		</div>
-		<p class="p-image"><img data-src="img/content_001.jpg" alt="kerajaan banten"></p>
-		<div class="div-content">
-			<h2>Cirebon</h2>
-			<p>Menurut Sulendraningrat yang mendasarkan pada naskah Babad Tanah Sunda dan Atja pada naskah Carita Purwaka Caruban Nagari, Cirebon pada awalnya adalah sebuah dukuh kecil yang dibangun oleh Ki Gedeng Tapa, yang lama-kelamaan berkembang menjadi sebuah desa yang ramai dan diberi nama Caruban (Bahasa Sunda: campuran), karena di sana bercampur para pendatang dari berbagai macam suku bangsa, agama, bahasa, adat istiadat, dan mata pencaharian yang berbeda-beda untuk bertempat tinggal atau berdagang.</p>
-			<p>Mengingat pada awalnya sebagian besar mata pencaharian masyarakat adalah sebagai nelayan, maka berkembanglah pekerjaan menangkap ikan dan rebon (udang kecil) di sepanjang pantai serta pembuatan terasi, petis, dan garam. Dari istilah air bekas pembuatan terasi (belendrang) dari udang rebon inilah berkembanglah sebutan cai-rebon (Bahasa Sunda:, air rebon) yang kemudian menjadi Cirebon.[5]</p>
-			<p>Dengan dukungan pelabuhan yang ramai dan sumber daya alam dari pedalaman, Cirebon kemudian menjadi sebuah kota besar dan menjadi salah satu pelabuhan penting di pesisir utara Jawa baik dalam kegiatan pelayaran dan perdagangan di kepulauan Nusantara maupun dengan bagian dunia lainnya. Selain itu, Cirebon tumbuh menjadi cikal bakal pusat penyebaran agama Islam di Jawa Barat.</p>
+		<div class="intro">
+			<h1>No limitations!</h1>
+			<p>Content is a priority. Even if it is so large :)</p>
 		</div>
 	</div>
-	
 </div>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
 </body>
 </html>
