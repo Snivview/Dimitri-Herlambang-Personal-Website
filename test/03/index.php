@@ -42,12 +42,12 @@
                             <p>Bukan cuma waktu, kesehatan pun jadi aset berharga bagi masyarakat urban. Bisa dimaklumi kemudian jika pusat kebugaran kian menjamur di berbagai penjuru kota. Salah satu yang naik daun adalah <span class="tI">boutique fitness studio</span>. &#9654;</p>
                         </div>
                     </div> <!-- /.block01 -->
-                    <div class="block01">
+                    <div class="block01" onclick="window.open('eksplor/');">
                         <div><img src="_img/interaktif_02.png"></div>
-                        <h3>Keistimewaan Umrah di Bulan Ramadhan</h3>
+                        <h3>Eksplor Jawa</h3>
                         <div class="flipLeft"><p class="type01">Eksplor &#9654;</p></div>
                         <div class="flipTop">
-                            <p>Padatnya jemaah umrah pada bulan Ramadhan menjadi keistimewaan sendiri di bulan yang penuh berkah ini. &#9654;</p>
+                            <p>Jelajahi jejak kerajaan Islam di 10 kota di pulau Jawa. &#9654;</p>
                         </div>
                     </div> <!-- /.block01 -->
                     <div class="block01">

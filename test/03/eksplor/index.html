@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>Eksplor Jawa</title>
+	<meta name="author" content="Dimitri" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="cmn/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="cmn/style.css" />
+	<style>
+		#section2.load-background{
+		  	background: url(img/section_2_bg.jpg) no-repeat;
+		}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	</style>
+
+	<script src="cmn/jQuery-183.js"></script>
+	<script src="cmn/jQuery-ui-191.js"></script>
+	<script type="text/javascript" src="cmn/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="cmn/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: [],
+				scrollOverflow: true,
+				verticalCentered: false,
+				css3:false,
+                onLeave: function(index, nextIndex, direction){
+                  if(nextIndex === 3){
+                    var destinationSection = $('.section').eq(nextIndex-1);
+                    destinationSection.addClass('load-background');
+                  }
+                }
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div id="menu" onclick="openNav()"><img src="img/icon_001.png"></div>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<img src="img/section_2_bg.png" alt="Pulau Jawa">
+	</div>
+
+	<div class="section active" id="section0">
+		<div class="div-transparent">
+			<div class="caption">
+				<h1>Eksplor Jawa</h1>
+				<h2>Telusuri jejak peninggalan Kerajaan-kerajaan Islam di 10 kota berikut</h2>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <div class="section" id="section1">
+		<img data-src="img/section_2_bg.png" alt="Pulau Jawa">
+	</div> -->
+	
+	<div class="section" id="section2">
+		<div class="div-content">
+			<h2>Banten</h2>
+			<p>Kesultanan Banten adalah sebuah kerajaan Islam yang pernah berdiri di Tatar Pasundan, Provinsi Banten, Indonesia. Berawal sekitar tahun 1526, ketika kesultanan Cirebon dan kesultanan Demak memperluas pengaruhnya ke kawasan pesisir barat Pulau Jawa, dengan menaklukan beberapa kawasan pelabuhan kemudian menjadikannya sebagai pangkalan militer serta kawasan perdagangan sebagai antisipasi terealisasinya perjanjian antara kerajaan Sunda dan Portugis tahun 1522 m.</p>
+			<p>Maulana Hasanuddin, putera Sunan Gunung Jati[5] berperan dalam penaklukan tersebut. Setelah penaklukan tersebut, Maulana Hasanuddin mengembangkan benteng pertahanan yang dinamakan Surosowan (dibangun 1600 m) menjadi kawasan kota pesisir yang kemudian hari menjadi pusat pemerintahan setelah Banten menjadi kesultanan yang berdiri sendiri.</p>
+			<p>Selama hampir 3 abad Kesultanan Banten mampu bertahan bahkan mencapai kejayaan yang luar biasa, yang diwaktu bersamaan penjajah dari Eropa telah berdatangan dan menanamkan pengaruhnya. Perang saudara, dan persaingan dengan kekuatan global memperebutkan sumber daya maupun perdagangan, serta ketergantungan akan persenjataan telah melemahkan hegemoni Kesultanan Banten atas wilayahnya. Kekuatan politik Kesultanan Banten akhir runtuh pada tahun 1813 setelah sebelumnya Istana Surosowan 	sebagai simbol kekuasaan di Kota Intan dihancurkan, dan pada masa-masa akhir pemerintanannya, para Sultan Banten tidak lebih dari raja bawahan dari pemerintahan kolonial di Hindia Belanda.</p>
+		</div>
+		<p class="p-image"><img data-src="img/content_001.jpg" alt="kerajaan banten"></p>
+		<div class="div-content">
+			<h2>Cirebon</h2>
+			<p>Menurut Sulendraningrat yang mendasarkan pada naskah Babad Tanah Sunda dan Atja pada naskah Carita Purwaka Caruban Nagari, Cirebon pada awalnya adalah sebuah dukuh kecil yang dibangun oleh Ki Gedeng Tapa, yang lama-kelamaan berkembang menjadi sebuah desa yang ramai dan diberi nama Caruban (Bahasa Sunda: campuran), karena di sana bercampur para pendatang dari berbagai macam suku bangsa, agama, bahasa, adat istiadat, dan mata pencaharian yang berbeda-beda untuk bertempat tinggal atau berdagang.</p>
+			<p>Mengingat pada awalnya sebagian besar mata pencaharian masyarakat adalah sebagai nelayan, maka berkembanglah pekerjaan menangkap ikan dan rebon (udang kecil) di sepanjang pantai serta pembuatan terasi, petis, dan garam. Dari istilah air bekas pembuatan terasi (belendrang) dari udang rebon inilah berkembanglah sebutan cai-rebon (Bahasa Sunda:, air rebon) yang kemudian menjadi Cirebon.[5]</p>
+			<p>Dengan dukungan pelabuhan yang ramai dan sumber daya alam dari pedalaman, Cirebon kemudian menjadi sebuah kota besar dan menjadi salah satu pelabuhan penting di pesisir utara Jawa baik dalam kegiatan pelayaran dan perdagangan di kepulauan Nusantara maupun dengan bagian dunia lainnya. Selain itu, Cirebon tumbuh menjadi cikal bakal pusat penyebaran agama Islam di Jawa Barat.</p>
+		</div>
+	</div>
+	
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
