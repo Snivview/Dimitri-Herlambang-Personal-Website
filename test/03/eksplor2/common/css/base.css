@@ -36,6 +36,10 @@ h2 {
 	font-family: Riga;
 	color: #fff;
 }
+h3 {
+	font-family: Riga;
+	color: #fff;
+}
 p {
 	color: #fff;
 	font-family: Ubuntu;
@@ -60,20 +64,18 @@ p {
 	position: relative;
 }
 .div-text {
-	max-width: 930px;
+	max-width: 730px;
 	margin: 0 auto;
 	padding: 15px;
 }
-.div-text p:first-of-type span {
-    float: left;
-    font-size: 45px;
-    line-height: 1;
-    font-weight: bold;
-    margin-right: 9px;
-}
 .div-text h2 {
-	font-size: 175%;
+	font-size: 225%;
+	text-align: center;
 	margin: 50px 0 20px 0;
+}
+.div-text h3 {
+	font-size: 130%;
+	margin: 50px 0 10px 0;
 }
 .div-text p {
 	font-size: 100%;
@@ -89,17 +91,45 @@ p {
 	position: relative;
 }
 .div-image {
-	margin: 0 auto;
+	margin: 10px auto;
 	max-width: 900px;
 }
 .div-image img{
 	width: 100%;
 }
 .div-image p {
+	padding: 0 10px;
 	margin-top: 5px;
 	font-size: 75%;
+	font-family: arial;
+	font-style: italic;
 }
-
+.div-borderA {
+	width: 100%;
+	height: 20px;
+	background-color: #fff;
+}
+.div-borderB {
+	width: 150px;
+	height: 1px;
+	background-color: #fff;
+	float: right;
+}
+.text-dropCap {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.text-lead {margin-bottom: 50px;}
+.text-lead p{
+	font-family: Times;
+	text-align: right;
+	font-size: 20px !important;
+	font-style: italic;
+	color: #fff;
+}
 .link-mapCaption {
 	position: absolute;
 	color: #fff;
@@ -189,6 +219,7 @@ p {
 	color: #fff;
 	background-color: #000;
 	z-index: 30;
+	font-family: Ubuntu;
 }
 #mainArea {}
 
@@ -215,7 +246,10 @@ p {
 	text-align: center;
 }
 #section_1 h1 {font-size: 250%;}
-#section_1 h2 {font-size: 150%;}
+#section_1 h2 {
+	margin-top: 15px;
+	font-size: 150%;
+}
 
 #section_2 {
 	box-sizing: border-box;
