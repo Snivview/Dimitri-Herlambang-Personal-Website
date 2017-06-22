@@ -21,7 +21,7 @@ input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;
 }
 @font-face {
 	font-family: Ubuntu;
-	src: url(../../font/Ubuntu-L.ttf);
+	src: url(../../font/ubuntu-l-webfont.woff2);
 }
 html {background-color: #000;}
 a {
@@ -72,37 +72,67 @@ p {
 	font-size: 225%;
 	text-align: center;
 	margin: 50px 0 20px 0;
+	transition: all 1s;
+	opacity: 0;
 }
 .div-text h3 {
 	font-size: 130%;
 	margin: 50px 0 10px 0;
+	transition: all 1s;
+	opacity: 0;
 }
 .div-text p {
 	font-size: 100%;
 	margin-bottom: 20px;
 	line-height: 25px;
+	transition: all 1s;
+	opacity: 0;
 }
 .div-map {
 	width: 1250px;
 	height: 420px;
-	margin: 50px auto;
+	margin: 300px auto 10px auto;
 	background: url(../../img/section_2_bg.png) no-repeat;
 	background-size: contain;
 	position: relative;
 }
-.div-image {
+.div-imageA {
 	margin: 10px auto;
 	max-width: 900px;
 }
-.div-image img{
-	width: 100%;
-}
-.div-image p {
+.div-imageA img{width: 100%;}
+.div-imageA p {
 	padding: 0 10px;
 	margin-top: 5px;
 	font-size: 75%;
 	font-family: arial;
 	font-style: italic;
+}
+
+.div-imageB {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    text-align:center;
+}
+.div-imageB div {
+    max-width: 450px;
+    display: inline-block;
+    margin: 5px;
+	overflow-y: hidden; 
+}
+.div-imageB div img {width: 100%;}
+
+.div-imageSide {
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	z-index: 30;
+	top: 10%;
+	left: 5%;
+}
+.div-imageSide img {
+	width: 100%;
 }
 .div-borderA {
 	width: 100%;
@@ -130,12 +160,28 @@ p {
 	font-style: italic;
 	color: #fff;
 }
+.text-quote {
+	width: 250px;
+	float: right;
+	text-align: right;
+	margin: 5px -50px 10px 5px;
+	font-style: italic;
+	font-size: 175%;
+    font-family: Times;
+    line-height: 30px;
+	color: #efdeae;
+}
+.tQ {
+    font-size: 170%;
+    font-family: Times;
+	color: #f1ba1b;
+}
 .link-mapCaption {
 	position: absolute;
 	color: #fff;
 	width: 20px;
-	height: 70px;
-	background: url(../../img/location.png) no-repeat;
+	height: 45px;
+	background: url(../../img/mux-side.png) no-repeat;
 	background-size: contain;
 	display: table;
 }
@@ -143,13 +189,11 @@ p {
 	display: table-cell;
 	vertical-align: bottom;
 	font-family: Riga;
-	color: #000;
+	color: #fff;
 }
-.bounce {
-	-webkit-animation-name: bounce;
-	-moz-animation-name: bounce;
-	-o-animation-name: bounce;
-	animation-name: bounce;
+.link-socMed img{
+	width: 40px;
+	float: right;
 }
 .animated{
 	-webkit-animation-fill-mode:both;
@@ -166,6 +210,18 @@ p {
 	-o-animation-duration:2s;
 	animation-duration:2s;
 }
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+.show {
+	transition: all 1s;
+	opacity: 1 !important;
+}
+
+
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-10px);}
 	60% {-webkit-transform: translateY(-5px);}
@@ -211,6 +267,29 @@ p {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+@media screen and (max-width: 568px) {
+	.div-imageB div {
+		margin: 5px 0;
+	}
+	.text-quote {
+		margin: 5px 5px 15px 5px;
+	}
+}
+
+#wrap {display: none;}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /* main */
 #headerArea {
@@ -221,7 +300,10 @@ p {
 	background-color: #000;
 	z-index: 30;
 	font-family: Ubuntu;
+	box-sizing: border-box;
 }
+#headerArea span {cursor: pointer;}
+
 #mainArea {}
 
 #section_1 {
@@ -251,16 +333,33 @@ p {
 	margin-top: 15px;
 	font-size: 150%;
 }
-
 #section_2 {
 	box-sizing: border-box;
 	overflow-y: hidden;
 	z-index: 28;
 	background-color: #000;
+	margin-bottom: 150px;
 }
-
 #section_3 {
-    margin-top: -35px;
     background-color: #000;
 	z-index: 29;
+}
+#section_4 {
+	margin-top: 50px;
+	border-top: 1px solid #fff;
+}
+#section_4 h3 {
+	margin: 10px 0;
+	color: #f1ba1b;
+}
+
+#footerArea {
+	position: fixed;
+	right: 0;
+    bottom: 0;
+	padding: 8px;
+	color: #fff;
+	background-color: #000;
+	z-index: 29;
+	font-family: Ubuntu;
 }
