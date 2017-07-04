@@ -8,9 +8,8 @@
     <meta name="description" content="eksplor peninggalan islam di pulau jawa">
     <meta name="keywords" content="eksplor,jawa,kompas,klasika">
     <meta name="author" content="kompas klasika">
-    <link href="common/css/base.css" rel="stylesheet">
-    <link href="common/css/parallax.css" rel="stylesheet">
     
+    <link href="common/css/base.css" rel="stylesheet">
     <style>
 		img:not([src]) {visibility: hidden;}
 
@@ -35,7 +34,7 @@
 			<div id="mySidenav" class="sidenav">
 				<div class="div-map">
        				<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-        			<div class="link-mapCaption animated bounce" style="top:15%;left:10%;"><a href="#Banten" onclick="closeNav()">Banten</a></div>
+        			<div id="inBanten" class="link-mapCaption animated bounce" style="top:15%;left:10%;"><a href="#Banten" onclick="closeNav()">Banten</a></div>
         			<div class="link-mapCaption animated bounce" style="top:28%;left:56%;"><a href="#Demak" onclick="closeNav()">Demak</a></div>
         			<div class="link-mapCaption animated bounce" style="top:28%;left:32%;"><a href="#Cirebon" onclick="closeNav()">Cirebon</a></div>
         		</div>
@@ -44,7 +43,7 @@
         	<div id="section_1" class="div-section clearfix">
         		<div class="div-transparentA">
         			<div class="div-caption">
-        				<img id="logo" src="img/logo_eksplor.png" alt="logo kompas eksplor">
+        				<h1>Eksplor<br>Ramadhan</h1>
         			</div>
 				</div>
         	</div>
@@ -72,9 +71,9 @@
         				<p>Banten Menyimpan banyak cerita yang memukau pada masa lampau. Mulai dari statusnya yang pernah menjadi pusat perdagangan dan ramai dikunjungi para pedagang, hingga menjadi kunci penyebaran agama Islam di kawasan yang sekarang menjadi Jakarta dan Jawa Barat. Ziarah ke Banten tidak hanya bisa memperkaya batin, tetapi juga wawasan sejarah.</p>
         				<div class="div-borderB"></div>
         			</div>
-        			
         			<p><span class="text-dropCap">N</span>ama Banten sudah masyhur sebelum Kesultanan Banten berdiri. Namun, puncak kejayaannya dicapai saat Maulana Hasanuddin berkuasa. Nama sultan yang adalah putra dari Syarief Hidayatullah atau lebih dikenal Sunan Gunung Jati ini juga makin harum lantaran dialah raja pertama yang memerintah Banten dengan mengedepankan budaya Islam.</p>
-        			<p><span class="text-quote"><span class="tQ">"</span>Untungnya, kendaraan Isuzu MU-X yang digunakan tangguh dan nyaman untuk melewati berbagai tantangan tersebut.<span class="tQ">"</span></span>Kejayaan Banten kala itu tak lepas dari kepiawaian Maulana Hasanuddin, yang tidak hanya cakap dalam hal agama, tetapi juga politik dan ekonomi. Tak heran saat itu Kesultanan Banten memiliki wilayah kekuasaan yang luas, terbentang dari Lampung hingga Karawang. Sejarah mencatat, Banten pun dengan cepat meraih kejayaan dan mampu mengalahkan Kerajaan Sunda atau Padjadjaran. Patut dicatat, puncak keemasan kesultanan ini dicapai pada masa pemerintahan Sultan Ageng Tirtayasa.</p>
+        			<p><span class="text-quote"><span class="tQ">"</span>Untungnya, kendaraan Isuzu MU-X yang digunakan tangguh dan nyaman untuk melewati berbagai tantangan tersebut.<span class="tQ">"</span></span>Kejayaan Banten kala itu tak lepas dari kepiawaian Maulana Hasanuddin, yang tidak hanya cakap dalam hal agama, tetapi juga politik dan ekonomi. Tak heran saat itu Kesultanan Banten memiliki wilayah kekuasaan yang luas, terbentang dari Lampung hingga Karawang.</p>
+        			<p>Sejarah mencatat, Banten pun dengan cepat meraih kejayaan dan mampu mengalahkan Kerajaan Sunda atau Padjadjaran. Patut dicatat, puncak keemasan kesultanan ini dicapai pada masa pemerintahan Sultan Ageng Tirtayasa.</p>
         			<p>Begitu tersohornya Banten membuat para pedagang dari India, Timur Tengah, hingga Eropa berdatangan. Komoditas lada menjadi yang paling favorit dan dicari. Konon, komoditas dari Banten itu menjadi rebutan antara Portugis dan Belanda.</p>
         			<p>Kini, kisah kejayaan Kesultanan Banten yang masih tersisa bisa dilihat di Masjid Agung Banten yang berada di Desa Banten, Kecamatan Kasemen, Kabupaten Serang, Banten. Masjid ini masih berdiri kokoh dan menjadi tempat ziarah yang populer.</p>
         			<h3>Percampuran Budaya</h3>
@@ -94,10 +93,9 @@
         		</div>
         		
         		<div class="div-text">
-        			<p>Bagi yang berkunjung ke kompleks masjid mengendarai mobil, tersedia lokasi parkir yang cukup luas dengan biaya Rp 10.000. Anda akan segera disambut dengan sebuah menara megah setinggi 24 meter. Konon, menara ini dibangun oleh seorang Belanda yang telah menjadi Islam bernama Lucas Cardeel pada masa pemerintahan Sultan Haji (1672-1687). Menara ini dulu berfungsi untuk memberi tahu waktu shalat kepada rakyat Kesultanan Banten dan masih berfungsi hingga kini.</p>
+        			<p>Bagi yang berkunjung ke kompleks masjid mengendarai mobil, tersedia lokasi parkir yang cukup luas dengan biaya Rp 10.000. Anda akan segera disambut dengan sebuah menara megah setinggi 24 meter.</p>
+        			<p>Konon, menara ini dibangun oleh seorang Belanda yang telah menjadi Islam bernama Lucas Cardeel pada masa pemerintahan Sultan Haji (1672-1687). Menara ini dulu berfungsi untuk memberi tahu waktu shalat kepada rakyat Kesultanan Banten dan masih berfungsi hingga kini.</p>
         			<p>Layaknya bangunan masjid kuno, Masjid Agung Banten memiliki kolam di depan bangunan masjid. Kolam ini biasanya digunakan umat untuk tempat wudhu sebelum masuk ke dalam masjid. Namun, kolam ini sudah beralih fungsi menjadi kolam biasa. Tim Eksplor Ramadhan melihat kolam ini dijadikan tempat untuk bermain anak-anak dan memancing.</p>
-				</div>
-       			<div class="div-text">
         			<p>Bangunan masjid sendiri cukup unik karena menghadirkan percampuran dua budaya, yaitu Jawa kuno dan China. Percampuran budaya ini terlihat dari bangunannya yang memiliki serambi yang luas dan atap bertingkat 5 yang menyerupai tumpeng. Di dalam ruangan, masjid ini ditopang 24 tiang penyangga yang memiliki makna 24 jam dalam 1 hari.</p>
         			<p>Menariknya, pintu masuk masjid ini ada 5 buah yang melambangkan 5 rukun Islam. Pintu masuknya pun terbilang kecil dan rendah. Maknanya, agar seseorang selalu diingatkan untuk tetap rendah hati dan tidak sombong dalam kesehariannya.</p>
         			<p>Di dalam kompleks ini juga ada dua bangunan lainnya, yaitu Tiamah yang pada masa Kesultanan Banten sering digunakan untuk bermusyawarah. Di sini juga ada Museum Kepurbakalaan Banten Lama yang berisikan benda-benda bersejarah yang pernah ada di Banten.</p>
@@ -149,11 +147,11 @@
 				</div>
       			
       			<div class="div-imageA">
-       				<img data-original="img/content_img_009.jpg" alt="MU-X Cirebon">
+      				<div><img data-original="img/content_img_009.jpg" alt="MU-X Cirebon"></div>
        			</div>
       			
        			<div class="div-text">
-        			<p>Namun, kendaraan Isuzu MU-X yang digunakan membuat percaya diri untuk menembus genangan karena memiliki <span class="tI">ground clearance</span> yang tinggi. Panasnya udara pesisir tidak mengganggu saat berkendara apalagi dengan audio yang memiliki kualitas baik ditambah speaker yang berada di bagian langit-langit membuat seolah-olah suara itu sejajar dengan telinga. Keamanan berkendara pun semakin mantap karena dukungan kamera 360 derajat yang disematkan di mobil ini. Jadi, Anda tak perlu khawatir saat ingin parkir atau melewati jalanan yang sempit.</p>
+      				<p>Namun, kendaraan Isuzu MU-X yang digunakan membuat percaya diri untuk menembus genangan karena memiliki <span class="tI">ground clearance</span> yang tinggi. Panasnya udara pesisir tidak mengganggu saat berkendara apalagi dengan audio yang memiliki kualitas baik ditambah speaker yang berada di bagian langit-langit membuat seolah-olah suara itu sejajar dengan telinga. Keamanan berkendara pun semakin mantap karena dukungan kamera 360 derajat yang disematkan di mobil ini. Jadi, Anda tak perlu khawatir saat ingin parkir atau melewati jalanan yang sempit.</p>
         			<p>Keberadaan masjid ini membuat kota kecil yang hanya berjarak sekitar 30 kilometer dari ibu kota Provinsi Jawa Tengah ini selalu ramai dikunjungi turis, terutama peziarah.</p>
         			<p>Masjid ini memiliki aksen bangunan Jawa yang kuat, terlihat dari empat sokoguru atau tiang penyangga atap masjid yang bertumpuk. Sokoguru ini menjadi khas gaya bangunan Majapahit. Bisa jadi karena Raden Patah sendiri merupakan turunan dari raja Majapahit.</p>
         			<p>Sokoguru ini berdiri kokoh di ruang utama masjid di empat penjuru. Dipercaya, empat sokoguru ini merupakan pemberian dari empat wali, yaitu Sunan Bonang, Sunan Kalijaga, Sunan Ampel, dan Sunan Gunung Jati. Keempat soko ini menahan beban bagian atap tertinggi. Sementara itu, untuk menopang tajug yang lebih rendah, terdapat tiang di sekeliling sokoguru.Jika tertarik untuk mengetahui sejarahnya lebih dalam, Anda bisa berkunjung ke museum yang berada di dalam kompleks. Di tempat ini, tidak hanya ada sejarahnya, tetapi juga sejumlah foto masjid dari masa ke masa dan sokoguru asli yang sudah mulai termakan usia.</p>
@@ -208,7 +206,6 @@
     
     <script src="common/js/lazy.js" type="text/javascript"></script>
     <script src="common/js/jquery-183.js" type="text/javascript"></script>
- 
     <script>
 		function onReady(callback) {
 			var intervalID = window.setInterval(checkReady, 1000);
@@ -242,7 +239,6 @@
 			var docViewTop = $(window).scrollTop();
 			var docViewBottom = docViewTop + $(window).height();
 			var circleHeight = $(elem).height() / 2;
-
 			var elemTop = $(elem).offset().top;
 			var elemBottom = elemTop + $(elem).height();
 
@@ -250,7 +246,7 @@
 			return ((elemBottom - circleHeight <= docViewBottom) && (elemTop - circleHeight >= docViewTop));
 		}
 		$(window).scroll(function () {
-			$(".div-text p, .div-text h3").each(function () {
+			$(".div-text p, .div-text h3, .div-imageC").each(function () {
 				if (isScrolledIntoView(this) === true) {
 					$(this).addClass('show')
 				}
