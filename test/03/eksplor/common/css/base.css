@@ -73,20 +73,20 @@ p {
 	text-align: center;
 	margin: 50px 0 20px 0;
 	transition: all 1s;
-	opacity: 0;
+	/* opacity: 0; */
 }
 .div-text h3 {
 	font-size: 130%;
 	margin: 50px 0 10px 0;
 	transition: all 1s;
-	opacity: 0;
+	/* opacity: 0; */
 }
 .div-text p {
 	font-size: 100%;
 	margin-bottom: 20px;
 	line-height: 25px;
 	transition: all 1s;
-	opacity: 0;
+	/* opacity: 0; */
 }
 .div-map {
 	width: 1250px;
@@ -386,7 +386,7 @@ section.module.parallax-2 {
 	vertical-align: middle;
 	text-align: center;
 }
-#section_1 h1 {font-size: 250%;}
+#section_1 h1 {font-size: 400%;}
 #section_1 h2 {
 	margin-top: 15px;
 	font-size: 150%;
@@ -420,8 +420,12 @@ section.module.parallax-2 {
 	z-index: 29;
 }
 #section_4 {
-	margin-top: 50px;
+	padding-top: 50px;
 	border-top: 1px solid #fff;
+	background-color: #000;
+	z-index: 29;
+    position: relative;
+
 }
 #section_4 h3 {
 	margin: 10px 0;
