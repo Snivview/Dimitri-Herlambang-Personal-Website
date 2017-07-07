@@ -24,12 +24,12 @@
 	<div id="loading"></div>
 	<div id="wrap" class="default-skin">
 		<div id="headerArea" class="clearfix">
-			<span onclick="openNav()"><img data-original="img/menu.png" alt="menu"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_fb.png" alt="share facebook"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_tw.png" alt="share twitter"></span>
 		</div>
        	
         <div id="mainArea" class="clearfix">
+        	<div id="horizontal">test</div>
         	
 			<div id="mySidenav" class="sidenav">
 				<div class="div-map">
@@ -60,12 +60,12 @@
         	<div id="section_3" class="div-section clearfix">
 				<div class="div-border"></div>
 				
+				
 				<section class="module parallax parallax-1" id="Banten">
 					<div class="container">
 						<h2 style="color:#fff;">Banten</h2>
 					</div>	
 				</section>
-				
 				<div class="div-text">
         			<div class="text-lead clearfix">
         				<p>Banten Menyimpan banyak cerita yang memukau pada masa lampau. Mulai dari statusnya yang pernah menjadi pusat perdagangan dan ramai dikunjungi para pedagang, hingga menjadi kunci penyebaran agama Islam di kawasan yang sekarang menjadi Jakarta dan Jawa Barat. Ziarah ke Banten tidak hanya bisa memperkaya batin, tetapi juga wawasan sejarah.</p>
@@ -94,7 +94,7 @@
         		
         		<div class="div-text">
         			<p>Bagi yang berkunjung ke kompleks masjid mengendarai mobil, tersedia lokasi parkir yang cukup luas dengan biaya Rp 10.000. Anda akan segera disambut dengan sebuah menara megah setinggi 24 meter.</p>
-        			<p>Konon, menara ini dibangun oleh seorang Belanda yang telah menjadi Islam bernama Lucas Cardeel pada masa pemerintahan Sultan Haji (1672-1687). Menara ini dulu berfungsi untuk memberi tahu waktu shalat kepada rakyat Kesultanan Banten dan masih berfungsi hingga kini.</p>
+        			<p>Konon, menara ini dibangun oleh seorang Belanda yang telah menjadi Muslim bernama Lucas Cardeel pada masa pemerintahan Sultan Haji (1672-1687). Menara ini dulu berfungsi untuk memberi tahu waktu shalat kepada rakyat Kesultanan Banten dan masih berfungsi hingga kini.</p>
         			<p>Layaknya bangunan masjid kuno, Masjid Agung Banten memiliki kolam di depan bangunan masjid. Kolam ini biasanya digunakan umat untuk tempat wudhu sebelum masuk ke dalam masjid. Namun, kolam ini sudah beralih fungsi menjadi kolam biasa. Tim Eksplor Ramadhan melihat kolam ini dijadikan tempat untuk bermain anak-anak dan memancing.</p>
         			<p>Bangunan masjid sendiri cukup unik karena menghadirkan percampuran dua budaya, yaitu Jawa kuno dan China. Percampuran budaya ini terlihat dari bangunannya yang memiliki serambi yang luas dan atap bertingkat 5 yang menyerupai tumpeng. Di dalam ruangan, masjid ini ditopang 24 tiang penyangga yang memiliki makna 24 jam dalam 1 hari.</p>
         			<p>Menariknya, pintu masuk masjid ini ada 5 buah yang melambangkan 5 rukun Islam. Pintu masuknya pun terbilang kecil dan rendah. Maknanya, agar seseorang selalu diingatkan untuk tetap rendah hati dan tidak sombong dalam kesehariannya.</p>
@@ -200,7 +200,7 @@
 		</div> <!-- /#mainArea -->
    
    		<div id="footerArea">
-   			<a href="#section_1">▲</a>
+			<span onclick="openNav()"><img data-original="img/menu.png" alt="menu"></span>
    		</div>
     </div> <!-- /#wrap -->
     
@@ -253,6 +253,25 @@
 				}
 			});
 		}); */
+	</script>
+	<script>
+		$(document).ready(function () {
+			var $horizontal = $('#horizontal');
+
+			$(window).scroll(function () {
+				var s = $(this).scrollTop(),
+					d = $(document).height(),
+					c = $(this).height();
+
+				scrollPercent = (s / (d - c));
+
+				var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+
+				$horizontal.css({
+					'left': position
+				});
+			});
+		});
 	</script>
 </body>
 </html>

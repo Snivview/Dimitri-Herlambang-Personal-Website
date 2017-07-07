@@ -268,6 +268,7 @@ p {
     padding-top: 60px;
 	color: #fff;
 }
+.sidenav .div-map {margin-top: 30px;}
 .sidenav #closebtn {
     position: fixed;
     top: 0;
@@ -352,6 +353,14 @@ section.module.parallax-2 {
 	background-size: 5%;
 }
 /* main */
+#horizontal {
+    position: fixed;
+    width: 50px;
+    background: red;
+    left: 0;
+    bottom: 48px;
+	z-index: 30;
+}
 #headerArea {
 	position: fixed;
 	width: 100%;
@@ -362,7 +371,6 @@ section.module.parallax-2 {
 	font-family: Ubuntu;
 	box-sizing: border-box;
 }
-#headerArea span {cursor: pointer;}
 #section_1 {
 	width: 100%;
 	height: 100vh;
@@ -425,7 +433,7 @@ section.module.parallax-2 {
 	background-color: #000;
 	z-index: 29;
     position: relative;
-
+	margin-bottom: 50px;
 }
 #section_4 h3 {
 	margin: 10px 0;
@@ -433,11 +441,20 @@ section.module.parallax-2 {
 }
 #footerArea {
 	position: fixed;
-	right: 0;
+	width: 100%;
     bottom: 0;
-	padding: 8px;
 	color: #fff;
 	background-color: #000;
 	z-index: 29;
 	font-family: Ubuntu;
+	box-sizing: border-box;
+}
+#footerArea span {
+	cursor: pointer;
+    position: relative;
+    padding: 5px 20px;
+    display: block;
+	float: right;
+	text-align: center;
+	background-color: #b88900;
 }
