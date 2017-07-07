@@ -353,14 +353,6 @@ section.module.parallax-2 {
 	background-size: 5%;
 }
 /* main */
-#horizontal {
-    position: fixed;
-    width: 50px;
-    background: red;
-    left: 0;
-    bottom: 48px;
-	z-index: 30;
-}
 #headerArea {
 	position: fixed;
 	width: 100%;
@@ -433,7 +425,7 @@ section.module.parallax-2 {
 	background-color: #000;
 	z-index: 29;
     position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 48px;
 }
 #section_4 h3 {
 	margin: 10px 0;
@@ -449,6 +441,17 @@ section.module.parallax-2 {
 	font-family: Ubuntu;
 	box-sizing: border-box;
 }
+#horizontal {
+	position: fixed;
+    width: 65px;
+    height: 0px;
+    left: 0;
+    bottom: 33px;
+    z-index: 31;
+}
+#horizontal img {
+	width: 100%;
+}
 #footerArea span {
 	cursor: pointer;
     position: relative;
@@ -457,4 +460,5 @@ section.module.parallax-2 {
 	float: right;
 	text-align: center;
 	background-color: #b88900;
+	z-index: 32;
 }
