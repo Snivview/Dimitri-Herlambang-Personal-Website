@@ -356,7 +356,7 @@ section.module.parallax-2 {
 #headerArea {
 	position: fixed;
 	width: 100%;
-	padding: 12px 8px 8px 20px;
+	padding: 8px 8px 6px 20px;
 	color: #fff;
 	background-color: #000;
 	z-index: 30;
@@ -441,6 +441,16 @@ section.module.parallax-2 {
 	font-family: Ubuntu;
 	box-sizing: border-box;
 }
+#footerArea span {
+	cursor: pointer;
+    position: relative;
+    padding: 5px 20px;
+    display: block;
+	float: right;
+	text-align: center;
+	background-color: #b88900;
+	z-index: 32;
+}
 #horizontal {
 	position: fixed;
     width: 65px;
@@ -452,13 +462,16 @@ section.module.parallax-2 {
 #horizontal img {
 	width: 100%;
 }
-#footerArea span {
-	cursor: pointer;
-    position: relative;
-    padding: 5px 20px;
-    display: block;
-	float: right;
-	text-align: center;
-	background-color: #b88900;
-	z-index: 32;
+.tyre {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+#tyre1 {
+	bottom: -30px;
+    left: 7px;
+}
+#tyre2 {
+	bottom: -30px;
+    left: 47px;
 }

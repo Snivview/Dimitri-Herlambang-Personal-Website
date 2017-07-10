@@ -80,7 +80,7 @@
         			<p>Jika tertarik untuk mengunjunginya, Anda bisa mengambil rute Tol Tangerang–Merak dan keluar di pintu Tol Serang Barat. Saat menyambangi Banten Lama, berbagai perbaikan jalan masih dilakukan. Tim Eksplor Ramadhan segera disambut dengan panas terik, jalanan berbatu, dan berdebu.</p>
         		</div>
         		<div class="div-imageA">
-        			<img data-original="img/content_img_002.jpg" alt="Isuzu MU-X di Banten">
+        			<img  src="img/content_img_002.jpg" alt="Isuzu MU-X di Banten">
         		</div>
         		<div class="div-text">
         			<p>Untungnya, kendaraan Isuzu MU-X yang digunakan tangguh dan nyaman untuk melewati berbagai tantangan tersebut. Dukungan 5-Link <span class="tI">rear suspension</span> dengan <span class="tI">gas shock absorbers</span> dan <span class="tI">stabilizer bar</span> menjadi salah satu yang mendukung hal tersebut. Sementara itu, hadirnya fitur AC otomatis yang bisa disesuaikan per 1 derajat serta AC <span class="tI">climate control</span> membuat suhu di dalam kabin bisa tetap sejuk sesuai kebutuhan dan udara panas di luar tak mengganggu perjalanan.</p>
@@ -88,7 +88,7 @@
 				</div>
         		
         		<div class="div-imageA" style="max-width: 550px;">
-        			<img data-original="img/content_img_001_square.jpg" alt="Benteng Spelwijk">
+        			<img  src="img/content_img_001_square.jpg" alt="Benteng Spelwijk">
         		</div>
         		
         		<div class="div-text">
@@ -108,8 +108,8 @@
 				</div>
      			
       			<div class="div-imageB clearfix">
-        			<div><img data-original="img/content_img_003.jpg" alt="Keraton Kasepuhan"></div>
-        			<div><img data-original="img/content_img_004.jpg" alt="Keraton Kasepuhan"></div>
+        			<div><img  src="img/content_img_003.jpg" alt="Keraton Kasepuhan"></div>
+        			<div><img  src="img/content_img_004.jpg" alt="Keraton Kasepuhan"></div>
        			</div>
        			
        			<div class="div-text">
@@ -117,7 +117,7 @@
         			<p>Di dekat wihara itu, ada Benteng Speelwijk, sebuah benteng peninggalan Portugis. Benteng Speelwijk ini dulu digunakan untuk memantau kapal-kapal yang datang dari Jawa. Benteng ini juga digunakan untuk menyimpan senjata dan meriam dari Portugis sekaligus penjara.</p>
 				</div>
        			<div class="div-imageA">
-       				<img data-original="img/content_img_005.jpg" alt="Benteng Speelwijk">
+       				<img  src="img/content_img_005.jpg" alt="Benteng Speelwijk">
        			</div>
        			<div class="div-text">
         			<p>Sayangnya, benteng ini terlihat tidak terurus. Bagian dalam benteng ini kini digunakan untuk lapangan bola. Sementara itu, di beberapa sudut benteng digunakan anak-anak muda untuk berpacaran. Belum lagi, tempat ini juga difungsikan untuk menggembala kerbau dan kambing.</p>
@@ -146,7 +146,7 @@
 				</div>
       			
       			<div class="div-imageA">
-      				<div><img data-original="img/content_img_009.jpg" alt="MU-X Cirebon"></div>
+      				<div><img  src="img/content_img_009.jpg" alt="MU-X Cirebon"></div>
        			</div>
       			
        			<div class="div-text">
@@ -161,8 +161,8 @@
         		</div>
         		
         		<div class="div-imageB clearfix">
-        			<div><img data-original="img/content_img_007.jpg" alt="Keraton Kasepuhan"></div>
-        			<div><img data-original="img/content_img_008.jpg" alt="Keraton Kasepuhan"></div>
+        			<div><img  src="img/content_img_007.jpg" alt="Keraton Kasepuhan"></div>
+        			<div><img  src="img/content_img_008.jpg" alt="Keraton Kasepuhan"></div>
        			</div>	
         			
         		<div class="div-text">
@@ -195,12 +195,17 @@
 					</div>
 				</div>
 			</div>
-        	
+        	<body>
+</body>
 		</div> <!-- /#mainArea -->
    
    		<div id="footerArea">
-			<span onclick="openNav()"><img data-original="img/menu.png" alt="menu"></span>
-        	<div id="horizontal"><img src="img/mux-side.png"></div>
+			<span onclick="openNav()"><img  src="img/menu.png" alt="menu"></span>
+        	<div id="horizontal">
+        	<img id="car" src="img/mux-side.png">
+        	<div class="tyre" id="tyre1"><img src="img/mux-tyre.png"></div>
+        	<div class="tyre" id="tyre2"><img src="img/mux-tyre.png"></div>
+        	</div>
    		</div>
     </div> <!-- /#wrap -->
     
@@ -256,17 +261,19 @@
 	</script>
 	<script>
 		$(document).ready(function () {
+			/* moving wheels */
+			$(window).scroll(function() {
+				var theta = $(window).scrollTop() / 100 % Math.PI;
+				$('.tyre').css({ transform: 'rotate(' + theta + 'rad)' });
+			});
+			/* moving car */
 			var $horizontal = $('#horizontal');
-
 			$(window).scroll(function () {
 				var s = $(this).scrollTop(),
 					d = $(document).height(),
 					c = $(this).height();
-
 				scrollPercent = (s / (d - c));
-
 				var position = (scrollPercent * ($(document).width() - $horizontal.width()));
-
 				$horizontal.css({
 					'left': position
 				});
