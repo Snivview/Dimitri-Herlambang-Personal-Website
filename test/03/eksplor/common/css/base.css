@@ -434,7 +434,7 @@ section.module.parallax {
 	padding-top: 50px;
 	z-index: 29;
     position: relative;
-	margin-bottom: 48px;
+	background-color: #000;
 }
 #section_4 h3 {
 	margin: 10px 0;
