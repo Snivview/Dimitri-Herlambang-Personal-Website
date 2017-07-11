@@ -28,8 +28,9 @@
         
         <div id="mainArea" class="clearfix">
             <div class="topHeading">
-                <h1>Interaktif Klasika</h1>
-                <h2>Ragam Advertorial Kegiatan di Sekitar Anda</h2>
+                <h1>InterAsik</h1>
+                <h2>Halaman Web Multimedia Interaktif Klasika</h2>
+                <!-- <h2>Ragam Advertorial Kegiatan di Sekitar Anda</h2> -->
             </div> <!-- /.topHeading -->
             
             <div class="wrap01">
@@ -49,7 +50,9 @@
                         <div class="flipTop">
                             <p>Jelajahi jejak kerajaan Islam di 10 kota di pulau Jawa. &#9654;</p>
                         </div>
-                    </div> <!-- /.block01 -->
+                    </div> 
+                    
+                    <!-- 
                     <div class="block01">
                         <div><img src="_img/spot03.png"></div>
                         <h3>Perumahan Citra Maja Raya</h3>
@@ -57,7 +60,7 @@
                         <div class="flipTop">
                             <p>Proyek rumah murah baru dari Ciputra yang berlokasi di kawasan Maja, Banten. Seperti apa penawaran dan prospek kedepannya ? &#9654;</p>
                         </div>
-                    </div> <!-- /.block01 -->
+                    </div> 
                     <div class="block01">
                         <div><img src="_img/spot04.png"></div>
                         <h3>Hello Moto Z</h3>
@@ -65,7 +68,7 @@
                         <div class="flipTop">
                             <p>Transformasi smartphone Moto Z dan Moto Z Play anda menjadi perangkat yang benar-benar berbeda. Proyektor movie, kamera, baterai pamungkas, speaker stereo dan lainnya. &#9654;</p>
                         </div>
-                    </div> <!-- /.block01 -->
+                    </div> 
                     <div class="block01">
                         <div><img src="_img/spot05.png"></div>
                         <h3>Samsung New Galaxy A</h3>
@@ -73,7 +76,7 @@
                         <div class="flipTop">
                             <p>Samsung kembali melakukan penyegaran terhadap Smartphone kelas menengah seri A, apa saja fitur yang ditambahkan ? &#9654;</p>
                         </div>
-                    </div> <!-- /.block01 -->
+                    </div> 
                     <div class="block01">
                         <div><img src="_img/spot06.png"></div>
                         <h3>Tokopedia</h3>
@@ -81,7 +84,7 @@
                         <div class="flipTop">
                             <p>Disebut sebagai salah satu pelopor start-up e-commerce di Indonesia, kini Tokopedia kembali mendapatkan suntikan modal senilai 1,9 triliun rupiah. Bagaimana sepak terjangnya hingga sebesar sekarang? &#9654;</p>
                         </div>
-                    </div> <!-- /.block01 -->
+                    </div>
                     <div class="block01">
                         <div><img src="_img/spot07.png"></div>
                         <h3>Renault Kwid</h3>
@@ -89,12 +92,9 @@
                         <div class="flipTop">
                             <p>Kehadiran pabrikan Eropa yang ingin menunjukkan eksistensinya di pasar melalui mobil LCGC yang dikembangkan di India ini menawarkan harga yang sangat terjangkau, seperti apa kualitasnya ? &#9654;</p>
                         </div>
-                    </div> <!-- /.block01 -->
+                    </div>  
+                    -->
                     
-
-               
-               
-               
                 </div> <!-- /.container -->
             </div> <!-- /.wrap01 -->
 		</div> <!-- /#mainArea -->
