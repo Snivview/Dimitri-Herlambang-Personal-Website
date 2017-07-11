@@ -32,18 +32,24 @@ h1 {
 	font-family: Riga;
 	color: #fff;
 }
-h2 {
-	font-family: Riga;
-	color: #fff;
-}
-h3 {
-	font-family: Riga;
-	color: #fff;
-}
+h2 {font-family: Riga;}
+h3 {font-family: Riga;}
 p {
-	color: #fff;
 	font-family: Ubuntu;
 	font-weight: 100;
+}
+button {
+	display: block;
+	height: 48px;
+	border: none;
+	font-family: Arial;
+	color: #fff;
+	background-color: #b88900;
+	position: relative;
+    z-index: 32;
+}
+button:focus {
+	outline: none;
 }
 /* base class */
 .clearfix:before,
@@ -73,12 +79,14 @@ p {
 	text-align: center;
 	margin: 50px 0 20px 0;
 	transition: all 1s;
+	color: #fff;
 	/* opacity: 0; */
 }
 .div-text h3 {
 	font-size: 130%;
 	margin: 50px 0 10px 0;
 	transition: all 1s;
+	color: #000;
 	/* opacity: 0; */
 }
 .div-text p {
@@ -86,6 +94,7 @@ p {
 	margin-bottom: 20px;
 	line-height: 25px;
 	transition: all 1s;
+	color: #000;
 	/* opacity: 0; */
 }
 .div-map {
@@ -155,7 +164,7 @@ p {
 .div-borderB {
 	width: 150px;
 	height: 1px;
-	background-color: #fff;
+	background-color: #000;
 	float: right;
 }
 .text-dropCap {
@@ -171,7 +180,7 @@ p {
 	text-align: right;
 	font-size: 20px !important;
 	font-style: italic;
-	color: #fff;
+	color: #000;
 }
 .text-quote {
 	width: 250px;
@@ -182,7 +191,7 @@ p {
 	font-size: 175%;
     font-family: Times;
     line-height: 30px;
-	color: #efdeae;
+	color: #f1b60f;
 }
 .tQ {
     font-size: 170%;
@@ -233,7 +242,9 @@ p {
 	transition: all 1s;
 	opacity: 1 !important;
 }
-
+.night-text {color: #fff !important;}
+.night-background {background-color: #000 !important;}
+.night-line {background-color: #fff !important;}
 
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-10px);}
@@ -322,12 +333,6 @@ section.module.parallax {
 	display: table;
 	width: 100%;
 }
-section.module.parallax-1 {
-  background-image: url("../../img/content_img_001.jpg");
-}
-section.module.parallax-2 {
-  background-image: url("../../img/content_img_006.jpg");
-}
 .container {
 	width: 100%;
 	height: 100%;
@@ -352,7 +357,6 @@ section.module.parallax-2 {
     background-position: center;
 	background-size: 5%;
 }
-/* main */
 #headerArea {
 	position: fixed;
 	width: 100%;
@@ -363,14 +367,16 @@ section.module.parallax-2 {
 	font-family: Ubuntu;
 	box-sizing: border-box;
 }
+#mainArea {
+	padding-bottom: 48px;
+}
 #section_1 {
 	width: 100%;
 	height: 100vh;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
-	background: url(../../img/section_1_bg.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
+	background-size: cover !important;
+	background-position: bottom !important;
 	position: relative;
 	z-index: 30;
 }
@@ -416,8 +422,9 @@ section.module.parallax-2 {
     left: 42%;
 }
 #section_3 {
-    background-color: #000;
+    background-color: #fff;
 	z-index: 29;
+	transition: .5s;
 }
 #section_4 {
 	padding-top: 50px;
@@ -436,17 +443,18 @@ section.module.parallax-2 {
 	width: 100%;
     bottom: 0;
 	color: #fff;
-	background-color: #000;
+	background-color: #fff;
 	z-index: 29;
 	font-family: Ubuntu;
 	box-sizing: border-box;
+	transition: .5s;
 }
 #footerArea span {
+	float: right;
+    padding: 5px 21px;
 	cursor: pointer;
     position: relative;
-    padding: 5px 20px;
     display: block;
-	float: right;
 	text-align: center;
 	background-color: #b88900;
 	z-index: 32;
@@ -459,10 +467,8 @@ section.module.parallax-2 {
     bottom: 33px;
     z-index: 31;
 }
-#horizontal img {
-	width: 100%;
-}
-.tyre {
+#horizontal img {width: 100%;}
+.moving {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -474,4 +480,15 @@ section.module.parallax-2 {
 #tyre2 {
 	bottom: -30px;
     left: 47px;
+}
+#light {
+	position: absolute;
+    top: -2px;
+    left: 65px;
+	opacity: 0;
+	transition: 1s;
+}
+.show {
+	display: 1 !important;
+	transition: 1s;
 }
