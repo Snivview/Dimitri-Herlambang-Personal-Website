@@ -66,8 +66,8 @@
         		</div>
         		
         		<div class="div-imageB clearfix">
-        			<div><img  src="img/content_img_007.jpg" alt="Keraton Kasepuhan"></div>
-        			<div><img  src="img/content_img_008.jpg" alt="Keraton Kasepuhan"></div>
+        			<div><img  src="img/cirebon/01.jpg" alt="Keraton Kasepuhan"></div>
+        			<div><img  src="img/cirebon/02.jpg" alt="Keraton Kasepuhan"></div>
        			</div>
         		
         		<div class="div-text">
@@ -83,68 +83,18 @@
 		</div> <!-- /#mainArea -->
    
    		<div id="footerArea">
-			<span onclick="openNav()"><img  src="img/menu.png" alt="menu"></span>
-       		<button id="nightMode">Night Mode</button>
+			<span onclick="openNav()" style="border-top-left-radius:10px;"><img  src="img/menu.png" alt="menu"></span>
+       		<button id="nightMode" style="border-top-right-radius:5px;">night mode</button>
         	<div id="horizontal">
-        	<img id="car" src="img/mux-side.png">
-        	<div class="tyre" id="tyre1"><img src="img/mux-tyre.png"></div>
-        	<div class="tyre" id="tyre2"><img src="img/mux-tyre.png"></div>
+        		<img id="car" src="img/mux-side.png">
+        		<div class="moving" id="tyre1"><img src="img/mux-tyre.png"></div>
+        		<div class="moving" id="tyre2"><img src="img/mux-tyre.png"></div>
+        		<img id="light" src="img/light.png">
         	</div>
    		</div>
     </div> <!-- /#wrap -->
     
     <script src="common/js/jquery-183.js" type="text/javascript"></script>
-    <script>
-		function onReady(callback) {
-			var intervalID = window.setInterval(checkReady, 1000);
-
-			function checkReady() {
-				if (document.getElementsByTagName('body')[0] !== undefined) {
-					window.clearInterval(intervalID);
-					callback.call(this);
-				}
-			}
-		}
-		function show(id, value) {
-			document.getElementById(id).style.display = value ? 'block' : 'none';
-		}
-		onReady(function () {
-			show('wrap', true);
-			show('loading', false);
-		});
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "100%";
-			document.getElementById("closebtn").style.display = "block";
-		}
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("closebtn").style.display = "none";
-		}
-		$(document).ready(function () {
-			/* moving wheels */
-			$(window).scroll(function() {
-				var theta = $(window).scrollTop() / 50 % Math.PI;
-				$('.tyre').css({ transform: 'rotate(' + theta + 'rad)' });
-			});
-			/* moving car */
-			var $horizontal = $('#horizontal');
-			$(window).scroll(function () {
-				var s = $(this).scrollTop(),
-					d = $(document).height(),
-					c = $(this).height();
-				scrollPercent = (s / (d - c));
-				var position = (scrollPercent * ($(document).width() - $horizontal.width()));
-				$horizontal.css({
-					'left': position
-				});
-			});
-			/* night mode */
-			$("button").click(function(){
-				$(".div-text p, .text-lead p, h3").toggleClass("night-text");
-				$("#section_3, #footerArea").toggleClass("night-background");
-				$(".div-borderB").toggleClass("night-line");
-			});
-		});
-	</script>
+	<script src="../_common/js/script.js" type="text/javascript"></script>
 </body>
 </html>
