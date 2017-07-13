@@ -15,6 +15,20 @@ onReady(function () {
 	show('wrap', true);
 	show('loading', false);
 });
+
+
+
+function openMenu() {
+    document.getElementById("mySidenavB").style.width = "250px";
+}
+
+function closeMenu() {
+    document.getElementById("mySidenavB").style.width = "0";
+}
+
+
+
+
 function openNav() {
 	document.getElementById("mySidenav").style.width = "100%";
 	document.getElementById("closebtn").style.display = "block";
@@ -44,8 +58,9 @@ $(document).ready(function () {
 	/* night mode */
 	$("button").click(function(){
 		$(".div-text p, .text-lead p, h3").toggleClass("night-text");
-		$("#section_3, html").toggleClass("night-background");
 		$(".div-borderB").toggleClass("night-line");
+		$("img").toggleClass("night-image");
+		$("#section_3, html").toggleClass("night-background");
 		$("#light").delay("slow").toggleClass("show");
 	});
 });

@@ -21,62 +21,124 @@
 		.div-text p {
 			color: #fff;
 		}
+		#mainArea {
+			padding-bottom: 0;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="loading"></div>
+	<div id="logo_eksplor"><img src="img/logo_eksplor_bw.png"></div>
 	<div id="wrap" class="default-skin">
 		<div id="headerArea" class="clearfix">
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_fb.png" alt="share facebook"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_tw.png" alt="share twitter"></span>
 		</div>
-       	
         <div id="mainArea" class="clearfix">
-        	<div id="section_1" class="div-section clearfix">
-        		<div class="div-transparentA">
-        			<div class="div-caption">
-        				<h1>Eksplor<br>Ramadhan</h1>
+        
+        	<div id="section_1" class="div-section">
+				<div class="div-transparent-layer">
+				<video poster="img/landing.jpg" id="bgvid" playsinline autoplay loop muted><source src="img/vid.mp4" type="video/mp4"></video>
+					<div class="div-caption">
+						<h1>Kompas Eksplor</h1>
+					</div>
+				</div> <!-- /.div-layer -->
+			</div> <!-- /#section_1 -->
+       	
+       		<div id="section_about" class="div-section">
+        		<div class="div-textB">
+        			<h2>About</h2>
+        			<div>
+        				<p>Kompas Eksplor merupakan event kerjasama antara Kompas Iklan dengan Isuzu Indonesia.</p>
+        				<p>Tim Kompas Eksplor menjelajahi peninggalan kerajaan-kerajaan Islam di pulau Jawa menggunakan MU-X yang merupakan versi teranyar dari varian Isuzu MU.</p>
+        				<p>Penjelajahan ini berlangsung selama 10 hari, melalui jalur-jalur yang mudah hingga sulit untuk dilewati mobil biasa, untuk membuktikan keampuhan MU-X melahap medan off-road.</p>
         			</div>
-				</div>
-        	</div>
-        	
+        			<div>
+        				<p>Kompas Eksplor merupakan event kerjasama antara Kompas Iklan dengan Isuzu Indonesia.</p>
+        				<p>Tim Kompas Eksplor menjelajahi peninggalan kerajaan-kerajaan Islam di pulau Jawa menggunakan MU-X yang merupakan versi teranyar dari varian Isuzu MU.</p>
+        				<p>Penjelajahan ini berlangsung selama 10 hari, melalui jalur-jalur yang mudah hingga sulit untuk dilewati mobil biasa, untuk membuktikan keampuhan MU-X melahap medan off-road.</p>
+        			</div>
+        		</div>
+        		<div class="div-imageA">
+        			<img  src="img/cirebon/landing.jpg" alt="pelepasan">
+        		</div>
+        	</div> <!-- /#section_about -->
+       	
         	<div id="section_2" class="div-section clearfix">
-        		<div id="logo_eksplor"><img src="img/logo_eksplor_bw.png"></div>
+        		<div class="div-info clearfix">
+        			<div class="div-cell" style="margin-top:50px;transition:2s;"><span class="counting">10</span><br>Kota</div>
+        			<div class="div-cell" style="margin-top:50px;transition:3s;"><span class="counting">100</span><br>Destinasi</div>
+        			<div class="div-cell" style="margin-top:50px;transition:4s;"><span class="counting">1000</span><br>Kilometer</div>
+        		</div>
         		<div class="div-map">
         			<div class="link-mapCaption animated bounce" style="top:15%;left:10%;"><a href="banten.html" onclick="closeNav()">Banten</a></div>
         			<div class="link-mapCaption animated bounce" style="top:28%;left:56%;"><a href="demak.html" onclick="closeNav()">Demak</a></div>
         			<div class="link-mapCaption animated bounce" style="top:28%;left:32%;"><a href="cirebon.html" onclick="closeNav()">Cirebon</a></div>
         		</div>
         	</div> <!-- /#section_2 -->
-		</div> <!-- /#mainArea -->
-   
-   		<div id="section_4">
-			<div class="div-text tC">
-				<h3>PHOTOGRAPHER</h3>
-				<p>Antonius Sulistyo Prabowo</p>
+        	
+        	<div id="section_4" class="div-section">
+				<div class="div-text tC">
+					<h3>PHOTOGRAPHER</h3>
+					<p>Antonius Sulistyo Prabowo</p>
 
-				<h3>COPYWRITER</h3>
-				<p>Benedictus Yurivito</p>
-				
-				<h3>EDITOR</h3>
-				<p>Mahansa Eka Gerga Sinulingga</p>
+					<h3>COPYWRITER</h3>
+					<p>Benedictus Yurivito</p>
 
-				<h3>DEVELOPER</h3>
-				<p>Dimitri Herlambang</p>
+					<h3>EDITOR</h3>
+					<p>Mahansa Eka Gerga Sinulingga</p>
 
-				<div class="div-imageB">
-					<div style="width: 150px;"><img src="img/logo 2.png"></div>
-					<div style="width: 100px;"><img src="img/logo.png"></div>
+					<h3>DEVELOPER</h3>
+					<p>Dimitri Herlambang</p>
+
+					<div class="div-imageB">
+						<div style="width: 150px;"><img src="img/logo_2.png"></div>
+						<div style="width: 100px;"><img src="img/logo.png"></div>
+					</div>
 				</div>
-			</div>
-		</div>
-   		
+			</div> <!-- /#section_4 -->
+		</div> <!-- /#mainArea -->
     </div> <!-- /#wrap -->
+    <script src="common/js/jquery-183.js" type="text/javascript"></script>
+    <script src="common/js/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script>
+		// inViewport jQuery plugin
+		// http://stackoverflow.com/a/26831113/383904
+		$(function($, win) {
+		  $.fn.inViewport = function(cb) {
+			return this.each(function(i,el){
+			  function visPx(){
+				var H = $(this).height(),
+					r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+				return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+			  } visPx();
+			  $(win).on("resize scroll", visPx);
+			});
+		  };
+		}(jQuery, window));
+		jQuery(function($) { // DOM ready and $ in scope
+		  $(".counting").inViewport(function(px) { // Make use of the `px` argument!!!
+			// if element entered V.port ( px>0 ) and
+			// if prop initNumAnim flag is not yet set
+			//  = Animate numbers
+			if(px>0 && !this.initNumAnim) { 
+			  this.initNumAnim = true; // Set flag to true to prevent re-running the same animation
+			  $(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+			  }, {
+				duration: 3000,
+				step: function (now) {
+				  $(this).text(Math.ceil(now));
+				}
+			  });         
+			}
+		  });
+		});
+	</script>
     <script>
 		function onReady(callback) {
 			var intervalID = window.setInterval(checkReady, 1000);
-
 			function checkReady() {
 				if (document.getElementsByTagName('body')[0] !== undefined) {
 					window.clearInterval(intervalID);
@@ -91,6 +153,12 @@
 			show('wrap', true);
 			show('loading', false);
 		});
+		$(document).ready(function(){
+            $('.div-cell').viewportChecker({
+				classToAdd: 'slideTop',
+				offset: 100,
+			});
+        });
 	</script>
 </body>
 </html>
