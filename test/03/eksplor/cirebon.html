@@ -12,20 +12,23 @@
     <link href="common/css/base.css" rel="stylesheet">
     <style>
 		img:not([src]) {visibility: hidden;}
-
 		/* Fixes Firefox anomaly during image load */
 		@-moz-document url-prefix() {
 			img:-moz-loading {visibility: hidden;}
 		}
-		#section_1 {background: url(img/cirebon/landing.jpg) no-repeat;}
+		/* #section_1 {background: url(img/cirebon/landing.jpg) no-repeat;} */
 		#cirebon {background-image: url("img/cirebon/heading.jpg");}
 	</style>
+	<script>
+		function cycleMode() {$('.cycleText').toggle();}
+	</script>
 </head>
 
 <body>
 	<div id="loading"></div>
 	<div id="wrap" class="default-skin">
 		<div id="headerArea" class="clearfix">
+			<span class="link link-menu" onclick="openMenu()"><img src="img/burger.png" alt="menu"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_fb.png" alt="share facebook"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_tw.png" alt="share twitter"></span>
 		</div>
@@ -41,13 +44,21 @@
         		</div>
 			</div>
        	
-        	<div id="section_1" class="div-section clearfix">
+       		<div id="mySidenavB" class="sidenavB">
+				<a href="javascript:void(0)" id="#closebtnB" onclick="closeMenu()" style="text-align: center">&times;</a>
+			  	<a href="index.html">Home</a>
+			  	<a href="index.html#section_about">About</a>
+			  	<a onClick="openNav()">Peta<span style="margin-left:10px;">►</span></a>
+			  	<a id="nightMode" onClick="cycleMode()">Mode<span style="margin-left:5px;" class="cycleText">Malam</span><span style="margin-left:5px;display:none;" class="cycleText">Siang</span></a>
+			</div>
+       		
+        	<!-- <div id="section_1" class="div-section clearfix">
         		<div class="div-transparentA">
         			<div class="div-caption">
         				<h1>Eksplor<br>Ramadhan</h1>
         			</div>
 				</div>
-        	</div>
+        	</div> -->
         	
         	<div id="section_3" class="div-section clearfix">
 				<div class="div-border"></div>
@@ -63,14 +74,6 @@
         				<div class="div-borderB"></div>
         			</div>
         			<p><span class="text-dropCap">S</span>ebelum berkunjung ke Demak, Tim Eksplor Ramadhan menyempatkan untuk berkunjung ke Keraton Kasepuhan di Cirebon. Keraton ini sendiri juga menjadi saksi penyebaran Islam di Jawa, khususnya Jawa Barat. Keraton ini memiliki luas 25 hektar dan masih dihuni oleh keturunan langsung dari Sultan Cirebon.</p>
-        		</div>
-        		
-        		<div class="div-imageB clearfix">
-        			<div><img  src="img/cirebon/01.jpg" alt="Keraton Kasepuhan"></div>
-        			<div><img  src="img/cirebon/02.jpg" alt="Keraton Kasepuhan"></div>
-       			</div>
-        		
-        		<div class="div-text">
         			<p>Sultan Cirebon sendiri masih keturunan dari Sunan Gunung Jati. Di kompleks kesultanan Cirebon ini, didirikan museum yang bisa dikatakan masih baru. Seluruh benda pusaka yang dulunya berada di bangunan museum yang lama sudah dipindahkan ke dalam bangunan baru yang terletak di depan bangunan utama keraton. Untuk mengunjunginya, Anda harus membayar Rp 25.000.</p>
         			<p>Di dalam kompleks sendiri ada satu daerah sakral, yaitu Sumur Kejayaan. Wilayah sumur ini dikatakan sakral dan hanya bisa dimasuki oleh laki-laki. Dipercaya, air dari sumur ini memiliki khasiat yang sama seperti air zamzam. Orang biasa untuk tirakat di sini. Syaratnya, harus melepaskan alas kaki, kendati lantai di situ berpasir.</p>
         		
@@ -78,23 +81,30 @@
         			<p>Anda yang berkesempatan mudik melintasi daerah Cirebon bisa mampir sejenak di situ. Di Cirebon ada dua keraton yang berdiri, yaitu Keraton Kasepuhan dan Keraton Kanoman.</p>
         			<p>Jikalau lapar, Anda bisa beristirahat sejenak untuk mencicipi kuliner khas Cirebon yang menggoda lidah, yaitu nasi jamblang dan empal gentong. Bagi yang menyukai daging, Empal Gentong Haji Apud bisa menjadi destinasi utama. Namun, jika mencari menu dengan lauk yang beragam, nasi jamblang Ibu Nur boleh dipilih.</p>
         		</div>
+        		
+        		<div class="div-imageB clearfix">
+        			<div><img  src="img/cirebon/01.jpg" alt="Keraton Kasepuhan"></div>
+        			<div><img  src="img/cirebon/02.jpg" alt="Keraton Kasepuhan"></div>
+       			</div>
         	</div> <!-- /#section_3 -->
         	
-		</div> <!-- /#mainArea -->
-   
-   		<div id="footerArea">
-			<span onclick="openNav()" style="border-top-left-radius:10px;"><img  src="img/menu.png" alt="menu"></span>
-       		<button id="nightMode" style="border-top-right-radius:5px;">night mode</button>
         	<div id="horizontal">
         		<img id="car" src="img/mux-side.png">
         		<div class="moving" id="tyre1"><img src="img/mux-tyre.png"></div>
         		<div class="moving" id="tyre2"><img src="img/mux-tyre.png"></div>
         		<img id="light" src="img/light.png">
         	</div>
-   		</div>
+		</div> <!-- /#mainArea -->
     </div> <!-- /#wrap -->
     
     <script src="common/js/jquery-183.js" type="text/javascript"></script>
+	<script src="common/js/jquery.viewportchecker.js" type="text/javascript"></script>
 	<script src="common/js/script.js" type="text/javascript"></script>
+	<script>
+		$(".div-text p, .div-text h2, .div-text h3").viewportChecker({
+			classToAdd: 'show',
+			offset: 100,
+		});
+	</script>
 </body>
 </html>

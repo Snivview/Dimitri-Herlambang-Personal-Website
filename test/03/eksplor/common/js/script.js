@@ -16,19 +16,12 @@ onReady(function () {
 	show('loading', false);
 });
 
-
-
 function openMenu() {
     document.getElementById("mySidenavB").style.width = "250px";
 }
-
 function closeMenu() {
     document.getElementById("mySidenavB").style.width = "0";
 }
-
-
-
-
 function openNav() {
 	document.getElementById("mySidenav").style.width = "100%";
 	document.getElementById("closebtn").style.display = "block";
@@ -37,12 +30,14 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("closebtn").style.display = "none";
 }
+
 $(document).ready(function () {
 	/* moving wheels */
 	$(window).scroll(function() {
 		var theta = $(window).scrollTop() / 50 % Math.PI;
 		$('.moving').css({ transform: 'rotate(' + theta + 'rad)' });
 	});
+	
 	/* moving car */
 	var $horizontal = $('#horizontal');
 	$(window).scroll(function () {
@@ -56,7 +51,7 @@ $(document).ready(function () {
 		});
 	});
 	/* night mode */
-	$("button").click(function(){
+	$("#nightMode").click(function(){
 		$(".div-text p, .text-lead p, h3").toggleClass("night-text");
 		$(".div-borderB").toggleClass("night-line");
 		$("img").toggleClass("night-image");

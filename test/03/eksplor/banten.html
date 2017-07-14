@@ -12,20 +12,23 @@
     <link href="common/css/base.css" rel="stylesheet">
     <style>
 		img:not([src]) {visibility: hidden;}
-
 		/* Fixes Firefox anomaly during image load */
 		@-moz-document url-prefix() {
 			img:-moz-loading {visibility: hidden;}
 		}
-		#section_1 {background: url(img/banten/landing.jpg) no-repeat;}
+		/* #section_1 {background: url(img/banten/landing.jpg) no-repeat;} */
 		#banten {background-image: url("img/banten/heading.jpg");}
 	</style>
+	<script>
+		function cycleMode() {$('.cycleText').toggle();}
+	</script>
 </head>
 
 <body>
 	<div id="loading"></div>
 	<div id="wrap" class="default-skin">
 		<div id="headerArea" class="clearfix">
+			<span class="link link-menu" onclick="openMenu()"><img src="img/burger.png" alt="menu"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_fb.png" alt="share facebook"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_tw.png" alt="share twitter"></span>
 		</div>
@@ -41,13 +44,21 @@
         		</div>
 			</div>
        	
-        	<div id="section_1" class="div-section clearfix">
+       		<div id="mySidenavB" class="sidenavB">
+				<a href="javascript:void(0)" id="#closebtnB" onclick="closeMenu()" style="text-align: center">&times;</a>
+			  	<a href="index.html">Home</a>
+			  	<a href="index.html#section_about">About</a>
+			  	<a onClick="openNav()">Peta<span style="margin-left:10px;">►</span></a>
+			  	<a id="nightMode" onClick="cycleMode()">Mode<span style="margin-left:5px;" class="cycleText">Malam</span><span style="margin-left:5px;display:none;" class="cycleText">Siang</span></a>
+			</div>
+       		
+        	<!-- <div id="section_1" class="div-section clearfix">
         		<div class="div-transparentA">
         			<div class="div-caption">
         				<h1>Eksplor<br>Ramadhan</h1>
         			</div>
 				</div>
-        	</div>
+        	</div> -->
         	
         	<div id="section_3" class="div-section clearfix">
 				<div class="div-border"></div>
@@ -72,13 +83,6 @@
         			<p>Jika tertarik untuk mengunjunginya, Anda bisa mengambil rute Tol Tangerang–Merak dan keluar di pintu Tol Serang Barat. Saat menyambangi Banten Lama, berbagai perbaikan jalan masih dilakukan. Tim Eksplor Ramadhan segera disambut dengan panas terik, jalanan berbatu, dan berdebu.</p>
         			<p>Untungnya, kendaraan Isuzu MU-X yang digunakan tangguh dan nyaman untuk melewati berbagai tantangan tersebut. Dukungan 5-Link <span class="tI">rear suspension</span> dengan <span class="tI">gas shock absorbers</span> dan <span class="tI">stabilizer bar</span> menjadi salah satu yang mendukung hal tersebut. Sementara itu, hadirnya fitur AC otomatis yang bisa disesuaikan per 1 derajat serta AC <span class="tI">climate control</span> membuat suhu di dalam kabin bisa tetap sejuk sesuai kebutuhan dan udara panas di luar tak mengganggu perjalanan.</p>
         			<p>Memasuki kawasan Banten Lama, kompleks Masjid Agung Banten tidak sulit untuk ditemukan. Sebelum masuk ke kawasan itu, sebuah tembok batu besar menyambut. Tembok itu merupakan sebuah dikenal sebagai Benteng Surosowan. Dulu, benteng ini digunakan untuk melindungi Istana Surosowan dari musuh.</p>
-				</div>
-        		
-        		<div class="div-imageA" style="max-width: 550px;">
-        			<img  src="img/banten/01.jpg" alt="menara masjid banten">
-        		</div>
-        		
-        		<div class="div-text">
         			<p>Bagi yang berkunjung ke kompleks masjid mengendarai mobil, tersedia lokasi parkir yang cukup luas dengan biaya Rp 10.000. Anda akan segera disambut dengan sebuah menara megah setinggi 24 meter.</p>
         			<p>Konon, menara ini dibangun oleh seorang Belanda yang telah menjadi Muslim bernama Lucas Cardeel pada masa pemerintahan Sultan Haji (1672-1687). Menara ini dulu berfungsi untuk memberi tahu waktu shalat kepada rakyat Kesultanan Banten dan masih berfungsi hingga kini.</p>
         			<p>Layaknya bangunan masjid kuno, Masjid Agung Banten memiliki kolam di depan bangunan masjid. Kolam ini biasanya digunakan umat untuk tempat wudhu sebelum masuk ke dalam masjid. Namun, kolam ini sudah beralih fungsi menjadi kolam biasa. Tim Eksplor Ramadhan melihat kolam ini dijadikan tempat untuk bermain anak-anak dan memancing.</p>
@@ -92,40 +96,38 @@
         			
         			<h3>Saksi keberagaman Budaya</h3>
         			<p>Di dekat Masjid Agung Banten juga berdiri peninggalan sejarah lainnya, yaitu Wihara Avalokitesvara. Wihara ini, menurut cerita, merupakan sebuah kebaikan dari Sunan Gunung Jati untuk rombongan dari istrinya seorang Putri Kaisar China Oeng Tian Nio yang tetap memeluk agamanya. Hingga kini, wihara ini masih tetap berdiri kokoh.</p>
-				</div>
-     			
-      			<div class="div-imageB clearfix">
+        			<p>Seorang pemuda lokal di sana yang memandu Tim Eksplor Ramadhan mengatakan, wihara ini ramai dikunjungi saat Imlek dan Cap Go Meh. Tidak hanya dari Jakarta, tetapi juga dari luar Jawa.</p>
+        			<p>Di dekat wihara itu, ada Benteng Speelwijk, sebuah benteng peninggalan Portugis. Benteng Speelwijk ini dulu digunakan untuk memantau kapal-kapal yang datang dari Jawa. Benteng ini juga digunakan untuk menyimpan senjata dan meriam dari Portugis sekaligus penjara.</p>
+        			<p>Sayangnya, benteng ini terlihat tidak terurus. Bagian dalam benteng ini kini digunakan untuk lapangan bola. Sementara itu, di beberapa sudut benteng digunakan anak-anak muda untuk berpacaran. Belum lagi, tempat ini juga difungsikan untuk menggembala kerbau dan kambing.</p>
+        		</div>
+        		<div class="div-imageB clearfix">
         			<div><img  src="img/banten/02.jpg" alt="tampak samping masjid agung banten"></div>
         			<div><img  src="img/banten/03.jpg" alt="tampak depan wihara avalokitesvara"></div>
        			</div>
-       			
-       			<div class="div-text">
-        			<p>Seorang pemuda lokal di sana yang memandu Tim Eksplor Ramadhan mengatakan, wihara ini ramai dikunjungi saat Imlek dan Cap Go Meh. Tidak hanya dari Jakarta, tetapi juga dari luar Jawa.</p>
-        			<p>Di dekat wihara itu, ada Benteng Speelwijk, sebuah benteng peninggalan Portugis. Benteng Speelwijk ini dulu digunakan untuk memantau kapal-kapal yang datang dari Jawa. Benteng ini juga digunakan untuk menyimpan senjata dan meriam dari Portugis sekaligus penjara.</p>
-				</div>
        			<div class="div-imageA">
-       				<img  src="img/banten/04.jpg" alt="reruntuhan benteng speelwijk">
+       				<div><img  src="img/banten/04.jpg" alt="reruntuhan benteng speelwijk"></div>
        			</div>
-       			<div class="div-text">
-        			<p>Sayangnya, benteng ini terlihat tidak terurus. Bagian dalam benteng ini kini digunakan untuk lapangan bola. Sementara itu, di beberapa sudut benteng digunakan anak-anak muda untuk berpacaran. Belum lagi, tempat ini juga difungsikan untuk menggembala kerbau dan kambing.</p>
-        		</div>
         	</div> <!-- /#section_3 -->
         	
-		</div> <!-- /#mainArea -->
-   
-   		<div id="footerArea">
-			<span onclick="openNav()" style="border-top-left-radius:10px;"><img  src="img/menu.png" alt="menu"></span>
-       		<button id="nightMode" style="border-top-right-radius:5px;">night mode</button>
         	<div id="horizontal">
         		<img id="car" src="img/mux-side.png">
         		<div class="moving" id="tyre1"><img src="img/mux-tyre.png"></div>
         		<div class="moving" id="tyre2"><img src="img/mux-tyre.png"></div>
         		<img id="light" src="img/light.png">
         	</div>
-   		</div>
+		</div> <!-- /#mainArea -->
     </div> <!-- /#wrap -->
     
     <script src="common/js/jquery-183.js" type="text/javascript"></script>
+    <script src="common/js/lazy.js" type="text/javascript"></script>
+	<script src="common/js/jquery.viewportchecker.js" type="text/javascript"></script>
 	<script src="common/js/script.js" type="text/javascript"></script>
+	<script>
+		new LazyLoad();
+		$(".div-text p, .div-text h2, .div-text h3").viewportChecker({
+			classToAdd: 'show',
+			offset: 100,
+		});
+	</script>
 </body>
 </html>

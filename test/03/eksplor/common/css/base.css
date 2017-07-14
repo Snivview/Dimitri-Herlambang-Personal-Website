@@ -52,14 +52,13 @@ button:focus {outline: none;}
 .div-map {
 	width: 1250px;
 	height: 420px;
-	margin: 100px auto 10px auto;
+	margin: 50px auto 10px auto;
 	background: url(../../img/section_2_bg.png) no-repeat;
 	background-size: contain;
 	position: relative;
 }
 .div-imageA {
-	margin: 10px auto;
-	max-width: 900px;
+	width: 100%;
 }
 .div-imageA img{width: 100%;}
 .div-imageA p {
@@ -76,24 +75,12 @@ button:focus {outline: none;}
     text-align:center;
 }
 .div-imageB div {
-    max-width: 450px;
-    display: inline-block;
-    margin: 5px;
-	overflow-y: hidden; 
+    width: 50%;
+    display: block;
+	float: left;
+	overflow-y: hidden;
 }
 .div-imageB div img {width: 100%;}
-.div-imageC {
-	opacity: 0;
-}
-.div-imageC div {
-	width: 45%;
-	float: left;
-}
-.div-imageC div:last-of-type {
-	padding: 20px;
-	line-height: 30px;
-}
-.div-imageC div img {width: 100%;}
 .div-imageSide {
 	width: 100px;
 	height: 100px;
@@ -158,14 +145,14 @@ button:focus {outline: none;}
 	margin: 50px 0 20px 0;
 	transition: all 1s;
 	color: #fff;
-	/* opacity: 0; */
+	opacity: 0;
 }
 .div-text h3 {
 	font-size: 130%;
 	margin: 50px 0 10px 0;
 	transition: all 1s;
-	color: #000;
-	/* opacity: 0; */
+	color: #3E2723;
+	opacity: 0;
 }
 .div-text p {
 	font-size: 100%;
@@ -173,7 +160,7 @@ button:focus {outline: none;}
 	line-height: 25px;
 	transition: all 1s;
 	color: #000;
-	/* opacity: 0; */
+	opacity: 0;
 }
 .div-textB {
 	width: 100%;
@@ -217,7 +204,7 @@ button:focus {outline: none;}
 	display: table-cell;
 	vertical-align: bottom;
 	font-family: Riga;
-	color: #fff;
+	color: #000;
 }
 .link-menu {
 	width: 40px;
@@ -250,6 +237,10 @@ button:focus {outline: none;}
 	-o-animation-name: bounce;
 	animation-name: bounce;
 }
+.counting {
+	font-size: 250%;
+	color: #009688;
+}
 .moving {
     position: absolute;
     width: 15px;
@@ -259,7 +250,6 @@ button:focus {outline: none;}
 .night-line {background-color: #fff !important;}
 .night-image {opacity: .8;}
 .night-background {background-color: #000 !important;}
-.counting {font-size: 250%;}
 .slideTop {opacity: 1 !important;}
 .show {
 	transition: all 1s;
@@ -307,11 +297,11 @@ button:focus {outline: none;}
 	display: none;
 }
 .sidenavB {
-    padding-top: 60px;
+    padding-top: 10px;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 40;
+    z-index: 39;
     top: 0;
     left: 0;
     background-color: #111;
@@ -320,11 +310,12 @@ button:focus {outline: none;}
 	font-family: Riga;
 }
 .sidenavB a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 30px;
     text-decoration: none;
     font-size: 25px;
     display: block;
 	color: #fff;
+	cursor: pointer;
 }
 .sidenavB #closebtnB {
     position: absolute;
@@ -341,16 +332,13 @@ button:focus {outline: none;}
 }
 @media screen and (max-width: 568px) {
 	.div-imageB div {
-		margin: 5px 0;
+		width: 100%;
+		margin: 0;
 	}
-	.text-quote {
-		margin: 5px 5px 15px 5px;
-	}
+	.text-quote {margin: 5px 5px 15px 5px;}
 }
 @media screen and (min-width: 568px) {
-	#section_1 h1 {
-		font-size: 600% !important;
-	}
+	#section_1 h1 {font-size: 600% !important;}
 }
 /* parallax styles */
 section.module:last-child {
@@ -373,7 +361,7 @@ section.module.content {
   	padding: 40px 0;
 }
 section.module.parallax {
-  	height: 500px;
+  	height: 800px;
   	background-position: 50% 50%;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
@@ -430,7 +418,7 @@ section.module.parallax {
 #headerArea {
 	position: fixed;
 	width: 100%;
-	padding: 8px 8px 6px 20px;
+	padding: 8px 8px 6px 10px;
 	color: #fff;
 	background-color: #000;
 	z-index: 30;
@@ -506,7 +494,7 @@ section.module.parallax {
 	background-color: #000;
 }
 #section_4 h3 {
-	margin: 10px 0;
+	margin: 10px 0 0 0;
 	color: #f1ba1b;
 }
 #footerArea {
@@ -518,10 +506,6 @@ section.module.parallax {
 	font-family: Ubuntu;
 	box-sizing: border-box;
 	transition: .5s;
-	background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
-	background	: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
-	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 #footerArea button {
 	display: block;
