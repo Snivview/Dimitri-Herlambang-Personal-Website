@@ -1,50 +1,66 @@
 <!doctype html>
 <html amp lang="en">
-  <head>
-    <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Landing Page Kompas Iklan</title>
-    <link rel="canonical" href="https://www.example.com/url/to/amp/document.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": ["logo.jpg"]
-      }
-    </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<head>
+        <meta charset="utf-8">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <link rel="icon" href="/_common/img/tab_logo.png">
+        <title>Dimitri Herlambang</title>
+        <link rel="canonical" href="https://www.example.com/url/to/amp/document.html">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Open-source framework for publishing content",
+            "datePublished": "2015-10-07T12:02:41Z",
+            "image": ["logo.jpg"]
+          }
+        </script>
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+        <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-	<style amp-custom>
-		/* any custom style goes here */
-		body {
-			background-color: white;
-			font-family: 'Open Sans', sans-serif;
-		}
-		amp-img {
-	        background-color: gray;
-	        border: 1px solid black;
-      	}
-		.tI {
-			font-style: italic;
-		}
-		.div-container {
-			padding: 10px;
-		}
-  </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <style amp-custom>
+           /* amp custom */ html{background:#fff;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}body{background-color:#fff;font-family:'Open Sans',sans-serif;}table{border-collapse:separate;border-spacing:0;}fieldset,img{border:0;}img{vertical-align:top;}address,caption,em,strong,th{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th,td{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}a{text-decoration:none;color:inherit;}
+            #header {
+                border-bottom: 1px solid #4c4c4c;
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+            }
+            #logo {
+                display: inline-block;
+                padding: 20px 40px;
+                font-size: 200%;
+                color: #80CBC4;
+                background-color: #000;
+                transition: .5s;
+            }
+            #logo:hover {
+                background-color: #26A69A;
+                color: #fff;
+                transition: .5s;
+            }
+            #main {
+                padding-top: 84px;
+            }
+        </style>
   </head>
   
   <body>
-		<div class="div-container">
-    		<h1>Selamat Datang di Proyek <span class="tI">Mobile Landing Page</span> Kompas Iklan</h1>
-		</div>
-    	<amp-img src="img/content_001.jpg" alt="Welcome" width="1280" height="768" layout="responsive"></amp-img>
-    	<div class="div-container">
-    		<p>Proyek ini menawarkan satu buah halaman web atau <span class="tI">Landing Page</span> kepada klien Kompas Iklan apabila mereka ingin mempromosikan produk  kedalam satu buah halaman web.</p>
-    	</div>
+      <div id="wrap">
+          
+          <div id="header">
+              <a href="/" id="logo">DH</a>
+          </div>
+          
+          <div id="main">
+              <amp-img alt="A view of the sea" src="img/02_content_bg.jpg" width="1920" height="1080" layout="responsive"></amp-img>
+          </div>
+          
+          <div id="footer">
+          </div>
+          
+      </div> <!-- /#wrap -->
   </body>
 </html>
