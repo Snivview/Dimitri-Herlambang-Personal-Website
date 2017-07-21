@@ -52,8 +52,9 @@ $(document).ready(function () {
 	});
 	/* night mode */
 	$("#nightMode").click(function(){
-		$(".div-text p, .text-lead p, h3").toggleClass("night-text");
+		$(".link-nav a, .div-text p, .text-lead p, h3").toggleClass("night-text");
 		$(".div-borderB").toggleClass("night-line");
+		$(".div-imageB div").toggleClass("shadow")
 		$("img").toggleClass("night-image");
 		$("#section_3, html").toggleClass("night-background");
 		$("#light").delay("slow").toggleClass("show");

@@ -16,15 +16,52 @@
 		@-moz-document url-prefix() {
 			img:-moz-loading {visibility: hidden;}
 		}
+		#headerArea {z-index: 10;}
 		#mainArea {padding-bottom: 0;}
-		#section_1 {background: url(img/landing.jpg) no-repeat;}
+		#section_1 {
+			position: absolute;
+    		bottom: 1%;
+			right: 1%;
+    		z-index: 30;
+		}
+		#section_1 .container {vertical-align: bottom;});}
 		#section_4 p {color: #fff;}
 		.div-text h2 {opacity: 1 !important; color: #000;}
-		.div-text h3 {opacity: 1 !important;}
-		.div-text p {opacity: 1 !important;}
+		.div-text h3 {opacity: 1 !important; font-size: 100%;}
+		.div-text p {opacity: 1 !important; color: #fff;}
 		.div-imageB div {
 			display: inline-block;
 			float: none;
+			-webkit-box-shadow: 1px 1px 5px 1px rgba(148,148,148,0);
+			-moz-box-shadow: 1px 1px 5px 1px rgba(148,148,148,0);
+			box-shadow: 1px 1px 5px 1px rgba(148,148,148,0);
+		}
+		/* Video wrap */
+		.bv-video-wrap {
+		  width: 100%;
+		  height: 100%;
+		  /* Please note this is only required if you with to add the
+		  '.bv-video-wrap--ready' class on the 'onReady' event */
+		  display: none;
+		}
+		.bv-video-wrap--ready {display: block;}
+		.bv-video-wrap::before {
+		  /* Optional overlay */
+		  content: '';
+		  position: absolute;
+		  height: 100%;
+		  width: 100%;
+		  top: 0;
+		  right: 0;
+		  left: 0;
+		  bottom: 0;
+		  background: rgba(0, 0, 0, 0.5);
+		  z-index: 10;
+		}
+		/* Video object */
+		.bv-video {
+		  width: 100%;
+		  height: 100%;
 		}
 	</style>
 	<script>
@@ -49,25 +86,48 @@
 
 <body>
 	<div id="loading"></div>
-	<div id="logo_eksplor"><img src="img/section_2_img.png"></div>
+	<!-- <div id="logo_eksplor"><img src="img/section_2_img.png"></div> -->
 	<div id="wrap" class="default-skin">
 		<div id="headerArea" class="clearfix">
+			<span class="link link-menu" onclick="openMenu()"><img src="img/burger.png" alt="menu"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_fb.png" alt="share facebook"></span>
 			<span class="link-socMed" onclick="window.open('newurl.html','mywindow');"><img src="img/logo_tw.png" alt="share twitter"></span>
 		</div>
         <div id="mainArea" class="clearfix">
         
-        	<div id="section_1" class="div-section">
-				<div class="div-transparent-layer">
-					<div class="div-caption">
-						<h1>Kompas Eksplor</h1>
-					</div>
-				</div> <!-- /.div-layer -->
-			</div> <!-- /#section_1 -->
+        	<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+				<div class="div-map">
+        			<div class="link-mapCaption" style="top:19%;left:7%;">
+        				<a class="link-mapPointer animated bounce" href="banten.html" onclick="closeNav()"></a>
+        				<a href="banten.html" onclick="closeNav()">Banten</a>
+        			</div>
+        			<div class="link-mapCaption" style="top:29%;left:31%;">
+        				<a class="link-mapPointer animated bounce" href="cirebon.html" onclick="closeNav()"></a>
+        				<a href="cirebon.html" onclick="closeNav()">Cirebon</a>
+        			</div>
+        			<div class="link-mapCaption" style="top:29%;left:53%;">
+        				<a class="link-mapPointer animated bounce" href="demak.html" onclick="closeNav()"></a>
+        				<a href="demak.html" onclick="closeNav()">Demak</a>
+        			</div>
+        		</div>
+			</div>
+        
+        	<div id="mySidenavB" class="sidenavB">
+				<a href="javascript:void(0)" id="#closebtnB" onclick="closeMenu()" style="text-align: center">&times;</a>
+			  	<a href="#" onclick="closeMenu()">Home</a>
+			  	<a href="index.html#section_about" onclick="closeMenu()">Tentang</a>
+			  	<a onClick="openNav()">Peta<span style="margin-left:10px;">►</span></a>
+			</div>
+        
+        	<video class="bv-video" id="landing_video"></video>
+        	<div id="section_1">
+        		<h1><img src="img/logo_kompas-eksplor.png" alt="kompas eksplor"></h1>
+        	</div>
        	
        		<div id="section_about" class="div-section">
         		<div class="div-text">
-        			<h2>About</h2>
+        			<h2>Sebuah Perjalanan Rohani Pulau Jawa</h2>
         			<div>
         				<p>Kompas Eksplor merupakan event kerjasama antara Kompas Iklan dengan Isuzu Indonesia.</p>
         				<p>Tim Kompas Eksplor menjelajahi peninggalan kerajaan-kerajaan Islam di pulau Jawa menggunakan MU-X yang merupakan versi teranyar dari varian Isuzu MU.</p>
@@ -77,7 +137,7 @@
         				<p>Penjelajahan ini berlangsung selama 10 hari, melalui jalur-jalur yang mudah hingga sulit untuk dilewati mobil biasa, untuk membuktikan keampuhan MU-X melahap medan off-road.</p>
         			</div>
         		</div>
-        		<div class="div-imageA">
+        		<div class="div-image">
         			<img  src="img/cirebon/landing.jpg" alt="pelepasan">
         		</div>
         		<div class="div-info clearfix">
@@ -86,7 +146,7 @@
         			<div class="div-cell" style="margin-top:50px;transition:4s;"><span class="counting">1000</span><br>Kilometer</div>
         		</div>
         		
-        		<div class="div-imageA" style="width:300px;margin: 20px auto;">
+        		<div class="div-image" style="width:300px;margin: 20px auto;">
         			<img  src="img/logo_eksplor.png" alt="logo kompas eksplor">
         		</div>
         		
@@ -96,7 +156,7 @@
         	</div> <!-- /#section_about -->
        	
         	<div id="section_2" class="div-section clearfix">
-        		<div class="div-map">
+        		<div class="div-map" id="landing_map">
         			<div class="link-mapCaption" style="top:20%;left:13%;">
         				<a class="link-mapPointer animated bounce" href="banten.html" onclick="closeNav()"></a>
         				<a href="banten.html" onclick="closeNav()">Banten</a>
@@ -137,6 +197,21 @@
     <script src="common/js/jquery-183.js" type="text/javascript"></script>
     <script src="common/js/jquery.viewportchecker.js" type="text/javascript"></script>
     <script src="common/js/jquery.tilt.js" type="text/javascript"></script>
+    <script src="common/js/script.js" type="text/javascript"></script>
+    <script src="common/js/backgroundVideo.js" type="text/javascript"></script>
+    <script>
+		document.getElementById('landing_video').muted = true;
+		const backgroundVideo = new BackgroundVideo('.bv-video', {
+		  src: [
+			'img/vid.mp4',
+		  ],
+		  onReady: function () {
+			// Use onReady() to prevent flickers or force loading state
+			const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
+			vidParent.classList.add('bv-video-wrap--ready');
+		  }
+		});
+	</script>
     <script>
 		$(function($, win) {
 		  $.fn.inViewport = function(cb) {
@@ -172,7 +247,7 @@
 				classToAdd: 'slideTop',
 				offset: 100,
 			});
-			$('.div-map').tilt({
+			$('#landing_map').tilt({
 				maxTilt: 5
 			})
         });
