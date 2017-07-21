@@ -75,6 +75,10 @@ button:focus {outline: none;}
 	max-width: 1000px;
 	margin: 0 auto;
 }
+.div-image p {
+	padding: 10px;
+	font-size: 14px;
+}
 .div-image img {width: 100%;}
 .div-imageA {
 	width: 550px;
@@ -91,7 +95,7 @@ button:focus {outline: none;}
 .div-imageA p {
 	padding: 0 10px;
 	margin-top: 5px;
-	font-size: 75%;
+	font-size: 14px;
 	font-family: arial;
 	font-style: italic;
 }
@@ -100,10 +104,9 @@ button:focus {outline: none;}
     margin: 0px auto;
     position: relative;
     text-align:center;
-	
 }
 .div-imageB div {
-    width: 460px;
+    width: 560px;
     display:inline-block;
     margin: 5px;
     overflow-y: hidden;
@@ -120,7 +123,7 @@ button:focus {outline: none;}
 }
 .div-map {
 	width: 1400px;
-	height: 500px;
+	height: 450px;
 	margin: 0 auto;
 	background: url(../../img/section_2_bg.png) no-repeat;
 	background-size: contain;
@@ -483,7 +486,7 @@ section.module.parallax {
 	font-family: Ubuntu;
 	box-sizing: border-box;
 }
-#mainArea {padding-bottom: 48px;}
+#mainArea {padding-bottom: 30px;}
 #section_about {
 	padding: 50px 0;
 	z-index: 9;
@@ -498,15 +501,13 @@ section.module.parallax {
 #section_1 h1 {
 	color: #fff;
 	text-align: right;
-	padding-bottom: 2%;
-	padding-right: 5%;
+	padding: 2%;
 	font-size: 400%;
 }
 #section_2 {
 	box-sizing: border-box;
 	overflow-y: hidden;
 	z-index: 9;
-	margin-bottom: 150px;
 }
 #section_2 #logo_eksplor img {
     margin: 0 auto;
