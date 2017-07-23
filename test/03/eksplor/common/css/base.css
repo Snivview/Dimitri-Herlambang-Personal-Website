@@ -19,16 +19,12 @@ input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;
     font-family: Myriad;
     src: url(../../font/MyriadPro-Light.otf);
 }
-@font-face {
-	font-family: Ubuntu;
-	src: url(../../font/ubuntu-l-webfont.woff2);
-}
 img {transition: .5s;}
 a {text-decoration: none;color:inherit;}
 h1 {font-family: Myriad;color: #fff;}
 h2 {font-family: Myriad;}
-h3 {font-family: Ubuntu;}
-p {font-family: Ubuntu;font-weight: 100;}
+h3 {font-family: georgia;}
+p {font-family: georgia;font-weight: 100;}
 button:focus {outline: none;}
 /* base class */
 .clearfix:before,
@@ -221,7 +217,7 @@ button:focus {outline: none;}
     padding: 15px;
 }
 .link-nav a {
-	font-family: Ubuntu;
+	font-family: georgia;
 	font-size: 120%;
 	color: #000;
 	margin-bottom: 10px;
@@ -431,7 +427,10 @@ section.module.parallax {
   	background-size: cover;
 	display: table;
 	width: 100%;
-}
+    -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.75);
+}  
 .container {
 	width: 100%;
 	height: 100%;
@@ -483,7 +482,7 @@ section.module.parallax {
 	color: #fff;
 	background-color: #000;
 	z-index: 30;
-	font-family: Ubuntu;
+	font-family: georgia;
 	box-sizing: border-box;
 }
 #mainArea {padding-bottom: 30px;}
@@ -540,7 +539,7 @@ section.module.parallax {
     bottom: 0;
 	color: #fff;
 	z-index: 29;
-	font-family: Ubuntu;
+	font-family: georgia;
 	box-sizing: border-box;
 	transition: .5s;
 }
