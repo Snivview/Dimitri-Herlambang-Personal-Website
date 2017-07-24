@@ -52,7 +52,7 @@ $(document).ready(function () {
 	});
 	/* night mode */
 	$("#nightMode").click(function(){
-		$(".div-image p, .link-nav a, .div-text p, .text-lead p, h3").toggleClass("night-text");
+		$(".div-image p, .div-text p, .text-lead p, h3").toggleClass("night-text");
 		$(".div-borderB").toggleClass("night-line");
 		$(".div-imageB div").toggleClass("shadow")
 		$("img").toggleClass("night-image");
