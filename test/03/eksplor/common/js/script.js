@@ -31,6 +31,7 @@ function closeNav() {
 	document.getElementById("closebtn").style.display = "none";
 }
 
+
 $(document).ready(function () {
 	/* moving wheels */
 	$(window).scroll(function() {
