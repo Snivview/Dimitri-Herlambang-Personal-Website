@@ -15,7 +15,6 @@ onReady(function () {
 	show('wrap', true);
 	show('loading', false);
 });
-
 function openMenu() {
     document.getElementById("mySidenavB").style.width = "250px";
 }
@@ -30,15 +29,13 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("closebtn").style.display = "none";
 }
-
-
+new LazyLoad();
 $(document).ready(function () {
 	/* moving wheels */
 	$(window).scroll(function() {
 		var theta = $(window).scrollTop() / 50 % Math.PI;
 		$('.moving').css({ transform: 'rotate(' + theta + 'rad)' });
 	});
-	
 	/* moving car */
 	var $horizontal = $('#horizontal');
 	$(window).scroll(function () {

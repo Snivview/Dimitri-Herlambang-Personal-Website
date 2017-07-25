@@ -16,17 +16,13 @@ input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;
 
 /* base tag */
 @font-face {
-    font-family: Myriad;
-    src: url(../../font/MyriadPro-Light.otf);
-}
-@font-face {
     font-family: Riga;
     src: url(../../font/Riga-Black.otf);
 }
 img {transition: .5s;}
 a {text-decoration: none;color:inherit;}
-h1 {font-family: Myriad;color: #fff;}
-h2 {font-family: Myriad;}
+h1 {font-family: Riga;color: #fff;}
+h2 {font-family: Riga;}
 h3 {font-family: georgia;}
 p {font-family: georgia;font-weight: 100;}
 button:focus {outline: none;}
@@ -67,12 +63,12 @@ button:focus {outline: none;}
     margin: 10px;
     overflow-y:  hidden;
 	font-size: 150%;
-	font-family: Myriad;
+	font-family: Riga;
 	opacity: 0;
 	transition: 1s;
 }
 .div-image {
-	max-width: 1000px;
+	max-width: 700px;
 	margin: 0 auto;
 }
 .div-image p {
@@ -185,7 +181,7 @@ button:focus {outline: none;}
 }
 .link-mapCaption a {
 	vertical-align: bottom;
-	font-family: Myriad;
+	font-family: Riga;
 	font-weight: bold;
 	font-size: 170%;
 	color: #000;
