@@ -11,6 +11,12 @@
     
     <link href="common/css/base.css" rel="stylesheet">
     <style>
+		#road_height {
+			height: 2000px;
+		}
+		#car_height {
+			height: 1080px;
+		}
 		img:not([src]) {visibility: hidden;}
 		/* Fixes Firefox anomaly during image load */
 		@-moz-document url-prefix() {
@@ -25,7 +31,16 @@
 </head>
 
 <body>
-	<div id="loading"></div>
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_four"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_one"></div>
+			</div>
+		</div>
+	</div>
 	<div id="wrap" class="default-skin">
 		<div id="headerArea" class="clearfix">
 			<span class="link link-menu" onclick="openMenu()"><img src="img/burger.png" alt="menu"></span>

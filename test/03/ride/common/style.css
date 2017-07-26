@@ -85,6 +85,7 @@ iframe {
 	transition: all 1s;
 	opacity: 0;
 	font-family: Ubuntu;
+	line-height: 30px;
 }
 
 .div-image {
