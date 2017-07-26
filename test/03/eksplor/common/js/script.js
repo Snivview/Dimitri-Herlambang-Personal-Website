@@ -30,7 +30,7 @@ function closeNav() {
 	document.getElementById("closebtn").style.display = "none";
 }
 new LazyLoad();
-$(document).ready(function () {
+$(document).ready(function(){
 	/* moving wheels */
 	$(window).scroll(function() {
 		var theta = $(window).scrollTop() / 50 % Math.PI;
@@ -52,9 +52,13 @@ $(document).ready(function () {
 	$("#nightMode").click(function(){
 		$(".div-image p, .div-text p, .text-lead p, h3").toggleClass("night-text");
 		$(".div-borderB").toggleClass("night-line");
+		$(".text-quote").toggleClass("night-border");
 		$(".div-imageB div").toggleClass("shadow")
 		$("img").toggleClass("night-image");
 		$("#section_3, html").toggleClass("night-background");
 		$("#light").delay("slow").toggleClass("show");
 	});
+	$("#btn-cirebon").hover(function(){$('#map-cirebon a.link-mapPointer').toggleClass("blink");});
+	$("#btn-demak").hover(function(){$('#map-demak a.link-mapPointer').toggleClass("blink");});
+	$("#btn-banten").hover(function(){$('#map-banten a.link-mapPointer').toggleClass("blink");});
 });

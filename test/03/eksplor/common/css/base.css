@@ -106,7 +106,10 @@ button:focus {outline: none;}
     display:inline-block;
     overflow-y: hidden;
 }
-.div-imageB div img {width: 100%;}
+.div-imageB div img {
+	width: 100%;
+	vertical-align: middle;
+}
 .div-info {
 	width: 100%;
     margin: 0px auto;
@@ -174,22 +177,27 @@ button:focus {outline: none;}
 	position: absolute;
 	color: #000;
 	width: 75px;
-	height: 90px;
+	height: 55px;
 	display: table;
 	text-align: center;
 	transform: translateZ(50px);
+	cursor: pointer;
 }
 .link-mapCaption a {
 	vertical-align: bottom;
 	font-family: Riga;
 	font-weight: bold;
-	font-size: 170%;
+	font-size: 100%;
 	color: #000;
+	transition: .5s;
+}
+.link-mapCaption a:last-of-type {
+	/* opacity: 0; */
 }
 .link-mapPointer {
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 35px;
 	background: url(../../img/map_pointer.png) no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -273,12 +281,14 @@ button:focus {outline: none;}
 	-moz-animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-fill-mode:both;
-	-webkit-animation-duration:2s;
-	-moz-animation-duration:2s;
-	-ms-animation-duration:2s;
-	-o-animation-duration:2s;
-	animation-duration:2s;
+	-webkit-animation-duration:1.5s;
+	-moz-animation-duration:1.5s;
+	-ms-animation-duration:1.5s;
+	-o-animation-duration:1.5s;
+	animation-duration:1.5s;
 }
+.blink {animation: blinker 1s linear infinite;}
+@keyframes blinker {50% {opacity: 0;}}
 .bounce {
 	-webkit-animation-name: bounce;
 	-moz-animation-name: bounce;
@@ -299,6 +309,7 @@ button:focus {outline: none;}
 .night-line {background-color: #fff !important;}
 .night-image {opacity: .8;}
 .night-background {background-color: #000 !important;}
+.night-border {border-top:1px solid #fff !important;border-bottom:1px solid #fff !important;}
 .slideTop {opacity: 1 !important;}
 .show {
 	transition: all 1s;
@@ -315,17 +326,17 @@ button:focus {outline: none;}
 }
 @-moz-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
-	40% {-moz-transform: translateY(-15px);}
+	40% {-moz-transform: translateY(-25px);}
 	60% {-moz-transform: translateY(-5px);}
 }
 @-o-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
-	40% {-o-transform: translateY(-15px);}
+	40% {-o-transform: translateY(-25px);}
 	60% {-o-transform: translateY(-5px);}
 }
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-15px);}
+	40% {transform: translateY(-25px);}
 	60% {transform: translateY(-5px);}
 }
 .sidenav {
@@ -451,7 +462,6 @@ section.module.parallax {
 	text-align: center;
 	background-color: rgba(0,0,0,.50)
 }
-
 #wrap {
 	display: none;
 	overflow-x: hidden;
@@ -565,7 +575,7 @@ section.module.parallax {
 	font-family: georgia;
 	box-sizing: border-box;
 }
-#mainArea {padding-bottom: 30px;}
+#mainArea {padding-bottom: 40px;}
 #section_about {
 	padding: 50px 0;
 	z-index: 9;
@@ -604,7 +614,7 @@ section.module.parallax {
 	transition: .5s;
 }
 #section_4 {
-	padding-top: 50px;
+	padding-top: 25px;
 	z-index: 29;
     position: relative;
 	background-color: #000;
