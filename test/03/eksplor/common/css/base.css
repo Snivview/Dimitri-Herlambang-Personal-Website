@@ -66,6 +66,7 @@ button:focus {outline: none;}
 	font-family: Riga;
 	opacity: 0;
 	transition: 1s;
+    color: #fdbe11;
 }
 .div-image {
 	max-width: 700px;
@@ -114,7 +115,7 @@ button:focus {outline: none;}
 	width: 100%;
     margin: 0px auto;
     position: relative;
-    text-align:center;
+    text-align: center;
 }
 .div-map {
 	width: 1400px;
@@ -298,7 +299,7 @@ button:focus {outline: none;}
 .counting {
 	font-size: 250%;
 	font-weight: bold;
-	color: #009688;
+	color: #fff;
 }
 .moving {
     position: absolute;
@@ -577,7 +578,7 @@ section.module.parallax {
 }
 #mainArea {padding-bottom: 40px;}
 #section_about {
-	padding: 20px 0;
+	padding: 20px 0 0;
 	z-index: 9;
 }
 #section_about h2 {
@@ -597,6 +598,7 @@ section.module.parallax {
 	box-sizing: border-box;
 	overflow-y: hidden;
 	z-index: 9;
+    background-color: #00bff3;
 }
 #section_2 #logo_eksplor img {
     margin: 0 auto;

@@ -18,6 +18,7 @@
 		}
 		#headerArea {z-index: 10;}
 		#mainArea {padding-bottom: 0;}
+        #landing {background-image: url("img/landing.jpg");}
 		#section_1 {
 			position: absolute;
     		bottom: 1%;
@@ -96,29 +97,10 @@
 		</div>
         <div id="mainArea" class="clearfix">
         
-        	<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-				<div class="div-map">
-        			<div class="link-mapCaption" style="top:19%;left:7%;">
-        				<a class="link-mapPointer animated bounce" href="banten.html" onclick="closeNav()"></a>
-        				<a href="banten.html" onclick="closeNav()">Banten</a>
-        			</div>
-        			<div class="link-mapCaption" style="top:29%;left:31%;">
-        				<a class="link-mapPointer animated bounce" href="cirebon.html" onclick="closeNav()"></a>
-        				<a href="cirebon.html" onclick="closeNav()">Cirebon</a>
-        			</div>
-        			<div class="link-mapCaption" style="top:29%;left:53%;">
-        				<a class="link-mapPointer animated bounce" href="demak.html" onclick="closeNav()"></a>
-        				<a href="demak.html" onclick="closeNav()">Demak</a>
-        			</div>
-        		</div>
-			</div>
-        
         	<div id="mySidenavB" class="sidenavB">
 				<a href="javascript:void(0)" id="#closebtnB" onclick="closeMenu()" style="text-align: center">&times;</a>
 			  	<a href="#" onclick="closeMenu()">Home</a>
 			  	<a href="index.html#section_about" onclick="closeMenu()">Tentang</a>
-			  	<a onClick="openNav()">Peta<span style="margin-left:10px;">►</span></a>
 			</div>
         
         	<video class="bv-video" id="landing_video"></video>
@@ -139,19 +121,22 @@
         			<img src="img/pelepasan.jpg" alt="pelepasan isuzu mu-x ekslor">
         		</div>
         		
-        		<div style="background:#FFCA76;padding-top:20px;">
-					<div class="div-info clearfix">
-						<div class="div-cell" style="transition:2s;"><span class="counting">10</span><br>Kota</div>
-						<div class="div-cell" style="transition:3s;"><span class="counting">100</span><br>Destinasi</div>
-						<div class="div-cell" style="transition:4s;"><span class="counting">1000</span><br>Kilometer</div>
-					</div>
-					<div class="div-image" style="width:300px;margin: 20px auto;">
-						<img  src="img/logo_eksplor.png" alt="logo kompas eksplor">
-					</div>
-       				<div class="div-text">
-        				<h3 class="tC" style="margin:10px 0">Klik icon pada peta untuk memilih destinasi</h3>
-        			</div>
-        		</div>        	</div> <!-- /#section_about -->
+                <section class="module parallax" id="landing">
+                    <div style="background-color: rgba(0,0,0,.6);">
+                        <div class="div-info clearfix">
+                            <div class="div-cell" style="transition:2s;"><span class="counting">10</span><br>Kota</div>
+                            <div class="div-cell" style="transition:3s;"><span class="counting">100</span><br>Destinasi</div>
+                            <div class="div-cell" style="transition:4s;"><span class="counting">1000</span><br>Kilometer</div>
+                        </div>
+                        <div class="div-image" style="width:300px;margin: 20px auto;">
+                            <img  src="img/logo_eksplor.png" alt="logo kompas eksplor">
+                        </div>
+                        <div class="div-text">
+                            <h3 class="tC" style="padding: 5px 0;margin:10px 0;border: 1px solid #fff;color:#fff;">Klik icon pada peta untuk memilih destinasi</h3>
+                        </div>
+                    </div>
+				</section>      	
+            </div> <!-- /#section_about -->
        	
         	<div id="section_2" class="div-section clearfix">
         		<div class="div-map" id="landing_map">
