@@ -58,6 +58,7 @@ $(document).ready(function(){
 		$("#section_3, html").toggleClass("night-background");
 		$("#light").delay("slow").toggleClass("show");
 	});
+	$(".link-mapCaption").hover(function(){$(this).find('a.link-mapPointer').toggleClass("blink");});
 	$("#btn-cirebon").hover(function(){$('#map-cirebon a.link-mapPointer').toggleClass("blink");});
 	$("#btn-demak").hover(function(){$('#map-demak a.link-mapPointer').toggleClass("blink");});
 	$("#btn-banten").hover(function(){$('#map-banten a.link-mapPointer').toggleClass("blink");});
