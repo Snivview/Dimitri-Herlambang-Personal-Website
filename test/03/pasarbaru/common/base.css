@@ -34,11 +34,42 @@ body {overflow-x: hidden;}
 .tWhite{color:#fff;}
 
 /* components */
-.div-image {}
-.div-image img {
+.div-image {
+    overflow: hidden;
 	float: left;
 	width: 50%;
+    position: relative;
 }
+.div-image img {
+    width: 100%;
+	transition: .3s;
+}
+.div-image img:hover {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+	transition: .3s;
+}
+.div-transparent {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); 
+}
+.div-text {
+    padding: 10px;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.div-text p {
+    font-family: segoe ui;
+}
+
 /* effects */
 
 .animated{
