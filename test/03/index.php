@@ -38,7 +38,7 @@
                     <div class="block01" onclick="window.open('ride/');">
                         <div><img src="_img/interaktif_01.png"></div>
                         <h3>Ride Jakarta</h3>
-                        <div class="flipLeft"><p class="type01">Advertorial &#9654;</p></div>
+                        <div class="flipLeft"><p class="type01">Langgam &#9654;</p></div>
                         <div class="flipTop">
                             <p>Bukan cuma waktu, kesehatan pun jadi aset berharga bagi masyarakat urban. Bisa dimaklumi kemudian jika pusat kebugaran kian menjamur di berbagai penjuru kota. Salah satu yang naik daun adalah <span class="tI">boutique fitness studio</span>. &#9654;</p>
                         </div>
@@ -48,53 +48,17 @@
                         <h3>Eksplor Jawa</h3>
                         <div class="flipLeft"><p class="type01">Eksplor &#9654;</p></div>
                         <div class="flipTop">
-                            <p>Jelajahi jejak kerajaan Islam di 10 kota di pulau Jawa. &#9654;</p>
-                        </div>
-                    </div> 
-                    
-                    <!-- 
-                    <div class="block01">
-                        <div><img src="_img/spot03.png"></div>
-                        <h3>Perumahan Citra Maja Raya</h3>
-                        <div class="flipLeft"><p class="type01">Sponsored by Ciputra Group &#9654;</p></div>
-                        <div class="flipTop">
-                            <p>Proyek rumah murah baru dari Ciputra yang berlokasi di kawasan Maja, Banten. Seperti apa penawaran dan prospek kedepannya ? &#9654;</p>
-                        </div>
-                    </div> 
-                    <div class="block01">
-                        <div><img src="_img/spot04.png"></div>
-                        <h3>Hello Moto Z</h3>
-                        <div class="flipLeft"><p class="type01">Sponsored by Lenovo Motorola &#9654;</p></div>
-                        <div class="flipTop">
-                            <p>Transformasi smartphone Moto Z dan Moto Z Play anda menjadi perangkat yang benar-benar berbeda. Proyektor movie, kamera, baterai pamungkas, speaker stereo dan lainnya. &#9654;</p>
-                        </div>
-                    </div> 
-                    <div class="block01">
-                        <div><img src="_img/spot05.png"></div>
-                        <h3>Samsung New Galaxy A</h3>
-                        <div class="flipLeft"><p class="type02">Advertorial &#9654;</p></div>
-                        <div class="flipTop">
-                            <p>Samsung kembali melakukan penyegaran terhadap Smartphone kelas menengah seri A, apa saja fitur yang ditambahkan ? &#9654;</p>
-                        </div>
-                    </div> 
-                    <div class="block01">
-                        <div><img src="_img/spot06.png"></div>
-                        <h3>Tokopedia</h3>
-                        <div class="flipLeft"><p class="type02">Klasika &#9654;</p></div>
-                        <div class="flipTop">
-                            <p>Disebut sebagai salah satu pelopor start-up e-commerce di Indonesia, kini Tokopedia kembali mendapatkan suntikan modal senilai 1,9 triliun rupiah. Bagaimana sepak terjangnya hingga sebesar sekarang? &#9654;</p>
+                            <p>Pulau Jawa merupakan salah satu pusat kerajaan-kerajaan Islam terbesar di nusantara, simak ulasan tim Kompas Eksplor ke 10 kota tempat peninggalan kerajaan Islam berikut ini &#9654;</p>
                         </div>
                     </div>
-                    <div class="block01">
-                        <div><img src="_img/spot07.png"></div>
-                        <h3>Renault Kwid</h3>
-                        <div class="flipLeft"><p class="type01">Sponsored by Renault &#9654;</p></div>
+                    <div class="block01" onclick="window.open('pasarbaru/');">
+                        <div><img src="_img/interaktif_03.jpg"></div>
+                        <h3>Pasar Baroe</h3>
+                        <div class="flipLeft"><p class="type01">Langgam Wisata &#9654;</p></div>
                         <div class="flipTop">
-                            <p>Kehadiran pabrikan Eropa yang ingin menunjukkan eksistensinya di pasar melalui mobil LCGC yang dikembangkan di India ini menawarkan harga yang sangat terjangkau, seperti apa kualitasnya ? &#9654;</p>
+                            <p>Pusat perbelanjaan tertua di Jakarta yang didirikan tahun 1820 ini bertahan selama 2 abad, bagaimana geliatnya saat ini ? &#9654;</p>
                         </div>
-                    </div>  
-                    -->
-                    
+                    </div>
                 </div> <!-- /.container -->
             </div> <!-- /.wrap01 -->
 		</div> <!-- /#mainArea -->
