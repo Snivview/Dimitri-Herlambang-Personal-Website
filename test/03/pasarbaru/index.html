@@ -37,16 +37,19 @@
         	
 			<section id="section_lead" class="clearfix">
 				<div class="div-image">
-					<img class="move-top-initial" src="img/wikipedia_1.jpg" alt="wikipedia">
+					<img class="img-photo" src="img/wikipedia_1.jpg" alt="wikipedia">
+					<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+					<p>Pusat perbelanjaan ini dibangun pada tahun 1820 sebagai Passer Baroe sewaktu Jakarta masih bernama Batavia</p>
 				</div>
 				<div class="div-image">
-					<img class="move-left-initial" src="img/wikipedia_2.jpg" alt="wikipedia">
+					<img class="img-photo" src="img/wikipedia_2.jpg" alt="wikipedia">
+					<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+					<p>Di Pasar Baru banyak bermukim orang India-Indonesia. Mereka bekerjasama dalam perdagangan kain, alat olahraga, dan sepatu.</p>
 				</div>
 			</section>
             
             <section id="section_content" style="margin-top: 20px;">
                 <div class="div-text">
-                    <p class="tI">Pusat perbelanjaan ini dibangun pada tahun 1820 sebagai Passer Baroe sewaktu Jakarta masih bernama Batavia, sebagai tempat perbelanjaan bagi kaum bermata biru yang tinggal di Rijswijk (sekarang Jalan Veteran).</p>
                 </div>
             </section>
             
@@ -58,6 +61,13 @@
 	<script>
 		$(window).on('beforeunload', function() {
 			$(window).scrollTop(0);
+		});
+		$(document).ready(function(){
+			$(".div-image").hover(function(){
+				$(this).find('p').toggleClass("show");
+				$(this).find('.img-photo').toggleClass("zoom");
+				$(this).find('.img-info').toggleClass("hidden");
+			});
 		});
 	</script>
 </body>
