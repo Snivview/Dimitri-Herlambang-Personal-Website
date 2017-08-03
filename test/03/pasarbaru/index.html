@@ -35,23 +35,48 @@
 				</div> <!-- /.div-layer -->
 			</section>
         	
-			<section id="section_lead" class="clearfix">
-				<div class="div-image">
-					<img class="img-photo" src="img/wikipedia_1.jpg" alt="wikipedia">
-					<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
-					<p>Pusat perbelanjaan ini dibangun pada tahun 1820 sebagai Passer Baroe sewaktu Jakarta masih bernama Batavia</p>
+			<section id="section_lead">
+				<div class="clearfix">
+					<div class="div-image">
+						<img class="img-photo" src="img/wikipedia_1.jpg" alt="wikipedia">
+						<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+						<p>Pusat perbelanjaan ini dibangun pada tahun 1820 sebagai Passer Baroe sewaktu Jakarta masih bernama Batavia</p>
+					</div>
+					<div class="div-image">
+						<img class="img-photo" src="img/wikipedia_2.jpg" alt="wikipedia">
+						<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+						<p>Di Pasar Baru banyak bermukim orang India-Indonesia. Mereka bekerjasama dalam perdagangan kain, alat olahraga, dan sepatu.</p>
+					</div>
 				</div>
-				<div class="div-image">
-					<img class="img-photo" src="img/wikipedia_2.jpg" alt="wikipedia">
-					<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
-					<p>Di Pasar Baru banyak bermukim orang India-Indonesia. Mereka bekerjasama dalam perdagangan kain, alat olahraga, dan sepatu.</p>
-				</div>
+				<p style="padding:5px;">Dok. Wikipedia</p>
 			</section>
             
-            <section id="section_content" style="margin-top: 20px;">
+            <section style="margin-top:10px;">
+                <div class="div-text text-lead">
+                	<p><span class="tI">"Pasar Baru, ... pada waktu saja masih ketjil sampai dewasa adalah sepi sekali. Belum ada kaki lima (trottoir). Di muka toko - toko terdapat pohon-pohon asam yang rindang meneduhi djalan. Belum ada rumah bertingkat."</span> --Tio Tek Hong, pengusaha di Pasar Baru</p>
+                	<div class="text-lead_bar"></div>
+                </div>
+                <div class="div-text" style="margin-top:30px;">
+                	<p><span class="text-dropCap">S</span>isa kejayaan masa lalu yang masih kokoh berdiri hingga hari ini, bisa kita nikmati bila bertandang ke kawasan Pasar Baru. Beberapa diantaranya Kantor Pos Filateli, Stadschouwburg (sekarang dikenal sebagai Gedung Kesenian Jakarta), Ursulint Zuster School (Santa Ursula), Gedung Antara, Toko Kompak dan lain-lain.</p> 
+                	<p>Tak cukup waktu sehari untuk menyurusi daerah Pasar Baru yang cukup luas, apalagi bila ingin keluar masuk gedung yang ada. Mari kita persempit dengan menikmati kawasan di sekitar pertokoan Pasar Baru sembari mengembangkan imajinasi ke masa lampau.</p>
+                </div>
                 <div class="div-text">
+                	<p>Pasar Baru adalah surga belanja bagi mereka yang mencari kain untuk bahan busana, sepatu, peralatan olah raga atau sekedar memuaskan mata dan mecoba membandingan harga dari satu toko ke toko lainnya sebelum mengambil keputusan untuk berbelanja dimana. Pernahkah terbersit dalam dalam benak anda untuk menikmati Pasar Baru tak sekedar keluar masuk toko yang menawarkan aneka diskon, menenteng tas belanja yang penuh lalu mencari makan saat perut lapar?</p>
                 </div>
             </section>
+            
+            <section class="module parallax" id="section_makanan" style="margin-bottom:10px;">
+            	<div class="img-caption">
+            		<p>Layaknya makan di rumah makan sederhana, jauh dari kata modern, namun memberikan kesan tersendiri bagi mereka yang pecinta suasana retro.</p>
+            	</div>
+			</section>
+           
+			<section>
+				<div class="div-text">
+					<p><span class="text-quote">Memasuki pusat pertokoan Pasar Baru, pengunjung akan disambut oleh sebuah gerbang tinggi bergaya Cina dengan tulisan besar di atasnya Passer Baroe, 1820</span>Pasar Baru adalah sebuah pasar yang terbentuk dengan sendirinya sebagai pelengkap perniagaan di Weltevreden (sekarang daerah Gambir - Pasar Baru - Senen), kawasan elit Batavia yang mulai berkembang pada abad ke-19.</p>
+					<p>Ketika terjadi penumpasan etnis Tionghoa di Batavia yang dikenal sebagai Peristiwa 1740, etnis Tionghoa "diisolir" di luar benteng Batavia. Pemerintah Hindia Belanda memberlakukan jam malam; etnis Tionghoa tidak boleh tinggal dan hanya diijinkan berada di dalam kota Batavia pada siang hari. Mereka inilah yang kemudian datang berdagang di Pasar Baru, membentuk komunitas, menjadi pengusaha sukses dan mengendalikan perniagaan di sana.</p>
+				</div>
+			</section>
             
 		</div><!-- /#mainArea -->
     </div> <!-- /#wrap -->
@@ -68,6 +93,10 @@
 				$(this).find('.img-photo').toggleClass("zoom");
 				$(this).find('.img-info').toggleClass("hidden");
 			});
+		});
+		$(".div-text p").viewportChecker({
+			classToAdd: 'show',
+			offset: 100,
 		});
 	</script>
 </body>

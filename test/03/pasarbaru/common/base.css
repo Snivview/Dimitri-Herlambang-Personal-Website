@@ -15,7 +15,12 @@ sub{vertical-align:text-bottom;}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
 
 /* base tag */
-body {overflow-x: hidden;}
+body {
+	overflow-x: hidden;
+	background: url(../img/body_bg.jpg);
+	background-attachment: fixed;
+	background-position: center;
+}
 
 /* base class */
 .clearfix:before,
@@ -43,12 +48,27 @@ body {overflow-x: hidden;}
 .img-photo {
     width: 100%;
 	transition: 5s;
+	opacity: .5;
 }
 .img-info {
 	position: absolute;
     bottom: 5%;
 	right: 3%;
 	opacity: 1;
+}
+.img-caption {
+    background-color: rgba(0,0,0,.5);
+    width: 250px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    padding: 20px;
+}
+.img-caption p {
+	line-height: 20px;
+	font-family: georgia;
+	font-size: 16px;
+	color: #fff;
 }
 .div-image p {
 	position: absolute;
@@ -72,11 +92,49 @@ body {overflow-x: hidden;}
 }
 .div-text {
     padding: 10px;
-    max-width: 940px;
+    max-width: 740px;
     margin: 0 auto;
 }
-.div-text p {font-family: segoe ui;}
-
+.div-text p {
+	font-size: 20px;
+	line-height: 35px;
+	margin-bottom: 10px;
+	font-family: georgia;
+	opacity: 0;
+}
+.text-dropCap {
+    float: left;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.text-lead {
+	max-width: 940px !important;
+}
+.text-lead p{
+	font-size: 16px;
+	line-height: 25px;
+}
+.text-lead_bar {
+	margin: 10px 0;
+	height: 2px;
+	background-color: #000;
+}
+.text-quote {
+	width: 250px;
+    float: right;
+    text-align: left;
+    margin: 10px -140px 10px 25px;
+    font-family: georgia;
+    font-size: 25px !important;
+	font-style: italic;
+    line-height: 45px;
+    padding: 10px 0;
+    color: #795548;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
 /* effects */
 
 .animated{
@@ -114,6 +172,7 @@ body {overflow-x: hidden;}
     -ms-transform:scale(1.3); /* IE 9 */
     -o-transform:scale(1.3); /* Opera */
      transform:scale(1.3);
+	opacity: 1;
 	transition: 5s;
 }
 @-webkit-keyframes bounce {
@@ -137,21 +196,6 @@ body {overflow-x: hidden;}
 }
 
 /* parallax styles */
-section.module:last-child {
-  margin-bottom: 0;
-}
-section.module h2 {
-	font-family: Riga;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	font-size: 400%;
-}
-section.module p {
-  	margin-bottom: 40px;
-  	font-size: 16px;
-  	font-weight: 300;
-	font-family: segoe ui;
-}
-section.module p:last-child {margin-bottom: 0;}
 section.module.content {padding: 40px 0;}
 section.module.parallax {
 	width: 100%;
@@ -164,13 +208,24 @@ section.module.parallax {
   	-o-background-size: cover;
   	background-size: cover;
 	display: table;
+	position: relative;
 }
-/* parallax uses */
-#section_landing {background-image: url("../img/pasar_baroe_01.jpg"); }
+/* parallax usage */
+#section_landing {background-image: url("../img/pasar_baroe_01.jpg");}
+#section_makanan {background-image: url("../img/pasar_baroe_02.jpg");}
 
 @media screen and (max-width: 768px) {
 	.div-image {
 		width: 100%;
+	}
+	.text-quote {
+        margin: 20px 0 40px 30px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 568px) {
+	#section_1 h1 {
+		font-size: 600% !important;
 	}
 }
 
@@ -185,6 +240,7 @@ section.module.parallax {
 #section_landing p {
 	font-size: 200%;
 	font-weight: 100;
+	font-family: segoe ui;
 	color: #fff;
 }
 #section_landing .div-transparent-layer {
