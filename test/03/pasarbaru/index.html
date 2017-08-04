@@ -72,17 +72,65 @@
 			</section>
            
 			<section>
-				<div class="div-text">
+				<div class="div-text clearfix">
 					<p><span class="text-quote">Memasuki pusat pertokoan Pasar Baru, pengunjung akan disambut oleh sebuah gerbang tinggi bergaya Cina dengan tulisan besar di atasnya Passer Baroe, 1820</span>Pasar Baru adalah sebuah pasar yang terbentuk dengan sendirinya sebagai pelengkap perniagaan di Weltevreden (sekarang daerah Gambir - Pasar Baru - Senen), kawasan elit Batavia yang mulai berkembang pada abad ke-19.</p>
 					<p>Ketika terjadi penumpasan etnis Tionghoa di Batavia yang dikenal sebagai Peristiwa 1740, etnis Tionghoa "diisolir" di luar benteng Batavia. Pemerintah Hindia Belanda memberlakukan jam malam; etnis Tionghoa tidak boleh tinggal dan hanya diijinkan berada di dalam kota Batavia pada siang hari. Mereka inilah yang kemudian datang berdagang di Pasar Baru, membentuk komunitas, menjadi pengusaha sukses dan mengendalikan perniagaan di sana.</p>
+					<p>Satu Sabtu pagi berenam kami ngariung menikmati sajian teh dan kopi panas ditemani aneka camilan berupa keripik balado dari Padang, rempeyek kacang serta jajanan dari Monami di Galeri Foto Jurnalistik Antara (GFJA). GJFA menempati sebuah gedung lama yang masih terawat di jejeran gedung sebelah kiri gerbang masuk Pasar Baru, bekas kantor berita Belanda yang pernah berjaya pada awal abad ke-20; ANETA (Algeemen Nieros en Telegraaf Agentschap). Dari tempat inilah teks Proklamasi dikumandangkan oleh Adam Malik hingga ke seantero negeri pada 17 Agustus 1945. Sebuah tempat yang nyaman untuk bersantai sambil menikmati potongan sejarah berdirinya kantor berita Antara di lantai dua atau memuaskan mata menikmati pameran foto di lantai bawah gedung dengan interior art deco ini.</p>
 				</div>
 			</section>
+            
+            <section>
+            	<div class="div-gallery-wrap">
+            		<div class="div-gallery">
+            			<img data-original="img/pasar_baroe_03.jpg" alt="pedagang koin kuno">
+            		</div><!--
+            		--><div class="div-gallery">
+            			<img data-original="img/pasar_baroe_04.jpg" alt="pedagang koin kuno">
+            		</div><!--
+            		--><div class="div-gallery">
+            			<img data-original="img/pasar_baroe_05.jpg" alt="pedagang koin kuno">
+            		</div><!--
+            		--><div class="div-gallery">
+            			<img data-original="img/pasar_baroe_06.jpg" alt="pedagang koin kuno">
+            		</div>
+            	</div>
+            </section>
+            
+            <section style="margin-bottom:50px;">
+            	<div class="div-text clearfix">
+            		<p>Setelah puas mengitari Sin Tek Bio, kami kembali ke pertokoan Pasar Baru dan duduk menikmati ruangan berpendingin di Restoran Tropik sembari menyegarkan tenggorokan dengan es krim jadul.</p>
+            		<p>Resto ini telah berdiri semenjak 1979, menempati bangunan yang dulunya rumah toko milik Tio Tek Hong seorang pengusaha dari Pasar Baru yang mempopulerkan sistem harga banderol/harga pasti dan pandai mempromosikan dagangan di tokonya dengan memasang iklan di koran Bintang Betawi. Salah satu contoh iklannya berbunyi seperti ini: "Zoner Binatu Lagi! Servet dari kertas (h)alus berkembang, lebih bagus dan pantas dari(pada) memakai servet biasa, yang membikin pusing mesti dicuci lagi sehabisnya dipakai. Tetapi servet ini kalau sudah dipakai satu kali boleh dibuang, sebab harganya ada lebih murah dari ongkos cuci."</p>
+				</div>
+            </section>
+            
+            <section style="padding:20px 0;background-color:#000;">
+            	<div class="text-credits">
+            		<h3>PHOTOGRAPHER</h3>
+					<p>Egbert Siagian</p>
+
+            		<h3>VIDEOGRAPHER</h3>
+					<p>Iwan Andryanto</p>
+					
+					<h3>COPYWRITER</h3>
+					<p>Rahajeng Kristianti</p>
+
+					<h3>EDITOR WEB</h3>
+					<p>Ino Julianto</p>
+
+					<h3>PENGEMBANG WEB</h3>
+					<p>Dimitri Herlambang</p>
+            	</div>
+            	
+            </section>
+            
+            <p class="tR animated bounce" style="position:fixed;bottom:2%;right:3%;"><a class="top"><img src="img/top.png" width="25" height="25" alt="top"></a></p>
             
 		</div><!-- /#mainArea -->
     </div> <!-- /#wrap -->
     
     <script src="common/jquery-210.js" type="text/javascript"></script>
 	<script src="common/jquery.viewportchecker.js" type="text/javascript"></script>
+	<script src="common/lazy.js" type="text/javascript"></script>
 	<script>
 		$(window).on('beforeunload', function() {
 			$(window).scrollTop(0);
@@ -93,10 +141,14 @@
 				$(this).find('.img-photo').toggleClass("zoom");
 				$(this).find('.img-info').toggleClass("hidden");
 			});
-		});
-		$(".div-text p").viewportChecker({
-			classToAdd: 'show',
-			offset: 100,
+			$(".div-text p").viewportChecker({
+				classToAdd: 'show',
+				offset: 100,
+			});
+			$(".top").click(function(){
+				$('html,body').animate({ scrollTop: 0 }, 'slow');
+			});
+			new LazyLoad();
 		});
 	</script>
 </body>
