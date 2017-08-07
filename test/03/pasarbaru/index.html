@@ -12,16 +12,6 @@
 </head>
 
 <body>
-   <div id="loading">
-		<div id="loading-center">
-			<div id="loading-center-absolute">
-				<div class="object" id="object_four"></div>
-				<div class="object" id="object_three"></div>
-				<div class="object" id="object_two"></div>
-				<div class="object" id="object_one"></div>
-			</div>
-		</div>
-	</div>
     <div id="wrap">
         <div id="mainArea" class="clearfix">
         
@@ -83,15 +73,23 @@
             	<div class="div-gallery-wrap">
             		<div class="div-gallery">
             			<img data-original="img/pasar_baroe_03.jpg" alt="pedagang koin kuno">
+            			<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+            			<p>Ditengah gelimang pasar modern, imej dari pasar tradisional yang "kumuh" memang cukup mengganggu bagi sebagian orang.</p>
             		</div><!--
             		--><div class="div-gallery">
             			<img data-original="img/pasar_baroe_04.jpg" alt="pedagang koin kuno">
+            			<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+            			<p>Namun ada kalanya, pasar tradisional memiliki komoditas yang mungkin sulit dicari di pasar modern, seperti pedagang koin kuno ini.</p>
             		</div><!--
             		--><div class="div-gallery">
             			<img data-original="img/pasar_baroe_05.jpg" alt="pedagang koin kuno">
+            			<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+            			<p>Toko sandang menjadi salah satu segmen yang terkena imbas dari e-commerce modern, dimana orang membeli pakaian tinggal melalui telepon.</p>
             		</div><!--
             		--><div class="div-gallery">
             			<img data-original="img/pasar_baroe_06.jpg" alt="pedagang koin kuno">
+            			<img class="img-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
+            			<p>Berbelanja pun harus tetap ingat waktu untuk ber-ibadah pada Yang Maha Kuasa.</p>
             		</div>
             	</div>
             </section>
@@ -136,9 +134,9 @@
 			$(window).scrollTop(0);
 		});
 		$(document).ready(function(){
-			$(".div-image").hover(function(){
+			$(".div-image,.div-gallery").hover(function(){
 				$(this).find('p').toggleClass("show");
-				$(this).find('.img-photo').toggleClass("zoom");
+				$(this).find('.img-photo,img').toggleClass("zoom");
 				$(this).find('.img-info').toggleClass("hidden");
 			});
 			$(".div-text p").viewportChecker({
