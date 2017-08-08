@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>Langgam Kompas Klasika</title>
+	<meta name="author" content="Kompas Klasika" />
+	<meta name="description" content="ekstensi langgam kompas klasika" />
+	<meta name="keywords"  content="kompas,klasika,langgam" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="_common/jquery.fullPage.css" />
+	<style>
+        a {
+            margin: 0 auto;
+            padding: 8px 0;
+            display: block;
+            width: 100px;
+            color: inherit;
+            text-decoration: none;
+            font-family: segoe ui;
+            font-size: 100%;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+        h1{
+            padding: 0 20px;
+            margin:0;
+            font-size: 300%;
+            font-family: Impact;
+            text-align: left;
+            color: #fff;
+        }
+        p {
+            padding: 0 20px;
+            margin:10px 0;
+            font-size: 150%;
+            font-weight: 100;
+            font-family: segoe ui;
+            text-align: left;
+            color: #fff;
+        }
+        #section0,
+        #section1,
+        #section2,
+        #section3{
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        #section0 {background-image: url(_img/page_1.jpg);}
+        #section1 {background-image: url(_img/page_2.jpg);}
+        #section2 {background-image: url(_img/page_3.jpg);}
+        .section{text-align:center;}
+        .transparent{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,.5);
+            display: table;
+        }
+        .caption {
+            width: 100%;
+            bottom: 0%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="_common/jquery-210.js"></script>
+	<script type="text/javascript" src="_common/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="_common/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				css3:false
+			});
+		});
+	</script>
+
+</head>
+<body>
+    <div id="fullpage">
+        
+        <div class="section " id="section0">
+            <div class="transparent">
+                <div class="caption">
+                    <h1>Ride Jakarta</h1>
+                    <p>Sensasi berkendara di dalam ruangan</p>
+                    <a href="ride/index.html">Baca</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="section1">
+            <div class="transparent">
+                <div class="caption">
+                    <h1>Eksplor Jawa</h1>
+                    <p>Jelajahi kota-kota tempat peninggalan kerajaan Islam di pulau Jawa</p>
+                    <a href="eksplor/index.html">Baca</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="section2">
+            <div class="transparent">
+                <div class="caption">
+                    <h1>Pasar Baroe</h1>
+                    <p>Geliat pasar legendaris di Ibukota</p>
+                    <a href="pasarbaru/index.html">Baca</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
