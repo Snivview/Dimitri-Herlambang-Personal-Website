@@ -12,6 +12,16 @@
 </head>
 
 <body>
+   	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_four"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_one"></div>
+			</div>
+		</div>
+	</div>
     <div id="wrap">
         <div id="mainArea" class="clearfix">
         
@@ -55,7 +65,7 @@
                 </div>
             </section>
             
-            <section class="module parallax" id="section_makanan" style="margin-bottom:10px;">
+            <section class="module parallax" id="section_makanan" style="margin:50px auto;">
             	<div class="img-caption">
             		<p>Layaknya makan di rumah makan sederhana, jauh dari kata modern, namun memberikan kesan tersendiri bagi mereka yang pecinta suasana retro.</p>
             	</div>
@@ -129,6 +139,24 @@
     <script src="common/jquery-210.js" type="text/javascript"></script>
 	<script src="common/jquery.viewportchecker.js" type="text/javascript"></script>
 	<script src="common/lazy.js" type="text/javascript"></script>
+	<script>
+		function onReady(callback) {
+			var intervalID = window.setInterval(checkReady, 1000);
+			function checkReady() {
+				if (document.getElementsByTagName('body')[0] !== undefined) {
+					window.clearInterval(intervalID);
+					callback.call(this);
+				}
+			}
+		}
+		function show(id, value) {
+			document.getElementById(id).style.display = value ? 'block' : 'none';
+		}
+		onReady(function () {
+			show('wrap', true);
+			show('loading', false);
+		});
+	</script>
 	<script>
 		$(window).on('beforeunload', function() {
 			$(window).scrollTop(0);
