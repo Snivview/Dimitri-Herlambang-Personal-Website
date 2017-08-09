@@ -103,7 +103,7 @@ body {
 .div-imageB div {
     width: 560px;
     display:inline-block;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .div-imageB div img {
 	width: 100%;
@@ -145,7 +145,7 @@ body {
     width: 50%;
 	margin-bottom: -5px;
     display:inline-block;
-    overflow-y: hidden;
+    overflow: hidden;
 	position: relative;
 }
 .div-gallery p {
