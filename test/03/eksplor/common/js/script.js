@@ -53,13 +53,14 @@ $(document).ready(function(){
 		$(".div-image p, .div-text p, .text-lead p, h3").toggleClass("night-text");
 		$(".div-borderB").toggleClass("night-line");
 		$(".text-quote").toggleClass("night-border");
-		$(".div-imageB div").toggleClass("shadow")
+		$(".div-imageB div").toggleClass("shadow");
 		$("img").toggleClass("night-image");
 		$("#section_3, html").toggleClass("night-background");
 		$("#light").delay("slow").toggleClass("show");
 	});
-	$(".link-mapCaption").hover(function(){$(this).find('a.link-mapPointer').toggleClass("blink");});
-	$("#btn-cirebon").hover(function(){$('#map-cirebon a.link-mapPointer').toggleClass("blink");});
-	$("#btn-demak").hover(function(){$('#map-demak a.link-mapPointer').toggleClass("blink");});
-	$("#btn-banten").hover(function(){$('#map-banten a.link-mapPointer').toggleClass("blink");});
+	$(".link-mapCaption").hover(function()	{$(this).find('a.link-mapPointer').toggleClass("blink");});
+	$("#btn-banten").hover(function()		{$('#map-banten a.link-mapPointer').toggleClass("blink");});
+	$("#btn-cirebon").hover(function()		{$('#map-cirebon a.link-mapPointer').toggleClass("blink");});
+	$("#btn-semarang").hover(function()		{$('#map-semarang a.link-mapPointer').toggleClass("blink");});
+	$("#btn-demak").hover(function()		{$('#map-demak a.link-mapPointer').toggleClass("blink");});
 });

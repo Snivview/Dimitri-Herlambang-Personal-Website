@@ -218,8 +218,7 @@ button:focus {outline: none;}
 .link-menu img{width: 100%;}
 .link-nav {
 	width: 300px;
-    margin: 50px auto 0 auto;
-    padding: 15px;
+    margin: 50px auto 50px auto;
 }
 .link-nav a {
     padding: 8px 30px;
@@ -403,7 +402,7 @@ button:focus {outline: none;}
 	}
 	.div-imageA {
 		max-width: 100%;
-		margin: 5px 5px 15px 30px;
+		margin: 5px auto 20px auto;
 	}
 }
 @media screen and (max-width: 768px) {

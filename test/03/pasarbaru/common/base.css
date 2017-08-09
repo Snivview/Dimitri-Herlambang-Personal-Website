@@ -50,6 +50,11 @@ body {
 .tR{text-align:right;}
 .tI{font-style:italic;}
 
+.margin50 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
 .tWhite{color:#fff;}
 
 /* components */
@@ -69,6 +74,40 @@ body {
 	font-size: 13px;
 	opacity: 0;
 	transition: 1s;
+}
+.div-imageA {
+	width: 550px;
+	float: right;
+	margin: 10px -140px 10px 25px;
+	padding: 10px 0;
+	line-height: 20px;
+	font-size: 15px;
+}
+.div-imageA img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.div-imageA p {
+	padding: 0 10px;
+	margin-top: 5px;
+	font-size: 14px;
+	font-family: arial;
+	font-style: italic;
+}
+.div-imageB {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    text-align:center;
+}
+.div-imageB div {
+    width: 560px;
+    display:inline-block;
+    overflow-y: hidden;
+}
+.div-imageB div img {
+	width: 100%;
+	vertical-align: middle;
 }
 .img-photo {
     width: 100%;
@@ -120,9 +159,7 @@ body {
 	opacity: 0;
 	transition: 1s;
 }
-.div-gallery img {
-	overflow: hidden;
-}
+.div-gallery img {overflow: hidden;}
 .div-gallery img:first-of-type {
 	width: 100%;
 	transition: 3s;
@@ -140,6 +177,12 @@ body {
     padding: 10px;
     max-width: 740px;
     margin: 0 auto;
+}
+.div-text h2 {
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: georgia;
 }
 .div-text p {
 	font-size: 20px;
@@ -363,6 +406,7 @@ section.module.parallax {
 /* parallax usage */
 #section_landing {background-image: url("../img/pasar_baroe_01.jpg");}
 #section_makanan {background-image: url("../img/pasar_baroe_02.jpg");}
+#section_restoran {background-image: url("../img/pasar_baroe_08.jpg");}
 
 @media screen and (max-width: 1024px) {
 	.div-gallery {
@@ -372,6 +416,10 @@ section.module.parallax {
         margin: 20px 0 40px 30px;
         width: 100%;
     }
+	.div-imageA {
+		width: 100%;
+		margin: 20px 0;
+	}
 }
 @media screen and (max-width: 768px) {
 	.div-image {
