@@ -2,29 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="icon" href="_img/favicon.png">
-	<title>Langgam Kompas Klasika</title>
-	<meta name="author" content="Kompas Klasika" />
-	<meta name="description" content="ekstensi langgam kompas klasika" />
-	<meta name="keywords"  content="kompas,klasika,langgam" />
-	<meta name="Resource-type" content="Document" />
+	<title>Klasika Visual</title>
+	<meta name="author" 		content="Klasika Visual" />
+	<meta name="description" 	content="nikmati konten kompas klasika dalam bentuk visual interaktif" />
+	<meta name="keywords"  		content="kompas,klasika" />
+	<meta name="Resource-type" 	content="Document" />
 
 	<link rel="stylesheet" type="text/css" href="_common/jquery.fullPage.css" />
 	<style>
-        a {
-            margin: 20px 0 0 20px;
-            padding: 8px 0;
-            display: block;
-            width: 100px;
-            color: inherit;
-            text-decoration: none;
-            font-family: segoe ui;
-            font-size: 100%;
-            color: #fff;
-            border: 1px solid #fff;
-        }
+        a {}
         h1{
             padding: 0 20px;
             margin:0;
@@ -42,6 +36,13 @@
             text-align: left;
             color: #fff;
         }
+		#logo {
+			width: 100px;
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			z-index: 25;
+		}
         #section0,
         #section1,
         #section2,
@@ -61,11 +62,24 @@
             display: table;
         }
         .caption {
+           	padding-bottom: 20px;
             width: 100%;
-            bottom: 0%;
             display: table-cell;
-            vertical-align: middle;
+            vertical-align: bottom;
         }
+		.link {
+            margin: 20px 0 0 20px;
+            padding: 8px 0;
+            display: block;
+            width: 100px;
+            color: inherit;
+            text-decoration: none;
+			text-align: left;
+            font-family: segoe ui;
+            font-size: 100%;
+            color: #fff;
+			
+		}
 	</style>
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -87,13 +101,14 @@
 </head>
 <body>
     <div id="fullpage">
+        <div id="logo"><a target="_blank" href="http://langgam.kompas.id"><img src="_img/logo_klasika.png" alt="logo klasika"></a></div>
         
-        <div class="section " id="section0">
+		<div class="section " id="section0">
             <div class="transparent">
                 <div class="caption">
                     <h1>Ride Jakarta</h1>
                     <p>Sensasi berkendara di dalam ruangan</p>
-                    <a href="ride/index.html">Baca</a>
+                    <a href="ride/" target="_blank" class="link">Baca</a>
                 </div>
             </div>
         </div>
@@ -103,7 +118,7 @@
                 <div class="caption">
                     <h1>Eksplor Jawa</h1>
                     <p>Jelajahi kota-kota tempat peninggalan kerajaan Islam di pulau Jawa</p>
-                    <a href="eksplor/index.html">Baca</a>
+                    <a href="eksplor/" target="_blank" class="link">Baca</a>
                 </div>
             </div>
         </div>
@@ -113,7 +128,7 @@
                 <div class="caption">
                     <h1>Pasar Baroe</h1>
                     <p>Geliat pasar legendaris di Ibukota</p>
-                    <a href="pasarbaru/index.html">Baca</a>
+                    <a href="pasarbaru/" target="_blank" class="link">Baca</a>
                 </div>
             </div>
         </div>
