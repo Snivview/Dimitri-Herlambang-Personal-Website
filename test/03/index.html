@@ -18,12 +18,20 @@
 
 	<link rel="stylesheet" type="text/css" href="_common/jquery.fullPage.css" />
 	<style>
-        a {}
+        @font-face {
+            font-family: Myriad;
+            src: url(_common/MyriadPro-Light.otf);
+        }
+        @font-face {
+            font-family: Riga;
+            src: url(_common/Riga-Black.otf);
+        }
         h1{
             padding: 0 20px;
             margin:0;
             font-size: 300%;
-            font-family: Impact;
+            letter-spacing: -1px;
+            font-family: Riga;
             text-align: left;
             color: #fff;
         }
@@ -32,7 +40,7 @@
             margin:10px 0;
             font-size: 150%;
             font-weight: 100;
-            font-family: segoe ui;
+            font-family: Myriad;
             text-align: left;
             color: #fff;
         }
@@ -68,18 +76,20 @@
             vertical-align: bottom;
         }
 		.link {
+            display: block;
             margin: 20px 0 0 20px;
             padding: 8px 0;
-            display: block;
-            width: 100px;
-            color: inherit;
+            width: 55px;
             text-decoration: none;
 			text-align: left;
             font-family: segoe ui;
             font-size: 100%;
             color: #fff;
-			
+            border-bottom: 1px solid #fff;
+			transition: .5s;
 		}
+        .link span {float: right;}
+        .link:hover {width: 100px;}
 	</style>
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -108,7 +118,7 @@
                 <div class="caption">
                     <h1>Ride Jakarta</h1>
                     <p>Sensasi berkendara di dalam ruangan</p>
-                    <a href="ride/" target="_blank" class="link">Baca</a>
+                    <a href="ride/" target="_blank" class="link">Baca <span>→</span></a>
                 </div>
             </div>
         </div>
@@ -118,7 +128,7 @@
                 <div class="caption">
                     <h1>Eksplor Jawa</h1>
                     <p>Jelajahi kota-kota tempat peninggalan kerajaan Islam di pulau Jawa</p>
-                    <a href="eksplor/" target="_blank" class="link">Baca</a>
+                    <a href="eksplor/" target="_blank" class="link">Baca <span>→</span></a>
                 </div>
             </div>
         </div>
@@ -128,7 +138,7 @@
                 <div class="caption">
                     <h1>Pasar Baroe</h1>
                     <p>Geliat pasar legendaris di Ibukota</p>
-                    <a href="pasarbaru/" target="_blank" class="link">Baca</a>
+                    <a href="pasarbaru/" target="_blank" class="link">Baca <span>→</span></a>
                 </div>
             </div>
         </div>

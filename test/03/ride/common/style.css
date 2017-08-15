@@ -70,7 +70,7 @@ iframe {
 .div-container {
 	padding: 15px;
 	margin: 0 auto;
-	max-width: 994px;
+	max-width: 700px;
 	transition: all 1s;
 }
 
@@ -85,7 +85,7 @@ iframe {
 	transition: all 1s;
 	opacity: 0;
 	font-family: Ubuntu;
-	line-height: 30px;
+	line-height: 25px;
 }
 
 .div-image {
@@ -136,10 +136,23 @@ iframe {
 .div-anchor {height: 30px;}
 .div-anchor:focus {outline: none;}
 
-.parallax-window {
-    height: 300px;
-    background: transparent;
+/* parallax styles */
+section.module.content {padding: 40px 0;}
+section.module.parallax {
+	width: 100%;
+  	height: 300px;
+  	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	display: table;
+	position: relative;
 }
+/* parallax usage */
+#section_par {background-image: url("../img/ride_5.jpg");}
 
 #navArea {
 	position: fixed;

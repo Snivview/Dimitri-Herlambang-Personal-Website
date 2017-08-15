@@ -219,7 +219,7 @@ button:focus {outline: none;}
 .link-menu img{width: 100%;}
 .link-nav {
 	width: 300px;
-    margin: 50px auto 50px auto;
+    margin: 5px auto 20px auto;
 }
 .link-nav a {
     padding: 8px 30px;
