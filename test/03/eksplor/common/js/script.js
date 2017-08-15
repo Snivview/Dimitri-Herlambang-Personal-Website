@@ -8,19 +8,13 @@ function onReady(callback) {
 		}
 	}
 }
-function show(id, value) {
-	document.getElementById(id).style.display = value ? 'block' : 'none';
-}
+function show(id, value) {document.getElementById(id).style.display = value ? 'block' : 'none';}
 onReady(function () {
 	show('wrap', true);
 	show('loading', false);
 });
-function openMenu() {
-    document.getElementById("mySidenavB").style.width = "250px";
-}
-function closeMenu() {
-    document.getElementById("mySidenavB").style.width = "0";
-}
+function openMenu() {document.getElementById("mySidenavB").style.width = "250px";}
+function closeMenu() {document.getElementById("mySidenavB").style.width = "0";}
 function openNav() {
 	document.getElementById("mySidenav").style.width = "100%";
 	document.getElementById("closebtn").style.display = "block";
@@ -59,8 +53,4 @@ $(document).ready(function(){
 		$("#light").delay("slow").toggleClass("show");
 	});
 	$(".link-mapCaption").hover(function()	{$(this).find('a.link-mapPointer').toggleClass("blink");});
-	$("#btn-banten").hover(function()		{$('#map-banten a.link-mapPointer').toggleClass("blink");});
-	$("#btn-cirebon").hover(function()		{$('#map-cirebon a.link-mapPointer').toggleClass("blink");});
-	$("#btn-semarang").hover(function()		{$('#map-semarang a.link-mapPointer').toggleClass("blink");});
-	$("#btn-demak").hover(function()		{$('#map-demak a.link-mapPointer').toggleClass("blink");});
 });
