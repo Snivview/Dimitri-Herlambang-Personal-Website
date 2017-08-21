@@ -76,20 +76,73 @@
             vertical-align: bottom;
         }
 		.link {
-            display: block;
-            margin: 20px 0 0 20px;
-            padding: 8px 0;
+            display: inline-block;
             width: 55px;
             text-decoration: none;
 			text-align: left;
             font-family: segoe ui;
             font-size: 100%;
             color: #fff;
-            border-bottom: 1px solid #fff;
 			transition: .5s;
 		}
-        .link span {float: right;}
+        .link span {float: left;}
         .link:hover {width: 100px;}
+        .animated{
+            -webkit-animation-fill-mode:both;
+            -moz-animation-fill-mode:both;
+            -ms-animation-fill-mode:both;
+            -o-animation-fill-mode:both;
+            animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            animation-fill-mode:both;
+            -webkit-animation-duration:1.5s;
+            -moz-animation-duration:1.5s;
+            -ms-animation-duration:1.5s;
+            -o-animation-duration:1.5s;
+            animation-duration:1.5s;
+        }
+        .animated{
+            -webkit-animation-fill-mode:both;
+            -moz-animation-fill-mode:both;
+            -ms-animation-fill-mode:both;
+            -o-animation-fill-mode:both;
+            animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            animation-fill-mode:both;
+            -webkit-animation-duration:1.5s;
+            -moz-animation-duration:1.5s;
+            -ms-animation-duration:1.5s;
+            -o-animation-duration:1.5s;
+            animation-duration:1.5s;
+        }
+        .bounce {
+            -webkit-animation-name: bounce;
+            -moz-animation-name: bounce;
+            -o-animation-name: bounce;
+            animation-name: bounce;
+        }
+        @-webkit-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {margin-left:0;}
+            40% {margin-left:25px;}
+            60% {margin-left:15px;}
+        }
+        @-moz-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {margin-left:0px;}
+            40% {margin-left:25px;}
+            60% {margin-left:15px;}
+        }
+        @-o-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {margin-left:0px;}
+            40% {margin-left:25px;}
+            60% {margin-left:15px;}
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {margin-left:0px;}
+            40% {margin-left:25px;}
+            60% {margin-left:15px;}
+        }
 	</style>
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -117,8 +170,8 @@
             <div class="transparent">
                 <div class="caption">
                     <h1>Ride Jakarta</h1>
-                    <p>Sensasi berkendara di dalam ruangan</p>
-                    <a href="ride/" target="_blank" class="link">Baca <span>→</span></a>
+                    <p>Sensasi berkendara di dalam ruangan <a href="ride/" target="_blank" class="link animated bounce"><span>→</span></a></p>
+                    
                 </div>
             </div>
         </div>
@@ -127,8 +180,7 @@
             <div class="transparent">
                 <div class="caption">
                     <h1>Eksplor Jawa</h1>
-                    <p>Jelajahi kota-kota tempat peninggalan kerajaan Islam di pulau Jawa</p>
-                    <a href="eksplor/" target="_blank" class="link">Baca <span>→</span></a>
+                    <p>Jelajahi kota-kota tempat peninggalan kerajaan Islam di pulau Jawa <a href="eksplor/" target="_blank" class="link animated bounce"><span>→</span></a></p>
                 </div>
             </div>
         </div>
@@ -137,8 +189,7 @@
             <div class="transparent">
                 <div class="caption">
                     <h1>Pasar Baroe</h1>
-                    <p>Geliat pasar legendaris di Ibukota</p>
-                    <a href="pasarbaru/" target="_blank" class="link">Baca <span>→</span></a>
+                    <p>Geliat pasar legendaris di Ibukota <a href="pasarbaru/" target="_blank" class="link animated bounce"><span>→</span></a></p>
                 </div>
             </div>
         </div>
