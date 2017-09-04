@@ -60,8 +60,7 @@ body {
 /* components */
 .div-image {
     overflow: hidden;
-	float: left;
-	width: 50%;
+	width: 100%;
     position: relative;
 }
 .div-image p {
@@ -108,6 +107,15 @@ body {
 .div-imageB div img {
 	width: 100%;
 	vertical-align: middle;
+}
+.div-imageC div{
+    overflow: hidden;
+	float: left;
+	width: 50%;
+    position: relative;
+}
+.div-imageC div img{
+	width: 100%;
 }
 .img-photo {
     width: 100%;
@@ -393,7 +401,7 @@ section.module.content {padding: 40px 0;}
 section.module.parallax {
 	width: 100%;
   	height: 100vh;
-  	background-position: 50% 50%;
+  	background-position: 60% 50%;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	-webkit-background-size: cover;
@@ -405,7 +413,8 @@ section.module.parallax {
 }
 /* parallax usage */
 #section_landing {background-image: url("../img/pasar_baroe_01.jpg");}
-#section_makanan {background-image: url("../img/pasar_baroe_02.jpg");}
+#section_2 {background-image: url("../img/wikipedia_1.jpg");}
+#section_3 {background-image: url("../img/../img/pasar_baroe_05.jpg");}
 #section_restoran {background-image: url("../img/pasar_baroe_08.jpg");}
 
 @media screen and (max-width: 1024px) {
@@ -422,8 +431,9 @@ section.module.parallax {
 	}
 }
 @media screen and (max-width: 768px) {
-	.div-image {
+	.div-imageC div{
 		width: 100%;
+		float: none;
 	}
 }
 @media screen and (min-width: 568px) {
