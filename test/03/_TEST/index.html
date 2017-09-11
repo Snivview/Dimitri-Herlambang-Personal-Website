@@ -32,9 +32,8 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 				//anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				menu: '#menu',
+				//menu: '#menu',
 				scrollingSpeed: 1000
 			});
 
@@ -43,37 +42,58 @@
 	</script>
 
 	<style>
-		/* Sections
-		 * --------------------------------------- */
-		#section0 img,
-		#section1 img{
-			margin: 20px 0 0 0;
-		}
-		#section2 img{
-			margin: 20px 0 0 52px;
-		}
-		#section3 img{
-			bottom: 0px;
-			position: absolute;
-			margin-left: -420px;
-		}
+        h1 {font-size: 250%;}
+        
+        .section {
+            position: relative;
+        }
+        
+        #section0 {
+            //background-color: cyan;
+            z-index: 1;
+        }
+        #section1 {
+            //background-color: aquamarine;
+            z-index: 1;
+        }
+        #section2 {
+            //background-color: cornflowerblue;
+            z-index: -1;
+        }
+        
+        .txt_section {
+            position: absolute;
+            top: 10%;
+            z-index: 0;
+        }
 		.intro p{
 			width: 80%;
 			margin: 0 auto;
 			font-size: 16px;
 			text-align: left;
 		}
-		.twitter-share-button{
-			position: absolute;
-			z-index: 99;
-			right: 149px;
-			top: 9px;
-		}
+        .showText {
+            z-index: 1;
+        }
 	</style>
 
 </head>
 <body>
 
+<div class="txt_section" id="">
+    <h1>Sesuaikan daya AC dengan luas ruangan</h1>
+</div>
+<div class="txt_section" id="">
+    <h1>Perhitungkan sumber-sumber panas</h1>
+</div>
+<div class="txt_section" id="">
+    <h1>Setel suhu yang proporsional dengan suhu luar ruangan</h1>
+</div>
+<div class="txt_section" id="">
+    <h1>Tips lainnya</h1>
+</div>
+                
+    
 <div id="fullpage">
 
 	<div class="section active " id="section0">
@@ -81,50 +101,101 @@
 		 <input type="hidden" name="id" value="1" />
 		<p>Tips Agar AC Hemat Listrik di Rumah</p>
 	</div>
+    
 	<div class="section" id="section1">
 		<div class="slide">
 			<div class="intro">
 				<p>AC merupakan salah satu faktor terbesar dalam penggunaan listrik rumah tangga</p>
-			</div>
-
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<img src="imgs/1.png" alt="simple" />
-				<h1>Simple</h1>
-				<p>Easy to use. Configurable and customizable.</p>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<img src="imgs/2.png" alt="Cool" />
-				<h1>Cool</h1>
-				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<img src="imgs/3.png" alt="Compatible" />
-				<h1>Compatible</h1>
-				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+				<p>Berikut ini tips dan trik agar AC Anda hemat listrik</p>
 			</div>
 		</div>
 	</div>
+    
 	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Example</h1>
-			<p>HTML markup example to define 4 sections.</p>
+        <div class="slide">
+			<div class="intro">
+				<p>AC dengan daya yang tidak sebanding dengan luas ruangan akan bekerja maksimal untuk mendinginkan ruangan</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<p>Akibatnya akan menyedot listrik full secara terus-menerus</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Sebaliknya, AC dengan daya yang sebanding dengan luas ruangan akan bekerja optimal untuk mendinginkan ruangan</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Dampaknya konsumsi listrik lebih rendah</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Selain itu juga akan membuat AC lebih awet</p>
+			</div>
 		</div>
 	</div>
+    
 	<div class="section" id="section3">
-		<div class="intro">
-			<h1>Working On Tablets</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-			</p>
+        <div class="slide">
+			<div class="intro">
+                <p>Manusia, perangkat komputer, televisi, semua memancarkan panas</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Panas matahari yang masuk melalui jendela atau menyerap di tembok juga memperburuk keadaan</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Semakin banyak benda-benda yang memancarkan panas akan memperberat kinerja AC</p>
+			</div>
 		</div>
 	</div>
+    
+    <div class="section" id="section4">
+        <div class="slide">
+			<div class="intro">
+                <p>AC akan bekerja sampai suhu ruangan mencapai suhu yang Anda setel di remote AC</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Setel-lah suhu 2-3 derajat dibawah suhu ruangan normal tanpa AC</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Ketika suhu ruangan mencapai yang diinginkan, kinerja AC akan menurun bersamaan dengan konsumsi listriknya</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Menyetel suhu terlalu rendah mengakibatkan AC bekerja maksimal terus-menerus</p>
+			</div>
+		</div>
+        <div class="slide">
+			<div class="intro">
+				<p>Akibatnya konsumsi listrik akan tetap tinggi</p>
+			</div>
+		</div>
+    </div>
 
+    <div class="section" id="section5">
+        <div class="slide">
+			<div class="intro">
+				<p>Pelajari perhitungan BTU (British Thermal Unit) dalam menghitung daya AC yang diperlukan dalam suatu ruangan</p>
+			</div>
+		</div><div class="slide">
+			<div class="intro">
+				<p>Pertimbangkan juga untuk menggunakan AC dengan teknologi Inverter.</p>
+			</div>
+		</div>
+    </div>
 	
 </div> <!-- /#fullpage -->
 
