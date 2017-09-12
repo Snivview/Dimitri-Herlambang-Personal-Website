@@ -34,62 +34,88 @@
 			$('#fullpage').fullpage({
 				//anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 				//menu: '#menu',
-				scrollingSpeed: 1000
-			});
+				scrollingSpeed: 1000,
+                
+                afterLoad: function(anchorLink, index){
+                    var loadedSection = $(this);
+                    if(index == 3){
+                        $('#heading_1').addClass('showText');
+                    }
+                    else if(index == 4){
+                        $('#heading_1').addClass('showText');
+                    }
+                },
+                
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
 
+                    if(index == 4 && direction == 'down'){
+                        $('#heading_1').removeClass('showText');
+                    }
+                    else if(index == 3 && direction == 'up'){
+                        $('#heading_1').removeClass('showText');
+                    }
+                }
+                 
+			});
 		});
 
 	</script>
 
 	<style>
-        h1 {font-size: 250%;}
+        h1 {
+            font-size: 250%;
+            text-align: center;
+        }
         
         .section {
             position: relative;
-        }
-        
-        #section0 {
-            //background-color: cyan;
-            z-index: 1;
-        }
-        #section1 {
-            //background-color: aquamarine;
-            z-index: 1;
-        }
-        #section2 {
-            //background-color: cornflowerblue;
             z-index: -1;
         }
         
-        .txt_section {
+        #section0 {
+            background-color: cyan;
+        }
+        #section1 {
+            background-color: aquamarine;
+        }
+        #section2 {
+            background-color: cornflowerblue;
+        }
+        
+        .txt_heading {
+            width: 100%;
             position: absolute;
             top: 10%;
-            z-index: 0;
+            z-index: 1;
+            opacity: 0;
+            transition: .3s ease all;
         }
 		.intro p{
 			width: 80%;
-			margin: 0 auto;
+			margin: 20px auto;
 			font-size: 16px;
 			text-align: left;
 		}
         .showText {
-            z-index: 1;
+            opacity: 1 !important;
+            transition: 1s ease all;
         }
 	</style>
 
 </head>
 <body>
 
-<div class="txt_section" id="">
+<div class="txt_heading" id="heading_1">
     <h1>Sesuaikan daya AC dengan luas ruangan</h1>
 </div>
-<div class="txt_section" id="">
+<div class="txt_heading" id="heading_2">
     <h1>Perhitungkan sumber-sumber panas</h1>
 </div>
-<div class="txt_section" id="">
+<div class="txt_heading" id="heading_3">
     <h1>Setel suhu yang proporsional dengan suhu luar ruangan</h1>
 </div>
-<div class="txt_section" id="">
+<div class="txt_heading" id="heading_4">
     <h1>Tips lainnya</h1>
 </div>
                 
@@ -101,7 +127,7 @@
 		 <input type="hidden" name="id" value="1" />
 		<p>Tips Agar AC Hemat Listrik di Rumah</p>
 	</div>
-    
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
 	<div class="section" id="section1">
 		<div class="slide">
 			<div class="intro">
@@ -110,21 +136,21 @@
 			</div>
 		</div>
 	</div>
-    
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
 	<div class="section" id="section2">
         <div class="slide">
 			<div class="intro">
-				<p>AC dengan daya yang tidak sebanding dengan luas ruangan akan bekerja maksimal untuk mendinginkan ruangan</p>
+				<p>AC dengan daya yang tidak sebanding dengan luas ruangan akan bekerja lebih lama untuk mendinginkan ruangan</p>
 			</div>
 		</div>
 		<div class="slide">
 			<div class="intro">
-				<p>Akibatnya akan menyedot listrik full secara terus-menerus</p>
+				<p>Akibatnya akan menyedot listrik yang besar dalam jangka waktu yang lama</p>
 			</div>
 		</div>
         <div class="slide">
 			<div class="intro">
-				<p>Sebaliknya, AC dengan daya yang sebanding dengan luas ruangan akan bekerja optimal untuk mendinginkan ruangan</p>
+				<p>Sebaliknya, AC dengan daya yang sebanding dengan luas ruangan akan lebih cepat untuk mendinginkan ruangan</p>
 			</div>
 		</div>
         <div class="slide">
@@ -132,13 +158,8 @@
 				<p>Dampaknya konsumsi listrik lebih rendah</p>
 			</div>
 		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Selain itu juga akan membuat AC lebih awet</p>
-			</div>
-		</div>
 	</div>
-    
+ <!-- ----------------------------------------------------------------------------------------------------------------------- -->   
 	<div class="section" id="section3">
         <div class="slide">
 			<div class="intro">
@@ -152,11 +173,11 @@
 		</div>
         <div class="slide">
 			<div class="intro">
-				<p>Semakin banyak benda-benda yang memancarkan panas akan memperberat kinerja AC</p>
+				<p>Semakin banyak benda-benda yang memancarkan panas berarti AC membutuhkan waktu semakin lama untuk mendinginkan ruangan</p>
 			</div>
 		</div>
 	</div>
-    
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
     <div class="section" id="section4">
         <div class="slide">
 			<div class="intro">
@@ -184,7 +205,7 @@
 			</div>
 		</div>
     </div>
-
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
     <div class="section" id="section5">
         <div class="slide">
 			<div class="intro">
