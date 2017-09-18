@@ -38,28 +38,73 @@
                 
                 afterLoad: function(anchorLink, index){
                     var loadedSection = $(this);
+                    
                     if(index == 3){
                         $('#heading_1').addClass('showText');
                     }
-                    else if(index == 4){
+                    else if(index == 6){
                         $('#heading_1').addClass('showText');
+                    }
+                    
+                    else if(index == 7){
+                        $('#heading_2').addClass('showText');
+                    }
+                    else if(index == 8){
+                        $('#heading_2').addClass('showText');
+                    }
+                    
+                    else if(index == 9){
+                        $('#heading_3').addClass('showText');
+                    }
+                    else if(index == 13){
+                        $('#heading_3').addClass('showText');
+                    }
+                    
+                    else if(index == 14){
+                        $('#heading_4').addClass('showText');
+                    }
+                    else if(index == 15){
+                        $('#heading_4').addClass('showText');
+                    }
+                    
+                    else if(index == 0 || index == 16){
+                        $('#heading_1,#heading_2,#heading_3,#heading_4').removeClass('showText');
                     }
                 },
                 
                 onLeave: function(index, nextIndex, direction){
                     var leavingSection = $(this);
-
-                    if(index == 4 && direction == 'down'){
+                    
+                    if(index == 3 && direction == 'up'){
                         $('#heading_1').removeClass('showText');
                     }
-                    else if(index == 3 && direction == 'up'){
+                    else if(index == 6 && direction == 'down'){
                         $('#heading_1').removeClass('showText');
+                    }
+                    
+                    else if(index == 7 && direction == 'up'){
+                        $('#heading_2').removeClass('showText');
+                    }
+                    else if(index == 8 && direction == 'down'){
+                        $('#heading_2').removeClass('showText');
+                    }
+                    
+                    else if(index == 9 && direction == 'up'){
+                        $('#heading_3').removeClass('showText');
+                    }
+                    else if(index == 13 && direction == 'down'){
+                        $('#heading_3').removeClass('showText');
+                    }
+                    
+                    else if(index == 14 && direction == 'up'){
+                        $('#heading_4').removeClass('showText');
+                    }
+                    else if(index == 15 && direction == 'down'){
+                        $('#heading_4').removeClass('showText');
                     }
                 }
-                 
 			});
 		});
-
 	</script>
 
 	<style>
@@ -79,8 +124,17 @@
         #section1 {
             background-color: aquamarine;
         }
-        #section2 {
+        #section2, #section3, #section4, #section5 {
             background-color: cornflowerblue;
+        }
+        #section6, #section7 {
+            background-color: chocolate;
+        }
+        #section8, #section9, #section10, #section11, #section12 {
+            background-color: deepskyblue;
+        }
+        #section13, #section14, #section15 {
+            background-color: darkgray;
         }
         
         .txt_heading {
@@ -94,7 +148,7 @@
 		.intro p{
 			width: 80%;
 			margin: 20px auto;
-			font-size: 16px;
+			font-size: 20px;
 			text-align: left;
 		}
         .showText {
@@ -107,7 +161,7 @@
 <body>
 
 <div class="txt_heading" id="heading_1">
-    <h1>Sesuaikan daya AC dengan luas ruangan</h1>
+    <h1 style="color:#fff;">Sesuaikan daya AC dengan luas ruangan</h1>
 </div>
 <div class="txt_heading" id="heading_2">
     <h1>Perhitungkan sumber-sumber panas</h1>
@@ -129,95 +183,85 @@
 	</div>
 <!-- ----------------------------------------------------------------------------------------------------------------------- -->
 	<div class="section" id="section1">
-		<div class="slide">
-			<div class="intro">
-				<p>AC merupakan salah satu faktor terbesar dalam penggunaan listrik rumah tangga</p>
-				<p>Berikut ini tips dan trik agar AC Anda hemat listrik</p>
-			</div>
+		<div class="intro">
+			<p>AC merupakan salah satu faktor terbesar dalam penggunaan listrik rumah tangga</p>
+			<p>Berikut ini tips dan trik agar AC Anda hemat listrik</p>
 		</div>
 	</div>
-<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+<!-- Sesuaikan daya AC dengan luas ruangan -->
 	<div class="section" id="section2">
-        <div class="slide">
-			<div class="intro">
-				<p>AC dengan daya yang tidak sebanding dengan luas ruangan akan bekerja lebih lama untuk mendinginkan ruangan</p>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<p>Akibatnya akan menyedot listrik yang besar dalam jangka waktu yang lama</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Sebaliknya, AC dengan daya yang sebanding dengan luas ruangan akan lebih cepat untuk mendinginkan ruangan</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Dampaknya konsumsi listrik lebih rendah</p>
-			</div>
+        <div class="intro">
+		  <p style="color:#fff;">AC dengan daya yang tidak sebanding dengan luas ruangan akan bekerja lebih lama untuk mendinginkan ruangan</p>
 		</div>
 	</div>
- <!-- ----------------------------------------------------------------------------------------------------------------------- -->   
-	<div class="section" id="section3">
-        <div class="slide">
-			<div class="intro">
-                <p>Manusia, perangkat komputer, televisi, semua memancarkan panas</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Panas matahari yang masuk melalui jendela atau menyerap di tembok juga memperburuk keadaan</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Semakin banyak benda-benda yang memancarkan panas berarti AC membutuhkan waktu semakin lama untuk mendinginkan ruangan</p>
-			</div>
-		</div>
+    <div class="section" id="section3">
+        <div class="intro">
+		  <p style="color:#fff;">Akibatnya akan menyedot listrik yang besar dalam jangka waktu yang lama</p>
+        </div>
 	</div>
-<!-- ----------------------------------------------------------------------------------------------------------------------- -->
     <div class="section" id="section4">
-        <div class="slide">
-			<div class="intro">
-                <p>AC akan bekerja sampai suhu ruangan mencapai suhu yang Anda setel di remote AC</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Setel-lah suhu 2-3 derajat dibawah suhu ruangan normal tanpa AC</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Ketika suhu ruangan mencapai yang diinginkan, kinerja AC akan menurun bersamaan dengan konsumsi listriknya</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Menyetel suhu terlalu rendah mengakibatkan AC bekerja maksimal terus-menerus</p>
-			</div>
-		</div>
-        <div class="slide">
-			<div class="intro">
-				<p>Akibatnya konsumsi listrik akan tetap tinggi</p>
-			</div>
-		</div>
-    </div>
-<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+        <div class="intro">
+		  <p style="color:#fff;">Sebaliknya, AC dengan daya yang sebanding dengan luas ruangan akan lebih cepat untuk mendinginkan ruangan</p>
+        </div>
+	</div>
     <div class="section" id="section5">
-        <div class="slide">
-			<div class="intro">
-				<p>Pelajari perhitungan BTU (British Thermal Unit) dalam menghitung daya AC yang diperlukan dalam suatu ruangan</p>
-			</div>
-		</div><div class="slide">
-			<div class="intro">
-				<p>Pertimbangkan juga untuk menggunakan AC dengan teknologi Inverter.</p>
-			</div>
-		</div>
-    </div>
-	
+        <div class="intro">
+		  <p style="color:#fff;">Dampaknya konsumsi listrik lebih rendah</p>
+        </div>
+	</div>
+<!-- Perhitungkan sumber-sumber panas -->
+    <div class="section" id="section6">
+        <div class="intro">
+            <p>Manusia, perangkat komputer, televisi, semua memancarkan panas</p>
+        </div>
+	</div>
+    <div class="section" id="section7">
+        <div class="intro">
+		  <p>Semakin banyak benda-benda yang memancarkan panas berarti AC membutuhkan waktu semakin lama untuk mendinginkan ruangan</p>
+        </div>
+	</div>
+<!-- Setel suhu yang proporsional dengan suhu luar ruangan -->
+    <div class="section" id="section8">
+        <div class="intro">
+            <p>AC akan bekerja sampai suhu ruangan mencapai suhu yang Anda setel di remote AC</p>
+        </div>
+	</div>
+    <div class="section" id="section9">
+        <div class="intro">
+		  <p>Setel-lah suhu 2-3 derajat dibawah suhu ruangan normal tanpa AC</p>
+        </div>
+	</div>
+    <div class="section" id="section10">
+        <div class="intro">
+		  <p>Ketika suhu ruangan mencapai yang diinginkan, kinerja AC akan menurun bersamaan dengan konsumsi listriknya</p>
+        </div>
+	</div>
+    <div class="section" id="section11">
+        <div class="intro">
+		  <p>Menyetel suhu terlalu rendah mengakibatkan AC bekerja maksimal terus-menerus</p>
+        </div>
+	</div>
+    <div class="section" id="section12">
+        <div class="intro">
+		  <p>Akibatnya konsumsi listrik akan tetap tinggi</p>
+        </div>
+	</div>
+<!-- Tips lainnya -->
+    <div class="section" id="section13">
+        <div class="intro">
+		  <p>Pelajari perhitungan BTU (British Thermal Unit) dalam menghitung daya AC yang diperlukan dalam suatu ruangan</p>
+        </div>
+	</div>
+    <div class="section" id="section14">
+        <div class="intro">
+		  <p>Pertimbangkan juga untuk menggunakan AC dengan teknologi Inverter.</p>
+        </div>
+	</div>
+    <div class="section" id="section15">
+        <div class="intro">
+		  <p>Terima Kasih</p>
+        </div>
+	</div>
 </div> <!-- /#fullpage -->
 
 
