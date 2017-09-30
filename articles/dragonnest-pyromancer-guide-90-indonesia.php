@@ -23,27 +23,26 @@
 <h1>Dragon Nest Pyromancer Guide 90 Indonesia</h1>
 <div class="mTB30 articles">
 <h2>Intro</h2>
-<p>Saleana alias Pyromancer adalah job yang memiliki tugas sebagai <span class="tI">Damage Dealer</span>, ataupun <span class="tI">Killer</span>.</p>
-<p>Disebut sebagai <span class="tI">Killer</span> karena potensi damagenya yang luar biasa. Oleh karenanya, player Pyromancer bertannggung jawab terhadap equipmentnya agar bisa menghasilkan damage sebesar-besarnya.</p>
+<p>Saleana alias Pyromancer adalah job yang memiliki tugas sebagai <span class="tI">Damage Dealer</span>, ataupun <span class="tI">Killer</span> di PvP.</p>
+<p>Disebut sebagai <span class="tI">Killer</span> karena potensi damage yang besar dan Area of Effect yang luas. Oleh karenanya, player Pyromancer sangat bertanggung jawab terhadap equipmentnya untuk dapat berkontribusi di tim.</p>
 <p>Guide ini akan membahas semua skill Sorceress &gt; Elemental Lord &gt; Pyromancer</p>
 <h2>Kelebihan dan Kekurangan</h2>
 <p>Kelebihan :</p>
 <ul class="dispList list02 t18 tB">
 <li>Elemen api, mendapatkan benefit dari stats Fire Attack.</li>
 <li>Board damage besar.</li>
-<li>Hellfire meningkatkan damage skill api secara keseluruhan, sebanyak 30%.</li>
 <li>Burning Hand (pasif pyromancer) turut meningkatkan damage skill api secara keseluruhan, sebanyak 50%.</li>
 <li>Memiliki shield yang dapat mengurangi damage yang diterima hingga 35%.</li>
-<li>Burn Damage memberikan efek damage-over-time.</li>
-<li>Memiliki skill yang mengurangi fire resist. Bisa di stack dengan beberapa skill -fire resist milik job lain (contoh : Blade Runner EX Ripper).</li>
+<li>Burn Damage memberikan efek damage-over-time, di PvP cukup sering membuat musuh "mati sendiri" meskipun berhasil melarikan diri.</li>
+<li>Memiliki skill yang mengurangi elemental resistance.</li>
 <li>Banyak skill memiliki area-of-effect yang luas dan jarak cukup jauh, sangat mudah menghabiskan gerombolan monster sekaligus.</li>
 </ul>
 <p>Kekurangan :</p>
 <ul class="dispList list02 t18 tB">
-<li>Hampir semua skillnya memiliki waktu casting yang lama.</li>
-<li>Kurang lincah, mobilitas hanya mengandalkan 2 skill.</li>
+<li>Beberapa skillnya memiliki waktu casting yang lama.</li>
+<li>Kurang lincah, mobilitas hanya mengandalkan 2 skill, ditambah skill lari tentunya.</li>
 <li>Burning Hand sifatnya random, 20% chance untuk aktif, +30% ditambah heraldry hingga total 50%. Bila dihitung rata-rata, hanya meningkatkan 25% damage (50/100 * 50).</li>
-<li>Burn Damage tidak berasa di PvE, hanya sakit di PvP.</li>
+<li>Burn Damage tidak berasa di PvE</li>
 <li>Shield sifatnya buff, dan tidak permanen (cooldown 30 detik, durasi 20 detik).</li>
 </ul>
 <h2>Skill Build</h2>
@@ -101,8 +100,7 @@
 </tr>
 </table>
 </dt>
-<dd>Skill api basic sorceress, fungsinya cukup untuk ngebakar musuh supaya skill api berikutnya dapat
-benefit dari Hellfire, damage tidak begitu besar, bisa juga untuk di combo ke ignite.
+<dd>Skill api basic sorceress, fungsinya cukup untuk ngebakar musuh supaya mendapat buff Fever, damage tidak begitu besar, bisa juga untuk di combo ke ignite.
 <ul>
 <li>apinya merambat di tanah.</li>
 <li>bisa ditembak menyebar, caranya ketika cast, langsung arahkan ke samping kiri atau kanan.</li>
@@ -124,7 +122,7 @@ benefit dari Hellfire, damage tidak begitu besar, bisa juga untuk di combo ke ig
 <th>PvP</th>
 <td>
 <ul>
-<li>murni sebagai filler combo, ataupun untuk mendorong.</li>
+<li>murni sebagai filler combo, atau untuk mendorong.</li>
 </ul>
 </td>
 </tr>
@@ -182,7 +180,6 @@ benefit dari Hellfire, damage tidak begitu besar, bisa juga untuk di combo ke ig
 </dt>
 <dd>Salah satu dari beberapa skill sorceress yang atributnya physical. di Level 6 bisa mengeluarkan mini tornado ke depan.
 <ul>
-<li>bisa mengenai musuh yang sedang jatuh.</li>
 <li>bisa mendorong objek.</li>
 </ul>
 <table class="analysis mTop10">
@@ -289,10 +286,9 @@ Penting untuk pertahanan diri di PvP.
 </tr>
 </table>
 </dt>
-<dd>Skill buff untuk diri sendiri dan party. mengurangi konsumsi mp sebesar 20% dalam penggunaan skill.
-Serta mengurangi cooldown seluruh skill sebesar 10%.
+<dd>Skill buff untuk diri sendiri dan party. mengurangi konsumsi mp skill sebesar 20%.
+Serta mengurangi cooldown seluruh skill aktif sebesar 10%.
 <ul>
-<li>Buff untuk diri sendiri secara akan diterima tepat ketika casting skill, untuk party/teman, seluruh animasi harus berjalan (angkat tongkat, ada efek aura).</li>
 </ul>
 </dd>
 <dt>
@@ -378,6 +374,7 @@ Serta mengurangi cooldown seluruh skill sebesar 10%.
 <li>vital untuk pertahanan, ketika paralyzed.</li>
 <li>tidak bisa digunakan ketika stunned.</li>
 <li>bisa menghindari combo Doom Blade + Dark Crash milik Avenger, ketika terjatuh menyentuh tanah, langsung power blink.</li>
+    <li>Hati-hati karena terkadang terjadi bug dimana skill blink dan powerblink akan terpakai secara bersamaan.</li>
 </ul>
 </td>
 </tr>
@@ -533,7 +530,7 @@ efek yang dihasilkan adalah stagger.
 <dd>skill nuke utama pyromancer, damage max setelah dicas selama 1,3 detik.
 damage maksimal. Klik kanan untuk memecah fireball menjadi 3 proyektil (EX only).
 <ul>
-<li>Damage masing-masing dari fireball pecah 3 adalah 96% dari board damage.</li>
+<li>Damage masing-masing dari fireball pecah 3 adalah 96% dari board damage di PvE, sehingga total 288% bila mengenai satu target.</li>
 <li>Sedangkan damage maksimum dari single fireball adalah 200% alias 2x lipat dari board damage.</li>
 <li>damage yang diterima selama casting Fireball akan berkurang, juga tersedia opsi damage reduction dari heraldry Fireball.</li>
 <li>skill ini punya efek balistik, arahkan ke atas untuk menjangkau target yang jauh.</li>
@@ -554,6 +551,7 @@ damage maksimal. Klik kanan untuk memecah fireball menjadi 3 proyektil (EX only)
 <td>
 <ul>
 <li>bisa digunakan untuk menjangkau target yang jauh dan posisi yang aman dari jangkauan serangan boss. Bila boss dalam jarak dekat, usahakan untuk menembak dengan klik kanan (pecah 3) agar damage maksimal.</li>
+    <li>di PvE, EX akan meningkatkan damage dari maksimum charge hingga 40%, sehingga total damage max charge sebesar 240% dari board damage (2.4x lipat).</li>
 </ul>
 </td>
 </tr>
@@ -576,7 +574,7 @@ damage maksimal. Klik kanan untuk memecah fireball menjadi 3 proyektil (EX only)
 </tr>
 </table>
 </dt>
-<dd>Menyemburkan api sejauh 7m kedepan selama 3 detik. Damage besar. Klik kiri untuk mengakhiri semburan
+<dd>Menyemburkan api sejauh 5m kedepan selama 3 detik. Damage besar. Klik kiri untuk mengakhiri semburan
 dengan sebuah ledakan dan memberikan debuff -20% critical resist (EX only).
 <ul>
 <li>selama menyemburkan api, bisa diarahkan ke kiri dan kanan untuk membelokkan arah semburan.</li>
@@ -584,6 +582,7 @@ dengan sebuah ledakan dan memberikan debuff -20% critical resist (EX only).
 <li>tidak bisa diarahkan ke atas maupun ke bawah, tapi mengenai musuh yang knockdown.</li>
 <li>sedikit mendorong musuh ke belakang.</li>
 <li>Skill ini memiliki banyak hit selama semburan, semakin banyak hit akan semakin sering memicu Burning Hand untuk keluar.</li>
+<li>Radius ledakan EX mencapai 7m.</li>
 </ul>
 <table class="analysis mTop10">
 <tr>
@@ -614,18 +613,17 @@ dengan sebuah ledakan dan memberikan debuff -20% critical resist (EX only).
 <table class="skillDetail">
 <tr>
 <th><img src="img/DN/Fire_Wall.png" alt="Fire Wall" width="51" height="50"></th>
-<td>Fire Wall EX</td>
+<td>(Awakened) Fire Wall EX</td>
 </tr>
 </table>
 </dt>
-<dd>Mengeluarkan 'tembok' api di sekeliling badan, klik kiri untuk dapat mengeluarkan tambahan semburan api kedepan (EX only), bila tidak hanya menjadi Fire Wall biasa.
+<dd>Menyemburkan gelombang api di sekeliling badan sejauh 8m, klik kiri untuk dapat mengeluarkan tambahan semburan api kedepan (EX only). Memberikan efek slow.
 <ul>
-<li>Memiliki Super Armor terbesar kedua setelah ultimate, jadi tidak mudah untuk membatalkan skill ini.</li>
-<li>SA Break juga besar, dapat mengangkat musuh.</li>
-<li>untuk mencapai damage maksimal, target harus berada di tanah, lalu terbawa terbang agar terkena seluruh tembok apinya.</li>
-<li>animasi ketika mengeluarkan tembok api dapat dicancel langsung ke EX, caranya klik kiri ketika casting.</li>
+<li>Awakened Firewall benar-benar mengubah sifat dari skill ini. Tidak lagi memberikan super armor yang besar, tapi casting timenya hampir instant, yakni sekitar 0,3 detik.</li>
+<li>Animasi skill ini mirip dengan Ignite, yakni menyemburkan gelombang api.</li>
+<li>SA Break juga besar.</li>
 <li>semburan api EX nya dapat diarahkan ke kiri atau kanan.</li>
-<li>Animasi casting skill ini sama dengan Ice Cold Field.</li>
+<li>Super Armor Awakakened firewall ex SANGAT KECIL, mudah untuk dibatalkan meski casting time hampir instant.</li>
 </ul>
 <table class="analysis mTop10">
 <tr>
@@ -635,8 +633,7 @@ dengan sebuah ledakan dan memberikan debuff -20% critical resist (EX only).
 <th>PvE</th>
 <td>
 <ul>
-<li>Damage cukup besar, berguna menghabisi gerombolan monster yang mengerubungi.</li>
-<li>Karena AoE-nya sekitar badan, harap berhati-hati ketika ingin menggunakannya pada Boss.</li>
+<li>Damage sangat besar, berguna menghabisi gerombolan monster yang mengerubungi.</li>
 </ul>
 </td>
 </tr>
@@ -644,8 +641,8 @@ dengan sebuah ledakan dan memberikan debuff -20% critical resist (EX only).
 <th>PvP</th>
 <td>
 <ul>
-<li>Super Armor besar, Damage lumayan, sulit untuk membatalkan skill ini.</li>
-<li>Casting time cukup lama, musuh masih bisa melarikan diri.</li>
+<li>Damage besar untuk AoE yang luas, sulit untuk membatalkan skill ini.</li>
+<li>Casting time hampir instant dengan SA kecil, musuh bisa menghindar ataupun membatalkan skill ini.</li>
 <li>Sangat efektif ketika berada di tengah-tengah gerombolan musuh.</li>
 </ul>
 </td>
@@ -677,7 +674,6 @@ untuk PvP, juga mengurangi damage yang diterima selama shield ini aktif.
 <ul>
 <li>efektif mengurangi damage yang diterima.</li>
 <li>Meskipun Super Armor meningkat dengan tajam, beberapa stomp masih bisa menembus Super Armor.</li>
-<li>sangat cocok di combo dengan ignite.</li>
 </ul>
 </td>
 </tr>
