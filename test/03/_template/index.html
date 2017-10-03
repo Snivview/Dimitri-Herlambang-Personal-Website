@@ -26,22 +26,46 @@
 			</div> <!-- /.div-layer -->
 		</section> <!-- /#section_landing -->
    		
-   		<section>
+   		<section class="clearfix">
             <div class="text-lead">
             	<p class="tI">TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD</p>
             	<div class="text-lead_line"></div>
             </div>
    		</section>
    		
-   		<section>
+   		<section class="clearfix">
    			<div class="text-paragraph">
    				<p><span class="text-dropCap">T</span>EKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF</p>
+   			</div>
+   		</section>
+   		
+   		<div style="height:2px;background-color:#737373"></div>
+   		
+   		<section>
+   			<div class="text-quote">
+   				<p>"TEKS QUOTE TEKS QUOTE TEKS QUOTE TEKS QUOTE"</p>
+   			</div>
+   		</section>
+   		
+   		<div style="height:2px;background-color:#737373"></div>
+   		
+   		<section class="clearfix">
+   			<div class="text-paragraph">
    				<p><span class="image-right"><img data-original="img/dummy.jpg" alt="dummy">caption caption caption caption caption caption.</span>EKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF</p>
+   			</div>
+   		</section>
+   		
+   		<div style="height:2px;background-color:#737373"></div>
+   		
+   		<section class="clearfix">
+   			<div class="text-paragraph">
    				<p><span class="image-left"><img data-original="img/dummy.jpg" alt="dummy">caption caption caption caption caption caption.</span>EKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF</p>
    			</div>
    		</section>
    		
-   		<section>
+   		<div style="height:2px;background-color:#737373"></div>
+   		
+   		<section class="clearfix">
    			<div class="image-gallery">
 				<img data-original="img/dummy.jpg" alt="dummy">
             	<img class="image-info" src="img/info.png" alt="klik atau arahkan mouse pada gambar">
@@ -53,6 +77,8 @@
             	<p>CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION</p>
             </div>
    		</section>
+   		
+   		<div style="height:2px;background-color:#737373"></div>
    		
    		<section class="module parallax" id="section_demo">
 			<div class="text-image-parallax_caption">
@@ -81,7 +107,7 @@
 	<script>
 		$(window).on('beforeunload',function(){$(window).scrollTop(0);});
 		$(document).ready(function(){
-			$(".text-paragraph p").viewportChecker({
+			$(".text-paragraph p, .text-quote p").viewportChecker({
 				classToAdd: 'show',
 				offset: 100,
 			});

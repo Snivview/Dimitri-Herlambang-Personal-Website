@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* reset */
-html{background:#fff;}
+html{background:#fff;overflow-x: hidden;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:separate;border-spacing:0;}
 fieldset,img{border:0;}
@@ -42,30 +42,6 @@ section{margin:25px 0;}
 
 /* components */
 
-.image-right {
-	width: 550px;
-	float: right;
-	margin: 10px -140px 10px 25px;
-	padding: 10px 0;
-	line-height: 20px;
-	font-size: 15px;
-}
-.image-right img{
-	width: 100%;
-	margin-bottom: 10px;
-}
-.image-left {
-	width: 550px;
-	float: left;
-	margin: 10px 25px 10px -140px;
-	padding: 10px 0;
-	line-height: 20px;
-	font-size: 15px;
-}
-.image-left img{
-	width: 100%;
-	margin-bottom: 10px;
-}
 .text-dropCap {
     float: left;
     font-size: 60px;
@@ -108,6 +84,24 @@ section{margin:25px 0;}
 	opacity: 0;
 	transition: 1s;
 }
+.text-quote {
+	margin: 0 auto;
+    max-width: 550px;
+	padding: 20px 0;
+	border-top: 1px solid rgba(184,184,184,1.00);
+	border-bottom: 1px solid rgba(184,184,184,1.00);
+}
+.text-quote p {
+	margin-bottom: 10px;
+	line-height: 35px;
+	font-family: georgia;
+	font-size: 22px;
+	color: rgba(99,99,99,1.00);
+	opacity: 0;
+	transition: 1s;
+	font-style: italic;
+	font-weight: bold;
+}
 .text-image-parallax_caption {
     background-color: rgba(0,0,0,.5);
     width: 250px;
@@ -121,6 +115,30 @@ section{margin:25px 0;}
 	font-family: georgia;
 	font-size: 16px;
 	color: #fff;
+}
+.image-right {
+	width: 550px;
+	float: right;
+	margin: 0 -140px 10px 25px;
+	padding: 10px 0;
+	line-height: 20px;
+	font-size: 15px;
+}
+.image-right img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.image-left {
+	width: 550px;
+	float: left;
+	margin: 0 25px 10px -140px;
+	padding: 10px 0;
+	line-height: 20px;
+	font-size: 15px;
+}
+.image-left img{
+	width: 100%;
+	margin-bottom: 10px;
 }
 .image-gallery-wrap {
     width: 100%;
@@ -172,18 +190,23 @@ section.module.parallax {
 	display: table;
 	position: relative;
 }
-@media screen and (max-width: 1024px) {
-	.text-quote {
-        margin: 20px 0 40px 30px;
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
+	.image-gallery {
+		float: none;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1050px) {
 	.image-right, .image-left {
 		width: 100%;
 		margin: 20px 0;
 	}
 }
 
-#section_landing {z-index: 10;}
+#section_landing {
+	margin-top: 0;
+	z-index: 10;
+}
 #section_landing .div-transparent-layer {
 	height: 100vh;
   	width: 100vw;
