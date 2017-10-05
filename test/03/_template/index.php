@@ -92,9 +92,9 @@
    		
     </div> <!-- /#wrap -->
     
-    <script src="cmn/jquery-210.js" type="text/javascript"></script>
-	<script src="cmn/jquery.viewportchecker-2.js" type="text/javascript"></script>
-	<script src="cmn/lazy.js" type="text/javascript"></script>
+    <script src="../_common/jquery-210.js" type="text/javascript"></script>
+	<script src="../_common/jquery.viewportchecker.js" type="text/javascript"></script>
+	<script src="../_common/lazy.js" type="text/javascript"></script>
 	<script>
 		function onReady(callback) {
 			var intervalID = window.setInterval(checkReady, 1000);
@@ -111,7 +111,7 @@
 	<script>
 		$(window).on('beforeunload',function(){$(window).scrollTop(0);});
 		$(document).ready(function(){
-			$(".text-paragraph p, .text-quote p").viewportChecker({
+			$(".text-paragraph p,.text-quote p").viewportChecker({
 				classToAdd: 'show',
 				offset: 100,
 			});
