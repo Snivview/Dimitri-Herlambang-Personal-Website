@@ -75,9 +75,10 @@ body {
 
 /* components */
 .div-image {
-    overflow: hidden;
-	width: 100%;
+	overflow: hidden;
+	max-width: 700px;
     position: relative;
+    margin: 0 auto;
 }
 .div-image p {
 	position: absolute;
@@ -240,9 +241,7 @@ body {
     font-weight: bold;
     margin-right: 9px;
 }
-.text-lead {
-	max-width: 940px !important;
-}
+.text-lead {max-width: 700px !important;}
 .text-lead p{
 	font-size: 16px;
 	line-height: 25px;
@@ -487,16 +486,12 @@ section.module.parallax {
 }
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+	max-width: 560px;
+	margin: 0 auto;
 }
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
+	display: block;
 	width: 100%;
-	height: 100%;
 }
 </style>
 </head>
@@ -533,7 +528,7 @@ section.module.parallax {
           <p>Pasar Baru yang didirikan pada sekitar tahun 1820 dikenal sebagai pusat perdagangan VOC (Verenigde Oost Indische Compagnie). Namanya diwariskan sejak zaman VOC, dengan ejaan Passer Baroe atau De Niewuw Markt dalam bahasa Belanda.</p>
         </div>
       </div>
-      <p style="padding:5px;">Dok. Wikipedia</p>
+      <p style="max-width:700px;margin: 0 auto;padding:5px;">Dok. Wikipedia</p>
     </section>
     <div class="div-text text-lead">
       <p class="tI">Pasar tradisional menjadi bagian tak terpisahkan dari denyut kehidupan sebagian besar masyarakat Indonesia. Tak luput di Jakarta. Di antara derap pembangunan dan solek Ibu Kota, masih tersisa ruang interaksi berwujud pasar tradisional yang menarik dikunjungi. Salah satunya, Pasar Baru.</p>

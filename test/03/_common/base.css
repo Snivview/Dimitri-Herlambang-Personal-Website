@@ -1,30 +1,27 @@
 @charset "utf-8";
 
 /* base class */
-.clearfix:before,
-.clearfix:after{content:"";display:table;}
-.clearfix:after{clear:both;}
-.fL{float:left;}
-.fR{float:right;}
 .tB{font-weight:bold;}
 .tL{text-align:left;}
 .tC{text-align:center;}
 .tR{text-align:right;}
 .tI{font-style:italic;}
 .tWhite{color:#fff;}
-#loading{background-color: #00599A;height:100%;width:100%;position:fixed;z-index:20;margin-top:0px;top:0px;}
-#loading-center{width:100%;height: 100%;position: relative;}
-#loading-center-absolute{position: absolute;left:50%;top:50%;height:200px;width:200px;margin-top:-100px;margin-left: -100px;-ms-transform: rotate(-135deg);-webkit-transform:rotate(-135deg);transform: rotate(-135deg);}
-.object{-moz-border-radius: 50% 50% 50% 50%;-webkit-border-radius:50% 50% 50% 50%;border-radius: 50% 50% 50% 50%;position:absolute;border-top: 5px solid #FFF;border-bottom: 5px solid transparent;border-left:5px solid #FFF;border-right:5px solid transparent;-webkit-animation:animate 2s infinite;animation:animate 2s infinite;}
-#object_one{left:75px;top:75px;width:50px;height:50px;}
-#object_two{left:65px;top:65px;width:70px;height:70px;-webkit-animation-delay:0.2s;animation-delay:0.2s;}	
-#object_three{left:55px;top:55px;width:90px;height:90px;-webkit-animation-delay:0.4s;animation-delay:0.4s;}
-#object_four{left:45px;top: 45px;width:110px;height:110px;-webkit-animation-delay:0.6s;animation-delay:0.6s;}	
-@-webkit-keyframes animate {50% {-ms-transform: rotate(360deg) scale(0.8);-webkit-transform: rotate(360deg) scale(0.8);transform: rotate(360deg) scale(0.8);}}
-@keyframes animate {50% {-ms-transform: rotate(360deg) scale(0.8);-webkit-transform: rotate(360deg) scale(0.8);transform: rotate(360deg) scale(0.8);}}
+a {text-decoration: none;color: inherit;}
+
+/* footer */
+#footerArea {
+	margin-top: 25px;
+	font-size: 12px;
+	font-family: georgia;
+	padding: 10px 20px 20px 20px;
+}
+#footerArea ul li {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+}
 
 /* components */
-
 .text-dropCap {
     float: left;
     font-size: 60px;
@@ -89,8 +86,8 @@
     background-color: rgba(0,0,0,.5);
     width: 250px;
     position: absolute;
-    right: 5%;
-    top: 50%;
+    left: 0;
+    bottom: 0;
     padding: 20px;
 }
 .text-image-parallax_caption p {
@@ -169,6 +166,16 @@
 	opacity: 1;
 	transition: 1s;
 }
+.videoWrapper {
+	position: relative;
+	max-width: 560px;
+	margin: 0 auto;
+}
+.videoWrapper iframe {
+	display: block;
+	width: 100%;
+}
+
 section.module.content {padding: 40px 0;}
 section.module.parallax {
 	width: 100%;
@@ -189,29 +196,33 @@ section.module.parallax {
 		width: 100%;
 	}
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1084px) {
 	.image-right, .image-left {
 		width: 100%;
 		margin: 20px 0;
 	}
+	#footerArea ul{
+		float: none;
+		text-align: center;
+	}
 }
 
-#section_landing {
+#landing_image {
 	margin-top: 0;
 	z-index: 10;
 }
-#section_landing .div-transparent-layer {
+.div-transparent-layer {
 	height: 100vh;
   	width: 100vw;
 	position: relative;
 	background: rgba(0,0,0,.6);
 }
-#section_landing .div-caption {
+.div-caption {
 	position: absolute;
 	bottom: 10%;
 	z-index: 11;
 }
-#section_landing .div-caption h1 {
+.div-caption h1 {
 	padding: 20px;
 	font-size: 400%;
 	letter-spacing: -1px;
@@ -219,12 +230,45 @@ section.module.parallax {
 	font-family: Impact;
 	color: #fff;
 }
-#section_landing .div-caption p {
+.div-caption p {
 	padding: 20px;
 	font-size: 150%;
 	font-weight: 100;
 	font-family: segoe ui;
 	color: #fff;
+}
+/* Video wrap */
+#landing_video {
+    background-image: url(../../_img/dummy.jpg);
+    background-position: bottom;
+    z-index: 10;
+    height: 100vh;
+}
+.bv-video-wrap {
+    width: 100%;
+    height: 100%;
+  /* Please note this is only required if you with to add the
+  '.bv-video-wrap--ready' class on the 'onReady' event */
+  display: none;
+}
+.bv-video-wrap--ready {display: block;}
+.bv-video-wrap::before {
+  /* Optional overlay */
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+/* Video object */
+.bv-video {
+  	width: 100%;
+  	height: 100%;
 }
 #section_demo {background-image: url("../img/dummy.jpg");}
 
@@ -281,4 +325,3 @@ section.module.parallax {
 	40% {transform: translateY(-25px);}
 	60% {transform: translateY(-5px);}
 }
-/* footer */
