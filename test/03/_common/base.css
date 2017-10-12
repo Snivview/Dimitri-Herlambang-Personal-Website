@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 /* base class */
+.fL{float:left;}
+.fR{float:right;}
 .tB{font-weight:bold;}
 .tL{text-align:left;}
 .tC{text-align:center;}

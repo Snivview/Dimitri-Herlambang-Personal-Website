@@ -51,6 +51,16 @@
 			left: 20px;
 			z-index: 25;
 		}
+		#view-all {
+			width: 30px;
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 25;
+		}
+		#view-all img {
+			width: 100%;
+		}
         #section0,
         #section1,
         #section2,
@@ -74,8 +84,8 @@
             width: 100%;
             display: table-cell;
             vertical-align: middle;
-			cursor: pointer;
         }
+		.caption div {cursor: pointer;}
 		.link {
             display: inline-block;
             width: 55px;
@@ -167,31 +177,38 @@
 </head>
 <body>
     <div id="fullpage">
-        <div id="logo"><a target="_blank" href="http://advisual.kompas.id/"><img src="_img/logo_advisual.png" alt="logo advisual"></a></div>
+        <div id="logo"><a href="http://advisual.kompas.id/"><img src="_img/logo_advisual.png" alt="logo advisual"></a></div>
+        <div id="view-all"><a href="view-all/"><img src="_img/view-all.png" alt="lihat semua"></a></div>
         
 		<div class="section " id="section0">
             <div class="transparent">
-                <div class="caption" onclick="window.open('ride/index.html','mywindow');">
-                    <h1>Ride Jakarta</h1>
-                    <p>Sensasi berkendara di dalam ruangan. <a href="ride/" target="_blank" class="link"><span class="animated bounce"><img src="_img/arrow_right_2.png" width="10" height="20"></span></a></p>
+                <div class="caption">
+                   	<div onclick="window.open('ride/index.html','mywindow');">
+                   		<h1>Ride Jakarta</h1>
+                    	<p>Sensasi berkendara di dalam ruangan. <a href="ride/" target="_blank" class="link"><span class="animated bounce"><img src="_img/arrow_right_2.png" width="10" height="20"></span></a></p>
+                   	</div>
                 </div>
             </div>
         </div>
         
         <div class="section" id="section1">
             <div class="transparent">
-                <div class="caption" onclick="window.open('eksplor/index.html','mywindow');">
-                    <h1>Eksplor Jawa</h1>
-                    <p>Jelajahi kota-kota tempat peninggalan kerajaan Islam di pulau Jawa. <a href="eksplor/" target="_blank" class="link"><span class="animated bounce"><img src="_img/arrow_right_2.png" width="10" height="20"></span></a></p>
+                <div class="caption">
+                   	<div onclick="window.open('eksplor/index.html','mywindow');">
+                   		<h1>Eksplor Jawa</h1>
+                    	<p>Jelajahi kota-kota tempat peninggalan kerajaan Islam di pulau Jawa. <a href="eksplor/" target="_blank" class="link"><span class="animated bounce"><img src="_img/arrow_right_2.png" width="10" height="20"></span></a></p>
+                   	</div>
                 </div>
             </div>
         </div>
         
         <div class="section" id="section2">
             <div class="transparent">
-                <div class="caption" onclick="window.open('pasarbaru/','mywindow');">
-                    <h1>Passer Baroe</h1>
-                    <p>Merajut Rindu di Pasar Baru. <a href="pasarbaru/" target="_blank" class="link"><span class="animated bounce"><img src="_img/arrow_right_2.png" width="10" height="20"></span></a></p>
+                <div class="caption">
+                   	<div onclick="window.open('pasarbaru/','mywindow');">
+                   		<h1>Passer Baroe</h1>
+                    	<p>Merajut Rindu di Pasar Baru. <a href="pasarbaru/" target="_blank" class="link"><span class="animated bounce"><img src="_img/arrow_right_2.png" width="10" height="20"></span></a></p>
+                   	</div>
                 </div>
             </div>
         </div>
