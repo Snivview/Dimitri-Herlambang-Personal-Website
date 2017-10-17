@@ -52,13 +52,17 @@
 			100% {opacity: 100%;left:0}
 		}
 		h1 {
+            float: left;
+            padding-left: 20px;
 			opacity: 1;
 			text-align: center;
 			-webkit-animation: frame1 1s;
 			animation: frame1 1s;
+            color: #fff;
 		}
 		h2 {
-			padding: 20px;
+            float: left;
+			padding: 10px 10px 10px 20px;
 			font-size: 22px;
 			opacity: 1;
 			color: #fff;
@@ -70,7 +74,8 @@
 		h3 {
 			margin: 10px 0;
 			font-weight: bold;
-			font-size: 25px;
+			font-size: 32px;
+            text-align: left;
 			color: #fff;
 		}
 		p {
@@ -95,6 +100,7 @@
 		.topHeading {margin-bottom: 50px;}
 		.wrap01 {
 			max-width: 1920px;
+            min-height: 750px;
 			margin: 0 auto;
 		}
 		.multiple { /* container to multiple centered div */
@@ -128,21 +134,30 @@
 		}
 		.block01 div {
 			height: 150px;
-			padding: 0 10px 10px 10px;
+			padding: 0 20px 20px 20px;
 			position: absolute;
 			bottom: 0;
-			background-color: rgba(0,0,0,.50);
+			background-color: rgba(0,0,0,.30);
+            transition: .5s;
 		}
 		.show {
 			opacity: 1 !important;
 			margin-top: 0;
 			transition: 1s;
 			-webkit-transform:scale(1); /* Safari and Chrome */
-				-moz-transform:scale(1); /* Firefox */
-				-ms-transform:scale(1); /* IE 9 */
-				-o-transform:scale(1); /* Opera */
-				 transform:scale(1);
+			-moz-transform:scale(1); /* Firefox */
+			-ms-transform:scale(1); /* IE 9 */
+			-o-transform:scale(1); /* Opera */
+			transform:scale(1);
 		}
+        .hover {
+            background-color: rgba(0,0,0,.80) !important;
+            -webkit-transform:scale(1.05); /* Safari and Chrome */
+			-moz-transform:scale(1.05); /* Firefox */
+			-ms-transform:scale(1.05); /* IE 9 */
+			-o-transform:scale(1.05); /* Opera */
+            transform:scale(1.05);
+        }
 		/* ---------------------- header ---------------------- */
 		#headerArea {
 			padding-left: 10px;
@@ -163,7 +178,8 @@
 		}
 		/* ---------------------- footer ---------------------- */
 		#footerArea {
-			max-width: 1000px;
+			max-width: 1880px;
+            padding: 20px;
 			margin: 25px auto;
 			color: #fff;
 		}
@@ -190,8 +206,16 @@
 				padding-left: 0;
 				padding-right: 0;
 			}
+            .block01 div {
+                background-color: rgba(0,0,0,.80) !important;
+            }
 		}
 		@media screen and (max-width:768px){
+            h1,h2 {
+                float: none;
+                text-align: center;
+            }
+            h2 {margin-top:20px;}
 			.block01 {width: 99%;}
 			.block01 div {height: auto;}
 		}
@@ -201,7 +225,7 @@
 <body>
     <div id="wrap">
         <div id="mainArea" class="clearfix">
-            <div class="topHeading">
+            <div class="topHeading clearfix">
                 <h1><a href="../"><img src="_img/logo_bw.png" alt="logo advisual" width="120"></a></h1>
                 <h2>Halaman Web Multimedia Interaktif Klasika</h2>
             </div>
@@ -244,6 +268,9 @@
 				classToAdd: 'show',
 				offset: 100,
 			});
+            $(".block01").hover(function () {
+                $(this).find("div").toggleClass("hover");
+             });
         });
     </script>
 </body>
