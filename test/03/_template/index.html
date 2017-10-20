@@ -21,9 +21,11 @@
 	</style>
    	<div id="loading"><div id="loading-center"><div id="loading-center-absolute"><div class="object" id="object_four"></div><div class="object" id="object_three"></div><div class="object" id="object_two"></div><div class="object" id="object_one"></div></div></div></div>
    
+    <div w3-include-html="../_common/header.html"></div>
+	
     <div id="wrap">
     
-    	<section class="module parallax" id="landing_image">
+    	<div class="module parallax" id="landing_image">
         	<div class="div-transparent-layer">
 				<div class="div-caption">
 					<h1>[ JUDUL PAGE ]</h1>
@@ -31,59 +33,59 @@
 				</div>
 				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a class="animated bounce" style="display:inline-block;"><img src="../_img/arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
 			</div>
-		</section>
+		</div>
    		
-   		<section>
-   			<video class="bv-video" id="landing_video"></video>
-        	<div class="div-transparent-layer">
-				<div class="div-caption">
+   		<div class="section" id="landing_video">
+   			<div class="div-transparent-layer">
+				<video poster="img/dummy.jpg" id="bgvid" playsinline autoplay muted loop><source src="../_img/vid.mp4" type="video/mp4"></video>
+ 				<div class="div-caption">
 					<h1>[ JUDUL PAGE ]</h1>
 					<p>[TEKS LEAD]</p>
-				</div>
-				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a class="animated bounce" style="display:inline-block;"><img src="../_img/arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
+ 				</div>
+ 				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a class="animated bounce" style="display:inline-block;"><img src="../_img/arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
 			</div>
-   		</section>
+   		</div>
    		
-   		<section class="clearfix">
+   		<div class="section clearfix">
             <div class="text-lead">
             	<p class="tI">TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD TEKS LEAD</p>
             	<div class="text-lead_line"></div>
             </div>
-   		</section>
+   		</div>
    		
-   		<section class="clearfix">
+   		<div class="section clearfix">
    			<div class="text-paragraph">
    				<p><span class="text-dropCap">T</span>EKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF</p>
    			</div>
-   		</section>
+   		</div>
    		
    		<div style="height:2px;background-color:#737373"></div>
    		
-   		<section>
+   		<div class="section">
    			<div class="text-quote">
    				<p>"TEKS QUOTE TEKS QUOTE TEKS QUOTE TEKS QUOTE"</p>
    			</div>
-   		</section>
+   		</div>
    		
    		<div style="height:2px;background-color:#737373"></div>
    		
-   		<section class="clearfix">
+   		<div class="section clearfix">
    			<div class="text-paragraph">
    				<p><span class="image-right"><img data-original="img/dummy.jpg" alt="dummy">caption caption caption caption caption caption.</span>EKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF</p>
    			</div>
-   		</section>
+   		</div>
    		
    		<div style="height:2px;background-color:#737373"></div>
    		
-   		<section class="clearfix">
+   		<div class="section clearfix">
    			<div class="text-paragraph">
    				<p><span class="image-left"><img data-original="img/dummy.jpg" alt="dummy">caption caption caption caption caption caption.</span>EKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF</p>
    			</div>
-   		</section>
+   		</div>
    		
    		<div style="height:2px;background-color:#737373"></div>
        	
-        <section>
+        <div class="section">
             <div class="image-middle">
                 <img data-original="img/dummy.jpg" alt="dummy">
                 caption caption caption caption caption caption
@@ -91,19 +93,19 @@
             <div class="text-paragraph">
                 <p>PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF TEKS PARAGRAF</p>
             </div>
-        </section>
+        </div>
         
         <div style="height:2px;background-color:#737373"></div>
         
-        <section>
+        <div class="section">
    			<div class="videoWrapper">
 				<iframe width="560" height="349" src="https://www.youtube.com/embed/3kis4jhbevE" frameborder="0" allowfullscreen></iframe>
 			</div>
-   		</section>
+   		</div>
         
         <div style="height:2px;background-color:#737373"></div>
         
-   		<section class="clearfix">
+   		<div class="section clearfix">
    			<div class="image-gallery">
 				<img data-original="img/dummy.jpg" alt="dummy">
             	<img class="image-info" src="../_img/info.png" alt="klik atau arahkan mouse pada gambar">
@@ -114,16 +116,40 @@
             	<img class="image-info" src="../_img/info.png" alt="klik atau arahkan mouse pada gambar">
             	<p>CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION</p>
             </div>
-   		</section>
+   		</div>
    		
    		<div style="height:2px;background-color:#737373"></div>
    		
-   		<section class="module parallax" id="section_demo">
+   		<div class="section module parallax" id="section_demo">
 			<div class="text-image-parallax_caption">
            		<p>CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION CAPTION</p>
             </div>
-		</section>
+		</div>
   		
+		<div class="section" style="margin-top: 40px;">
+			<div class="text-credits">
+				<h3>STAKEHOLDER 1</h3>
+				<p>nama</p>
+				<h3>STAKEHOLDER 2</h3>
+				<p>nama</p>
+				<h3>STAKEHOLDER 3</h3>
+				<p>nama</p>
+				<h3>STAKEHOLDER 4</h3>
+				<p>nama</p>
+			</div>
+		</div>
+		
+		<div class="section">
+			<div class="image-logo">
+				<table>
+					<tr>
+						<td><img src="img/logo.png" alt="logo klasika"></td>
+						<td><img src="img/logo 2.png" alt="logo kompas"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
    		<div style="height:2px;background-color:#737373"></div>
    		
     </div> <!-- /#wrap -->
@@ -134,20 +160,6 @@
 	<script src="../_common/jquery.viewportchecker.js" type="text/javascript"></script>
 	<script src="../_common/lazy.js" type="text/javascript"></script>
 	<script src="../_common/w3.js" type="text/javascript"></script>
-	<script src="../_common/backgroundVideo.js" type="text/javascript"></script>
-    <script>
-		document.getElementById('landing_video').muted = true;
-		const backgroundVideo = new BackgroundVideo('.bv-video', {
-		  src: [
-			'../_img/vid.mp4',
-		  ],
-		  onReady: function () {
-			// Use onReady() to prevent flickers or force loading state
-			const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
-			vidParent.classList.add('bv-video-wrap--ready');
-		  }
-		});
-	</script>
 	<script>
 		w3.includeHTML();
 		function onReady(callback) {

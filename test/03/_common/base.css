@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+h1 {font-size: 64px;}
+
 /* base class */
 .fL{float:left;}
 .fR{float:right;}
@@ -10,6 +12,15 @@
 .tI{font-style:italic;}
 .tWhite{color:#fff;}
 a {text-decoration: none;color: inherit;}
+
+/* header */
+#headerArea {
+	padding: 10px 20px;
+	width: 100%;
+	background-color: #000;
+	position: fixed;
+	z-index: 1;
+}
 
 /* footer */
 #footerArea {
@@ -24,6 +35,12 @@ a {text-decoration: none;color: inherit;}
 }
 
 /* components */
+.section {
+	padding: 25px 0;
+	background-color: #fff;
+	z-index: 0;
+	position: relative;
+}
 .text-dropCap {
     float: left;
     font-size: 60px;
@@ -31,6 +48,16 @@ a {text-decoration: none;color: inherit;}
     font-weight: bold;
     margin-right: 9px;
 }
+.text-credits {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.text-credits h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.text-credits p {text-align: center;}
 .text-lead {
 	padding: 20px;
 	margin-top: -50px;
@@ -48,18 +75,18 @@ a {text-decoration: none;color: inherit;}
 }
 .text-paragraph {
     margin: 0 auto;
-    padding: 10px;
-    max-width: 750px;
+    padding: 20px;
+    max-width: 740px;
 }
-.text-paragraph h3 {
-	margin-bottom: 10px;
-	font-family: georgia;
-	font-size: 24px;
+.text-paragraph h2 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 32px;
 	font-weight: bold;
 }
 .text-paragraph p {
 	margin-top: -50px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	line-height: 35px;
 	font-family: georgia;
 	font-size: 18px;
@@ -69,7 +96,7 @@ a {text-decoration: none;color: inherit;}
 .text-quote {
 	margin: 0 auto;
     max-width: 550px;
-	padding: 20px 0;
+	padding: 20px;
 	border-top: 1px solid rgba(184,184,184,1.00);
 	border-bottom: 1px solid rgba(184,184,184,1.00);
 }
@@ -81,7 +108,6 @@ a {text-decoration: none;color: inherit;}
 	color: rgba(99,99,99,1.00);
 	opacity: 0;
 	transition: 1s;
-	font-style: italic;
 	font-weight: bold;
 }
 .text-image-parallax_caption {
@@ -168,6 +194,9 @@ a {text-decoration: none;color: inherit;}
 	opacity: 1;
 	transition: 1s;
 }
+.image-logo table {margin: 0 auto;}
+.image-logo td {padding: 10px;}
+.image-logo td img {width: 100%;}
 .videoWrapper {
 	position: relative;
 	max-width: 560px;
@@ -178,8 +207,8 @@ a {text-decoration: none;color: inherit;}
 	width: 100%;
 }
 
-section.module.content {padding: 40px 0;}
-section.module.parallax {
+div.module.content {padding: 40px 0;}
+div.module.parallax {
 	width: 100%;
   	height: 100vh;
   	background-position: 50% 50%;
@@ -209,10 +238,6 @@ section.module.parallax {
 	}
 }
 
-#landing_image {
-	margin-top: 0;
-	z-index: 10;
-}
 .div-transparent-layer {
 	height: 100vh;
   	width: 100vw;
@@ -239,38 +264,13 @@ section.module.parallax {
 	font-family: segoe ui;
 	color: #fff;
 }
-/* Video wrap */
+#landing_image {
+	margin-top: 0;
+	z-index: 1;
+}
 #landing_video {
-    background-image: url(../../_img/dummy.jpg);
-    background-position: bottom;
-    z-index: 10;
-    height: 100vh;
-}
-.bv-video-wrap {
-    width: 100%;
-    height: 100%;
-  /* Please note this is only required if you with to add the
-  '.bv-video-wrap--ready' class on the 'onReady' event */
-  display: none;
-}
-.bv-video-wrap--ready {display: block;}
-.bv-video-wrap::before {
-  /* Optional overlay */
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-}
-/* Video object */
-.bv-video {
-  	width: 100%;
-  	height: 100%;
+	z-index: 1;
+    overflow: hidden;
 }
 #section_demo {background-image: url("../img/dummy.jpg");}
 
