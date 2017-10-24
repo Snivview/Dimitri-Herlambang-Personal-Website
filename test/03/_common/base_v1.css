@@ -52,12 +52,16 @@ a {text-decoration: none;color: inherit;}
 	max-width: 500px;
 	margin: 0 auto;
 }
-.text-credits h3 {
+.text-credits h2 {
 	margin-top: 20px;
-	margin-bottom: 10px;
+	font-size: 18px;
 	text-align: center;
 }
-.text-credits p {text-align: center;}
+.text-credits p {
+	text-align: center;
+	padding: 5px 0;
+	font-size: 12px;
+}
 .text-lead {
 	padding: 20px;
 	margin-top: -50px;
@@ -65,7 +69,7 @@ a {text-decoration: none;color: inherit;}
 	max-width: 900px;
 }
 .text-lead p{
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 25px;
 }
 .text-lead_line {
@@ -75,28 +79,26 @@ a {text-decoration: none;color: inherit;}
 }
 .text-paragraph {
     margin: 0 auto;
-    padding: 20px;
     max-width: 740px;
 }
 .text-paragraph h2 {
-	margin-top: 30px;
-	margin-bottom: 20px;
-	font-size: 32px;
+	padding: 10px 20px;
+	font-size: 24px;
 	font-weight: bold;
 }
 .text-paragraph p {
 	margin-top: -50px;
-	margin-bottom: 30px;
-	line-height: 35px;
+	padding: 10px 20px;
+	line-height: 30px;
 	font-family: georgia;
-	font-size: 18px;
+	font-size: 16px;
 	opacity: 0;
 	transition: 1s;
 }
 .text-quote {
 	margin: 0 auto;
     max-width: 550px;
-	padding: 20px;
+	padding: 16px;
 	border-top: 1px solid rgba(184,184,184,1.00);
 	border-bottom: 1px solid rgba(184,184,184,1.00);
 }
@@ -130,7 +132,7 @@ a {text-decoration: none;color: inherit;}
 	margin: 0 -140px 10px 25px;
 	padding: 10px 0;
 	line-height: 20px;
-	font-size: 15px;
+	font-size: 12px;
 }
 .image-right img{
 	width: 100%;
@@ -142,7 +144,7 @@ a {text-decoration: none;color: inherit;}
 	margin: 0 25px 10px -140px;
 	padding: 10px 0;
 	line-height: 20px;
-	font-size: 15px;
+	font-size: 12px;
 }
 .image-left img{
 	width: 100%;
@@ -151,8 +153,11 @@ a {text-decoration: none;color: inherit;}
 .image-middle {
     max-width: 550px;
     margin: 0 auto 10px auto;
-    font-size: 15px;
+    font-size: 12px;
     font-family: georgia;
+}
+.image-middle p {
+	padding: 0 20px;
 }
 .image-middle img {
     width: 100%;
@@ -221,23 +226,6 @@ div.module.parallax {
 	display: table;
 	position: relative;
 }
-@media screen and (max-width: 768px) {
-	.image-gallery {
-		float: none;
-		width: 100%;
-	}
-}
-@media screen and (max-width: 1084px) {
-	.image-right, .image-left {
-		width: 100%;
-		margin: 20px 0;
-	}
-	#footerArea ul{
-		float: none;
-		text-align: center;
-	}
-}
-
 .div-transparent-layer {
 	height: 100vh;
   	width: 100vw;
@@ -273,6 +261,23 @@ div.module.parallax {
     overflow: hidden;
 }
 #section_demo {background-image: url("../img/dummy.jpg");}
+@media screen and (max-width: 768px) {
+	.image-gallery {
+		float: none;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1084px) {
+	.image-right, .image-left {
+		width: 100%;
+		margin: 20px 0;
+	}
+	#footerArea ul{
+		float: none;
+		text-align: center;
+	}
+}
+
 
 /* effect */
 
