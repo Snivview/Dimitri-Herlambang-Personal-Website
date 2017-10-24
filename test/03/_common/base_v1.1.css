@@ -267,7 +267,7 @@ div.module.parallax {
 		width: 100%;
 	}
 }
-@media screen and (max-width: 1084px) {
+@media screen and (max-width: 1000px) {
 	.image-right, .image-left {
 		width: 100%;
 		margin: 20px 0;
