@@ -61,22 +61,7 @@
         .image-middle {
             color: #fff;
             font-family: roboto;
-            line-height: 25px;
         }
-		.image-gallery {
-			padding: 1px;
-			overflow: hidden;
-			box-sizing: border-box;
-		}
-		.image-gallery img {transition: 1s;}
-		.image-gallery img:first-of-type {width: auto;}
-		.image-gallery p{
-			width: 100%;
-			min-height: 60px;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-		}
         .link {cursor: pointer;}
         .link-mapCaption {
             position: absolute;
@@ -123,7 +108,6 @@
 			opacity: 1;
 			transition: 1s;
 		}
-		
         #landing_video video {opacity: .5;}
         #section_map {
             overflow-y: hidden;
@@ -133,27 +117,11 @@
         /* maps */
         #section_banten {background-image: url(img/banten/heading.jpg);}
         #section_cirebon {background-image: url(img/cirebon/heading.jpg);}
-		
 		@media screen and (max-width: 1367px) {
 			.image-gallery {
 				float: none;
 				width: 100%;
 			}
-		}
-		
-		.tile {
-			height: 80vh;
-		}
-		.photo {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			transition: transform .5s ease-out;
 		}
     </style>
    	<div id="loading"><div id="loading-center"><div id="loading-center-absolute"><div class="object" id="object_four"></div><div class="object" id="object_three"></div><div class="object" id="object_two"></div><div class="object" id="object_one"></div></div></div></div>
@@ -243,12 +211,12 @@
 			</div>
            	<div class="section clearfix">
 				<div class="image-gallery">
-					<div class="tile" data-scale="2" data-original="img/banten/pelataran_benteng_surosowan.jpg" alt="pelataran benteng surosowan"></div>
+					<div class="tile" data-scale="1.2" data-original="img/banten/pelataran_benteng_surosowan.jpg" alt="pelataran benteng surosowan"></div>
 					<img class="image-info" src="../_img/info.png" alt="klik atau arahkan mouse pada gambar">
 					<p>Dahulu benteng ini digunakan untuk melindungi Keraton Surosowan dari musuh.</p>
 				</div><!--
 				--><div class="image-gallery">
-					<div class="tile" data-scale="2" data-original="img/banten/sudut_benteng_surosowan.jpg" alt="sudut benteng surosowan"></div>
+					<div class="tile" data-scale="1.2" data-original="img/banten/sudut_benteng_surosowan.jpg" alt="sudut benteng surosowan"></div>
 					<img class="image-info" src="../_img/info.png" alt="klik atau arahkan mouse pada gambar">
 					<p>Sudut benteng berbentuk intan untuk menyerang musuh dari atas benteng.</p>
 				</div>
@@ -287,12 +255,12 @@
 			</div>
            	<div class="section clearfix">
 				<div class="image-gallery">
-					<div class="tile" data-scale="2" data-original="img/banten/pelataran_masjid.jpg" alt="pelataran masjid"></div>
+					<div class="tile" data-scale="1.2" data-original="img/banten/pelataran_masjid.jpg" alt="pelataran masjid"></div>
 					<img class="image-info" src="../_img/info.png" alt="klik atau arahkan mouse pada gambar">
 					<p>Masjid Agung Banten ini tiap tahun selalu dilakukan perawatan, namun biayanya tanpa tanggungan pemerintah</p>
 				</div><!--
 				--><div class="image-gallery">
-					<div class="tile" data-scale="2" data-original="img/banten/bagian_dalam_masjid.jpg" alt="bagian dalam masjid"></div>
+					<div class="tile" data-scale="1.2" data-original="img/banten/bagian_dalam_masjid.jpg" alt="bagian dalam masjid"></div>
 					<img class="image-info" src="../_img/info.png" alt="klik atau arahkan mouse pada gambar">
 					<p>Kepengurusan Masjid ini juga dipegang oleh keluarga yang merupakan keturunan Sultan Maulana Hasanuddin</p>
 				</div>
@@ -323,7 +291,7 @@
 			</div>
            	<div class="section clearfix">
 				<div class="image-gallery">
-					<div class="tile" data-scale="2" data-original="img/cirebon/patung_singa_keraton_kasepuhan.jpg" alt="patung singa keraton kasepuhan"></div>
+					<div class="tile" data-scale="1.2" data-original="img/cirebon/patung_singa_keraton_kasepuhan.jpg" alt="patung singa keraton kasepuhan"></div>
 					<img class="image-info" src="../_img/info.png" alt="klik atau arahkan mouse pada gambar">
 					<p>Patung macan putih kembar ini sebagai lambang keluarga besar Pajajaran</p> 
 				</div><!--
@@ -501,7 +469,6 @@
 			});
 			$(".image-gallery").hover(function(){
 				$(this).find('p').toggleClass("show");
-				/* $(this).find('img').toggleClass("zoom"); */
 				$(this).find('.image-info').toggleClass("hidden");
 			});
 			new LazyLoad();
@@ -527,7 +494,6 @@
 			});
 			/* zoom image on hover*/
 			$('.tile')
-				/* tile mouse actions */
 				.on('mouseover', function(){
 				  $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
 				})
@@ -537,16 +503,12 @@
 				.on('mousemove', function(e){
 				  $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
 				})
-				/* tiles set up */
 				.each(function(){
 				  $(this)
-					/* add a photo container */
 					.append('<div class="photo"></div>')
-					/* some text just to show zoom level on current item in this example */
 					.append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
-					/* set up a background image for each tile based on data-image attribute */
 					.children('.photo').css({'background-image': 'url('+ $(this).attr('data-original') +')'});
-				})
+            })
 		});
 	</script>
 </body>
