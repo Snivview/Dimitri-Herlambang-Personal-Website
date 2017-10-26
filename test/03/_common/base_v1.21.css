@@ -126,18 +126,6 @@ a {text-decoration: none;color: inherit;}
 	font-size: 16px;
 	color: #fff;
 }
-.image-right {
-	width: 550px;
-	float: right;
-	margin: 0 -140px 10px 25px;
-	padding: 10px 0;
-	line-height: 20px;
-	font-size: 12px;
-}
-.image-right img{
-	width: 100%;
-	margin-bottom: 10px;
-}
 .image-left {
 	width: 550px;
 	float: left;
@@ -146,21 +134,26 @@ a {text-decoration: none;color: inherit;}
 	line-height: 20px;
 	font-size: 12px;
 }
-.image-left img{
+.image-middle {
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+	line-height: 25px;
+}
+.image-right {
+	width: 550px;
+	float: right;
+	margin: 0 -140px 10px 25px;
+	padding: 10px 0;
+}
+.image-left img,.image-middle img,.image-right img {
 	width: 100%;
 	margin-bottom: 10px;
 }
-.image-middle {
-    max-width: 550px;
-    margin: 0 auto 10px auto;
+.image-left p,.image-middle p,.image-right p {
+	padding: 0;
     font-size: 12px;
+	line-height: 20px;
     font-family: georgia;
-	line-height: 25px;
-}
-.image-middle p {padding: 0 20px;}
-.image-middle img {
-    width: 100%;
-    margin-bottom: 10px;
 }
 .image-gallery-wrap {
     width: 100%;
@@ -267,13 +260,13 @@ div.module.parallax {
     overflow: hidden;
 }
 #section_demo {background-image: url("../img/dummy.jpg");}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1367px) {
 	.image-gallery {
 		float: none;
 		width: 100%;
 	}
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
 	.image-right, .image-left {
 		width: 100%;
 		margin: 20px 0;
@@ -282,6 +275,10 @@ div.module.parallax {
 		float: none;
 		text-align: center;
 	}
+}
+@media screen and (max-width: 761px) {
+	.image-middle p {padding: 0 20px;}
+	.image-right p {padding: 0 20px;}
 }
 
 /* effect */
