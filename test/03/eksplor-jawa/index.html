@@ -100,10 +100,8 @@
 			color: #fff;
 		}
         .text-quote p{
-			font-size: 15px;
             font-style: italic;
             color: #f1ba1b;
-			line-height: 22px;
         }
 		.section {position: inherit;}
         .text-paragraph h2 {color: #fff;}
@@ -217,7 +215,8 @@
             </div>
             <div class="section clearfix">
                 <div class="text-quote">
-                    <p>Kejayaan Banten kala itu tak lepas dari kepiawaian Maulana Hasanuddin, yang tidak hanya cakap dalam hal agama, tetapi juga politik dan ekonomi. Tak heran saat itu Kesultanan Banten memiliki wilayah kekuasaan yang luas, terbentang dari Lampung hingga Karawang.</p>
+                    <p>Kejayaan Banten kala itu tak lepas dari kepiawaian Maulana Hasanuddin, yang tidak hanya cakap dalam hal agama, tetapi juga politik dan ekonomi.</p>
+					<p>Tak heran saat itu Kesultanan Banten memiliki wilayah kekuasaan yang luas, terbentang dari Lampung hingga Karawang.</p>
                 </div>
             </div>
             <div class="section clearfix">
@@ -568,7 +567,7 @@
 	<script>
 		$(window).on('beforeunload',function(){$(window).scrollTop(0);});
 		$(document).ready(function(){
-			$(".text-paragraph p,.text-quote p").viewportChecker({
+			$(".text-paragraph p,.text-quote p,.text-paragraph h2").viewportChecker({
 				classToAdd: 'show',
 				offset: 100,
 			});

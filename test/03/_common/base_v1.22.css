@@ -85,13 +85,14 @@ a {text-decoration: none;color: inherit;}
 	padding: 10px 20px;
 	font-size: 24px;
 	font-weight: bold;
+	opacity: 0;
+	transition: 1s;
 }
 .text-paragraph p {
-	margin-top: -50px;
 	padding: 10px 20px;
-	line-height: 30px;
+	line-height: 26px;
 	font-family: georgia;
-	font-size: 16px;
+	font-size: 14px;
 	opacity: 0;
 	transition: 1s;
 }
@@ -104,9 +105,9 @@ a {text-decoration: none;color: inherit;}
 }
 .text-quote p {
 	margin-bottom: 10px;
-	line-height: 35px;
+	line-height: 24px;
 	font-family: georgia;
-	font-size: 22px;
+	font-size: 15px;
 	color: rgba(99,99,99,1.00);
 	opacity: 0;
 	transition: 1s;
@@ -312,7 +313,6 @@ div.module.parallax {
 .show {
 	opacity: 1 !important;
 	transition: 1s;
-	margin-top: 0px !important;
 }
 .tile {height: 80vh;}
 .photo {
