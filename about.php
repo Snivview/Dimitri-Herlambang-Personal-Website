@@ -269,9 +269,7 @@
 						<div class="clearfix">
 							<div class="container480 fL">
 								<h2>Front-End Programming</h2>
-								<p class="t16">
-									I have been using HTML, CSS, jS, jQ for 2 years to develop landing pages.
-								</p>
+								<p class="t16">HTML, CSS, jS, jQ for 2 years to develop landing pages.</p>
 								<ul class="list01" style="margin-top:20px;">
 									<li><img src="/_img/logo_ps.png" alt="Photoshop++" title="Photoshop"></li><!--
 									--><li><img src="/_img/logo_dw.png" alt="Dreamweaver" title="Dreamweaver"></li><!--
