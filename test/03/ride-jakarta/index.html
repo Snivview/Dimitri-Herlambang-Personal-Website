@@ -259,7 +259,7 @@
 	<script>
 		$(window).on('beforeunload',function(){$(window).scrollTop(0);});
 		$(document).ready(function(){
-			$(".text-paragraph p,.text-quote p").viewportChecker({
+			$(".text-paragraph p,.text-quote p,.text-paragraph h2").viewportChecker({
 				classToAdd: 'show',
 				offset: 100,
 			});
