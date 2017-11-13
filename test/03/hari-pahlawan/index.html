@@ -37,8 +37,19 @@
 		.article {
             display: none;
             transition: .3s;
+            animation: fadein 1s;
         }
         .article.current{display: block !important;}
+        figure {transition: .5s;}
+        figure:hover {
+            -webkit-transform:scale(1.10); /* Safari and Chrome */
+			-moz-transform:scale(1.10); /* Firefox */
+			-ms-transform:scale(1.10); /* IE 9 */
+			-o-transform:scale(1.10); /* Opera */
+            transform:scale(1.10);
+            transition: .5s;
+        }
+		.tab-title {cursor: pointer;}
 		.text-paragraph {max-width: 700px;}
 		.text-paragraph h2 {
 			font-size: 28px;
@@ -59,6 +70,7 @@
 		.text-quote p{
 			font-family: roboto;
 			color: #000;
+            font-style: italic;
 		}
 		.link-toHeroes {cursor: pointer;}
 		.image-gallery-modal {
@@ -78,7 +90,6 @@
 			font-size: 13px;
 			font-family: roboto;
 		}
-		.tab-title {cursor: pointer;}
 	</style>
    	<div id="loading"><div id="loading-center"><div id="loading-center-absolute"><div class="object" id="object_four"></div><div class="object" id="object_three"></div><div class="object" id="object_two"></div><div class="object" id="object_one"></div></div></div></div>
 	
@@ -104,7 +115,7 @@
 		
 		<div class="section clearfix">
    			<div class="text-paragraph">
-   				<p><span class="text-dropCap">P</span>ahlawan Nasional Indonesia per 5 November 2017 berjumlah 168 orang. Dari jumlah tersebut, tidak banyak yang mungkin diketahui masyarakat. Buku sejarah yang dipelajari generasi X, Y, serta Z boleh jadi hanya mengangkat segelintir Pahlawan Nasional yang memiliki nama besar dan terkenal. Tetapi sesungguhnya banyak pahlawan-pahlawan dari pelosok Nusantara yang turut mewujudkan kemerdekaan Indonesia.</p>
+   				<p><span class="text-dropCap">P</span>ahlawan Nasional Indonesia per 5 November 2017 berjumlah 168 orang. Dari jumlah tersebut, tidak banyak yang mungkin diketahui masyarakat. Buku sejarah yang dipelajari generasi X, Y, serta Z boleh jadi hanya mengangkat segelintir Pahlawan Nasional yang memiliki nama besar dan terkenal. Tetapi sesungguhnya banyak pahlawan-pahlawan dari pelosok Nusantara yang turut serta mewujudkan kemerdekaan Indonesia.</p>
    			</div>
    		</div>
 		
@@ -311,7 +322,7 @@
 			new LazyLoad();
 			$(".text-paragraph p,.text-quote p,.text-paragraph h2").viewportChecker({
 				classToAdd: 'show',
-				offset: 100,
+				offset: 50
 			});
 			$(".image-gallery").hover(function(){
 				$(this).find('p').toggleClass("show");
@@ -333,7 +344,7 @@
                 );
             });
 			$(".link-toHeroes").click(function() {
-                $('.article').removeClass('current');
+                /* $('.article').removeClass('current'); */
 				$('html,body').animate({
 					scrollTop: $("#section_heroes").offset().top},'slow'
 				);
