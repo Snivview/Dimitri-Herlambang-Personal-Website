@@ -13,6 +13,7 @@
     <meta name="author" content="Kompas klasika">
     <link href="../_common/reset.css" rel="stylesheet">
     <link href="../_common/base_v1.22.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 </head>
 
 <body>
@@ -22,17 +23,11 @@
 		  font-family: riga;
 		  src: url('local/Riga-Black.otf');
 		}
-		@font-face {
-		  font-family: roboto-b;
-		  src: url('local/Roboto-Bold.woff');
-		}
-		@font-face {
-		  font-family: roboto;
-		  src: url('local/Roboto-Light.ttf');
-		}
-		#landing_image {
+		html {
 			background: url(img/bg.jpg) no-repeat;
-			background-position: bottom;
+    		background-position: bottom;
+    		background-repeat: no-repeat;
+    		background-attachment: fixed;
 		}
 		.article {
             display: none;
@@ -40,6 +35,9 @@
             animation: fadein 1s;
         }
         .article.current{display: block !important;}
+		.image-middle {
+			max-width: 400px;
+		}
         figure {transition: .5s;}
         figure:hover {
             -webkit-transform:scale(1.10); /* Safari and Chrome */
@@ -49,28 +47,82 @@
             transform:scale(1.10);
             transition: .5s;
         }
+		#headerArea {
+			opacity: 0;
+			transition: .5s;
+		}
 		.tab-title {cursor: pointer;}
+		.table-biodata {
+			max-width: 500px;
+			margin: 0 auto;
+			font-family: Merriweather;
+		}
+		.table-biodata h4 {
+			font-size: 16px;
+		}
+		.table-biodata th {
+			width: 30%;
+			font-weight: bold;
+			font-size: 12px;
+			padding: 5px 5px 5px 20px;
+			vertical-align: top;
+		}
+		.table-biodata th img {
+			width: 100%;
+			border-radius: 75px;
+		}
+		.table-biodata td {
+			width: 70%;
+			font-size: 12px;
+			padding: 5px;
+			vertical-align: top;
+		}
+		.text-credits {font-family: Merriweather;}
+		.text-credits h2 {color: #ed1750;}
+		.table-opinion {max-width: 660px !important;}
+		.table-opinion th{
+			width: 25%;
+			padding: 20px 5px 5px 20px;
+		}
+		.table-opinion td{
+			padding: 20px 20px 5px 5px;
+			font-size: 14px;
+			font-family: Merriweather;
+			line-height: 20px;
+		}
 		.text-paragraph {max-width: 700px;}
 		.text-paragraph h2 {
 			font-size: 28px;
-			font-family: roboto-b;
+			font-family: Merriweather;
 		}
 		.text-paragraph h3 {
 			padding: 10px 20px;
-			font-size: 18px;
-			font-family: roboto-b;
+			font-size: 20px;
+			font-family: Merriweather;
+			font-weight: bold;
 		}
+		.text-paragraph h3 span {
+			border-left: 5px solid;
+			padding-left:10px;
+		}
+		#tab-1 .text-paragraph h3 span {border-left-color:#90c747}
+		#tab-2 .text-paragraph h3 span {border-left-color:#6fc6e1}
+		#tab-3 .text-paragraph h3 span {border-left-color:#f4955b}
+		#tab-4 .text-paragraph h3 span {border-left-color:#fdbf48}
+		#tab-5 .text-paragraph h3 span {border-left-color:#cea1c2}
 		.text-paragraph p {
 			font-size: 16px;
-			font-family: roboto;
+			font-family: Merriweather;
 			line-height: 25px;
 		}
-		.text-lead {font-family: roboto;}
+		.text-lead {font-family: Merriweather;}
 		.text-dropCap {font-size: 50px;}
 		.text-quote p{
-			font-family: roboto;
+			font-family: Merriweather;
 			color: #000;
-            font-style: italic;
+		}
+		.text-quote span{
+			font-size: 25px;
 		}
 		.link-toHeroes {cursor: pointer;}
 		.image-gallery-modal {
@@ -85,10 +137,10 @@
 		.image-gallery-modal figure {
 		  	display: inline-block;
 		  	float: none;
-		  	margin: 0 0 5px 0;
+		  	margin: 0 2px 5px 2px;
 		  	width: 150px;
 			font-size: 13px;
-			font-family: roboto;
+			font-family: Merriweather;
 		}
 	</style>
    	<div id="loading"><div id="loading-center"><div id="loading-center-absolute"><div class="object" id="object_four"></div><div class="object" id="object_three"></div><div class="object" id="object_two"></div><div class="object" id="object_one"></div></div></div></div>
@@ -108,18 +160,18 @@
 		
 		<div class="section clearfix">
             <div class="text-lead">
-            	<p class="tI">Semangat hari pahlawan tidak hanya sekedar mengingat peristiwa heroik 10 November di kota Surabaya. Tapi banyak juga pahlawan nasional NKRI yang mungkin sedikit atau bahkan tidak dikenal oleh anak-anak <span class="tI">"Jaman Now"</span>.</p>
+            	<p class="tI">Semangat hari pahlawan tidak hanya sekedar mengingat peristiwa heroik 10 November di kota Surabaya. Tapi banyak juga pahlawan nasional NKRI yang mungkin sedikit atau bahkan tidak dikenal oleh masyarakat.</p>
             	<div class="text-lead_line"></div>
             </div>
    		</div>
 		
 		<div class="section clearfix">
    			<div class="text-paragraph">
-   				<p><span class="text-dropCap">P</span>ahlawan Nasional Indonesia per 5 November 2017 berjumlah 168 orang. Dari jumlah tersebut, tidak banyak yang mungkin diketahui masyarakat. Buku sejarah yang dipelajari generasi X, Y, serta Z boleh jadi hanya mengangkat segelintir Pahlawan Nasional yang memiliki nama besar dan terkenal. Tetapi sesungguhnya banyak pahlawan-pahlawan dari pelosok Nusantara yang turut serta mewujudkan kemerdekaan Indonesia.</p>
+   				<p><span class="text-dropCap">P</span>ahlawan Nasional Indonesia per 5 November 2017 berjumlah 168 orang. Dari jumlah tersebut, tidak banyak yang mungkin diketahui masyarakat. Buku sejarah boleh jadi hanya mengangkat segelintir Pahlawan Nasional yang memiliki nama besar dan terkenal. Tetapi sesungguhnya banyak pahlawan-pahlawan dari pelosok Nusantara yang turut serta mewujudkan kemerdekaan Indonesia.</p>
    			</div>
    		</div>
 		
-		<div class="section clearfix" id="section_heroes">
+		<div class="section clearfix" id="section_heroes" style="padding-top: 50px;">
 			<div class="image-gallery-modal div-tab" itemscope itemtype="">
 				<figure class="tab-title" data-tab="tab-1" itemprop="associatedMedia" itemscope itemtype="">
 					<img src="img/Abdul_Wahid_Hasjim.jpg" itemprop="thumbnail" alt="Abdul Wahid Hasjim" /><br>
@@ -160,7 +212,7 @@
 			</div>
 			<div class="section" style="background-color:#90c747;">
 				<div class="text-quote" style="border-top-color:#c5d745;border-bottom-color: #c5d745;">
-					<p style="color:#000;">"Dalam penyusunan rumusan Pancasila dan Undang-Undang Dasar 1945 (UUD '45), Wahid juga termasuk seseorang yang turut ambil andil besar. Wahid adalah satu dari sembilan orang yang menandatangani Piagam Jakarta. Piagam Jakarta inilah yang menjadi cikal bakal perumusan Pembukaan UUD '45."</p>
+					<p style="color:#000;">Dalam penyusunan rumusan Pancasila dan Undang-Undang Dasar 1945 (UUD '45), Wahid juga termasuk seseorang yang turut ambil andil besar. Wahid adalah satu dari sembilan orang yang menandatangani Piagam Jakarta. Piagam Jakarta inilah yang menjadi cikal bakal perumusan Pembukaan UUD '45.</p>
 				</div>
 			</div>
 			<div class="section">
@@ -181,6 +233,81 @@
 				<div class="text-paragraph">
 					<p>Hingga kini, Wahid merupakan sosok pahlawan yang disegani. Kecerdasannya membuat Wahid mengawali terjun dalam dunia politik pada usia yang terbilang cukup dini, yaitu 25 tahun. Sayangnya, ia meninggal pada usia yang tergolong muda, yaitu 39 tahun. Wahid Hasyim meninggal dunia pada 1953 akibat kecelakaan mobil di Cimahi, Jawa Barat.</p>
 					<p>Meskipun perjuangannya terbilang singkat, sosoknya yang tegas dan cerdas dan mendukung toleransi telah menjadi inspirasi bagi banyak orang. Wahid Hasyim tercatat sebagai pahlawan menurut SK Presiden RI No 206 tahun 1964, pada 24 Agustus 1964.</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="image-middle">
+					<img data-original="img/Abdul_Wahid_Hasjim.jpg" alt="Abdul Wahid Hasjim">
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Quote</span></h3>
+				</div>
+				<div class="text-quote">
+					<p class="tI"><span>❝</span> Perjuangan bersenjata melawan Belanda akan segera berakhir, hanya memerlukan beberapa tahun, dan kita akan menang, insya Allah. Namun, perjuangan yang lebih lama dari itu adalah perjuangan politik, ekonomi, kebudayaan, dan pembangunan akhlak. Perjuangan itu akan berlangsung lama, memerlukan kebijaksanaan dan kesabaran.<span>❞</span></p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Biodata</span></h3>
+					<table class="table-biodata">
+						<tbody>
+							<tr>
+								<th>Nama</th>
+								<td>: K.H. Abdul Wahid Hasjim</td>
+							</tr>
+							<tr>
+								<th>Tempat lahir</th>
+								<td>: Jombang, Jawa Timur</td>
+							</tr>
+							<tr>
+								<th>Tanggal lahir</th>
+								<td>: 1 Juni 1914</td>
+							</tr>
+							<tr>
+								<th>Wafat</th>
+								<td>: 19 April 1953</td>
+							</tr>
+							<tr>
+								<th>SK Presiden</th>
+								<td>: Keppres No. 206 Tahun 1964 pada 24 Agustus 1964</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Apa kata mereka ?</span></h3>
+					<table class="table-biodata table-opinion">
+						<tbody>
+							<tr>
+								<th><img data-original="img/opini/Abi_Chondro.jpg" alt="Abi Chondro"></th>
+								<td>
+									<h4 class="tB">Abi Chondro</h4>
+									<span class="tI">Desainer grafis di Boyolali-Jawa Tengah</span><br><br>
+									Kapasitas intelektual dan leadership Wahid Hasyim memang pantas diakui karena melebihi usianya atau pemuda lain di usianya. Terbukti dengan dipilih menjadi ketua Masyumi dan menjadi anggota perumus UUD ’45.
+								</td>
+							</tr>
+							<tr>
+								<th><img data-original="img/opini/Lies_Afroniyati.jpg" alt="Lies Afroniyati"></th>
+								<td>
+									<h4 class="tB">Lies Afroniyati</h4>
+									<span class="tI">Ibu rumah tangga di Depok-Tangerang</span><br><br>
+									Secara pribadi, Wahid Hasyim memang pantas disebut sebagai pahlawan nasional dan pahlawan modernisasi pesantren. Dalam lingkup pesantren, Wahid Hasyim mampu mendorong para santri belajar ilmu-ilmu umum tanpa harus mengabaikan ajaran Islam. Dalam lingkup nasional, Wahid Hasyim sangat rendah hati terhadap tokoh-tokoh politik dan agama lain. Gaya diplomasi yang diperkenalkan sangat santun.
+								</td>
+							</tr>
+							<tr>
+								<th><img data-original="img/opini/Yohanes_Wara.jpg" alt="Yohanes Wara"></th>
+								<td>
+									<h4 class="tB">Yohanes Wara</h4>
+									<span class="tI">Dokter di Yogyakarta</span><br><br>
+									Wahid Hasyim adalah sosok yang mandiri. Dia mempunyai semangat belajar yang tinggi hingga mau menempuh pendidikan di luar negeri dan mempelajari banyak bahasa. Ia juga memiliki pendirian, aktif dalam organisasi, dan tidak goyah dalam menyikapi perbedaan budaya.
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div> <!-- /#tab-1 -->
@@ -209,6 +336,73 @@
 					<p>Tak pernah ada kata berhenti untuk berjuang membela negeri. Pucuk pimpinan pasukan perang sang ibunda pun diteruskan Teuku Sabi, anak semata wayang Cut Meutia. Semangat nasionalisme yang menggelora dan perjuangan tiada henti melawan penjajah membuat Cut Meutia layak menjadi tokoh pahlawan perempuan nasional yang perlu kita teladani.</p>
 				</div>
 			</div>
+			<div class="section">
+				<div class="image-middle">
+					<img data-original="img/Cut_Meutia.jpg" alt="Cut Nyak Meutia">
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Quote</span></h3>
+				</div>
+				<div class="text-quote">
+					<p class="tI"><span>❝</span> Penyerahan pimpinan itu aku terima dengan penuh tanggung jawab pada agama dan negeri kita. Akan tetapi, bila pimpinanku kurang sempurna supaya cepat ditegur sehingga segala urusan dapat berjalan lancar dan baik dan supaya kita semua seiya sekata, bersatu hati, dan tidak terpecah belah.<span>❞</span></p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Biodata</span></h3>
+					<table class="table-biodata">
+						<tbody>
+							<tr>
+								<th>Nama</th>
+								<td>Cut Nyak Meutia</td>
+							</tr>
+							<tr>
+								<th>Tempat lahir</th>
+								<td>Perlak, Keureutoe, Aceh Utara</td>
+							</tr>
+							<tr>
+								<th>Tahun lahir</th>
+								<td>1870</td>
+							</tr>
+							<tr>
+								<th>Wafat</th>
+								<td>24 Oktober 1910</td>
+							</tr>
+							<tr>
+								<th>SK Presiden</th>
+								<td>Keppres Nomor 107 Tahun 1964</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Apa kata mereka ?</span></h3>
+					<table class="table-biodata table-opinion">
+						<tbody>
+							<tr>
+								<th><img data-original="img/opini/Claudina_Oscaria.jpg" alt="Claudina Oscaria"></th>
+								<td>
+									<h4 class="tB">Claudina Oscaria</h4>
+									<span class="tI">Senior Graphic Designer, Jakarta Pusat</span><br><br>
+									Semangat pantang menyerah Cut Meutia membela rakyat Aceh dari penjajahan patut kita tiru, terutama bagi kaum perempuan di era modern ini. Mumpung masih muda, jangan sia-siakan hidup untuk melakukan hal-hal yang tidak membawa manfaat untuk pengembangan diri kita. Semangat Cut Meutia menginspirasi untuk terus berjuang merealisasikan bermacam tujuan hidup yang saya impikan.
+								</td>
+							</tr>
+							<tr>
+								<th><img data-original="img/opini/Septian_Eko_Yuliantoro.jpg" alt="Septian Eko Yuliantoro"></th>
+								<td>
+									<h4 class="tB">Septian Eko Yuliantoro</h4>
+									<span class="tI">Guru SMK, Wonogiri, Jawa Tengah</span><br><br>
+									Cut Meutia adalah perempuan luar biasa. Zaman dulu, pahlawan itu identik dengan pria. Namun, Cut Meutia berbeda karena dia menentang kebiasaan karena perempuan kerap dianggap memiliki derajat lebih rendah dari laki-laki dan hanya boleh mengurus rumah tangga. Cut Meutia berani keluar dari kebiasaan itu. Dia membantu para laki-laki Aceh untuk bersama berjuang melawan penjajah. Saat ini, banyak masyarakat yang kurang menghargai perjuangan kemerdekaan. Harapannya, semoga semangat Cut Meutia muncul kembali untuk membela negara dalam kondisi apa pun.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div> <!-- /#tab-2 -->
 		
 		<div id="tab-3" class="section article" style="display:none;">
@@ -230,6 +424,73 @@
 				<div class="text-paragraph">
 					<p>Hingga pada 19 Desember 1961, Presiden Sukarno mengumandangkanÂ Tri Komando Rakyat (Trikora) sebagai upaya membebaskan Irian yang dilanjutkan dengan operasi militer. Frans Kaisiepo turut aktif membantu kelancaran TNI untuk mendarat di Irian Barat. Ketika Trikora berakhir, perjuangan dilanjutkan melalui jalur diplomasi. Akhirnya, pada 1 Mei 1963, secara resmi Perserikatan Bangsa-Bangsa (PBB) menyerahkan Irian Barat kepada Pemerintah RI.</p>
 					<p>"Dalam diri Frans Kaisiepo dapat dilihat pribadi yang mempertahankan dengan teguh persatuan bangsa dan dari sini dapat diketahui bahwa banyak pihak dari Sabang - Merauke yang berupaya memperjuangkan Indonesia jaya," papar Susanto.</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="image-middle">
+					<img data-original="img/Frans_Kaisiepo.jpg" alt="Frans Kaisiepo.jpg">
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Quote</span></h3>
+				</div>
+				<div class="text-quote">
+					<p class="tI"><span>❝</span> Bersatu pastilah lebih baik daripada tercerai-berai<span>❞</span></p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Biodata</span></h3>
+					<table class="table-biodata">
+						<tbody>
+							<tr>
+								<th>Nama</th>
+								<td>Frans Kaisiepo</td>
+							</tr>
+							<tr>
+								<th>Tempat lahir</th>
+								<td>Biak, Papua</td>
+							</tr>
+							<tr>
+								<th>Tanggal lahir</th>
+								<td>10 Oktober 1921</td>
+							</tr>
+							<tr>
+								<th>Wafat</th>
+								<td>10 April 1979</td>
+							</tr>
+							<tr>
+								<th>SK Presiden</th>
+								<td>Keppres Nomor 077/TK/1993 pada 14 September 1993</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Apa kata mereka ?</span></h3>
+					<table class="table-biodata table-opinion">
+						<tbody>
+							<tr>
+								<th><img data-original="img/opini/Dodid_Wijanarko.jpg" alt="Dodid Wijanarko"></th>
+								<td>
+									<h4 class="tB">Dodid Wijanarko</h4>
+									<span class="tI">Pekerja Seni, Jakarta Selatan</span><br><br>
+									Yang sering diketahui Frans Kaisiepo adalah nama bandar udara di Biak. Padahal, Frans kaisepo adalah salah satu putra Papua yang turut memperjuangkan kemerdekaan Indonesia lewat jalur diplomasi. Oleh karena itu, sudah saatnya bangsa Indonesia kembali mengenalkan banyak pahlawan nasional tidak hanya sebagai simbol nama KRI ataupun bandara, tetapi juga memperkenalkan apa yang sudah dibuat oleh Frans Kaisiepo pada Republik Indonesia.
+								</td>
+							</tr>
+							<tr>
+								<th><img data-original="img/opini/Eka_Febriansyah.jpg" alt="Eka Febriansyah"></th>
+								<td>
+									<h4 class="tB">Eka Febriansyah</h4>
+									<span class="tI">Project Officer, Depok</span><br><br>
+									Siapa Frans Kaisiepo memang saya tidak terlalu banyak tahu. Hanya tahu nama beliau dijadikan bandar udara di Biak. Tapi, setelah mencari tahu ternyata apa yang diperjuangkan Frans Kaisiepo sebagai putra Papua sangat memukau. Memegang teguh nasionalisme yang sudah sepatutnya hingga kini kita pun melakukan hal sama walau tentunya dalam wujud perjuangan yang berbeda.
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div> <!-- /#tab-3 -->
@@ -255,6 +516,73 @@
 					<p>Thamrin juga mengunjungi perkebunan-perkebunan di Sumatera. Di sinilah ia melihat ketidakadilan bagi pekerja perkebunan. Di sana diberlakukan purnale sunctie. Kuli perkebunan diperlakukan pemerintah kolonial dengan semena-mena. Pertentangan pun timbul dari para pekerja tersebut. Mereka melawan, bahkan membunuh asisten perkebunan. Isu ini besar dan dibahas dalam surat-surat kabar serta dibicarakan dalam Volksraad. Thamrin pun berpidato menentang sistem ini, yang juga dikutip surat-surat kabar di Amerika Serikat. Purnale sanctie pun berangsur-angsur dihapuskan.</p>
 					<p>Tak hanya dalam bidang politik, Thamrin juga berperan dalam dunia sepak bola dengan mendukung dibentuknya Voetbalbond Indonesische Jakarta (VIJ), cikal bakal Persija. Ia bahkan penjadi pembinanya. VIJ ini pulalah yang mendorong dibentuknya PSSI di Yogyakarta pada 19 April 1930.</p>
 					<p>Kini, setiap kali mendengar nama MH Thamrin atau melewati jalan MH Thamrin, ingatlah bahwa berkat seseorang yang vokal dan gigih tersebut, kita dibantu meraih kemerdekaan. Thamrin adalah pahlawan yang berkarya di banyak bidang untuk satu tujuan, kemandirian rakyat.</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="image-middle">
+					<img data-original="img/Husni_Thamrin.jpg" alt="Husni Thamrin">
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Quote</span></h3>
+				</div>
+				<div class="text-quote">
+					<p class="tI"><span>❝</span> … Saya berharap krisis ini akan mengajarkan kepada pemerintah Hindia dan Belanda untuk memulai di sini, di Indonesia, suatu rezim yang memerintah dengan kerja keras dan bukan sekadar memerintah negeri.<span>❞</span></p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Biodata</span></h3>
+					<table class="table-biodata">
+						<tbody>
+							<tr>
+								<th>Nama</th>
+								<td>Mohammad Husni Thamrin</td>
+							</tr>
+							<tr>
+								<th>Tempat lahir</th>
+								<td>Sawah Besar, Jakarta</td>
+							</tr>
+							<tr>
+								<th>Tanggal lahir</th>
+								<td>16 Februari 1894</td>
+							</tr>
+							<tr>
+								<th>Wafat</th>
+								<td>11 Januari 1941</td>
+							</tr>
+							<tr>
+								<th>SK Presiden</th>
+								<td>Keppres Nomor 175, 28 Juli 1960</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Apa kata mereka ?</span></h3>
+					<table class="table-biodata table-opinion">
+						<tbody>
+							<tr>
+								<th><img data-original="img/opini/Ruby_Astari.jpg" alt="Ruby stari"></th>
+								<td>
+									<h4 class="tB">Ruby Astari</h4>
+									<span class="tI">Penulis konten situs</span><br><br>
+									MH Thamrin menjadi sosok yang menarik karena ia tidak seperti pahlawan kebanyakan yang maju ke medan perang dengan senjata atau kekerasan. Saya menyebut dia sebagai pahlawan intelektual. Perjuangannya lebih ke arah pendidikan, terutama pendidikan politik. Terus dia juga menggerakkan rakyat Indonesia agar lebih mencintai budaya sendiri. Di zaman sekarang, tantangan terberat kita adalah globalisasi. Atas nama globalisasi orang kerap mengorbankan budaya sendiri. Seperti MH Thamrin, seharusnya kita mengupayakan juga untuk tetap mempertahankan budaya kita
+								</td>
+							</tr>
+							<tr>
+								<th><img data-original="img/opini/Ernest_Dimitria.jpg" alt="Ernest Dimitria"></th>
+								<td>
+									<h4 class="tB">Ernest Dimitria</h4>
+									<span class="tI">Penulis</span><br><br>
+									Meskipun datang dari keluarga terpandang, Thamrin tidak menjadikan status tersebut sebagai tembok yang menghalangi pergaulannya dengan rakyat jelata. Perjuangannya pun didasari keprihatinan terhadap kehidupan masyarakat saat itu. Inilah nilai yang seharusnya dicontoh, bukan dilupakan, oleh para petinggi pemerintahan.
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div> <!-- /#tab-4 -->
@@ -288,12 +616,96 @@
 					<p>Setelah Maria berpulang, banyak kemajuan yang dicapai bangsa kita, khususnya yang menyangkut perwujudan cita-citanya. PIKAT maju pesat. Pada 1930-an, perempuan diberi kesempatan untuk duduk dalam Locale Raden atau Dewan Perwakilan Rakyat Daerah. Maria diangkat sebagai Pahlawan Nasional pada 20 Mei 1969.</p>
 				</div>
 			</div>
+			<div class="section">
+				<div class="image-middle">
+					<img data-original="img/Maria_Walanda_Maramis.jpg" alt="Maria Walanda Maramis">
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Quote</span></h3>
+				</div>
+				<div class="text-quote">
+					<p class="tI"><span>❝</span> Alangkah pahitnya bila kita hanya menyerah pada kelemahan atau kekurangan perhatian orang lain terhadap hati nurani serta seluruh rencana dan gagasan kita.<span>❞</span></p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Biodata</span></h3>
+					<table class="table-biodata">
+						<tbody>
+							<tr>
+								<th>Nama</th>
+								<td>Maria Walanda Maramis</td>
+							</tr>
+							<tr>
+								<th>Tempat lahir</th>
+								<td>Kema, Kabupaten Minahasa, Sulawesi Utara</td>
+							</tr>
+							<tr>
+								<th>Tanggal lahir</th>
+								<td>1 Desember 1872</td>
+							</tr>
+							<tr>
+								<th>Wafat</th>
+								<td>22 April 1924</td>
+							</tr>
+							<tr>
+								<th>SK Presiden</th>
+								<td>Keppres Nomor 012/K/1969, 20 Mei 1969</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="text-paragraph">
+					<h3><span>Apa kata mereka ?</span></h3>
+					<table class="table-biodata table-opinion">
+						<tbody>
+							<tr>
+								<th><img data-original="img/opini/Ricky_Henry_Rawung.jpg" alt="Ricky Henry Rawung"></th>
+								<td>
+									<h4 class="tB">Ricky Henry Rawung</h4>
+									<span class="tI">Dosen, Bandung</span><br><br>
+									Sejak kecil, saya yang berasal dari Tomohon sudah tahu bahwa beliau adalah pahlawan perempuan dari Sulawesi Utara. Beliau memiliki misi memajukan peradaban dan mewujudkan kesetaraan gender di dunia politik. Saya juga sangat setuju dengan gagasan beliau yang mengatakan pendidikan dimulai dari dalam keluarga. Di masa hidupnya, Walanda Maramis mengajak kaum perempuan untuk sekolah sehingga mereka dapat mendidik anak dalam rangka menyiapkan generasi penerus yang hebat bagi bangsa indonesia.
+								</td>
+							</tr>
+							<tr>
+								<th><img data-original="img/opini/Oktiva_Rossari.jpg" alt="Oktiva Rossari"></th>
+								<td>
+									<h4 class="tB">Oktiva Rossari</h4>
+									<span class="tI">PNS, Tangerang</span><br><br>
+									Maria Walanda Maramis adalah sebentuk cahaya dari timur yang menyediakan jalan bagi kemajuan dan emansipasi perempuan. Ia merupakan pejuang yang bergerak dengan kecerdasan dan keberanian untuk mendobrak adat.
+								</td>
+							</tr>
+							<tr>
+								<th><img data-original="img/opini/Ade_Ivan.jpg" alt="Ade Ivan"></th>
+								<td>
+									<h4 class="tB">Ade Ivan</h4>
+									<span class="tI">Manajer Artis, Jakarta</span><br><br>
+									Lupakan sejenak RA Kartini! Indonesia masih memiliki putri bangsa yang mengabdi bagi Ibu Pertiwi. Kenali, hargai, dan kenang mereka. Jangan sampai Maria Walanda hanya berhenti sebatas nama tanpa makna. Masih banyak Maria-Maria lain yang sepenuh hati berkiprah bagi Ibu Pertiwi.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div> <!-- /#tab-5 -->
 		<div class="section">
 			<div class="text-paragraph">
 				<p class="link-toHeroes tR" style="text-decoration: underline;">Kembali ke Atas</p>
 			</div>
 		</div>
+		<div class="section" style="">
+			<div class="text-credits">
+				<h2>EDITOR WEB</h2>
+				<p>Ino Julianto</p>
+				<h2>DEVELOPER WEB</h2>
+				<p>Dimitri Herlambang</p>
+			</div>
+		</div>
+
     </div> <!-- /#wrap -->
     
     <div w3-include-html="../_common/footer.html"></div>
@@ -348,6 +760,15 @@
 				$('html,body').animate({
 					scrollTop: $("#section_heroes").offset().top},'slow'
 				);
+			});
+			
+			$(window).scroll(function() {    
+				var scroll = $(window).scrollTop();    
+				if (scroll >= 1 * $(window).height()) {
+					$('#headerArea').css('opacity', '1');
+				} else {
+					$('#headerArea').css('opacity', '0');
+				}
 			});
 		});
 	</script>
