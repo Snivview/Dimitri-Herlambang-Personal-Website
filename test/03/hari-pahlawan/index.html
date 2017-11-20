@@ -25,9 +25,10 @@
 		}
 		html {
 			background: url(img/bg.jpg) no-repeat;
-    		background-position: bottom;
+    		background-position: center;
     		background-repeat: no-repeat;
     		background-attachment: fixed;
+			background-size: contain;
 		}
 		.article {
             display: none;
@@ -87,6 +88,10 @@
             text-align: center;
             width: 100%;
         }
+		#footerArea {
+			margin-top: 0;
+			background-color: #fff;
+		}
 		#headerArea {
 			opacity: 0;
 			transition: .5s;
@@ -107,9 +112,7 @@
 			margin: 0 auto;
 			font-family: Merriweather;
 		}
-		.table-biodata h4 {
-			font-size: 16px;
-		}
+		.table-biodata h4 {font-size: 16px;}
 		.table-biodata th {
 			width: 30%;
 			font-weight: bold;
@@ -171,9 +174,7 @@
 			font-family: Merriweather;
 			color: #000;
 		}
-		.text-quote span{
-			font-size: 25px;
-		}
+		.text-quote span{font-size: 25px;}
 		.link-toHeroes {cursor: pointer;}
 	</style>
    	<div id="loading"><div id="loading-center"><div id="loading-center-absolute"><div class="object" id="object_four"></div><div class="object" id="object_three"></div><div class="object" id="object_two"></div><div class="object" id="object_one"></div></div></div></div>
