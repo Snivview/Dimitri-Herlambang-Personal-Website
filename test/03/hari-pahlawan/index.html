@@ -38,19 +38,69 @@
 		.image-middle {
 			max-width: 400px;
 		}
-        figure {transition: .5s;}
-        figure:hover {
+        figure{
+            display: inline-block;
+		  	float: none;
+		  	margin: 0 2px 5px 2px;
+		  	width: 150px;
+            height: 175px;
+			font-size: 13px;
+			font-family: Merriweather;
+            transition: .3s;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        figure.current {
             -webkit-transform:scale(1.10); /* Safari and Chrome */
 			-moz-transform:scale(1.10); /* Firefox */
 			-ms-transform:scale(1.10); /* IE 9 */
 			-o-transform:scale(1.10); /* Opera */
             transform:scale(1.10);
+            transition: .3s;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+        .hover {
+            -webkit-transform:scale(1.10); /* Safari and Chrome */
+			-moz-transform:scale(1.10); /* Firefox */
+			-ms-transform:scale(1.10); /* IE 9 */
+			-o-transform:scale(1.10); /* Opera */
+            transform:scale(1.10);
+            transition: .3s;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+        figure p {
+            opacity: 0;
+            margin-top: -35px;
             transition: .5s;
+            position: absolute;
+            text-align: center;
+            width: 100%;
         }
 		#headerArea {
 			opacity: 0;
 			transition: .5s;
 		}
+		.image-gallery-modal {
+			width: 100%;
+		  	float: left;
+			text-align: center;
+		}
+		.image-gallery-modal img {
+		 	width: 100%;
+		  	height: auto;
+		}
+        .show {margin-top: 0;}
 		.tab-title {cursor: pointer;}
 		.table-biodata {
 			max-width: 500px;
@@ -125,23 +175,6 @@
 			font-size: 25px;
 		}
 		.link-toHeroes {cursor: pointer;}
-		.image-gallery-modal {
-			width: 100%;
-		  	float: left;
-			text-align: center;
-		}
-		.image-gallery-modal img {
-		 	width: 100%;
-		  	height: auto;
-		}
-		.image-gallery-modal figure {
-		  	display: inline-block;
-		  	float: none;
-		  	margin: 0 2px 5px 2px;
-		  	width: 150px;
-			font-size: 13px;
-			font-family: Merriweather;
-		}
 	</style>
    	<div id="loading"><div id="loading-center"><div id="loading-center-absolute"><div class="object" id="object_four"></div><div class="object" id="object_three"></div><div class="object" id="object_two"></div><div class="object" id="object_one"></div></div></div></div>
 	
@@ -154,7 +187,7 @@
 					<h1>Hari Pahlawan</h1>
 					<p>Mengenal Pahlawan Nasional yang Terlupakan</p>
 				</div>
-				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a class="animated bounce" style="display:inline-block;"><img src="../_img/arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
+				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a href="#begin" class="animated bounce" style="display:inline-block;"><img src="../_img/arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
 			</div>
 		</div>
 		
@@ -171,36 +204,42 @@
    			</div>
    		</div>
 		
-		<div class="section clearfix" id="section_heroes" style="padding-top: 50px;">
+        <div class="section clearfix">
+            <div class="text-paragraph">
+                <div class="tC"><p>Pilih Pahlawanmu</p></div>
+            </div>
+        </div>
+            
+		<div class="section clearfix" id="section_heroes">
 			<div class="image-gallery-modal div-tab" itemscope itemtype="">
 				<figure class="tab-title" data-tab="tab-1" itemprop="associatedMedia" itemscope itemtype="">
 					<img src="img/Abdul_Wahid_Hasjim.jpg" itemprop="thumbnail" alt="Abdul Wahid Hasjim" /><br>
-					Abdul Wahid Hasjim
+					<p>Abdul Wahid Hasjim</p>
 				</figure>
 
 				<figure class="tab-title" data-tab="tab-2" itemprop="associatedMedia" itemscope itemtype="">
 					<img src="img/Cut_Meutia.jpg" itemprop="thumbnail" alt="Cut Meutia" />
-					Cut Meutia
+					<p>Cut Meutia</p>
 				</figure>
 
 				<figure class="tab-title" data-tab="tab-3" itemprop="associatedMedia" itemscope itemtype="">
 					<img src="img/Frans_Kaisiepo.jpg" itemprop="thumbnail" alt="Frans Kaisiepo" />
-					Frans Kaisiepo
+					<p>Frans Kaisiepo</p>
 				</figure>
 
 				<figure class="tab-title" data-tab="tab-4" itemprop="associatedMedia" itemscope itemtype="">
 					<img src="img/Husni_Thamrin.jpg" itemprop="thumbnail" alt="Husni Thamrin" />
-					Husni Thamrin
+					<p>Husni Thamrin</p>
 				</figure>
 				
 				<figure class="tab-title" data-tab="tab-5" itemprop="associatedMedia" itemscope itemtype="">
 					<img src="img/Maria_Walanda_Maramis.jpg" itemprop="thumbnail" alt="Maria Walanda Maramis" />
-					Maria Walanda Maramis
+					<p>Maria Walanda Maramis</p>
 				</figure>
 			</div>
 		</div>
 
-        <div class="anchor-article section"></div>
+        <div class="anchor-article section" style="margin-bottom:-60px;"></div>
 		
 		<div id="tab-1" class="section article" style="display:none;">
 			<div class="section clearfix">
@@ -694,7 +733,7 @@
 		</div> <!-- /#tab-5 -->
 		<div class="section">
 			<div class="text-paragraph">
-				<p class="link-toHeroes tR" style="text-decoration: underline;">Kembali ke Atas</p>
+				<p class="link-toHeroes tR" style="text-decoration: underline;">Kembali ke Pahlawan</p>
 			</div>
 		</div>
 		<div class="section" style="">
@@ -736,16 +775,23 @@
 				classToAdd: 'show',
 				offset: 50
 			});
+            /* hover */
 			$(".image-gallery").hover(function(){
 				$(this).find('p').toggleClass("show");
 				$(this).find('img').toggleClass("zoom");
 				$(this).find('.image-info').toggleClass("hidden");
 			});
+            $(".tab-title").hover(function(){
+				$(this).find('p').toggleClass("show");
+				$(this).toggleClass("hover");
+			});
 			/* tabbing */
             $('.div-tab figure').click(function(){
                 var tab_id = $(this).attr('data-tab');
+                
                 $('.div-tab figure').removeClass('current');
                 $('.article').removeClass('current');
+                
                 $(this).addClass('current');
                 $("#"+tab_id).addClass('current');
             })
@@ -756,7 +802,8 @@
                 );
             });
 			$(".link-toHeroes").click(function() {
-                /* $('.article').removeClass('current'); */
+                $('.article').removeClass('current');
+                $('figure').removeClass('current');
 				$('html,body').animate({
 					scrollTop: $("#section_heroes").offset().top},'slow'
 				);
