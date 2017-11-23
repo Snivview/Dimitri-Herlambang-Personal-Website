@@ -1,118 +1,258 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Eksplor Jawa 2</title>
-    <link rel="icon" href="img/favicon.png">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Menjelajahi pedalaman Jawa bersama Honda">
     <meta name="keywords" content="kompas,klasika,langgam">
     <meta name="author" content="Kompas klasika">
-    <link href="../_common/reset.css" rel="stylesheet">
-    <link href="../_common/base_v1.22.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<meta name="Resource-type" content="Document" />
+	
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-
-</head>
-
-<body>
-  	<style>
-		#loading{background-color: #00599A;height:100%;width:100%;position:fixed;z-index:20;margin-top:0px;top:0px;}#loading-center{width:100%;height: 100%;position: relative;}#loading-center-absolute{position: absolute;left:50%;top:50%;height:200px;width:200px;margin-top:-100px;margin-left: -100px;-ms-transform: rotate(-135deg);-webkit-transform:rotate(-135deg);transform: rotate(-135deg);}.object{-moz-border-radius: 50% 50% 50% 50%;-webkit-border-radius:50% 50% 50% 50%;border-radius: 50% 50% 50% 50%;position:absolute;border-top: 5px solid #FFF;border-bottom: 5px solid transparent;border-left:5px solid #FFF;border-right:5px solid transparent;-webkit-animation:animate 2s infinite;animation:animate 2s infinite;}#object_one{left:75px;top:75px;width:50px;height:50px;}#object_two{left:65px;top:65px;width:70px;height:70px;-webkit-animation-delay:0.2s;animation-delay:0.2s;}#object_three{left:55px;top:55px;width:90px;height:90px;-webkit-animation-delay:0.4s;animation-delay:0.4s;}#object_four{left:45px;top: 45px;width:110px;height:110px;-webkit-animation-delay:0.6s;animation-delay:0.6s;}@-webkit-keyframes animate{50%{-ms-transform: rotate(360deg) scale(0.8);-webkit-transform: rotate(360deg) scale(0.8);transform: rotate(360deg) scale(0.8);}}@keyframes animate{50%{-ms-transform: rotate(360deg) scale(0.8);-webkit-transform: rotate(360deg) scale(0.8);transform: rotate(360deg) scale(0.8);}}
-        html {
-            background: url(img/bg.jpg) no-repeat;
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="local/jquery.fullPage.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../_common/jquery-210.js"></script>
+	<script src="../_common/jquery-ui-191.js"></script>
+	<script type="text/javascript" src="local/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="local/jquery.fullPage.min.js"></script>
+	<style>
+		.clearfix:before,
+		.clearfix:after{content:"";display:table;}
+		.clearfix:after{clear:both;}
+		.fL{float:left;}
+		.fR{float:right;}
+		@-webkit-keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-25px);}
+			60% {-webkit-transform: translateY(-5px);}
+		}
+		@-moz-keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+			40% {-moz-transform: translateY(-25px);}
+			60% {-moz-transform: translateY(-5px);}
+		}
+		@-o-keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+			40% {-o-transform: translateY(-25px);}
+			60% {-o-transform: translateY(-5px);}
+		}
+		@keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+			40% {transform: translateY(-25px);}
+			60% {transform: translateY(-5px);}
+		}
+		.animated{
+			-webkit-animation-fill-mode:both;
+			-moz-animation-fill-mode:both;
+			-ms-animation-fill-mode:both;
+			-o-animation-fill-mode:both;
+			animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-webkit-animation-iteration-count: infinite;
+			animation-fill-mode:both;
+			-webkit-animation-duration:1.5s;
+			-moz-animation-duration:1.5s;
+			-ms-animation-duration:1.5s;
+			-o-animation-duration:1.5s;
+			animation-duration:1.5s;
+		}
+		.bounce {
+			-webkit-animation-name: bounce;
+			-moz-animation-name: bounce;
+			-o-animation-name: bounce;
+			animation-name: bounce;
+		}
+		html {
+            background: url(img/bg_2.jpg) no-repeat;
             background-size: cover;
             background-attachment: fixed;
+			background-position: center;
         }
-        #headerArea {
-            transition: .3s;
-            opacity: 0;
-        }
-        #footerArea {
-            margin-top: 0;
-            background-color: #fff;
-        }
-        .section {
-            background-color: #524e4f;
-        }
-        .text-paragraph h2 {
-            opacity: 1;
+		h1 {
+			font-family: Impact;
+			font-size: 400%;
+			font-weight: normal;
+			color: #fff;
+		}
+		.text-caption h2 {
             font-family: Merriweather;
             font-style: normal;
             font-size: 32px;
-            color: #efdfc6;
-        }
-        .text-paragraph p {
-            font-family: 'Source Sans Pro', sans-serif;
-            color: #efdfc6;
-        }
-	</style>
-   	<div id="loading"><div id="loading-center"><div id="loading-center-absolute"><div class="object" id="object_four"></div><div class="object" id="object_three"></div><div class="object" id="object_two"></div><div class="object" id="object_one"></div></div></div></div>
-	
-    <div w3-include-html="../_common/header.html"></div>
-   
-    <div id="wrap">
-        <div class="module parallax" id="landing_image">
-        	<div class="div-transparent-layer">
-				<div class="div-caption">
-					<h1>Eksplor Jawa</h1>
-					<p>Menjelajah Tempat Wisata di Pedalaman Jawa</p>
-				</div>
-				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a class="animated bounce" style="display:inline-block;"><img src="../_img/arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
-			</div>
-		</div>
-        
-        <div class="section clearfix" style="padding-top:120px;">
-            <div class="text-paragraph">
-            	<h2 class="tI">Peradaban di Belantara Hutan</h2>
-                <p>Pulau Jawa merupakan salah satu pulau terpadat di Nusantara, meskipun begitu, masih banyak terdapat hutan belantara yang belum terjamah manusia.</p>
-                <p>Keberadaan peninggalan artifak kuno di pedalaman menjadi bukti eksistensi situs kerajaan kuno yang hilang ditelan peradaban.</p>
-            </div>
-   		</div>
-
-    </div> <!-- /#wrap -->
-    
-    <div w3-include-html="../_common/footer.html"></div>
-    
-    <script src="../_common/jquery-210.js" type="text/javascript"></script>
-	<script src="../_common/jquery.viewportchecker.js" type="text/javascript"></script>
-	<script src="../_common/lazy.js" type="text/javascript"></script>
-	<script src="../_common/w3.js" type="text/javascript"></script>
-	<script>
-		function onReady(callback) {
-			var intervalID = window.setInterval(checkReady, 1000);
-			function checkReady() {
-				if (document.getElementsByTagName('body')[0] !== undefined) {
-					window.clearInterval(intervalID);
-					callback.call(this);
-				}
-			}
+            color: #fff;
 		}
-		function show(id, value) {document.getElementById(id).style.display = value ? 'block' : 'none';}
-		onReady(function(){show('wrap', true);show('loading', false);});
-		$(window).on('beforeunload',function(){$(window).scrollTop(0);});
-        /* ------------- document ready ----------------- */
-		$(document).ready(function(){
-			new LazyLoad();
-            w3.includeHTML();
-			$(".text-paragraph p,.text-quote p").viewportChecker({
-				classToAdd: 'show',
-				offset: 100,
-			});
-			$(".image-gallery").hover(function(){
-				$(this).find('p').toggleClass("show");
-				$(this).find('img').toggleClass("zoom");
-				$(this).find('.image-info').toggleClass("hidden");
-			});
-            $(window).scroll(function() {    
-				var scroll = $(window).scrollTop();    
-				if (scroll >= 1 * $(window).height()) {
-					$('#headerArea').css('opacity', '1');
-				} else {
-					$('#headerArea').css('opacity', '0');
-				}
+		.text-caption p {
+			font-family: Merriweather;
+			font-size: 15px;
+			color: #fff;
+		}
+		#section0 {background-color: rgba(0,0,0,.6);}
+		#section1 {background-color: rgba(0,0,0,.6);}
+		.fp-tableCell {
+			text-align: center;
+		}
+		.text-caption {
+			max-width: 300px;
+			margin: 0 auto;
+		}
+		.interior {
+			width: 100vw;
+			height: 30vh;
+			background: url(img/interior.png);
+			background-position: left;
+			background-size: cover;
+			position: fixed;
+			bottom: -100%;
+			transition: 1s;
+			z-index: 1;
+		}
+		.getInside {
+			bottom: 0%;
+			transition: 1s;
+		}
+		.roadMap {
+			padding: 70px 0;
+			max-width: 500px;
+			margin: 0 auto;
+			background: url(img/jalanan.png);
+			background-repeat: repeat-y;
+			background-position: center;
+		}
+		.destination {
+			margin-bottom: 100vh;
+			width: 160px;
+			font-family: 'Varela Round';
+			color: #fff;
+			border: 2px solid #fff;
+			background-color: rgba(0,146,63,.7);
+			background-repeat: no-repeat;
+		}
+		.destination.left {
+			margin-left: 40px;
+			background-image: url(img/arrow-left.png);
+			background-position: 3% 3%;
+		}
+		.destination.right {
+			margin-right: 40px;
+			background-image: url(img/arrow-right.png);
+			background-position: 97% 3%;
+		}
+		.destination h3 {
+			margin-top: 40px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.destination p {
+			font-size: 14px;
+			font-weight: 100;
+			padding: 10px;
+			line-height: 20px;
+			text-align: left;
+		}
+		.scroll {
+			bottom: 0;
+			width: 100%;
+			color: #fff;
+			position: absolute;
+			text-align: center;
+			font-family: 'Varela Round';
+		}
+	</style>
+</head>
+<body>
+
+<div class="interior"></div>
+	
+<div id="fullpage">
+	
+	<div class="section active" id="section0">
+		<div class="text-caption">
+			<h1>Eksplor Jawa</h1>
+			<p>Menjelajah Tempat Wisata di Pedalaman Jawa</p>
+		</div>
+		<p class="animated bounce scroll">Scroll <br> ke bawah</p>
+	</div>
+	
+	<div class="section" id="section1">
+		<div class="text-caption">
+			<h2>Peradaban di Belantara Hutan</h2>
+			<p>Pulau Jawa merupakan salah satu pulau terpadat di Nusantara, meskipun begitu, masih banyak terdapat hutan belantara yang belum terjamah manusia.</p>
+			<p>Keberadaan peninggalan artifak kuno di pedalaman menjadi bukti eksistensi situs kerajaan kuno yang hilang ditelan peradaban. Tim Kompas Eksplor bersama Honda menjelajah rimbunnya hutan demi menyingkap misteri pedalaman Jawa.</p>
+		</div>
+	</div>
+	
+	<div class="section" id="section2">
+		<div class="roadMap">
+			
+			<p class="animated bounce scroll" style="top:0;left:25%;">Scroll atau Swipe <br> ke bawah</p>
+			<div class="clearfix">
+				<div class="destination fL left">
+					<h3>Baduga Gunung Parang</h3>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<div class="destination fR right">
+					<h3>Kampung Kuta</h3>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<div class="destination fL left">
+					<h3>Dieng</h3>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<div class="destination fR right">
+					<h3>Desa Candirejo</h3>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<div class="destination fL left">
+					<h3>Brumbun</h3>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<div class="destination fR right">
+					<h3>Watu Karung</h3>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<div class="destination fL left">
+					<h3>Nglanggeran</h3>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				scrollOverflow: true,
+				afterLoad: function(anchorLink, index){
+                    var loadedSection = $(this);
+                    /* if(index == 3){
+                        $('.interior').addClass('getInside');
+                    } */
+                },
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
+
+					if(index == 2 && direction == 'down'){
+                        $('.interior').addClass('getInside');
+                    }
+                    else if(index == 3 && direction == 'up'){
+                        $('.interior').removeClass('getInside');
+                    }
+                }
 			});
 		});
 	</script>
