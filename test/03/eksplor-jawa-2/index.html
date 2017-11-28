@@ -19,6 +19,7 @@
 	<script src="../_common/jquery-ui-191.js"></script>
 	<script type="text/javascript" src="local/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="local/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="local/bodymovin.js"></script>
 	<style>
 		.clearfix:before,
 		.clearfix:after{content:"";display:table;}
@@ -98,18 +99,20 @@
 			max-width: 300px;
 			margin: 0 auto;
 		}
-		.interior {
+		#interior {
 			width: 100vw;
 			height: 40vh;
-			background: url(img/interior-2.png);
-			background-position: bottom;
-			background-repeat: no-repeat;
-			background-size: 60%;
 			position: fixed;
 			bottom: -100%;
 			transition: 1s;
 			z-index: 1;
             overflow-x: visible;
+		}
+		#dashboard {
+			padding-top: 10vh;
+			width: 100%;
+			height: 100%;
+			position: absolute;
 		}
 		.roadMap {
 			padding: 70px 0;
@@ -163,22 +166,37 @@
 			text-align: center;
 			font-family: 'Varela Round';
 		}
-		@media screen and (max-width:941px){
-			.interior {
-				background-size: 100%;
-                background-position: bottom;
-			}
+		#dashboard {
+		  animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
+		  transform: translate3d(0, 0, 0);
+		  backface-visibility: hidden;
+		  perspective: 1000px;
 		}
-		@media screen and (min-width:567px){
-			.interior {
-                background-position: top;
-			}
+
+		@keyframes shake {
+		  10%, 90% {
+			transform: translate3d(0 -1px, 0);
+		  }
+
+		  20%, 80% {
+			transform: translate3d(0, 2px, 0);
+		  }
+
+		  30%, 50%, 70% {
+			transform: translate3d(0, -2px, 0);
+		  }
+
+		  40%, 60% {
+			transform: translate3d(0, 2px, 0);
+		  }
 		}
 	</style>
 </head>
 <body>
 
-<div class="interior"></div>
+<div id="interior">
+	<div id="dashboard"></div>
+</div>
 	
 <div id="fullpage">
 	
@@ -250,6 +268,15 @@
 </div>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			
+			var animation = bodymovin.loadAnimation({
+			  container: document.getElementById('dashboard'),
+			  renderer: 'svg',
+			  loop: true,
+			  autoplay: true,
+			  path: 'local/data2.json'
+			});
+			
 			$('#fullpage').fullpage({
 				scrollOverflow: true,
 				afterLoad: function(anchorLink, index){
@@ -262,10 +289,10 @@
                     var leavingSection = $(this);
 
 					if(index == 2 && direction == 'down'){
-                        $('.interior').addClass('getInside');
+                        $('#interior').css("bottom","0");
                     }
                     else if(index == 3 && direction == 'up'){
-                        $('.interior').removeClass('getInside');
+                        $('#interior').css("bottom","-100%");
                     }
                 }
 			});
