@@ -26,46 +26,6 @@
 		.clearfix:after{clear:both;}
 		.fL{float:left;}
 		.fR{float:right;}
-		@-webkit-keyframes bounce {
-			0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-25px);}
-			60% {-webkit-transform: translateY(-5px);}
-		}
-		@-moz-keyframes bounce {
-			0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
-			40% {-moz-transform: translateY(-25px);}
-			60% {-moz-transform: translateY(-5px);}
-		}
-		@-o-keyframes bounce {
-			0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
-			40% {-o-transform: translateY(-25px);}
-			60% {-o-transform: translateY(-5px);}
-		}
-		@keyframes bounce {
-			0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-			40% {transform: translateY(-25px);}
-			60% {transform: translateY(-5px);}
-		}
-		.animated{
-			-webkit-animation-fill-mode:both;
-			-moz-animation-fill-mode:both;
-			-ms-animation-fill-mode:both;
-			-o-animation-fill-mode:both;
-			animation-iteration-count: infinite;
-			-moz-animation-iteration-count: infinite;
-			-webkit-animation-iteration-count: infinite;
-			animation-fill-mode:both;
-			-webkit-animation-duration:1.5s;
-			-moz-animation-duration:1.5s;
-			-ms-animation-duration:1.5s;
-			-o-animation-duration:1.5s;
-			animation-duration:1.5s;
-		}
-		.bounce {
-			-webkit-animation-name: bounce;
-			-moz-animation-name: bounce;
-			-o-animation-name: bounce;
-			animation-name: bounce;
-		}
 		html {
             background: url(img/bg_2.jpg) no-repeat;
             background-size: cover;
@@ -91,13 +51,31 @@
 		}
 		#section0 {background-color: rgba(0,0,0,.6);}
 		#section1 {background-color: rgba(0,0,0,.6);}
-		#section2 {background-color: rgba(0,0,0,1);}
+		#section2 {
+			background-color: rgba(0,0,0,1);
+			background-image: url(img/jalanan_2.png);
+			background-position: center;
+    		background-size: 100% 100%;
+		}
 		.fp-tableCell {
 			text-align: center;
 		}
 		.text-caption {
 			max-width: 300px;
 			margin: 0 auto;
+		}
+		#mirror {
+			top:-100%;
+			width: 25%;
+			left: 50%;
+			margin-left: -12.5%;
+			position: fixed;
+			transition: 1s;
+			z-index: 5;
+			animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
 		}
 		#interior {
 			width: 100vw;
@@ -109,42 +87,51 @@
             overflow-x: visible;
 		}
 		#dashboard {
-			padding-top: 10vh;
+			/* padding-top: 10vh; */
 			width: 100%;
-			height: 100%;
+			/* height: 100%; */
 			position: absolute;
+			top: 0;
+			animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
 		}
 		.roadMap {
 			padding: 70px 0;
-			max-width: 500px;
+			max-width: 1000px;
 			margin: 0 auto;
-			background: url(img/jalanan.png);
+			background: url(img/marka.png);
 			background-repeat: repeat-y;
 			background-position: center;
 		}
 		.destination {
+			padding-top: 10px;
 			margin-bottom: 100vh;
-			width: 160px;
+			width: 200px;
+			height: 400px;
 			font-family: 'Varela Round';
 			color: #fff;
-			border: 2px solid #fff;
-			background-color: rgba(0,146,63,.7);
+			background-size: contain; 
 			background-repeat: no-repeat;
 			border-radius: 5px;
+			text-align: left;
 		}
 		.destination.left {
 			margin-left: 40px;
-			background-image: url(img/arrow-left.png);
+			background-image: url(img/plang-left.png);
 			background-position: 3% 3%;
+    		padding-left: 40px;
 		}
 		.destination.right {
 			margin-right: 40px;
-			background-image: url(img/arrow-right.png);
+			background-image: url(img/plang-right.png);
 			background-position: 97% 3%;
+   			padding-left: 10px;
 		}
 		.destination h3 {
 			margin-top: 40px;
-			font-size: 24px;
+			font-size: 20px;
 			font-weight: bold;
 		}
 		.destination p {
@@ -166,13 +153,27 @@
 			text-align: center;
 			font-family: 'Varela Round';
 		}
-		#dashboard {
-		  animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
-		  transform: translate3d(0, 0, 0);
-		  backface-visibility: hidden;
-		  perspective: 1000px;
+		.animated{
+			-webkit-animation-fill-mode:both;
+			-moz-animation-fill-mode:both;
+			-ms-animation-fill-mode:both;
+			-o-animation-fill-mode:both;
+			animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-webkit-animation-iteration-count: infinite;
+			animation-fill-mode:both;
+			-webkit-animation-duration:1.5s;
+			-moz-animation-duration:1.5s;
+			-ms-animation-duration:1.5s;
+			-o-animation-duration:1.5s;
+			animation-duration:1.5s;
 		}
-
+		.bounce {
+			-webkit-animation-name: bounce;
+			-moz-animation-name: bounce;
+			-o-animation-name: bounce;
+			animation-name: bounce;
+		}
 		@keyframes shake {
 		  10%, 90% {
 			transform: translate3d(0 -1px, 0);
@@ -190,10 +191,42 @@
 			transform: translate3d(0, 2px, 0);
 		  }
 		}
+		@-webkit-keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-25px);}
+			60% {-webkit-transform: translateY(-5px);}
+		}
+		@-moz-keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+			40% {-moz-transform: translateY(-25px);}
+			60% {-moz-transform: translateY(-5px);}
+		}
+		@-o-keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+			40% {-o-transform: translateY(-25px);}
+			60% {-o-transform: translateY(-5px);}
+		}
+		@keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+			40% {transform: translateY(-25px);}
+			60% {transform: translateY(-5px);}
+		}
+		@media screen and (max-width: 1025px) {
+			#dashboard {
+				top: auto;
+				bottom: -2%;
+			}
+		}
+		@media screen and (min-width: 1365px) {
+			#interior {
+				height: 50vh;
+			}
+		}
+
 	</style>
 </head>
 <body>
 
+<div id="mirror"><img width="100%" src="img/spion.png" alt="spion"></div>
 <div id="interior">
 	<div id="dashboard"></div>
 </div>
@@ -219,9 +252,9 @@
 	<div class="section" id="section2">
 		<div class="roadMap">
 			
-			<p class="animated bounce scroll" style="top:0;left:25%;">Scroll atau Swipe <br> ke bawah</p>
+			<p class="animated bounce scroll" style="top:0;right:25%;height:50px;">Scroll atau Swipe <br> ke bawah</p>
 			<div class="clearfix">
-				<div class="destination fL left">
+				<div class="destination fL left" style="margin-top:40vh;">
 					<h3>Baduga Gunung Parang</h3>
 				</div>
 			</div>
@@ -274,7 +307,7 @@
 			  renderer: 'svg',
 			  loop: true,
 			  autoplay: true,
-			  path: 'local/data2.json'
+			  path: 'local/data3.json'
 			});
 			
 			$('#fullpage').fullpage({
@@ -290,9 +323,11 @@
 
 					if(index == 2 && direction == 'down'){
                         $('#interior').css("bottom","0");
+                        $('#mirror').css("top","-3px");
                     }
                     else if(index == 3 && direction == 'up'){
                         $('#interior').css("bottom","-100%");
+                        $('#mirror').css("top","-100%");
                     }
                 }
 			});
