@@ -65,6 +65,7 @@
 			max-width: 300px;
 			margin: 0 auto;
 		}
+        /* 
 		#mirror {
 			top:-100%;
 			width: 25%;
@@ -77,7 +78,7 @@
 			transform: translate3d(0, 0, 0);
 			backface-visibility: hidden;
 			perspective: 1000px;
-		}
+		} */
 		#interior {
 			width: 100vw;
 			height: 40vh;
@@ -93,7 +94,7 @@
 			width: 100%;
 			/* height: 100%; */
 			position: absolute;
-			top: 0;
+            bottom: 10px;
 			animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
 			transform: translate3d(0, 0, 0);
 			backface-visibility: hidden;
@@ -103,7 +104,7 @@
 			padding: 70px 0;
 			max-width: 1000px;
 			margin: 0 auto;
-			background: url(img/marka.png);
+			/* background: url(img/marka.png); */
 			background-repeat: repeat-y;
 			background-position: center;
 		}
@@ -118,15 +119,18 @@
 			background-repeat: no-repeat;
 			border-radius: 5px;
 			text-align: left;
+            transition: .5s;
+            transform: scale(0.1);
+            position: relative;
 		}
 		.destination.left {
-			margin-left: 40px;
+			left: 20%;
 			background-image: url(img/plang-left.png);
 			background-position: 3% 3%;
     		padding-left: 40px;
 		}
 		.destination.right {
-			margin-right: 40px;
+            right: 20%;
 			background-image: url(img/plang-right.png);
 			background-position: 97% 3%;
    			padding-left: 10px;
@@ -170,6 +174,11 @@
 			-o-animation-duration:1.5s;
 			animation-duration:1.5s;
 		}
+        .arrive {
+            margin-right: 100px !important;
+            transition: 1s all;
+            opacity: 1;
+        }
 		.bounce {
 			-webkit-animation-name: bounce;
 			-moz-animation-name: bounce;
@@ -230,7 +239,7 @@
 </head>
 <body>
 
-<div id="mirror"><img width="100%" src="img/spion.png" alt="spion"></div>
+<!-- <div id="mirror"><img width="100%" src="img/spion.png" alt="spion"></div> -->
 <div id="interior">
 	<div id="dashboard"></div>
 </div>
@@ -257,44 +266,46 @@
 		<div class="roadMap">
 			
 			<p class="animated bounce scroll" style="top:0;right:25%;height:50px;">Scroll atau Swipe <br> ke bawah</p>
-			<div class="clearfix">
-				<div class="destination fL left" style="margin-top:40vh;">
-					<h3>Baduga Gunung Parang</h3>
-				</div>
-			</div>
 			
-			<div class="clearfix">
-				<div class="destination fR right">
+            
+            <div class="clearfix" id="field_1">
+                <div id="dest_1" class="destination fL left" style="margin-top:40vh;">
+                     <h3>Baduga Gunung Parang</h3>
+                </div>
+            </div>
+                
+			<div class="clearfix" id="field_2">
+				<div id="dest_2" class="destination fR right">
 					<h3>Kampung Kuta</h3>
 				</div>
 			</div>
 			
-			<div class="clearfix">
-				<div class="destination fL left">
+			<div class="clearfix" id="field_3">
+				<div id="dest_3" class="destination fL left">
 					<h3>Dieng</h3>
 				</div>
 			</div>
 			
-			<div class="clearfix">
-				<div class="destination fR right">
+			<div class="clearfix" id="field_4">
+				<div id="dest_4" class="destination fR right">
 					<h3>Desa Candirejo</h3>
 				</div>
 			</div>
 			
-			<div class="clearfix">
-				<div class="destination fL left">
+			<div class="clearfix" id="field_5">
+				<div id="dest_5" class="destination fL left">
 					<h3>Brumbun</h3>
 				</div>
 			</div>
 			
-			<div class="clearfix">
-				<div class="destination fR right">
+			<div class="clearfix" id="field_6">
+				<div id="dest_6" class="destination fR right">
 					<h3>Watu Karung</h3>
 				</div>
 			</div>
 			
-			<div class="clearfix">
-				<div class="destination fL left">
+			<div class="clearfix" id="field_7">
+				<div id="dest_7" class="destination fL left">
 					<h3>Nglanggeran</h3>
 				</div>
 			</div>
@@ -304,15 +315,59 @@
 	
 </div>
 	<script type="text/javascript" src="../_common/jquery.viewportchecker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="local/animation.gsap.min.js"></script>
+
 	<script>
 		$("h2").viewportChecker({
 			classToAdd: 'visible',
 			offset: 100
 		});
+        
+        var controller = new ScrollMagic.Controller();
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_1", duration: 200})
+					.setTween("#dest_1", {scale: "1",left:"-1%"}) 
+					.addIndicators({name: "2 (duration: 200)"})
+					.addTo(controller);
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_2", duration: 200})
+					.setTween("#dest_2", {scale: "1",right:"-1%"}) 
+					.addIndicators({name: "2 (duration: 200)"})
+					.addTo(controller);
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_3", duration: 200})
+					.setTween("#dest_3", {scale: "1",left:"-1%"}) 
+					.addIndicators({name: "2 (duration: 200)"})
+					.addTo(controller);
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_4", duration: 200})
+					.setTween("#dest_4", {scale: "1",right:"-1%"}) 
+					.addIndicators({name: "2 (duration: 200)"})
+					.addTo(controller);
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_5", duration: 200})
+					.setTween("#dest_5", {scale: "1",left:"-1%"}) 
+					.addIndicators({name: "2 (duration: 200)"})
+					.addTo(controller);
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_6", duration: 200})
+					.setTween("#dest_6", {scale: "1",right:"-1%"}) 
+					.addIndicators({name: "2 (duration: 200)"})
+					.addTo(controller);
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_7", duration: 200})
+					.setTween("#dest_7", {scale: "1",left:"-1%"}) 
+					.addIndicators({name: "2 (duration: 200)"})
+					.addTo(controller);
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			
+            
+            
 			var animation = bodymovin.loadAnimation({
 			  container: document.getElementById('dashboard'),
 			  renderer: 'svg',
