@@ -102,9 +102,19 @@
 			backface-visibility: hidden;
 			perspective: 1000px;
 		}
+        #road {
+            width: 300px;
+            height: 300px;
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: 0 auto;
+        }
 		.roadMap {
 			padding: 70px 0;
 			max-width: 1000px;
+            height: 3500px;
 			margin: 0 auto;
 			/* background: url(img/marka.png); */
 			background-repeat: repeat-y;
@@ -123,16 +133,17 @@
 			text-align: left;
             transition: .5s;
             transform: scale(0.1);
-            position: relative;
+            position: absolute;
+            top: 10%;
 		}
 		.destination.left {
-			left: 30%;
+			left: 0;
 			background-image: url(img/plang-left.png);
 			background-position: 3% 3%;
     		padding-left: 40px;
 		}
 		.destination.right {
-            right: 30%;
+            right: 0%;
 			background-image: url(img/plang-right.png);
 			background-position: 97% 3%;
    			padding-left: 10px;
@@ -234,16 +245,24 @@
 				height: 50vh;
 			}
 		}
-		.fp-scroller {
-			transform: translate(0px, -100%);
-		}
+		.fp-scroller {transform: translate(0px, -100%);}
+        .field {position: relative;}
 	</style>
 </head>
 <body>
 
 <div id="mirror"></div>
-<div id="interior">
-	<div id="dashboard"></div>
+<div id="interior"><div id="dashboard"></div></div>
+<div id="road">
+    <div id="dest_1" class="destination fL left">
+         <h3>Baduga Gunung Parang</h3>
+    </div>
+    <div id="dest_2" class="destination fR right">
+        <h3>Kampung Kuta</h3>
+    </div>
+    <div id="dest_3" class="destination fL left">
+        <h3>Dieng</h3>
+    </div>
 </div>
 	
 <div id="fullpage">
@@ -270,47 +289,11 @@
 			<p class="animated bounce scroll" style="top:0;right:25%;height:50px;">Scroll atau Swipe <br> ke bawah</p>
 			
             
-            <div class="clearfix" id="field_1">
-                <div id="dest_1" class="destination fL left" style="margin-top:40vh;">
-                     <h3>Baduga Gunung Parang</h3>
-                </div>
-            </div>
-                
-			<div class="clearfix" id="field_2">
-				<div id="dest_2" class="destination fR right">
-					<h3>Kampung Kuta</h3>
-				</div>
-			</div>
+            
+            <div class="field" id="field_1" style="margin-top:60vh;height:1000px"></div>
+			<div class="field" id="field_2" style="height:1000px"></div>
+			<div class="field" id="field_3" style="height:1000px"></div>
 			
-			<div class="clearfix" id="field_3">
-				<div id="dest_3" class="destination fL left">
-					<h3>Dieng</h3>
-				</div>
-			</div>
-			
-			<div class="clearfix" id="field_4">
-				<div id="dest_4" class="destination fR right">
-					<h3>Desa Candirejo</h3>
-				</div>
-			</div>
-			
-			<div class="clearfix" id="field_5">
-				<div id="dest_5" class="destination fL left">
-					<h3>Brumbun</h3>
-				</div>
-			</div>
-			
-			<div class="clearfix" id="field_6">
-				<div id="dest_6" class="destination fR right">
-					<h3>Watu Karung</h3>
-				</div>
-			</div>
-			
-			<div class="clearfix" id="field_7">
-				<div id="dest_7" class="destination fL left">
-					<h3>Nglanggeran</h3>
-				</div>
-			</div>
 			
 		</div>
 	</div>
@@ -325,45 +308,21 @@
         
         var controller = new ScrollMagic.Controller();
 		
-        var scene = new ScrollMagic.Scene({triggerElement: "#field_1", duration: 300})
-					.setTween("#dest_1", {scale: "2",left:"-20%"}) 
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_1", duration: 1000})
+					.setTween("#dest_1", {scale: "2",left:"-100%",opacity:"0"}) 
 					.addIndicators({name: "2 (duration: 300)"})
 					.addTo(controller);
         
-        var scene = new ScrollMagic.Scene({triggerElement: "#field_2", duration: 300})
-					.setTween("#dest_2", {scale: "2",right:"-20%"}) 
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_2", duration: 1000})
+					.setTween("#dest_2", {scale: "2",right:"-100%",opacity:"0"}) 
 					.addIndicators({name: "2 (duration: 300)"})
 					.addTo(controller);
         
-        var scene = new ScrollMagic.Scene({triggerElement: "#field_3", duration: 300})
-					.setTween("#dest_3", {scale: "1",left:"-10%"}) 
+        var scene = new ScrollMagic.Scene({triggerElement: "#field_3", duration: 1000})
+					.setTween("#dest_3", {scale: "2",left:"-100%",opacity:"0"}) 
 					.addIndicators({name: "2 (duration: 300)"})
 					.addTo(controller);
         
-        var scene = new ScrollMagic.Scene({triggerElement: "#field_4", duration: 300})
-					.setTween("#dest_4", {scale: "1",right:"0%"}) 
-					.addIndicators({name: "2 (duration: 300)"})
-					.addTo(controller);
-        
-        var scene = new ScrollMagic.Scene({triggerElement: "#field_5", duration: 300})
-					.setTween("#dest_5", {scale: "1",left:"0%"}) 
-					.addIndicators({name: "2 (duration: 300)"})
-					.addTo(controller);
-        
-        var scene = new ScrollMagic.Scene({triggerElement: "#field_6", duration: 300})
-					.setTween("#dest_6", {scale: "1",right:"0%"}) 
-					.addIndicators({name: "2 (duration: 300)"})
-					.addTo(controller);
-        
-        var scene = new ScrollMagic.Scene({triggerElement: "#field_7", duration: 300})
-					.setTween("#dest_7", {scale: "1",left:"0%"}) 
-					.addIndicators({name: "2 (duration: 300)"})
-					.addTo(controller);
-		
-		var scene = new ScrollMagic.Scene({triggerElement: ".roadMap", duration: 10000})
-					.setTween("#mirror", {scale: "1.2"}) 
-					.addIndicators({name: "5 (duration: 5000)"})
-					.addTo(controller);
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
