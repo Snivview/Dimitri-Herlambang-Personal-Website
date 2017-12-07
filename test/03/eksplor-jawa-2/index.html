@@ -61,8 +61,7 @@
 			max-width: 300px;
 			margin: 0 auto;
 		}
-         
-		#mirror {
+		#mountain {
 			left: 0;
             right: 0;
 			top:0;
@@ -72,13 +71,13 @@
 			position: fixed;
 			transition: .4s;
 			z-index: 1;
-			background: url(img/gunung.png);
+			/* background: url(img/gunung.png); */
 			z-index: -1;
             background-size: cover;
 		} 
 		#interior {
 			width: 100vw;
-			height: 40vh;
+			height: 50vh;
 			position: fixed;
 			bottom: -100%;
 			transition: 1s;
@@ -86,8 +85,9 @@
 			overflow-y: hidden;
 		}
 		#dashboard {
+			right: 1%;
 			bottom: -5px;
-			width: 100%;
+			width: 101%;
 			/* height: 100%; */
             bottom: -10px;
 			animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
@@ -96,12 +96,29 @@
 			perspective: 1000px;
 			position: absolute;
 		}
+		#road {
+			position: fixed;
+			top: 30vh;
+			width: 100%;
+			height: 100vh;
+			/* background: url(img/jalanan.png) no-repeat; */
+			background-size: 100% 70%;
+			z-index: -10;
+		}
+		#hint {
+			position: fixed;
+			top:40%;
+			right:10%;
+			width: 50px;
+			height: 75px;
+			font-family: 'Varela Round';
+		}
         .road {
             width: 300px;
             position: fixed;
             right: 0;
             left: 0;
-			top: 10%;
+			top: 50vh;
             margin: 0 auto;
 			z-index: 10;
 			opacity: 0;
@@ -109,7 +126,6 @@
 		.roadMap {
 			padding: 70px 0;
 			max-width: 1000px;
-            height: 3500px;
 			margin: 0 auto;
 			/* background: url(img/marka.png); */
 			background-repeat: repeat-y;
@@ -117,12 +133,14 @@
 		}
 		.destination {
 			left: 0;
-			padding: 10px 10px 0 30px;
+			right: 0;
+			margin: 0 auto;
+			padding: 20px 10px 0 10px;
 			width: 160px;
-			height: 200px;
+			height: 90px;
 			font-family: 'Varela Round';
 			color: #fff;
-			background-image: url(img/plang-left.png);
+			background-image: url(img/plang.png);
 			background-position: 3% 3%;
 			background-size: contain; 
 			background-repeat: no-repeat;
@@ -133,11 +151,8 @@
             top: 10%;
 			opacity: 0.8;
 		}
-		.destination:hover {
-			opacity: 1;
-		}
+		.destination:hover {opacity: 1;}
 		.destination h3 {
-			margin-top: 40px;
 			font-size: 20px;
 			font-weight: bold;
 		}
@@ -147,10 +162,6 @@
 			padding: 10px;
 			line-height: 20px;
 			text-align: left;
-		}
-		.getInside {
-			bottom: 0%;
-			transition: 1s;
 		}
 		.scroll {
 			bottom: 0;
@@ -220,6 +231,11 @@
 		.fp-scroller {transform: translate(0px, -100%);}
         .field {position: relative;}
 		
+		.hidden {
+			left: -200vw !important;
+			top: 200vh !important;
+			transition: 1s;
+		}
 		@media screen and (min-width: 1023px) {
 			#dashboard {
 				top: auto;
@@ -227,12 +243,33 @@
 				position: relative;
 			}
 		}
+		@media screen and (max-width: 769px) {
+			#interior {height: 30vh;}
+			#dashboard {right:0%;}
+		}
+		@media screen and (max-height:500px) and (max-height:800px) {
+			#dashboard {
+				bottom: auto;
+				top: 0;
+			}
+		}
 	</style>
 </head>
 <body>
 
-<div id="mirror"></div>
+<div id="mountain"></div>
+<div id="road"></div>
 <div id="interior"><div id="dashboard"></div></div>
+<div id="hint" class="animated bounce">
+	<table>
+		<tbody>
+			<tr><td align="center">↑</td></tr>
+			<tr><td align="center">Gulir/Usap</td></tr>
+			<tr><td align="center">↓</td></tr>
+		</tbody>
+	</table>
+</div>
+
 <div class="road">
     <div id="dest_1" class="destination fL left">
          <h3>Baduga Gunung Parang</h3>
@@ -241,6 +278,12 @@
         <h3>Kampung Kuta</h3>
     </div>
     <div id="dest_3" class="destination fL left">
+        <h3>Dieng</h3>
+    </div>
+	<div id="dest_4" class="destination fL left">
+        <h3>Dieng</h3>
+    </div>
+	<div id="dest_5" class="destination fL left">
         <h3>Dieng</h3>
     </div>
 </div>
@@ -252,7 +295,6 @@
 			<h1>Eksplor Jawa</h1>
 			<p>Menjelajah Tempat Wisata di Pedalaman Jawa</p>
 		</div>
-		<p class="animated bounce scroll">Scroll <br> ke bawah</p>
 	</div>
 	
 	<div class="section" id="section1">
@@ -266,13 +308,11 @@
 	<div class="section" id="section2">
 		<div class="roadMap">
 			
-			<p class="animated bounce scroll" style="top:0;right:25%;height:50px;">Scroll atau Swipe <br> ke bawah</p>
-			
-            
-            
             <div class="field" id="field_1" style="margin-top:60vh;height:1000px"></div>
 			<div class="field" id="field_2" style="height:1000px"></div>
 			<div class="field" id="field_3" style="height:1000px"></div>
+			<div class="field" id="field_4" style="height:1000px"></div>
+			<div class="field" id="field_5" style="height:1000px"></div>
 			
 			
 		</div>
@@ -289,26 +329,33 @@
         var controller = new ScrollMagic.Controller();
 		
         var scene = new ScrollMagic.Scene({triggerElement: "#field_1", duration: 1000})
-					.setTween("#dest_1", {scale: "2",left:"-100vw",top:"20vh"}) 
-					.addIndicators({name: "2 (duration: 300)"})
+					.setTween("#dest_1", {scale: "4",top:"-120vh"})
+					/* .addIndicators({name: "2 (duration: 1000)"}) */
 					.addTo(controller);
         
         var scene = new ScrollMagic.Scene({triggerElement: "#field_2", duration: 1000})
-					.setTween("#dest_2", {scale: "2",left:"-100vw",top:"20vh"}) 
-					.addIndicators({name: "2 (duration: 300)"})
+					.setTween("#dest_2", {scale: "4",top:"-120vh"})
+					/* .addIndicators({name: "2 (duration: 1000)"}) */
 					.addTo(controller);
         
         var scene = new ScrollMagic.Scene({triggerElement: "#field_3", duration: 1000})
-					.setTween("#dest_3", {scale: "2",left:"-100vw",top:"20vh"}) 
-					.addIndicators({name: "2 (duration: 300)"})
+					.setTween("#dest_3", {scale: "4",top:"-120vh"})
+					/* .addIndicators({name: "2 (duration: 1000)"}) */
+					.addTo(controller);
+		
+		var scene = new ScrollMagic.Scene({triggerElement: "#field_4", duration: 1000})
+					.setTween("#dest_4", {scale: "4",top:"-120vh"})
+					/* .addIndicators({name: "2 (duration: 1000)"}) */
+					.addTo(controller);
+		
+		var scene = new ScrollMagic.Scene({triggerElement: "#field_5", duration: 1000})
+					.setTween("#dest_5", {scale: "4",top:"-120vh"})
+					/* .addIndicators({name: "2 (duration: 1000)"}) */
 					.addTo(controller);
         
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			
-            
-            
 			var animation = bodymovin.loadAnimation({
 			  container: document.getElementById('dashboard'),
 			  renderer: 'svg',
