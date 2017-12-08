@@ -15,8 +15,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="local/jquery.fullPage.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="../_common/jquery-210.js"></script>
-	<script src="../_common/jquery-ui-191.js"></script>
+	<script src="../../_common/js/jQuery-ui.js"></script>
 	<script type="text/javascript" src="local/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="local/jquery.fullPage.min.js"></script>
 	<style>
@@ -69,7 +68,10 @@
 			z-index: 10;
 		}
 		.background {
-			top:30vh;
+			/* top:30vh; */
+			-ms-transform: translate(0, 30vh); /* IE 9 */
+			-webkit-transform: translate(0, 30vh); /* Safari */
+			transform: translate(0, 30vh); /* Standard syntax */
 			width: 100vw;
 			height: 100vh;
             background-size: cover;
@@ -79,7 +81,10 @@
 			transition: 1s ease-in-out;
         }
 		.background-1 {
-			top:0;
+			/* top:0; */
+			-ms-transform: translate(0, 0vh); /* IE 9 */
+			-webkit-transform: translate(0, 0vh); /* Safari */
+			transform: translate(0, 0vh); /* Standard syntax */
             background: url(img/bg_2.jpg) no-repeat;
 			z-index: 3;
 		}
@@ -92,12 +97,18 @@
 			z-index: 1;
 		}
 		.moveTop {
-			top: 0;
-			transition: 1s ease-in-out;
+			/* top: 0;
+			transition: 1s ease-in-out; */
+			-ms-transform: translate(0, 0vh); /* IE 9 */
+			-webkit-transform: translate(0, 0vh); /* Safari */
+			transform: translate(0, 0vh); /* Standard syntax */
 		}
 		.moveTopHidden {
-			top: -100vh !important;
-			transition: 1s ease-in-out;
+			/* top: -100vh !important;
+			transition: 1s ease-in-out; */
+			-ms-transform: translate(0,-100vh); /* IE 9 */
+			-webkit-transform: translate(0,-100vh); /* Safari */
+			transform: translate(0,-100vh); /* Standard syntax */
 		}
 		h1 {
 			font-family: Impact;
