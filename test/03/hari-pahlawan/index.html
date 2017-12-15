@@ -6,14 +6,12 @@
     <meta http-equiv="Expires" content="0" />
     <meta charset="utf-8">
     <title>Hari Pahlawan</title>
-    <link rel="icon" href="../_img/favicon.png">
+    <link rel="icon" href="../_common/img/logo-advisual_favicon.png">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Memperingati Hari Pahlawan pada 10 November, berikut ini 5 pahlawan yang sering generasi jaman now.">
     <meta name="keywords" content="kompas,klasika,langgam">
     <meta name="author" content="Kompas klasika">
-    <link href="../_common/reset.css" rel="stylesheet">
-    <link href="../_common/base_v1.22.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="../_common/modules_v1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -96,62 +94,16 @@
 			opacity: 0;
 			transition: .5s;
 		}
-		.image-gallery-modal {
-			width: 100%;
-		  	float: left;
-			text-align: center;
-		}
-		.image-gallery-modal img {
-		 	width: 100%;
-		  	height: auto;
-		}
         .show {margin-top: 0;}
 		.tab-title {cursor: pointer;}
-		.table-biodata {
-			max-width: 500px;
-			margin: 0 auto;
-			font-family: Merriweather;
-		}
-		.table-biodata h4 {font-size: 16px;}
-		.table-biodata th {
-			width: 30%;
-			font-weight: bold;
-			font-size: 12px;
-			padding: 5px 5px 5px 20px;
-			vertical-align: top;
-		}
-		.table-biodata th img {
-			width: 100%;
-			border-radius: 75px;
-		}
-		.table-biodata td {
-			width: 70%;
-			font-size: 12px;
-			padding: 5px;
-			vertical-align: top;
-		}
-		.text-credits {font-family: Merriweather;}
 		.text-credits h2 {color: #ed1750;}
-		.table-opinion {max-width: 660px !important;}
-		.table-opinion th{
-			width: 25%;
-			padding: 20px 5px 5px 20px;
-		}
-		.table-opinion td{
-			padding: 20px 20px 5px 5px;
-			font-size: 14px;
-			font-family: Merriweather;
-			line-height: 20px;
-		}
 		.text-paragraph {max-width: 700px;}
 		.text-paragraph h2 {
 			font-size: 28px;
-			font-family: Merriweather;
 		}
 		.text-paragraph h3 {
 			padding: 10px 20px;
 			font-size: 20px;
-			font-family: Merriweather;
 			font-weight: bold;
 		}
 		.text-paragraph h3 span {
@@ -163,15 +115,8 @@
 		#tab-3 .text-paragraph h3 span {border-left-color:#f4955b}
 		#tab-4 .text-paragraph h3 span {border-left-color:#fdbf48}
 		#tab-5 .text-paragraph h3 span {border-left-color:#cea1c2}
-		.text-paragraph p {
-			font-size: 16px;
-			font-family: Merriweather;
-			line-height: 25px;
-		}
-		.text-lead {font-family: Merriweather;}
 		.text-dropCap {font-size: 50px;}
 		.text-quote p{
-			font-family: Merriweather;
 			color: #000;
 		}
 		.text-quote span{font-size: 25px;}
@@ -188,7 +133,7 @@
 					<h1>Hari Pahlawan</h1>
 					<p>Mengenal Pahlawan Nasional yang Terlupakan</p>
 				</div>
-				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a href="#begin" class="animated bounce" style="display:inline-block;"><img src="../_img/arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
+				<p class="tC" style="bottom:0;position:absolute;width:100%;z-index:10;"><a href="#begin" class="animated bounce" style="display:inline-block;"><img src="../_common/img/icon-arrow_down.png" alt="scroll kebawah" width="30" height="30"></a></p>
 			</div>
 		</div>
 		
@@ -240,7 +185,7 @@
 			</div>
 		</div>
 
-        <div class="anchor-article section" style="margin-bottom:-60px;"></div>
+        <div class="anchor-article section" style="margin-bottom:-25px;"></div>
 		
 		<div id="tab-1" class="section article" style="display:none;">
 			<div class="section clearfix">
@@ -750,10 +695,10 @@
     
     <div w3-include-html="../_common/footer.html"></div>
     
-    <script src="../_common/jquery-210.js" type="text/javascript"></script>
-	<script src="../_common/jquery.viewportchecker.js" type="text/javascript"></script>
-	<script src="../_common/lazy.js" type="text/javascript"></script>
-	<script src="../_common/w3.js" type="text/javascript"></script>
+    <script src="../_common/js/jquery_v2.1.0.js" type="text/javascript"></script>
+	<script src="../_common/js/jquery_viewportchecker.js" type="text/javascript"></script>
+	<script src="../_common/js/lazy.js" type="text/javascript"></script>
+	<script src="../_common/js/w3.js" type="text/javascript"></script>
 	<script>
 		w3.includeHTML();
 		function onReady(callback) {
