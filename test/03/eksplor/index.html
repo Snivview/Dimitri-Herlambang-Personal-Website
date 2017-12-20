@@ -129,14 +129,6 @@
 		#fp-nav ul li a span, .fp-slidesNav ul li a span {background: #fff;}
 		
 		#section4 .text-caption {color: #fff;}
-		#section4 ul {text-align: center;}
-		#section4 ul li {
-			display: inline;
-			font-family: 'Alegreya Sans', sans-serif;
-			font-size: 13px;
-			margin-right: 15px;
-		}
-		
 		#slide1 {background: url(img/eksplor_1.jpg) no-repeat;}
 		#slide2 {background: url(img/eksplor_2.jpg) no-repeat;}
 		#slide3 {background: url(img/eksplor_3.jpg) no-repeat;}
@@ -166,7 +158,7 @@
 			top: -200px;
 			right: 0;
 			position: fixed;
-			background-color: #000;
+			background-color: rgba(0,0,0,.7);
 			transition: .5s;
 			z-index: -1;
 		}
@@ -194,8 +186,8 @@
 			margin: 0 5px 5px 0;
 		}
 		#hint {
-			bottom: 15px;
-			right: 10px;
+			bottom: 40px;
+			right: 5px;
 			position: fixed;
 			font-family: 'Alegreya Sans', sans-serif;
 			font-size: 9px;
@@ -222,10 +214,11 @@
 		#bg_2 {
 			background: url(img/bg_1.jpg) no-repeat;
 			background-position: bottom;
-			opacity: .5;
+			opacity: .7;
+			filter: alpha(opacity=50);
 		}
 		.showMenu {
-			top: 75px !important;
+			top: 80px !important;
 			transition: .5s;
 		}
 		.hide {
@@ -292,24 +285,15 @@
 			position: absolute;
 			top:0;
 		}
-		.image-social img{
-			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    		filter: grayscale(100%);
-			transition: .5s;
-		}
-		.image-social img:hover{
-			-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    		filter: grayscale(0%);
-			transition: .5s;
-		}
 		.image-gallery {
+			padding-bottom: 100px;
 			max-width: 1900px;
 			margin: 40px auto;
 			position: relative;
 			text-align: center;
 		}
 		.image-gallery .image {
-			width: 30%;
+			width: 45%;
 			display: inline-block;
 			margin: 5px;
 			-ms-transform: scale(.5,.5);
@@ -340,6 +324,18 @@
 			transition: 1s;
 		}
 		.image-container img {width: 100%;}
+		.image-social {
+			display: table;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.image-social li {
+			display: table-cell;
+			vertical-align: middle;
+			font-family: 'Alegreya Sans', sans-serif;
+			font-size: 13px;
+			padding: 10px;
+		}
 		.slide {background-position: bottom !important;}
 		.slide .text-caption h2 {
 			font-size: 46px;
@@ -361,10 +357,10 @@
 			font-family: 'Alegreya Sans', sans-serif;
 		}
 		.text-caption h2 {
-            font-size: 32px;
+            font-size: 48px;
             font-weight: bold;
 			font-family: georgia;
-			line-height: 40px;
+			line-height: 50px;
 			margin-bottom: 40px;
 		}
 		.text-caption p {
@@ -393,7 +389,8 @@
 			background-color: #fff;
 			transition: .5s;
 		}
-		@media screen and (max-width: 769px) {
+		
+		@media screen and (max-width: 569px) {
 			.image-gallery .image {
 				width: 100%;
 				height: auto;
@@ -411,9 +408,9 @@
 <body>
 
 <div id="headerArea" class="clearfix">
-	<h1 style="width:150px;height:50px;" class="fL"><a href="../"><img src="img/logo-advisual.svg" width="150" height="50" alt="logo advisual"></a></h1>
-	<div style="width:100px;height:50px;" id="menu_eksplor" class="image-container fL"><img src="img/logo-eksplor.svg" width="100" height="50" alt="logo eksplor"></div>
-	<div style="width:25px;height:50px;" id="menu_dropdown" class="fR"><img src="img/icon-burger.svg" width="25" height="25" alt="burger menu"></div>
+	<h1 style="width:200px;height:40px;" class="fL"><a href="../"><img src="img/logo-advisual.svg" width="200" height="40" alt="logo advisual"></a></h1>
+	<!-- <div style="width:100px;height:40px;" id="menu_eksplor" class="image-container fL"><img src="img/logo-eksplor.svg" width="100" height="40" alt="logo eksplor"></div> -->
+	<div style="width:25px;height:25px;margin-top:5px;" id="menu_dropdown" class="fR"><img src="img/icon-burger.svg" width="25" height="25" alt="burger menu"></div>
 	<ul id="menu" class="fR">
 		<li data-menuanchor="about"><a href="#about">Tentang</a></li>
 		<li data-menuanchor="kisah"><a href="#kisah">Kisah</a></li>
@@ -436,7 +433,7 @@
 <div id="fullpage">
 	
 	<div class="section active" id="section0">
-		<p class="animated bounce tC" style="position:absolute;color:#fff;font-family:'Open Sans', sans-serif;left:0;right:0;bottom:20px;">Scroll</p>
+		<p class="animated bounce tC" style="position:absolute;color:#fff;font-family:'Open Sans', sans-serif;left:0;right:0;bottom:20px;"><img src="../_common/img/icon-arrow_down.png" width="25" height="25" alt="arrow down"></p>
 	</div> <!-- /#section0 -->
 	
 	<div class="section" id="section1">
@@ -515,14 +512,14 @@
 	</div> <!-- /#section3 -->
 	
 	<div class="section" id="section4">
-		<div class="text-caption" style="margin-bottom:70px;">
+		<div class="text-caption" style="padding:100px 0;">
 			<p class="tC" style="margin-bottom:20px;">Dipersembahkan oleh</p>
 			<p class="tC"><a href="https://klasika.kompas.id" style="width:200px;height:44px;display:block;margin: 0 auto;"><img src="img/logo-klasika.svg" width="200" height="44" alt="logo klasika"></a></p>
 			<p class="tC" style="margin-top:40px;margin-bottom:20px;">Disponsori oleh</p>
 			<ul class="image-social">
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
+				<li><a href="http://isuzu-astra.com/" style="width:100px;height:19px;"><img src="img/logo-isuzu.svg" width="100" height="19" alt="logo isuzu"></a></li>
+				<li><a href="https://www.suzuki.co.id/" style="width:100px;height:17px;"><img src="img/logo-suzuki.svg" width="100" height="17" alt="logo suzuki"></a></li>
+				<li><a href="https://www.honda-indonesia.com/" style="width:50px;height:50px;"><img src="img/logo-honda.svg" width="50" height="50" alt="logo honda"></a></li>
 			</ul>
 			<p class="tC" style="margin-top:40px;margin-bottom:20px;">Ikuti kami di</p>
 			<ul class="image-social">
@@ -561,6 +558,8 @@
 					if (index == 1) {
 						$('#title_1').removeClass('hide');
 						$('#menu_eksplor').removeClass('show');
+						$('#bg_1').removeClass('moveTopMost');
+						$('#bg_2').removeClass('moveTop');
 					}
 					else if (index == 2) {
 						$('#headerArea').css('background-color','rgba(0,0,0,.7)');
@@ -572,6 +571,11 @@
 					}
 					else if(index == 4){
 						$('.image').addClass('show');
+						$('#headerArea').css('background-color','rgba(0,0,0,.7)');
+					}
+					else if(index == 5){
+						$('#headerArea').css('background-color','rgba(0,0,0,.7)');
+						$('#bg_2').css('opacity','0');
 					}
 					
                 },
@@ -610,6 +614,10 @@
                     }
 					else if(index == 4 && direction == 'up'){
 						$('.image').removeClass('show');
+						$('#headerArea').css('background-color','transparent');
+					}
+					else if(index == 5 && direction == 'up'){
+						$('#bg_2').css('opacity','.5');
 					}
                 }
 			});

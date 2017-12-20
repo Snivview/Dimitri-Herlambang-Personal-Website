@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>Eksplor Ramadhan - Banten</title>
+	<meta name="author" content="Kompas Klasika" />
+	<meta name="description" content="Sebuah perjalanan rohani di pulau Jawa" />
+	<meta name="keywords"  content="kompas,klasika,eksplor,ramadhan" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../local/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="../../_common/css/reset_v1.0.css" />
+	<link rel="icon" href="../../_common/img/logo-advisual_favicon.png">
+	<style>
+	
+	</style>
+	<!--[if IE]><script type="text/javascript">var console = { log: function() {} };</script><![endif]-->
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Scrolling inside sections</h1>
+		</div>
+	</div> <!-- #section0 -->
+	
+	<div class="section" id="section1">
+		<div class="intro">
+			<h1>Scrolling inside sections</h1>
+		</div>
+	</div> <!-- #section1 -->
+	
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Scrolling inside sections</h1>
+		</div>
+	</div> <!-- #section2 -->
+</div>
+	<script type="text/javascript" src="../../_common/js/jquery_v2.1.0.js"></script>
+	<script type="text/javascript" src="../../_common/js/jquery_ui-v1.9.1.js"></script>
+	<script type="text/javascript" src="../local/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="../local/jquery.fullPage.min.js"></script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="local/animation.gsap.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+				scrollOverflow: true,
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
+</body>
+</html>
