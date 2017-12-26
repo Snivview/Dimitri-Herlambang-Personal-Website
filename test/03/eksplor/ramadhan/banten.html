@@ -13,17 +13,49 @@
 	<link rel="stylesheet" type="text/css" href="../local/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="../../_common/css/reset_v1.0.css" />
 	<link rel="icon" href="../../_common/img/logo-advisual_favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
 	<style>
-	
+		.background {
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			transition: 1s;
+		}
+		#bg_1 {
+			opacity: 0;
+			background-image: url(img/banten/ilust_01.jpg);
+		}
+		.text-caption {
+			padding: 20px;
+			max-width: 460px;
+			margin: 0 auto;
+		}
+		.text-caption h2 {
+            font-family: Georgia;
+            font-weight: bold;
+            font-size: 32px;
+            color: #000;
+			margin-bottom: 20px;
+		}
+		.text-caption p {
+			font-family: 'Alegreya Sans', sans-serif;
+			font-size: 18px;
+			color: #000;
+		}
 	</style>
 	<!--[if IE]><script type="text/javascript">var console = { log: function() {} };</script><![endif]-->
 </head>
 <body>
 
+<div id="bg_1" class="background"></div>
 <div id="fullpage">
 	<div class="section " id="section0">
-		<div class="intro">
-			<h1>Scrolling inside sections</h1>
+		<div class="text-caption">
+			<h2>Masjid Agung Banten</h2>
+			<p>Masjid Agung Banten adalah salah satu masjid tertua di Indonesia. Di sini, pengunjung bisa melakukan berbagai macam kegiatan, seperti berziarah, menikmati arsitektur kuno dan unik masjid, serta melihat bukti bersejarah Kesultanan Banten. Jika berkunjung ke sini, tempat apa saja yang harus dikunjungi? </p>
 		</div>
 	</div> <!-- #section0 -->
 	
@@ -52,10 +84,27 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-				sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
 				scrollOverflow: true,
-				scrollingSpeed: 1000
+				scrollingSpeed: 1000,
+				afterLoad: function(anchorLink, index){
+                    var loadedSection = $(this);
+                    if(index == 1){
+						$('#bg_1').css("opacity","1");
+                    }
+					else if(index == 3){
+						
+                    }
+                },
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
+
+					if(index == 1 && direction == 'down'){
+						
+                    }
+                    else if(index == 2 && direction == 'up'){
+						
+                    }
+                }
 			});
 		});
 	</script>
