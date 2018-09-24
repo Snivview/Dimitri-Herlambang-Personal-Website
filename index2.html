@@ -101,13 +101,21 @@
         }
         /* about */
         h1,h2,dt,dd,p,li {color:#fff;}
+		#about {
+			position: absolute;
+			top: 10vh;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
         .hidden{
-            height: 1px;
+            height: 500px;
             padding: 0;
             overflow: hidden;
             opacity: 0;
             z-index: -1;
             position: absolute;
+			transition: .5s;
         }
         .tabTitle li {
 			display: inline-block;
@@ -127,8 +135,9 @@
 		.list01 li img{width: 70%;}
 		.tabbing {
 			padding: 30px 10px 10px 10px;
-			/* background-color: #fff;	
-			box-shadow: 0px 2px 5px 0px rgba(186,186,186,1); */
+			height: 500px;
+			overflow-x: hidden;
+			overflow-y: scroll;
             animation: fadein .3s;
 		}
 		/* ------ TAB 1 ------- */
@@ -258,6 +267,9 @@
 		}
         @media screen and (max-width:768px) {
             html {background: none;}
+			#about {
+				top: 5vh;
+			}
         }
 	</style>
 </head>
