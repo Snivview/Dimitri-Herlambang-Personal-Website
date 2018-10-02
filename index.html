@@ -38,7 +38,11 @@
 			-o-animation: fadein 1s; 
 			animation: fadein 1s;
 		}
-        h2 {margin-bottom: 20px;}
+        strong {font-weight: bold;}
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
         p {font-weight: 300;}
         #mainArea {padding: 0;}
         /* intro */
@@ -101,8 +105,14 @@
             opacity: 0;
             transition: 1s;
         }
+        .container960 {
+            padding: 0px 10px 20px 10px;
+        }
         /* about */
-        h1,h2,dt,dd,p,li {color:#fff;}
+        h1,h2,dt,dd,p,li {
+            color:#fff;
+            text-align: center;
+        }
 		#about {
 			position: absolute;
 			top: 10vh;
@@ -136,12 +146,21 @@
 		#tabTitle_4.ui-tabs-active.ui-state-active{border-bottom-color:#AEEA00;}
 		.list01 li img{width: 70%;}
 		.tabbing {
-			padding: 30px 10px 10px 10px;
+			padding: 0;
+            width: 100%;
 			height: 500px;
 			overflow-x: hidden;
 			overflow-y: scroll;
             animation: fadein .3s;
 		}
+        .h1border {
+            margin: 10px auto 30px auto;
+            width: 100px;
+            height: 2px;
+        }
+        .list01 {
+            text-align: center;
+        }
 		/* ------ TAB 1 ------- */
 		#portrait {
 			width: 190px;
@@ -309,7 +328,7 @@
             </div>
             <div id="about" class="hidden container960 clearfix">
                 <div id="tabs" class="clearfix">
-                    <ul class="tabTitle">
+                    <ul class="tabTitle" style="margin-bottom:10px;">
                         <li id="tabTitle_1" class="tabTitleBord"><a href="#tabs-1">Intro</a></li><!--
                         --><li id="tabTitle_2" class="tabTitleBord"><a href="#tabs-2">Skills</a></li><!--
                         --><li id="tabTitle_3" class="tabTitleBord"><a href="#tabs-3">Experience</a></li><!--
@@ -322,7 +341,7 @@
                     	<div id="portrait"></div>
 						<div class="clearfix">
 							<div class="container960">
-								<h2>My name is Dimitri Herlambang.</h2>
+								<h2>My name is Dimitri Herlambang</h2>
                                 <p class="t14">I am a Front-End Developer, and while not limited to web development, also a capable english-indonesian translator.</p>
 								<p class="t14">Working 2 years at Japanese agency, and now a Front-End Developer at Kompas Gramedia, advertising division.</p>
 								<h2>My Works</h2>
@@ -341,215 +360,62 @@
 								<div class="portfolio" style="background: url(https://travel.kompas.id/wp-content/uploads/sites/120/2018/08/banner-ktf-2018.jpg) no-repeat center center;">
                                     <h3><a href="https://travel.kompas.id/">Kompas Travel Fair 2018</a></h3>
                                 </div>
-							</div> <!-- /.container960 -->
-						</div> <!-- /.clearfix -->
+							</div>
+						</div>
 						
                     </div> <!-- /#tabs-1 -->
                     
                     <div id="tabs-2" class="tabbing clearfix">
 						<h1>Skills &amp; Abilities</h1>
                         <div class="h1border" style="background-color:#1B5E20;"></div>
-						<div class="clearfix">
-							<div class="container480 fL">
-								<h2>Front-End Programming</h2>
-								<p class="t16">HTML, CSS, jS, jQ for 2 years to develop landing pages.</p>
-								<ul class="list01" style="margin-top:20px;">
-									<li><img src="/_img/logo_ps.png" alt="Photoshop++" title="Photoshop"></li><!--
-									--><li><img src="/_img/logo_dw.png" alt="Dreamweaver" title="Dreamweaver"></li><!--
-									--><li><img src="/_img/logo_nt.png" alt="Notepad++" title="Notepad++"></li><!--
-									--><li><img src="/_img/logo_cp.png" alt="Codepen" title="Codepen"></li><!--
-									--><li><img src="/_img/logo_so.png" alt="Stackoverflow" title="Stackoverflow"></li><!--
-									--><li><img src="/_img/logo_jf.png" alt="JSFiddle" title="JsFiddle"></li>
-								</ul>
-							</div><!-- /.container480 -->
-							<div class="container480 fR tR" style="">
-								<dl class="skills">
-									<dt>HTML</dt>
-									<dd>
-										<div class="clearfix">
-                                			<div id="progressBar" class="progressBarS"><div></div></div>
-										</div>
-										Able to utilize most html tags.
-									</dd>
-                                        
-									<dt>CSS</dt>
-									<dd>
-										<div class="clearfix">
-                                			<div id="progressBar2" class="progressBarS"><div></div></div>
-										</div>
-										CSS3 style decoration, advanced selectors.
-									</dd>
-                                        
-									<dt>jS &amp; jQ</dt>
-									<dd>
-										<div class="clearfix">
-                                			<div id="progressBar3" class="progressBarS"><div></div></div>
-										</div>
-										Basic DOM manipulation, simple event handling.
-									</dd>
-                                    </dl><!-- /.skills -->
-                                </div><!-- /.container480 -->
-                            </div><!-- /.clearfix -->
-							<div class="clearfix">
-								<div class="container480 fL">
-									<h2>Microsoft Office</h2>
-									<p class="t16">Been using microsoft office product for years, for article writing, personal financial report, to list client's content list.</p>
-									<p class="t16">Microsoft Visio to draw diagrams and create database schemes.									</p>
-									<ul class="list01" style="margin-top:20px;">
-										<li><img src="/_img/logo_word.png" alt="Microsoft Word" title="Microsoft Word"></li><!--
-										--><li><img src="/_img/logo_excel.png" alt="Microsoft Excel" title="Microsoft Excel"></li><!--
-										--><li><img src="/_img/logo_power.png" alt="Microsoft PowerPoint" title="Microsoft PowerPoint"></li><!--
-										--><li><img src="/_img/logo_visio.png" alt="Microsoft Visio" title="Microsoft Visio"></li>
-									</ul>
-								</div><!-- /.container480 -->
-								<div class="container480 fR tR" style="">
-									<dl class="skills">
-										<dt>Microsoft Office</dt>
-										<dd>
-											<div class="clearfix">
-												<div id="progressBar4" class="progressBarS"><div></div></div>
-											</div>
-											Basic macros, financial calculations, concat, pivot table. 
-										</dd>
-										
-										<dt>Microsoft Visio</dt>
-										<dd>
-											<div class="clearfix">
-												<div id="progressBar5" class="progressBarS"><div></div></div>
-											</div>
-											Relational, Use case, Activity, Communication, Class diagram.
-										</dd>
-									</dl> <!-- /.skills -->
-								</div><!-- /.container480 -->
-							</div><!-- /.clearfix -->
-                            <div class="clearfix">
-                                <div class="container480 fL">
-									<h2>Website Hosting and Repositories</h2>
-									<p class="t16">Experienced in website hosting, Tortoise Github for web repository.</p>
-									<ul class="list01" style="margin-top:20px;">
-										<li><img src="/_img/logo_gh.png" alt="Tortoise Github" title="Tortoise Github"></li>
-									</ul>
-								</div><!-- /.container480 -->
-                            </div><!-- /.clearfix -->
-							<div class="clearfix">
-								<div class="container480">
-									<h2>Languages</h2>
-									<p class="t16">Indonesian<br>
-										Born with Indonesian Nationality, I learned Indonesian mostly from parents and text books.
-									</p>
-									<p class="t16">English<br>
-										I learnt english language mostly from video games I played. Sentences, some grammars, and metaphors.
-									</p>
-								</div><!-- /.container480 -->
-                            </div><!-- /.clearfix -->
+                        
+                        <h2>Front-End</h2>
+						<ul class="list01">
+							<li><img src="/_img/logo_jq.png" alt="jQuery" title="jQuery"></li><!--
+							--><li><img src="/_img/logo_wp.png" alt="Wordpress" title="Wordpress"></li><!--
+							--><li><img src="/_img/logo_vc.png" alt="Visual Composer" title="Visual Composer"></li>
+						</ul>
+                        
+                        <h2>Microsoft Office</h2>
+						<ul class="list01">
+							<li><img src="/_img/logo_word.png" alt="Microsoft Word" title="Microsoft Word"></li><!--
+							--><li><img src="/_img/logo_excel.png" alt="Microsoft Excel" title="Microsoft Excel"></li><!--
+							--><li><img src="/_img/logo_power.png" alt="Microsoft PowerPoint" title="Microsoft PowerPoint"></li><!--
+							--><li><img src="/_img/logo_visio.png" alt="Microsoft Visio" title="Microsoft Visio"></li>
+						</ul>
+                        
+                        <h2>Web Management</h2>
+						<ul class="list01">
+							<li><img src="/_img/logo_gh.png" alt="Tortoise Github" title="Tortoise Github"></li><!--
+                            --><li><img src="/_img/logo_hr.png" alt="Hostinger" title="Hostinger"></li><!--
+                            --><li><img src="/_img/logo_ga.png" alt="Google Analytic" title="Google Analytic"></li>
+						</ul>
                     </div> <!-- /#tabs_2 -->
                     
                     <div id="tabs-3" class="tabbing clearfix">
 						<h1>Education &amp; Experiences</h1>
 						<div class="h1border" style="background-color:#FF9800;"></div>
-                        <div class="clearfix">
-                            <div class="container480">
-                                <h2>Bina Nusantara University <br> (2010 - 2014)</h2>
-							</div><!-- /.container480 -->
-						</div><!-- /.clearfix -->
-                        <div class="clearfix">
-                            <div class="container480 fL">
-                                <p class="t14">
-									4 Years of studying Information System, studied theoritical information system development to high-level programming language such as Java, C#, HTML, and SQL Server.
-                                </p>
-                            </div><!-- /.container480 -->
-                            <div class="container480 fR">
-                                <ul class="achievement">
-                            		<li>Took <i>Busines Intelligence</i> field</li>
-                            		<li>Developed "<i>Analisa dan Perancangan Sistem Penyewaan Kapal pada PT. XYZ</i>" using C#</li>
-                                	<li>Developed "<i>Perancangan Basis Data Untuk Divisi General Affair dengan Lingkup Pembelian dan Manajemen Aset pada PT Skyworx Indonesia</i>"using PHP.</li>
-                                </ul>
-                            </div> <!-- /.container480 -->
-                        </div><!-- /.clearfix -->
-                        <div class="clearfix">
-                            <div class="container480">
-                                <h2>Transcosmos Indonesia <br> (December 2014 - February 2017)</h2>
-							</div> <!-- /.container480 -->
-						</div> <!-- /.clearfix -->
-                        <div class="clearfix">
-                            <div class="container480 fL">
-                                <p class="t14">
-                                    Japanese origin company, renowned for providing Call Center
-                                    operators in their homeland for over <a class="link01" target="_blank" href="http://www.trans-cosmos.co.jp/english/company/history.html"> 50 years</a>, and also recently here in <a class="link01" target="_blank" href="http://www.trans-cosmos.co.id/">Indonesia</a>.
-								</p>
-                                <p class="t14">Recruited as a junior web programmer, after trained half a year, got involved in clients content management projects.</p>
-                            </div><!-- /.container480 -->
-                            <div class="container480 fL">
-                                <ul class="achievement">
-                            		<li>Joined coding team</li>
-                            		<li>Worked on client's web content creation projects.</li>
-                                	<li>Worked on product image modification projects using Photoshop.</li>
-                                	<li>Worked on client's product management using CMS</li>
-                                    <li>Worked on English-Indonesia Translation project</li>
-                                	<li>Supervised company's knowledge management system</li>
-                                </ul>
-                            </div> <!-- /.container480 -->
-                        </div><!-- /.clearfix -->
-                        <div class="clearfix">
-                            <div class="container480">
-                                <h2>Kompas Harian <br> (April 2017 - Current)</h2>
-							</div> <!-- /.container480 -->
-						</div> <!-- /.clearfix -->
-                        <div class="clearfix">
-                            <div class="container480 fL">
-                                <p class="t14">
-                                    One of renowned Indonesia media since 1965. Currently underwent a transition into a digital environment. Its notable products are klasika, advertorial, kompas karier, and many more. <br>For online daily newspaper, you can visit <a class="link01" href="http://kompas.id" target="_blank">kompas id</a>.
-								</p>
-                                <p class="t14">
-                                    Recruited as a new front-end designer. I was tasked to be the "enabler" for advertisement team to pour printed advertisement into a web-based. 
-                                </p>
-                            </div><!-- /.container480 -->
-                            <div class="container480 fL">
-                                <ul class="achievement">
-                            		<li>Joined web advertisement team</li>
-                                </ul>
-                            </div> <!-- /.container480 -->
-                        </div><!-- /.clearfix -->
+                        
+                        <h2>Bina Nusantara University</h2>
+                        <p>2010 - 2014<br>School of Information System</p>
+                        
+                        <h2>Transcosmos Indonesia</h2>
+                        <p>December 2014 - February 2017<br>Web Administrator</p>
+                        
+                        <h2>Harian Kompas</h2>
+                        <p>April 2017 - Current<br>Web Designer</p>
                     </div> <!-- /#tabs_3 -->
                     
                     <div id="tabs-4" class="tabbing clearfix">
 						<h1>Bio</h1>
 						<div class="h1border" style="background-color:#AEEA00;"></div>
-                        <div class="clearfix">
-                            <div class="container480 fL">
-                                <p class="t24">Dimitri Herlambang S.Kom</p>
-                                <p>Born in rural town of Bekasi at 1992, I am the first and the last son of my family.<br>Being the only son, I have the most luxurious, pampered treatment from my parents most of the time.
-                                </p>
-                                <p>I am rarely go outside as a result of their "overly-protective" policy, so they bought me Playstation console for entertainment, it became my primary source of fun.</p>
-                                <p>The first time I made contact with a computer was at primary school (<span class="tI">yes they had windows 95 OS PCs as part of school curriculum</span>), they taught basic computer operations, design application named "Instant Artist", basic html programming, Paint, and finally CorelDraw.
-                                </p>
-                                <p>At the age of 10, my parents bought me a PC. Since that, it grew to become my interest for studying computer. Not-so-often I broke my PC as a result of me tampering with the system, just because my curiosity did so.</p>
-                                <p>When it came to choosing a university, I immediately took an interest in Information System, I chose Binus because of its notability in computer studies, and its proximity to my house, saving a lot of transport and living costs compared to studying in another province.</p>
-                                <p>And then I graduated at 2014, on the last month of that year, I got recruited into Transcosmos Indonesia as a web administrator. Learned html, js, jq, everything that is needed to build a website.</p>
-                                <p>After two years of my first workplace, I decided to not continue the contract and ended my service for the company at January 2017.</p>
-                                <p>One month after that, I got hired at Kompas media, one of famous media in Nusantara, serving people of Indonesia since 1965. My position here is crucial as I am one of the "enabler" of digital transformation of Kompas daily print newspaper. Of course, my career will unfold, my skills will be expanded, and my patience will be tested.</p>
-                            </div> <!-- /.container480 -->
-                            <div class="container480 fL">
-								<h2 class="t24">About Me</h2>
-                                <p>
-                                    • Friendly<br>
-                                    • Open-minded<br>
-                                    • Optimist<br>
-                                    • Ever-ready<br>
-                                    • Organized
-                                </p>
-                                <p>Hobbies :<br>
-                                    • Coding<br>
-                                    • Gaming<br>
-                                    • Writing
-                                </p>
-                                <p>Side Activities :<br>
-                                    • Cycling<br>
-                                    • Badminton<br>
-                                    • Tennis<br>
-                                </p>
-                            </div> <!-- /.container480 -->
-                        </div> <!-- /.clearfix -->
+                        
+                        <h2>Dimitri Herlambang S.Kom</h2>
+                        <p>Born in rural town of Bekasi at 1992, I am the first and the last son of my family.<br>Being the only son, I have the most luxurious, pampered treatment from my parents most of the time.</p>
+                        <p>Victim of an "overly-protective" policy, my only entertainment was Playstation, and PC.<br> As a result, I developed interest into computer systems.</p>
+                        <p><strong>Traits:</strong><br>Friendly, Open-minded, Optimist, Resourceful, Organized</p>
+                        <p><strong>Hobbies:</strong><br>Coding, Gaming, Writing</p>
+                        <p><strong>Side Activities:</strong><br>Cycling, Badminton</p>
 					</div> <!-- /#tabs_4 -->
                 </div><!-- /#tabs -->
 			</div><!-- /.container960 -->
