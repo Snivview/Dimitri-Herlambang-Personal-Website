@@ -10,34 +10,7 @@
     <meta name="author" content="Dimitri">
     <link href="/_common/css/base.css" rel="stylesheet">
     <style>
-		html:before {
-			width: 100%;
-			height: 100%;
-			background: url(/_img/main_bg.jpg) no-repeat center center !important;
-			content: "";
-			display: block;
-			position: fixed;
-			left: 0;
-			top: 0;
-			z-index: -10;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
 		*{transition: .3s ease-in-out;}
-		html {
-			/* background: url(/_img/main_bg.jpg) no-repeat; */
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			-webkit-animation: fadein 1s;
-			-moz-animation: fadein 1s;  
-			-ms-animation: fadein 1s; 
-			-o-animation: fadein 1s; 
-			animation: fadein 1s;
-		}
         strong {font-weight: bold;}
         h2 {
             margin-top: 30px;
@@ -83,6 +56,17 @@
             top: 55vh;
             text-align: center;
             color: #fff;
+        }
+        #background {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            z-index: -1;
+            background: url(/_img/main_bg.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
         }
         .moveTop {
             -ms-transform: translate(0,-20vh); /* IE 9 */
@@ -148,7 +132,7 @@
 		.tabbing {
 			padding: 0;
             width: 100%;
-			height: 500px;
+			height: 70vh;
 			overflow-x: hidden;
 			overflow-y: scroll;
             animation: fadein .3s;
@@ -270,6 +254,12 @@
 			line-height: 22px;
 			width: 0;
 		}
+        .zoom {
+            -ms-transform: scale(1.1,1.1);
+            -webkit-transform: scale(1.1,1.1);
+            transform: scale(1.1,1.1);
+            filter: blur(4px);
+        }
         #progressBar div{background-color: #E44D26;}
 		#progressBar2 div{background-color: #1572B6;}
 		#progressBar3 div{background-color: #108040;}
@@ -320,7 +310,8 @@
 <body>
     <div id="wrap">
         <div id="mainArea" class="clearfix">
-            
+            <div id="background">
+            </div>
             <div id="intro">
                 <h1 id="element_1" class="animate">I am Dimitri Herlambang</h1>
                 <h2 id="element_2" class="animate">About Me</h2>
@@ -425,88 +416,6 @@
     
     <script type="text/javascript" src="/_common/js/jQuery.js"></script>
 	<script type="text/javascript" src="/_common/js/jQuery-ui.js"></script>
-    <script type="text/javascript">
-		/*--------------------------------------------------------------------------*
-		 *  
-		 *  SmoothScroll JavaScript Library V2
-		 *  
-		 *  MIT-style license. 
-		 *  
-		 *  2007-2011 Kazuma Nishihata 
-		 *  http://www.to-r.net
-		 *  
-		 *--------------------------------------------------------------------------*/
-		new function(){
-        var attr ="data-tor-smoothScroll";//for html5 , if you can't use html5 , this value change "class"
-        var attrPatt = /noSmooth/;
-        var d = document;//document short cut
-        /* add Event -------------------------------------------------*/
-        function addEvent(elm,listener,fn){
-            try{ // IE
-                elm.addEventListener(listener,fn,false);
-            }catch(e){
-                elm.attachEvent(
-                    "on"+listener
-                    ,function(){
-                        fn.apply(elm,arguments)
-                    }
-                );
-            }
-        }
-        /* Start SmoothScroll  -------------------------------------------------*/
-        function SmoothScroll(a){
-            if(d.getElementById(a.rel.replace(/.*\#/,""))){
-                var e = d.getElementById(a.rel.replace(/.*\#/,""));
-            }else{
-                return;
-            }
-
-            //Move point
-            var end=e.offsetTop
-            var docHeight = d.documentElement.scrollHeight;
-            var winHeight = window.innerHeight || d.documentElement.clientHeight
-            if(docHeight-winHeight<end){
-                var end = docHeight-winHeight;
-            }
-            //Current Point
-            var start=window.pageYOffset || d.documentElement.scrollTop || d.body.scrollTop || 0;
-            var flag=(end<start)?"up":"down";
-            function scrollMe(start,end,flag) {
-                setTimeout(
-                    function(){
-                        if(flag=="up" && start >= end){
-                            start=start-(start-end)/20-1;
-                            window.scrollTo(0,start)
-                            scrollMe(start,end,flag);
-                        }else if(flag=="down" && start <= end){
-                            start=start+(end-start)/20+1;
-                            window.scrollTo(0,start)
-                            scrollMe(start,end,flag);
-                        }else{
-                            scrollTo(0,end);
-                        }
-                        return ;
-                    }
-                    ,10
-                );
-
-            }
-            scrollMe(start,end,flag);
-        }
-        /* Add SmoothScroll -------------------------------------------------*/
-        addEvent(window,"load",function(){
-            var anchors = d.getElementsByTagName("a");
-            for(var i = 0 ,len=anchors.length; i<len ; i++){
-                if(!attrPatt.test(anchors[i].getAttribute(attr)) && 
-                    anchors[i].href.replace(/\#[a-zA-Z0-9_]+/,"") == location.href.replace(/\#[a-zA-Z0-9_]+/,"")){
-                    anchors[i].rel = anchors[i].href;
-                    anchors[i].href = "javascript:void(0)";
-                    anchors[i].onclick=function(){SmoothScroll(this)}
-                }
-            }
-        });
-    }
-	</script>
     <script>
         $("#element_2").click(function() {
             $("#element_1").addClass("moveTop");
@@ -514,6 +423,7 @@
             $("#element_3").addClass("moveRight");
             $("#about").removeClass("hidden");
             $("#intro").css("z-index","-1");
+            $("#background").addClass("zoom");
         });
         $("#tabTitle_5").click(function() {
             $("#element_1").removeClass("moveTop");
@@ -521,6 +431,7 @@
             $("#element_3").removeClass("moveRight");
             $("#about").addClass("hidden");
             $("#intro").css("z-index","1");
+            $("#background").removeClass("zoom");
         });
 		$( "#tabs" ).tabs({
 			activate: function (event, ui) {
