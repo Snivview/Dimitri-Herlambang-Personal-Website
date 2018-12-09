@@ -255,10 +255,7 @@
 			width: 0;
 		}
         .zoom {
-            -ms-transform: scale(1.1,1.1);
-            -webkit-transform: scale(1.1,1.1);
-            transform: scale(1.1,1.1);
-            filter: blur(4px);
+            background-color: rgba(0,0,0,.6);
         }
         #progressBar div{background-color: #E44D26;}
 		#progressBar2 div{background-color: #1572B6;}
@@ -423,7 +420,7 @@
             $("#element_3").addClass("moveRight");
             $("#about").removeClass("hidden");
             $("#intro").css("z-index","-1");
-            $("#background").addClass("zoom");
+            $("#intro").addClass("zoom");
         });
         $("#tabTitle_5").click(function() {
             $("#element_1").removeClass("moveTop");
@@ -431,7 +428,7 @@
             $("#element_3").removeClass("moveRight");
             $("#about").addClass("hidden");
             $("#intro").css("z-index","1");
-            $("#background").removeClass("zoom");
+            $("#intro").removeClass("zoom");
         });
 		$( "#tabs" ).tabs({
 			activate: function (event, ui) {
