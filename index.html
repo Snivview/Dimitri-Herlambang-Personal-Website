@@ -9,14 +9,28 @@
     <meta name="keywords" content="Dimitri,Herlambang,Personal,Website">
     <meta name="author" content="Dimitri">
     <link href="/_common/css/base.css" rel="stylesheet">
+    <link href="/_common/css/swiper.min.css" rel="stylesheet">
     <style>
 		*{transition: .3s ease-in-out;}
         strong {font-weight: bold;}
         h2 {
             margin-top: 30px;
             margin-bottom: 10px;
+            font-size: 32px;
         }
-        p {font-weight: 300;}
+        h3 {
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 20px auto;
+            max-width: 500px;
+            font-weight: 300;
+            font-size: 14px;
+        }
         #mainArea {padding: 0;}
         /* intro */
         #intro {
@@ -38,7 +52,7 @@
         #element_1 {
             padding:5px;
             width: 310px;
-            top: 35vh;
+            top: 30vh;
             text-align: center;
             color: #fff;
         }
@@ -90,7 +104,7 @@
             transition: 1s;
         }
         .container960 {
-            padding: 0px 10px 20px 10px;
+            padding: 0;
         }
         /* about */
         h1,h2,dt,dd,p,li {
@@ -99,7 +113,6 @@
         }
 		#about {
 			position: absolute;
-			top: 10vh;
 			margin: auto;
 			left: 0;
 			right: 0;
@@ -115,19 +128,10 @@
         }
         .tabTitle li {
 			display: inline-block;
-			padding: 15px 0 15px 0;
-			margin-right: 15px;
-			margin-bottom: 10px;
+			padding: 10px;
 		}
-		.tabTitle li a {padding: 15px;color:#fff;}
+		.tabTitle li a {padding: 10px;color:#fff;font-size:20px;}
 		.tabTitleBord {border-bottom: 3px solid rgba(236, 236, 236, 0);}
-		.ui-tabs-active.ui-state-active{
-			transition: .3s;
-		}
-		#tabTitle_1.ui-tabs-active.ui-state-active{border-bottom-color:#01579B;}
-		#tabTitle_2.ui-tabs-active.ui-state-active{border-bottom-color:#1B5E20;}
-		#tabTitle_3.ui-tabs-active.ui-state-active{border-bottom-color:#FF9800;}
-		#tabTitle_4.ui-tabs-active.ui-state-active{border-bottom-color:#AEEA00;}
 		.list01 li img{width: 70%;}
 		.tabbing {
 			padding: 0;
@@ -154,72 +158,74 @@
 			border: 8px solid #FFE0B2;
 			background:url(/_img/main_portrait.jpg) no-repeat center;
 		}
-        /* .blockHover {
-            padding-top: 10px;
+        .swiper-container {
+            padding-top: 25px;
             width: 100%;
             height: 100%;
-            opacity: 0;
-            background-color: #fff;
-            transition: .3s;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .blockHover:hover {
-            opacity: .9;
-            transition: .3s;
+        .swiper-slide {
+            top: 20px;
+            height: 80vh;
+            overflow-y: scroll;
+            cursor: grab;
         }
-        .blockHover button {
-            width: 205px;
-            height: 105px;
-            border-radius: 8px;
-            color: #fff;
-            background-color: inherit;
-            transition: .3s;
-            font-size: 18px;
+        .swiper-slide:active {
+            cursor:grabbing;
         }
-        .blockHover button:focus {
-            transition: .3s;
+        .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+            top: 0;
+            bottom: inherit;
         }
-        .blockHover p:nth-of-type(1) button {
-            border: 1px solid #FF6F00;
-            color: #FF6F00;
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
         }
-        .blockHover p:nth-of-type(1) button:hover {
-            background-color: #FF6F00;
-            color: #fff;
+        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 4px 2px 0 2px;
         }
-        .blockHover p:nth-of-type(2) button {
-            border: 1px solid #004D40;
-            color: #004D40;
+        .swiper-pagination-bullet:nth-of-type(1) {
+            background-color: #01579B;
         }
-        .blockHover p:nth-of-type(2) button:hover {
-            background-color: #004D40;
-            color: #fff;
+        .swiper-pagination-bullet:nth-of-type(2) {
+            background-color: #1B5E20;
         }
-        .block:nth-of-type(1) {background-image: url(portofolio/img/thumb_port01.jpg);}
-        .block:nth-of-type(2) {background-image: url(portofolio/img/thumb_port02.jpg);}
-        .block:nth-of-type(3) {background-image: url(portofolio/img/thumb_port03.jpg);}
-        .block:nth-of-type(4) {background-image: url(portofolio/img/thumb_port04.jpg);}
-        .block:nth-of-type(5) {background-image: url(portofolio/img/thumb_port05.jpg);} */
-		
+        .swiper-pagination-bullet:nth-of-type(3) {
+            background-color: #FF9800;
+        }
+        .swiper-pagination-bullet:nth-of-type(4) {
+            background-color: #AEEA00;
+        }
+        .swiper-button-prev {
+            left: 30%;
+        }
+        .swiper-button-next {
+            right: 30%;
+        }
+		.swiper-button-next, .swiper-button-prev {
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            background-size: 16px 16px;
+        }
 		::-webkit-scrollbar {width: 3px;}
 		::-webkit-scrollbar-track {border-radius: 10px;}
 		::-webkit-scrollbar-thumb {background: #fff;}
 		::-webkit-scrollbar-thumb:hover {background: #fff;}
-		
-        .portfolio{
-			margin-bottom: 5px;
-            position: relative;
-            height: 150px;
-            width: 100%;
-            display: table;
-        }
-        .portfolio h3 {
-            display: table-cell;
-            vertical-align: middle;
-            font-weight: bold;
+        .portfolio {
             text-align: center;
-            background-color: rgba(0,0,0,.6);
-            color: #fff;
-            font-size: 24px;
+        }
+        .portfolio li {
+            padding: 10px;
+            display: inline-block;
+            width: 250px;
+        }
+        .portfolio li p{
+            font-size: 12px;
+        }
+        .portfolio li a{
+            padding: 10px;
         }
 		/* ------ TAB 2 ------- */
 		.skills dt{
@@ -232,36 +238,9 @@
 			font-size: 16px;
 			margin-bottom: 20px;
 		}
-		.skillLvl {
-			position: relative;
-			width: 280px;
-			height: 10px;
-			background-color: #fff;
-		}
-		.skillLvlBar {
-			position: absolute;
-			height: 10px;
-		}
-		.progressBarS {
-			float: right;
-			width: 280px;
-			height: 10px;
-		}
-		.progressBarS div {
-			height: 100%;
-			color: #fff;
-			text-align: right;
-			line-height: 22px;
-			width: 0;
-		}
         .zoom {
             background-color: rgba(0,0,0,.6);
         }
-        #progressBar div{background-color: #E44D26;}
-		#progressBar2 div{background-color: #1572B6;}
-		#progressBar3 div{background-color: #108040;}
-		#progressBar4 div{background-color: #EB3C00;}
-		#progressBar5 div{background-color: #3853A0;}
 		/* ------ TAB 3 ------- */
 		.achievement li {
 			padding-left: 10px;
@@ -286,21 +265,6 @@
 			opacity: 1;
 			transition: .3s;
 		}
-		@media screen and (max-width:568px) {
-			.tabTitle li {
-				padding: 5px 0 5px 0;
-				margin-right: 15px;
-			}
-			.tabTitle li a {
-				padding: 5px 0 5px 0;
-			}
-		}
-        @media screen and (max-width:768px) {
-            html {background: none;}
-			#about {
-				top: 5vh;
-			}
-        }
 	</style>
 </head>
 
@@ -317,94 +281,88 @@
             <div id="about" class="hidden container960 clearfix">
                 <div id="tabs" class="clearfix">
                     <ul class="tabTitle" style="margin-bottom:10px;">
-                        <li id="tabTitle_1" class="tabTitleBord"><a href="#tabs-1">Intro</a></li><!--
-                        --><li id="tabTitle_2" class="tabTitleBord"><a href="#tabs-2">Skills</a></li><!--
-                        --><li id="tabTitle_3" class="tabTitleBord"><a href="#tabs-3">Experience</a></li><!--
-                        --><li id="tabTitle_4" class="tabTitleBord"><a href="#tabs-4">Bio</a></li><!--
-                        --><li id="tabTitle_5" style="float: right;margin-right: 0;font-weight: bold;border-bottom: 3px solid #fff;cursor:pointer;"><a>X</a></li>
+                        <li id="tabTitle_5" style="float:left;margin-right: 0;font-weight: bold;cursor:pointer;"><a>←</a></li>
                     </ul>
-                    <div id="tabs-1" class="tabbing clearfix">
-                        <h1>Introduction</h1>
-                        <div class="h1border" style="background-color:#01579B"></div>
-                    	<div id="portrait"></div>
-						<div class="clearfix">
-							<div class="container960">
-								<h2>My name is Dimitri Herlambang</h2>
-                                <p class="t14">I am a Front-End Developer, and while not limited to web development, also a capable english-indonesian translator.</p>
-								<p class="t14">Working 2 years at Japanese agency, and now a Front-End Developer at Kompas Gramedia, advertising division.</p>
-								<h2>My Works</h2>
-                                <div class="portfolio" style="background: url(https://advisual.kompas.id/_local/page_1.jpg) no-repeat center center;">
-                                    <h3><a href="https://advisual.kompas.id/ride-jakarta/">Ride Jakarta</a></h3>
-                                </div>
-                                <div class="portfolio" style="background: url(https://advisual.kompas.id/_local/page_2.jpg) no-repeat 19% 67%;">
-                                    <h3><a href="https://advisual.kompas.id/ride-jakarta/">Eksplor Ramadhan</a></h3>
-                                </div>
-								<div class="portfolio" style="background: url(https://advisual.kompas.id/_local/page_3.jpg) no-repeat center 29%;">
-                                    <h3><a href="https://advisual.kompas.id/pasarbaru/">Passer Baroe</a></h3>
-                                </div>
-								<div class="portfolio" style="background: url(https://advisual.kompas.id/_local/page_4a.jpg) no-repeat center 80%;">
-                                    <h3><a href="https://advisual.kompas.id/hari-pahlawan/">Hari Pahlawan</a></h3>
-                                </div>
-								<div class="portfolio" style="background: url(https://travel.kompas.id/wp-content/uploads/sites/120/2018/08/banner-ktf-2018.jpg) no-repeat center center;">
-                                    <h3><a href="https://travel.kompas.id/">Kompas Travel Fair 2018</a></h3>
-                                </div>
-							</div>
-						</div>
-						
-                    </div> <!-- /#tabs-1 -->
                     
-                    <div id="tabs-2" class="tabbing clearfix">
-						<h1>Skills &amp; Abilities</h1>
-                        <div class="h1border" style="background-color:#1B5E20;"></div>
-                        
-                        <h2>Front-End</h2>
-						<ul class="list01">
-							<li><img src="/_img/logo_jq.png" alt="jQuery" title="jQuery"></li><!--
-							--><li><img src="/_img/logo_wp.png" alt="Wordpress" title="Wordpress"></li><!--
-							--><li><img src="/_img/logo_vc.png" alt="Visual Composer" title="Visual Composer"></li>
-						</ul>
-                        
-                        <h2>Microsoft Office</h2>
-						<ul class="list01">
-							<li><img src="/_img/logo_word.png" alt="Microsoft Word" title="Microsoft Word"></li><!--
-							--><li><img src="/_img/logo_excel.png" alt="Microsoft Excel" title="Microsoft Excel"></li><!--
-							--><li><img src="/_img/logo_power.png" alt="Microsoft PowerPoint" title="Microsoft PowerPoint"></li><!--
-							--><li><img src="/_img/logo_visio.png" alt="Microsoft Visio" title="Microsoft Visio"></li>
-						</ul>
-                        
-                        <h2>Web Management</h2>
-						<ul class="list01">
-							<li><img src="/_img/logo_gh.png" alt="Tortoise Github" title="Tortoise Github"></li><!--
-                            --><li><img src="/_img/logo_hr.png" alt="Hostinger" title="Hostinger"></li><!--
-                            --><li><img src="/_img/logo_ga.png" alt="Google Analytic" title="Google Analytic"></li>
-						</ul>
-                    </div> <!-- /#tabs_2 -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h1>Introduction</h1>
+                                <div class="h1border" style="background-color:#01579B"></div>
+                                <div id="portrait"></div>
+                                <div class="clearfix">
+                                    <div class="container960">
+                                        <h3>My name is Dimitri Herlambang</h3>
+                                        <p>I am an interactive front-end developer, blogger, and gamer.</p>
+                                        <p>Originally, I wanted to be a system analyst. But my first job involving web's front-end development changed the course of my career. Now I want to be an interactive landing page developer, awwwards.com class.</p>
+                                        <h2>My Works</h2>
+                                        <ul class="portfolio">
+                                            <li><h3><a class="link01" href="https://advisual.kompas.id">Kompas Advisual</a></h3><p>Advisual is Harian Kompas advertisement division project of paid content through interactive landing page.</p></li>
+                                            <li><h3><a class="link01" href="https://klasika.kompas.id">Kompas Klasika</a></h3><p>Your daily dose of life stories, business, movie reviews, and useful tips for your ride, house, and career.</p></li>
+                                            <li><h3><a class="link01" href="https://travel.kompas.id">Kompas Travel Fair</a></h3><p>Kompas' yearly travel exhibition for those seeking adventures with low fare and affordable travel packages.</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1>Skills &amp; Abilities</h1>
+                                <div class="h1border" style="background-color:#1B5E20;"></div>
+
+                                <h2>Front-End</h2>
+                                <ul class="list01">
+                                    <li><img src="/_img/logo_jq.png" alt="jQuery" title="jQuery"></li><!--
+                                    --><li><img src="/_img/logo_wp.png" alt="Wordpress" title="Wordpress"></li><!--
+                                    --><li><img src="/_img/logo_vc.png" alt="Visual Composer" title="Visual Composer"></li>
+                                </ul>
+
+                                <h2>Microsoft Office</h2>
+                                <ul class="list01">
+                                    <li><img src="/_img/logo_word.png" alt="Microsoft Word" title="Microsoft Word"></li><!--
+                                    --><li><img src="/_img/logo_excel.png" alt="Microsoft Excel" title="Microsoft Excel"></li><!--
+                                    --><li><img src="/_img/logo_power.png" alt="Microsoft PowerPoint" title="Microsoft PowerPoint"></li><!--
+                                    --><li><img src="/_img/logo_visio.png" alt="Microsoft Visio" title="Microsoft Visio"></li>
+                                </ul>
+
+                                <h2>Web Management</h2>
+                                <ul class="list01">
+                                    <li><img src="/_img/logo_gh_w.png" alt="Tortoise Github" title="Tortoise Github"></li><!--
+                                    --><li><img src="/_img/logo_hr.png" alt="Hostinger" title="Hostinger"></li><!--
+                                    --><li><img src="/_img/logo_ga.png" alt="Google Analytic" title="Google Analytic"></li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1>Education &amp; Experiences</h1>
+                                <div class="h1border" style="background-color:#FF9800;"></div>
+
+                                <h2>Bina Nusantara University</h2>
+                                <p>2010 - 2014<br>School of Information System</p>
+
+                                <h2>Transcosmos Indonesia</h2>
+                                <p>December 2014 - February 2017<br>Web Administrator</p>
+
+                                <h2>Harian Kompas</h2>
+                                <p>April 2017 - Current<br>Web Designer</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1>Bio</h1>
+                                <div class="h1border" style="background-color:#AEEA00;"></div>
+
+                                <h2>Dimitri Herlambang S.Kom</h2>
+                                <p>Born in rural town of Bekasi at 1992, I am the first and the last son of my family.</p>
+                                <p>Aside from writing codes in my daily, I am also enjoy writing stories and experience in my <a class="link01" href="https://blog.dimiherlambang.com">blog.</a></p>
+                                <p>My twin principles of living my life is that: First, always expect the worst to happen, so you will not be surprised by "what could possibly go wrong?" and be able to prepare steps to avoid it. Second, stay as low as possible, so that you can take others by surprise.</p>
+                                <p><strong>Traits:</strong><br>Friendly, Open-minded, Pessimist, Resourceful, Organized</p>
+                                <p><strong>Hobbies:</strong><br>Coding, Gaming, Writing</p>
+                                <p><strong>Side Activities:</strong><br>Cycling, Badminton, Urban Farming.</p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                     
-                    <div id="tabs-3" class="tabbing clearfix">
-						<h1>Education &amp; Experiences</h1>
-						<div class="h1border" style="background-color:#FF9800;"></div>
-                        
-                        <h2>Bina Nusantara University</h2>
-                        <p>2010 - 2014<br>School of Information System</p>
-                        
-                        <h2>Transcosmos Indonesia</h2>
-                        <p>December 2014 - February 2017<br>Web Administrator</p>
-                        
-                        <h2>Harian Kompas</h2>
-                        <p>April 2017 - Current<br>Web Designer</p>
-                    </div> <!-- /#tabs_3 -->
-                    
-                    <div id="tabs-4" class="tabbing clearfix">
-						<h1>Bio</h1>
-						<div class="h1border" style="background-color:#AEEA00;"></div>
-                        
-                        <h2>Dimitri Herlambang S.Kom</h2>
-                        <p>Born in rural town of Bekasi at 1992, I am the first and the last son of my family.<br>Being the only son, I have the most luxurious, pampered treatment from my parents most of the time.</p>
-                        <p>Since I was a kid, My entertainment was Playstation, and PC.<br> As a result, I developed interest into computer systems. I can build Desktop and setting up website.</p>
-                        <p><strong>Traits:</strong><br>Friendly, Open-minded, Optimist, Resourceful, Organized</p>
-                        <p><strong>Hobbies:</strong><br>Coding, Gaming, Writing</p>
-                        <p><strong>Side Activities:</strong><br>Cycling, Badminton</p>
-					</div> <!-- /#tabs_4 -->
                 </div><!-- /#tabs -->
 			</div><!-- /.container960 -->
 		
@@ -412,7 +370,22 @@
     </div> <!-- /#wrap -->
     
     <script type="text/javascript" src="/_common/js/jQuery.js"></script>
-	<script type="text/javascript" src="/_common/js/jQuery-ui.js"></script>
+    <script type="text/javascript" src="_common/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+            spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+    </script>
     <script>
         $("#element_2").click(function() {
             $("#element_1").addClass("moveTop");
@@ -430,25 +403,6 @@
             $("#intro").css("z-index","1");
             $("#intro").removeClass("zoom");
         });
-		$( "#tabs" ).tabs({
-			activate: function (event, ui) {
-				var active = $('#tabs').tabs('option', 'active');
-				if (active == 1) {
-					progress(80, $('#progressBar'));
-					progress(75, $('#progressBar2'));
-					progress(40, $('#progressBar3'));
-					progress(60, $('#progressBar4'));
-					progress(50, $('#progressBar5'));
-				} else {
-					progress(0, $('#progressBar'));
-					progress(0, $('#progressBar2'));
-					progress(0, $('#progressBar3'));
-					progress(0, $('#progressBar4'));
-					progress(0, $('#progressBar5'));
-				}
-			}
-		});
-        
 		function progress(percent, $element) {
     		var progressBarWidth = percent * $element.width() / 100;
     		$element.find('div').animate({ width: progressBarWidth }, 200).html();
