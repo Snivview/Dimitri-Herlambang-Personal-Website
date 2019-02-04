@@ -41,7 +41,6 @@
         }
         #intro h1 {
             font-size: 28px;
-            border-bottom: 2px solid #fff;
         }
         .animate {
             position: absolute;
@@ -49,9 +48,16 @@
             left: 0;
             right: 0;
         }
+        .bottom-border {
+            margin-top: 5px;
+            height: 3px;
+            background-color: #fff;
+            transition: .7s;
+            width: 100%;
+        }
         #element_1 {
             padding:5px;
-            width: 310px;
+            width: 320px;
             top: 30vh;
             text-align: center;
             color: #fff;
@@ -185,18 +191,10 @@
         .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
             margin: 4px 2px 0 2px;
         }
-        .swiper-pagination-bullet:nth-of-type(1) {
-            background-color: #01579B;
-        }
-        .swiper-pagination-bullet:nth-of-type(2) {
-            background-color: #1B5E20;
-        }
-        .swiper-pagination-bullet:nth-of-type(3) {
-            background-color: #FF9800;
-        }
-        .swiper-pagination-bullet:nth-of-type(4) {
-            background-color: #AEEA00;
-        }
+        .swiper-pagination-bullet:nth-of-type(1) {background-color: #01579B;}
+        .swiper-pagination-bullet:nth-of-type(2) {background-color: #1B5E20;}
+        .swiper-pagination-bullet:nth-of-type(3) {background-color: #FF9800;}
+        .swiper-pagination-bullet:nth-of-type(4) {background-color: #AEEA00;}
         .swiper-button-prev {
             left: 30%;
         }
@@ -274,7 +272,7 @@
             <div id="background">
             </div>
             <div id="intro">
-                <h1 id="element_1" class="animate">I am Dimitri Herlambang</h1>
+                <div id="element_1" class="animate"><h1>I am Dimitri Herlambang</h1><div class="bottom-border"></div></div>
                 <h2 id="element_2" class="animate">About Me</h2>
                 <h2 id="element_3" class="animate"><a href="https://blog.dimiherlambang.com">My Blog</a></h2>
             </div>
@@ -394,6 +392,7 @@
             $("#about").removeClass("hidden");
             $("#intro").css("z-index","-1");
             $("#intro").addClass("zoom");
+            $(".bottom-border").css("width","0%");
         });
         $("#tabTitle_5").click(function() {
             $("#element_1").removeClass("moveTop");
@@ -402,6 +401,7 @@
             $("#about").addClass("hidden");
             $("#intro").css("z-index","1");
             $("#intro").removeClass("zoom");
+            $(".bottom-border").css("width","100%");
         });
 		function progress(percent, $element) {
     		var progressBarWidth = percent * $element.width() / 100;
